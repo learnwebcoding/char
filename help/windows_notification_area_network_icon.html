@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Diagnose Network Connection Issues By Interpreting The Windows XP/Vista/7 Notification Area Network Icon</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="Windows XP, Windows Vista, Windows 7, how to, diagnose, network connection, issue, problem, notification area, system tray, network icon, local area connection icon" />
+<meta name="Description" content="The Windows notification area Network icon provides network status and diagnostic information. Learn how to diagnose network connection issues by interpreting the Windows XP/Vista/7 notification area Network icon." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>Diagnose Network Connection Issues By Interpreting The Windows XP/Vista/7 Notification Area Network Icon</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows XP (32) | Windows Vista (32/64) | Windows 7 (32/64)</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 04 Apr 2011 | Published: 08 Dec 2010 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span></li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Fully Enable The Windows XP/Vista Notification Area Network Icon</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Fully Enable The Windows XP Notification Area Network Icon</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Fully Enable The Windows Vista Notification Area Network Icon</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Diagnose Network Connection Issues By Interpreting The Windows XP Notification Area Network Icon</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">The Windows XP Notification Area Network Icon: Local Area Connection - A Network Cable Is Unplugged</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">The Windows XP Notification Area Network Icon: Local Area Connection - Status: Limited Or No Connectivity</a></span></li>
+			<li><span class="tocSubsectionTitle">3.3.&nbsp;&nbsp;<a href="#toc3_3" class="linkToc">The Windows XP Notification Area Network Icon: Local Area Connection - Status: Connected</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Diagnose Network Connection Issues By Interpreting The Windows Vista Notification Area Network Icon</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">4.1.&nbsp;&nbsp;<a href="#toc4_1" class="linkToc">The Windows Vista Notification Area Network Icon: Not Connected - You Are Currently Not Connected To Any Networks</a></span></li>
+			<li><span class="tocSubsectionTitle">4.2.&nbsp;&nbsp;<a href="#toc4_2" class="linkToc">The Windows Vista Notification Area Network Icon: Currently Connected To: Unidentified Network - Access: Limited Connectivity</a></span></li>
+			<li><span class="tocSubsectionTitle">4.3.&nbsp;&nbsp;<a href="#toc4_3" class="linkToc">The Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local Only</a></span></li>
+			<li><span class="tocSubsectionTitle">4.4.&nbsp;&nbsp;<a href="#toc4_4" class="linkToc">The Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local And Internet</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">5.&nbsp;&nbsp;<a href="#toc5" class="linkToc">Diagnose Network Connection Issues By Interpreting The Windows 7 Notification Area Network Icon</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">5.1.&nbsp;&nbsp;<a href="#toc5_1" class="linkToc">The Windows 7 Notification Area Network Icon: Not Connected - No Connections Are Available</a></span></li>
+			<li><span class="tocSubsectionTitle">5.2.&nbsp;&nbsp;<a href="#toc5_2" class="linkToc">The Windows 7 Notification Area Network Icon: Unidentified Network - No Network Access</a></span></li>
+			<li><span class="tocSubsectionTitle">5.3.&nbsp;&nbsp;<a href="#toc5_3" class="linkToc">The Windows 7 Notification Area Network Icon: Network - No Internet Access</a></span></li>
+			<li><span class="tocSubsectionTitle">5.4.&nbsp;&nbsp;<a href="#toc5_4" class="linkToc">The Windows 7 Notification Area Network Icon: Network - Internet Access</a></span></li>
+		</ol>
+	</li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>The Windows XP, Windows Vista, and Windows 7 (Windows XP/Vista/7) notification area Network icon provides network status and diagnostic information through icon overlays and icon mouseover infotips. This Web page describes how to diagnose network connection issues by interpreting the Windows XP/Vista/7 notification area Network icon.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">This page assumes your computer obtains its IP address from your Internet Service Provider (ISP) or router. In other words, this page assumes your computer network adapter's TCP/IPv4 and TCP/IPv6 properties are set to Obtain an IP address automatically, which is the Windows XP/Vista/7 default.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Fully Enable The Windows XP/Vista Notification Area Network Icon</p>
+
+<div class="section">
+
+	<p>By default, the Windows 7 notification area Network icon is fully enabled and the Windows XP/Vista notification area Network icon is not fully enabled.</p>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Fully Enable The Windows XP Notification Area Network Icon</p>
+
+	<p>By default, the Windows XP notification area Network icon is shown when the network has limited or no connectively, and is not shown when the network is connected. To show the Windows XP notification area Network icon when the network is connected:</p>
+
+	<ol>
+		<li>Click <span class="userInput">Start | Control Panel | Network and Internet Connections | Network Connections</span>.</li>
+		<li>Right click the <span class="userInput">Local Area Connection</span> corresponding to your network adapter (not 1394 Connection, if present) and select <span class="userInput">Properties</span>.</li>
+		<li>Check <span class="userInput">Show icon in notification area when connected</span>.
+			<div class="imgInListItem"><img src="../images/windows_notification_area_network_icon/wxpp_lac_properties_show_icon_when_connected_arrow_385x450.gif" style="border:0;width:385px;height:450px" alt="Windows XP Local Area Connection Properties: Show Icon When Connected" /></div>
+		</li>
+		<li>Click <span class="userInput">OK</span>.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;Fully Enable The Windows Vista Notification Area Network Icon</p>
+
+	<p>Unlike Windows 7, the Windows XP/Vista notification area Network icon animates (i.e., the icon's monitors light up) when network activity occurs (i.e., the computer is sending/receiving network data). By default, the Windows Vista notification area Network icon activity animation is turned off. To turn on the Windows Vista notification area Network icon activity animation:</p>
+
+	<ul>
+		<li>Right click the <span class="userInput">notification area Network icon</span> and select <span class="userInput">Turn on activity animation</span>.
+			<div class="imgInListItem"><img src="../images/windows_notification_area_network_icon/wvistault_network_icon_turn_on_activity_animation_arrow_390x170.gif" style="border:0;width:390px;height:170px" alt="Windows XP Local Area Connection Properties: Show Icon When Connected" class="img" /></div>
+		</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Diagnose Network Connection Issues By Interpreting The Windows XP Notification Area Network Icon</p>
+
+<div class="section">
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Unlike Windows 7, the Windows XP notification area Network icon animates (i.e., the icon's monitors light up) when the computer is sending/receiving network data.</li>
+					<li>Unlike Windows Vista/7, the Windows XP notification area Network icon does not distinguish between the presence or absence of an Internet connection.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;The Windows XP Notification Area Network Icon: Local Area Connection - A Network Cable Is Unplugged</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wxpp_unplugged_mouseover_180x80.gif" style="border:0;width:180px;height:80px" alt="Windows XP Notification Area Network Icon: Local Area Connection - A Network Cable Is Unplugged" class="img" /></p>
+
+	<p>This Network icon appears when the cabling between the computer and the network device is faulty or the network device is powered off:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_unplugged_wvistault7p_notConnected_443x249.gif" style="border:0;width:443px;height:249px" alt="Windows XP Notification Area Network Icon: Local Area Connection - A Network Cable Is Unplugged: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;The Windows XP Notification Area Network Icon: Local Area Connection - Status: Limited Or No Connectivity</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wxpp_limited_mouseover_180x80.gif" style="border:0;width:180px;height:80px" alt="Windows XP Notification Area Network Icon: Local Area Connection - Status: Limited Or No Connectivity" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device and is unable to obtain an IP address. With a routerless (i.e., direct) network connection, this occurs when the modem needs to be powered off/on or reset, the connection between the modem and the Internet is faulty, or the Internet is down. With a router, this occurs when the router needs to be powered off/on or reset:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_limited_wvistault7p_unidentified_443x204.gif" style="border:0;width:443px;height:204px" alt="Windows XP Notification Area Network Icon: Local Area Connection - Status: Limited Or No Connectivity: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc3_3"></a>3.3.&nbsp;&nbsp;The Windows XP Notification Area Network Icon: Local Area Connection - Status: Connected</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wxpp_connected_mouseover_180x80.gif" style="border:0;width:180px;height:80px" alt="Windows XP Notification Area Network Icon: Local Area Connection - Status: Connected" class="img" /></p>
+
+	<p>When the computer is sending/receiving network data the Network icon lights up:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wxpp_connected_transferring_180x80.gif" style="border:0;width:180px;height:80px" alt="Windows XP Notification Area Network Icon: Local Area Connection - Status: Connected: Transferring Data" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device and obtains an IP address:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_connected_444x434.gif" style="border:0;width:444px;height:434px" alt="Windows XP Notification Area Network Icon: Local Area Connection - Status: Connected: Network Map" /></p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Diagnose Network Connection Issues By Interpreting The Windows Vista Notification Area Network Icon</p>
+
+<div class="section">
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Unlike Windows 7, the Windows Vista notification area Network icon animates (i.e., the icon's monitors light up) when the computer is sending/receiving network data.</li>
+					<li>Unlike Windows XP, the Windows Vista notification area Network icon distinguishes between the presence or absence of an Internet connection.</li>
+					<li>With a functioning routerless (i.e., direct) network connection, the Network icon mouseover infotip reference to &quot;Local&quot; is misleading.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc4_1"></a>4.1.&nbsp;&nbsp;The Windows Vista Notification Area Network Icon: Not Connected - You Are Currently Not Connected To Any Networks</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_notConnected_mouseover_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Not Connected - You Are Currently Not Connected To Any Networks" class="img" /></p>
+
+	<p>This Network icon appears when the cabling between the computer and the network device is faulty or the network device is powered off:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_unplugged_wvistault7p_notConnected_443x249.gif" style="border:0;width:443px;height:249px" alt="Windows Vista Notification Area Network Icon: Not Connected - You Are Currently Not Connected To Any Networks: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc4_2"></a>4.2.&nbsp;&nbsp;The Windows Vista Notification Area Network Icon: Currently Connected To: Unidentified Network - Access: Limited Connectivity</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_unidentified_mouseover_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Unidentified Network - Access: Limited Connectivity" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device and is unable to obtain an IP address. With a routerless (i.e., direct) network connection, this occurs when the modem needs to be powered off/on or reset, the connection between the modem and the Internet is faulty, or the Internet is down. With a router, this occurs when the router needs to be powered off/on or reset:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_limited_wvistault7p_unidentified_443x204.gif" style="border:0;width:443px;height:204px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Unidentified Network - Access: Limited Connectivity: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc4_3"></a>4.3.&nbsp;&nbsp;The Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local Only</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_localOnly_mouseover_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local Only" class="img" /></p>
+
+	<p>When the computer is sending/receiving network data the Network icon lights up:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_localOnly_transferring_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local Only: Transferring Data" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device, obtains an IP address, and is unable to connect to the Internet. This only occurs with a router and when something on the WAN (i.e., public) side of the router is not functioning, including when the cabling is faulty, the modem is powered off, the modem needs to be powered off/on or reset, or the Internet is down:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wvistault_localOnly_w7p_noInternetAccess_443x293.gif" style="border:0;width:443px;height:293px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local Only: Transferring Data: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc4_4"></a>4.4.&nbsp;&nbsp;The Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local And Internet</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_localAndInternet_mouseover_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local And Internet" class="img" /></p>
+
+	<p>When the computer is sending/receiving network data the Network icon lights up:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_wvistault_localAndInternet_transferring_250x125.gif" style="border:0;width:250px;height:125px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local And Internet: Transferring Data" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device, obtains an IP address, and connects to the Internet:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wvistault_localAndInternet_w7p_internetAccess_443x113.gif" style="border:0;width:443px;height:113px" alt="Windows Vista Notification Area Network Icon: Currently Connected To: Network - Access: Local And Internet: Transferring Data: Network Map" /></p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc5"></a>5.&nbsp;&nbsp;Diagnose Network Connection Issues By Interpreting The Windows 7 Notification Area Network Icon</p>
+
+<div class="section">
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Unlike Windows XP/Vista, the Windows 7 notification area Network icon does not animate (i.e., the icon's monitors do not light up) when the computer is sending/receiving network data.</li>
+					<li>Unlike Windows XP, the Windows 7 notification area Network icon distinguishes between the presence or absence of an Internet connection.</li>
+					<li>The Windows 7 notification area Network icon is identical for &quot;Unidentified network - No network access&quot; and &quot;Network - No internet access.&quot;</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc5_1"></a>5.1.&nbsp;&nbsp;The Windows 7 Notification Area Network Icon: Not Connected - No Connections Are Available</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_w7p_notConnected_mouseover_270x90.gif" style="border:0;width:270px;height:90px" alt="Windows 7 Notification Area Network Icon: Not Connected - No Connections Are Available" class="img" /></p>
+
+	<p>This Network icon appears when the cabling between the computer and the network device is faulty or the network device is powered off:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_unplugged_wvistault7p_notConnected_443x249.gif" style="border:0;width:443px;height:249px" alt="Windows 7 Notification Area Network Icon: Not Connected - No Connections Are Available: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc5_2"></a>5.2.&nbsp;&nbsp;The Windows 7 Notification Area Network Icon: Unidentified Network - No Network Access</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_w7p_unidentified_mouseover_270x90.gif" style="border:0;width:270px;height:90px" alt="Windows 7 Notification Area Network Icon: Unidentified Network - No Network Access" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device and is unable to obtain an IP address. With a routerless (i.e., direct) network connection, this occurs when the modem needs to be powered off/on or reset, the connection between the modem and the Internet is faulty, or the Internet is down. With a router, this occurs when the router needs to be powered off/on or reset:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wxpp_limited_wvistault7p_unidentified_443x204.gif" style="border:0;width:443px;height:204px" alt="Windows 7 Notification Area Network Icon: Unidentified Network - No Network Access: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc5_3"></a>5.3.&nbsp;&nbsp;The Windows 7 Notification Area Network Icon: Network - No Internet Access</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_w7p_noInternetAccess_mouseover_270x90.gif" style="border:0;width:270px;height:90px" alt="Windows 7 Notification Area Network Icon: Network - No Internet Access" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device, obtains an IP address, and is unable to connect to the Internet. This only occurs with a router and when something on the WAN (i.e., public) side of the router is not functioning, including when the cabling is faulty, the modem is powered off, the modem needs to be powered off/on or reset, or the Internet is down:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wvistault_localOnly_w7p_noInternetAccess_443x293.gif" style="border:0;width:443px;height:293px" alt="Windows 7 Notification Area Network Icon: Network - No Internet Access: Network Map" /></p>
+
+	<p class="subsectionTitle"><a id="toc5_4"></a>5.4.&nbsp;&nbsp;The Windows 7 Notification Area Network Icon: Network - Internet Access</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_icon_w7p_internetAccess_mouseover_270x90.gif" style="border:0;width:270px;height:90px" alt="Windows 7 Notification Area Network Icon: Network - Internet Access" class="img" /></p>
+
+	<p>This Network icon appears when the computer finds a network device, obtains an IP address, and connects to the Internet:</p>
+
+	<p><img src="../images/windows_notification_area_network_icon/network_map_wvistault_localAndInternet_w7p_internetAccess_443x113.gif" style="border:0;width:443px;height:113px" alt="Windows 7 Notification Area Network Icon: Network - Internet Access: Network Map" /></p>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>

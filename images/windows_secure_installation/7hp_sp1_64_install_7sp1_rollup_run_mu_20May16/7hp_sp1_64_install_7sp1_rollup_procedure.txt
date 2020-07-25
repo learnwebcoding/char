@@ -1,0 +1,7 @@
+7hp_sp1_64_install_7sp1_rollup_procedure.txt
+
+1.) Install MSDN subscriptions Windows 7 Home Premium With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_home_premium_with_sp1_x64_dvd_u_676549.iso.
+2.) Install Windows 7 SP1 Rollup prerequisite Windows6.1-KB3020369-x64.msu.
+3.) Install Windows 7 SP1 Rollup windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu.
+4.) Open Windows Update, click the Get updates for other Microsoft products link, install Microsoft Update.
+5.) Run Microsoft Update.

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>On The Windows 2000/XP Setup Disks</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="windows 2000, windows xp, setup disk, setup boot disk, boot floppy disk, floppy disk" />
+<meta name="Description" content="The Windows 2000/XP Setup Disks are a series of floppy disks from which is loaded the exact same Windows 2000/XP Setup preinstallation environment that is loaded from the Windows 2000/XP product CD. Therefore, if a computer does not boot from the Windows 2000/XP product CD and you do not want to configure the BIOS to boot from CD/DVD drives, an alternative is to boot the computer from the Windows 2000/XP Setup Disks. Learn how to create, and how to boot a computer from, the Windows 2000/XP Setup Disks." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>On The Windows 2000/XP Setup Disks</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows 2000 Professional | Windows XP (32)</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 06 Apr 2020 | Published: 23 Sep 2002 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Abbreviations</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Creating The Windows 2000 Setup Disks</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Creating The Windows 2000 Setup Disks: After Booting A Computer From The Windows 98/ME Startup Disk</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Creating The Windows 2000 Setup Disks: In Windows 9x/ME</a></span></li>
+			<li><span class="tocSubsectionTitle">2.3.&nbsp;&nbsp;<a href="#toc2_3" class="linkToc">Creating The Windows 2000 Setup Disks: In Windows 2000/XP</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Creating The Windows XP Setup Disks In Windows 9x/ME/2000/XP</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Creating The Windows XP Setup Disks In Windows 9x/ME</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Creating The Windows XP Setup Disks In Windows 2000/XP</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Booting A Computer From The Windows 2000/XP Setup Disks</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">4.1.&nbsp;&nbsp;<a href="#toc4_1" class="linkToc">Booting A Computer From The Windows 2000 Setup Disks</a></span></li>
+			<li><span class="tocSubsectionTitle">4.2.&nbsp;&nbsp;<a href="#toc4_2" class="linkToc">Booting A Computer From The Windows XP Setup Disks</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">5.&nbsp;&nbsp;<a href="#toc5" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>The Windows 2000 Professional and Windows XP (Windows 2000/XP) product CD is a bootable disc from which Windows 2000/XP Setup is loaded. Windows 2000/XP Setup consists of a near minimal 32-bit Windows operating system, a text mode user interface, and numerous 32-bit device drivers that constitute a preinstallation environment from which you can run the Recovery Console to repair a Windows 2000/XP installation, or initiate the installation of Windows 2000/XP from the Windows 2000/XP product CD.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The Windows 2000/XP Setup preinstallation environment is:
+				<ul>
+					<li>the successor to the Windows 9x/ME Startup Disk.</li>
+					<li>the forerunner of the official Microsoft product released in 2003 called Windows Preinstallation Environment (Windows PE).</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>To boot a computer from the Windows 2000/XP product CD, insert the Windows 2000/XP product CD into the CD/DVD drive, power on/restart the computer, and, when prompted, press any key to boot from CD. If the prompt to press any key to boot from CD does not appear and the computer has multiple CD/DVD drives, insert the Windows 2000/XP product CD into the other CD/DVD drives and try again. If the prompt to press any key to boot from CD still does not appear, and if the Windows 2000/XP product CD is functional and the CD/DVD drive(s) are functional, then either: 1.) the computer BIOS does not support booting from CD/DVD drives, which is unlikely for computers manufactured since 2002; or 2.) the computer BIOS is not configured to boot from CD/DVD drives, which means, to boot the computer from the Windows 2000/XP product CD, you must enter the BIOS setup program and configure the BIOS to boot from CD/DVD drives.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>The prompt to press any key to boot from CD lasts only a couple of seconds. If you do not press any key during this time, the computer proceeds with the boot process as normal. Therefore, if the computer appears to boot as normal, it is suggested that you first try powering on/restarting the computer and paying closer attention for the prompt to press any key to boot from CD.</li>
+					<li>Further discussion of the BIOS is beyond the scope of this page. For information on how to enter the BIOS setup program and how to configure the BIOS to boot from CD/DVD drives, see the computer motherboard/BIOS documentation.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>If a computer does not boot from the Windows 2000/XP product CD and you do not want to configure the BIOS to boot from CD/DVD drives, an alternative is to boot the computer from the Windows 2000/XP Setup Disks.</p>
+
+	<p>The Windows 2000/XP Setup Disks are a series of floppy disks (four/six, respectively) from which is loaded the exact same Windows 2000/XP Setup preinstallation environment that is loaded from the Windows 2000/XP product CD. Accordingly, after booting a computer from the Windows 2000/XP Setup Boot Disks, you can run the Recovery Console to repair a Windows 2000/XP installation, or initiate the installation of Windows 2000/XP from the Windows 2000/XP product CD. This Web page describes how to create, and how to boot a computer from, the Windows 2000/XP Setup Disks.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Abbreviations</p>
+
+	<ul>
+		<li>9x = Windows 95 and Windows 98 Second Edition.</li>
+		<li>98 = Windows 98 = Windows 98 Second Edition.</li>
+		<li>ME = Windows ME = Windows Millennium Edition.</li>
+		<li>2000 = 2000 Pro = Windows 2000 Pro = Windows 2000 Professional.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Creating The Windows 2000 Setup Disks</p>
+
+<div class="section">
+
+	<p>The Windows 2000 Setup Disks are a series of four floppy disks created by running a file on the Windows 2000 product CD. The X:\BOOTDISK\ folder, where X is the CD/DVD drive with the Windows 2000 product CD, contains six files:</p>
+
+	<p><img src="../images/w2kxp_setup_disks/w2k_cd_bootdisk_folder_425x425.gif"  style="border:0;width:425px;height:425px" alt="The Windows 2000 Product CD Bootdisk Folder" class="img"/></p>
+
+	<p>The four image files, CDBOOT1.IMG - CDBOOT4.IMG, correspond to and contain the files written to each of the four Windows 2000 Setup Disks. The two application files, MAKEBOOT.EXE and MAKEBT32.EXE, do the same thing: extract and write the contents of the four image files to the four Windows 2000 Setup Disks, and make the first disk of the series, the Windows 2000 Setup Boot Disk, bootable. The only difference between MAKEBOOT.EXE and MAKEBT32.EXE is that MAKEBOOT.EXE is a DOS-based (16-bit) executable and, therefore, can be run on MS-DOS and Windows 9x/ME/2000/XP, whereas, MAKEBT32.EXE is a Windows NT-based (32-bit) executable and, therefore, can only be run on Windows NT/2000/XP. The Windows 2000 Setup Disks are identical whether MAKEBOOT.EXE or MAKEBT32.EXE is run to create them.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Since the Windows 2000 Setup Disks are identical whether MAKEBOOT.EXE or MAKEBT32.EXE is run to create to them, and since MAKEBOOT.EXE is compatible with a wider range of operating systems, MAKEBOOT.EXE is used to create the Windows 2000 Setup Disks in this page.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Creating the Windows 2000 Setup Disks requires four floppy disks, starting a computer to MS-DOS with CD/DVD drive support (e.g., booting a computer from the Windows 98/ME Startup Disk) or Windows 9x/ME/2000/XP, and the Windows 2000 product CD.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Floppy disks are extremely unreliability. Therefore, it is strongly recommended that you create at least two sets of the Windows 2000 Setup Disks. Moreover, if an error message appears while creating the Windows 2000 Setup Disks, the floppy disk is probably bad. Try again with a different floppy disk.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Creating The Windows 2000 Setup Disks: After Booting A Computer From The Windows 98/ME Startup Disk</p>
+
+	<ol>
+		<li>Boot the computer from the Windows 98/ME Startup Disk.</li>
+		<li>The Microsoft Windows 98/ME Startup Menu appears. Start the computer with CD/DVD drive support:
+			<ul>
+				<li>Windows 98 Startup Disk: Press <span class="userInput">1 | Enter</span>.</li>
+				<li>Windows ME Startup Disk: Press <span class="userInput">2 | Enter</span>.</li>
+			</ul>
+		</li>
+		<li>The DOS prompt at A:\> appears.</li>
+		<li>Insert the Windows 2000 product CD into the CD/DVD drive.</li>
+		<li>Type type <span class="userInput">X:</span>, where X is the CD/DVD drive with the Windows 2000 product CD, and press <span class="userInput">Enter</span>.
+			<div class="note">
+				<div class="noteMarker noteMarkerImportant">!</div>
+				<div class="noteContent">When a computer is booted from the Windows 98/ME Startup Disk and CD/DVD drive support is selected, the drive letters assigned to CD/DVD drives might be different than if the computer was started to Windows installed on the computer hard drive.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>The DOS prompt at X:\> appears.</li>
+		<li>Type <span class="userInput">CD BOOTDISK</span> and press <span class="userInput">Enter</span>.</li>
+		<li>The DOS prompt at X:\BOOTDISK> appears.</li>
+		<li>Type <span class="userInput">MAKEBOOT.EXE</span> and press <span class="userInput">Enter</span>.</li>
+		<li>The Please specify the floppy drive to copy the images to prompt appears. Press <span class="userInput">A</span>.</li>
+		<li>The Insert one of these disks into drive A prompt appears. Remove the Windows 98/ME Startup Disk from drive A. Label a floppy disk &quot;Windows 2000 Setup Boot Disk&quot; and insert it into drive A. The Windows 2000 Setup Boot Disk is the first disk of the four disk series. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the first disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #2&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the second disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #3&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the third disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #4&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fourth disk is created successfully, The setup boot disks have been created successfully report appears and the DOS prompt at X:\BOOTDISK> appears.</li>
+		<li>Remove the fourth disk from drive A and remove the Windows 2000 product CD from the CD/DVD drive.</li>
+		<li>To power off the computer, press the computer <span class="userInput">power switch</span>. To restart the computer, press <span class="userInput">Ctrl+Alt+Del</span> or press the computer <span class="userInput">restart/reset switch</span>.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;Creating The Windows 2000 Setup Disks: In Windows 9x/ME</p>
+
+	<ol>
+		<li>Start the computer to Windows 9x/ME.</li>
+		<li>Insert the Windows 2000 product CD into the CD/DVD drive. If the Windows 2000 product CD autoruns, close the dialogs that appear.</li>
+		<li>Open My Computer or Windows Explorer and double click <span class="userInput">X:\BOOTDISK\MAKEBOOT</span>, where X is the CD/DVD drive with the Windows 2000 product CD.</li>
+		<li>A DOS shell opens and the Please specify the floppy drive to copy the images to prompt appears. Press <span class="userInput">A</span>:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wme_floppy_drive_letter_prompt_492x309.gif" style="border:0;width:492px;height:309px" alt="Creating The Windows 2000 Setup Disks: In Windows 9x/ME: Specify Floppy Drive Prompt" class="img" /></div>
+		</li>
+		<li>The Insert one of these disks into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Boot Disk&quot; and insert it into drive A. The Windows 2000 Setup Boot Disk is the first disk of the four disk series. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wme_disk1_prompt_492x309.gif" style="border:0;width:492px;height:309px" alt="Creating The Windows 2000 Setup Disks: In Windows 9x/ME: Insert Disk 1 Prompt" class="img" /></div>
+		</li>
+		<li>After the first disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #2&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wme_disk2_prompt_492x309.gif" style="border:0;width:492px;height:309px" alt="Creating The Windows 2000 Setup Disks: In Windows 9x/ME: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #3&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the third disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #4&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fourth disk is created successfully, The setup boot disks have been created successfully report appears:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wme_disk4_completed_492x309.gif" style="border:0;width:492px;height:309px" alt="Creating The Windows 2000 Setup Disks: In Windows 9x/ME: Setup Disks Created Successfully Report" class="img" /></div>
+		</li>
+		<li>Remove the fourth disk from drive A and remove the Windows 2000 product CD from the CD/DVD drive.</li>
+		<li>To close the DOS shell, click <b>Close</b>, <b>X</b>, at the top right corner of the DOS shell.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_3"></a>2.3.&nbsp;&nbsp;Creating The Windows 2000 Setup Disks: In Windows 2000/XP</p>
+
+	<ol>
+		<li>Start the computer to Windows 2000/XP.</li>
+		<li>Insert the Windows 2000 product CD into the CD/DVD drive. If the Windows 2000 product CD autoruns, close the dialogs that appear.</li>
+		<li>Open My Computer or Windows Explorer and double click <span class="userInput">X:\BOOTDISK\MAKEBOOT</span>, where X is the CD/DVD drive with the Windows 2000 product CD.</li>
+		<li>A DOS shell opens and the Please specify the floppy drive to copy the images to prompt appears. Press <span class="userInput">A</span>:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wxpp_sp2_floppy_drive_letter_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows 2000 Setup Disks: In Windows 2000/XP: Specify Floppy Drive Prompt" class="img" /></div>
+		</li>
+		<li>The Insert one of these disks into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Boot Disk&quot; and insert it into drive A. The Windows 2000 Setup Boot Disk is the first disk of the four disk series. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wxpp_sp2_disk1_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows 2000 Setup Disks: In Windows 2000/XP: Insert Disk 1 Prompt" class="img" /></div>
+		</li>
+		<li>After the first disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #2&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_disks_within_wxpp_sp2_disk2_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows 2000 Setup Disks: In Windows 2000/XP: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #3&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the third disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows 2000 Setup Disk #4&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fourth disk is created successfully, the DOS shell closes.</li>
+		<li>Remove the fourth disk from drive A and remove the Windows 2000 product CD from the CD/DVD drive.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Creating The Windows XP Setup Disks In Windows 9x/ME/2000/XP</p>
+
+<div class="section">
+
+	<p>The Windows XP Setup Disks are a series of six floppy disks created by downloading and running a file from Microsoft. The file to download and run from Microsoft for creating the Windows XP Setup Disks depends upon the version (Home or Pro) and the Service Pack (SP) level (Original Release, SP1, or SP2) of Windows XP on your Windows XP product CD, and is named accordingly:</p>
+
+	<p><img src="../images/w2kxp_setup_disks/wxp_setup_disks_downloaded_640x342.gif" style="border:0;width:640px;height:342px" alt="The Windows XP Setup Disks Downloaded" class="img"/></p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Microsoft often omits labeling products &quot;Original Release,&quot; but rarely omits labeling product &quot;Service Pack X.&quot; Therefore, Microsoft products not labeled &quot;Original Release&quot; and not labeled &quot;Service Pack X&quot; are, by default (a.k.a., silently), Original Release.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>The file to download and run from Microsoft for creating the Windows XP Setup Disks, generically referred to as <b>WinXP_Setup_Disks.exe</b>, is a self-extracting executable file. A self-extracting executable file is a .exe file that contains one or more files. Running a self-extracting executable file extracts its files, and, depending upon how the self-extracting executable file was built, can run one of the extracted files.</p>
+
+	<p>WinXP_Setup_Disks.exe contains eight files: six image files, cdboot1.img - cdboot6.img, and two application files, makeboot.exe and makebt32.exe. The six image files correspond to and contain the files written to each of the six Windows XP Setup Disks. The two application files do the same thing: extract and write the contents of the six image files to the six Windows XP Setup Disks, and make the first disk of the series, the Windows XP Setup Boot Disk, bootable. The only difference between makeboot.exe and makebt32.exe is that makeboot.exe is a DOS-based (16-bit) executable and, therefore, can be run on MS-DOS and Windows 9x/ME/2000/XP, whereas, makebt32.exe is a Windows NT-based (32-bit) executable and, therefore, can only be run on Windows NT/2000/XP. The Windows XP Setup Disks are identical whether makeboot.exe or makebt32.exe is run to create them.</p>
+
+	<p>Running WinXP_Setup_Disks.exe extracts its files to a temporary folder after which makeboot.exe is run and a DOS shell opens. When the DOS shell is closed, either manually or automatically, the temporary folder is deleted.</p>
+
+	<p>Creating the Windows XP Setup Disks requires six floppy disks, starting a computer to Windows 9x/ME/2000/XP, and downloading and running a file from Microsoft that corresponds to the version (Home or Pro) and Service Pack level (Original Release, SP1, or SP2) of Windows XP on your Windows XP product CD.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Floppy disks are extremely unreliability. Therefore, it is strongly recommended that you create at least two sets of the Windows XP Setup Disks. Moreover, if an error message appears while creating the Windows XP Setup Disks, the floppy disk is probably bad. Try again with a different floppy disk.</li>
+					<li>When creating the Windows XP Setup Disks, the prompts that appear reference Service Pack level, but not version. It is recommended that you label the Windows XP Setup Disks by both version and Service Pack level.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Creating The Windows XP Setup Disks In Windows 9x/ME</p>
+
+	<ol>
+		<li>Start the computer to Windows 9x/ME.</li>
+		<li>Visit the <a href="http://support.microsoft.com/kb/310994" class="linkContent">How To Obtain Windows XP Setup Disks For A Floppy Boot Installation (310994) (support.microsoft.com)</a> page.</li>
+		<li>Click the link that corresponds to the version (Home or Pro) and Service Pack level (Original Release, SP1, or SP2) of Windows XP on your Windows XP product CD.</li>
+		<li>The file download page appears. Click <span class="userInput">Download</span> and save WinXP_Setup_Disks.exe to the computer.</li>
+		<li>Open My Computer or Windows Explorer and double click <span class="userInput">WinXP_Setup_Disks.exe</span>.</li>
+		<li>The Do you accept all of the terms of the preceding License Agreement dialog appears. Click <span class="userInput">Yes</span>.</li>
+		<li>WinXP_Setup_Disks.exe is extracted, makeboot.exe runs, a DOS shell opens, and the Please specify the floppy drive to copy the images to prompt appears. Press <span class="userInput">A</span>:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wme_floppy_drive_prompt_412x284.gif" style="border:0;width:412px;height:284px" alt="Creating The Windows XP Setup Disks: In Windows 9x/ME: Specify Floppy Drive Prompt" class="img" /></div>
+		</li>
+		<li>The Insert one of these disks into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Orig, SP1, or SP2) Setup Boot Disk&quot; and insert it into drive A. The Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Boot Disk is the first disk of the six disk series. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wme_disk1_prompt_412x284.gif" style="border:0;width:412px;height:284px" alt="Creating The Windows XP Setup Disks: In Windows 9x/ME: Insert Disk 1 Prompt" class="img" /></div>
+		</li>
+		<li>After the first disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #2&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wme_disk2_prompt_412x284.gif" style="border:0;width:412px;height:284px" alt="Creating The Windows XP Setup Disks: In Windows 9x/ME: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #3&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the third disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #4&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fourth disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #5&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fifth disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #6&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the sixth disk is created successfully, The setup boot disks have been created successfully report appears:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wme_disk6_completed_412x284.gif" style="border:0;width:412px;height:284px" alt="Creating The Windows XP Setup Disks: In Windows 9x/ME: Setup Disks Created Successfully Report" class="img" /></div>
+		</li>
+		<li>Remove the sixth disk from drive A.</li>
+		<li>To close the DOS shell, click <b>Close</b>, <b>X</b>, at the top right corner of the DOS shell.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Creating The Windows XP Setup Disks In Windows 2000/XP</p>
+
+	<ol>
+		<li>Start the computer to Windows 2000/XP.</li>
+		<li>Visit the <a href="http://support.microsoft.com/kb/310994" class="linkContent">How To Obtain Windows XP Setup Disks For A Floppy Boot Installation (310994) (support.microsoft.com)</a> page.</li>
+		<li>Click the link that corresponds to the version (Home or Pro) and Service Pack level (Original Release, SP1, or SP2) of Windows XP on your Windows XP product CD.</li>
+		<li>The file download page appears. Click <span class="userInput">Download</span> and save WinXP_Setup_Disks.exe to the computer.</li>
+		<li>Open My Computer or Windows Explorer and double click <span class="userInput">WinXP_Setup_Disks.exe</span>.</li>
+		<li>If the Open File - Security Warning: Do you want to run this file dialog appears, click <span class="userInput">Run</span>.</li>
+		<li>The Do you accept all of the terms of the preceding License Agreement dialog appears. Click <span class="userInput">Yes</span>.</li>
+		<li>WinXP_Setup_Disks.exe is extracted, makeboot.exe runs, a DOS shell opens, and the Please specify the floppy drive to copy the images to prompt appears. Press <span class="userInput">A</span>:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wxpp_sp2_floppy_drive_letter_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows XP Setup Disks: In Windows 2000/XP: Specify Floppy Drive Prompt" class="img" /></div>
+		</li>
+		<li>The Insert one of these disks into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Boot Disk&quot; and insert it into drive A. The Windows XP Setup Boot Disk is the first disk of the six disk series. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wxpp_sp2_disk1_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows XP Setup Disks: In Windows 2000/XP: Insert Disk 1 Prompt" class="img" /></div>
+		</li>
+		<li>After the first disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #2&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_disks_within_wxpp_sp2_disk2_prompt_588x331.gif" style="border:0;width:588px;height:331px" alt="Creating The Windows XP Setup Disks: In Windows 2000/XP: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #3&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the third disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #4&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fourth disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #5&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the fifth disk is created successfully, the Insert another disk into drive A prompt appears. Label a floppy disk &quot;Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #6&quot; and insert it into drive A. Press <span class="userInput">any key</span> when you are ready.</li>
+		<li>After the sixth disk is created successfully, the DOS shell closes.</li>
+		<li>Remove the sixth disk from drive A.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Booting A Computer From The Windows 2000/XP Setup Disks</p>
+
+<div class="section">
+
+	<p>To boot a computer from the Windows 2000/XP Setup Disks, insert the first disk of the series, the Windows 2000/XP Setup Boot Disk, into the floppy disk drive, and power on/restart the computer. If the computer does not boot from the Windows 2000/XP Setup Boot Disk as described below and the computer has multiple floppy disk drives, insert the Windows 2000/XP Setup Boot Disk into the other floppy disk drives and try again. If the computer still does not boot from the Windows 2000/XP Setup Boot Disk as described below, and if the Windows 2000/XP Setup Boot Disk was created successfully and is functional, and if the floppy disk drive(s) are functional, then either: 1.) the computer BIOS does not support booting from floppy disk drives, which is unlikely for computers with floppy disk drives, or 2.) the computer BIOS is not configured to boot from floppy disk drives, which means, to boot the computer from the Windows 2000/XP Setup Disks, you must enter the BIOS setup program and configure the BIOS to boot from floppy disk drives.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Only the first disk of the Windows 2000/XP Setup Disks series, the Windows 2000/XP Setup Boot Disk, is bootable. The remaining disks of the series function primarily as file storage for device drivers.</li>
+					<li>Further discussion of the BIOS is beyond the scope of this page. For information on how to enter the BIOS setup program and how to configure the BIOS to boot from floppy disk drives, see the computer motherboard/BIOS documentation.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc4_1"></a>4.1.&nbsp;&nbsp;Booting A Computer From The Windows 2000 Setup Disks</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">When booting a computer from the Windows 2000 Setup Disks, the prompts that appear reference &quot;Windows 2000 Professional.&quot; When creating the Windows 2000 Setup Disks, the prompts that appear reference &quot;Windows 2000.&quot;</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<ol>
+		<li>Insert the first disk of the series, the Windows 2000 Setup Boot Disk, into the floppy disk drive and power on/restart the computer.</li>
+		<li>Windows 2000 Setup starts loading from the Windows 2000 Setup Boot Disk and the Please insert the disk labeled Windows 2000 Professional Setup Disk #2 into Drive A prompt appears. Insert the Windows 2000 Setup Disk #2 into drive A. Press <span class="userInput">Enter</span> when ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_insert_disk_2_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows 2000 Setup Disks: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is loaded successfully, the Please insert the disk labeled Windows 2000 Professional Setup Disk #3 into Drive A prompt appears. Insert the Windows 2000 Setup Disk #3 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the third disk is loaded successfully, the Please insert the disk labeled Windows 2000 Professional Setup Disk #4 into Drive A prompt appears. Insert the Windows 2000 Setup Disk #4 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the fourth disk is loaded successfully, Welcome to Setup appears. Insert the Windows 2000 product CD into the CD/DVD drive and proceed as needed:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/w2k_setup_welcome_to_setup_640x396.gif" style="border:0;width:640px;height:396px" alt="Booting A Computer From The Windows 2000 Setup Disks: Welcome To Setup" class="img" /></div>
+		</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc4_2"></a>4.2.&nbsp;&nbsp;Booting A Computer From The Windows XP Setup Disks</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">When booting a computer from the Windows XP Setup Disks, the prompts that appear reference &quot;Windows XP Home Edition&quot; or &quot;Windows XP Professional.&quot; When creating the Windows XP Setup Disks, the prompts that appear reference &quot;Windows XP.&quot;</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<ol>
+		<li>Insert the first disk of the series, the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Boot Disk, into the floppy disk drive and power on/restart the computer.</li>
+		<li>Windows XP Setup starts loading from the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Boot Disk and the Please insert the disk labeled Windows XP (Home Edition or Professional) (Original Release-silent, SP1, or SP2) Setup Disk #2 into Drive A prompt appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #2 into drive A. Press <span class="userInput">Enter</span> when ready:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_insert_disk_2_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows XP Setup Disks: Insert Disk 2 Prompt" class="img" /></div>
+		</li>
+		<li>After the second disk is loaded successfully, the Please insert the disk labeled Windows XP (Home Edition or Professional) (Original Release-silent, SP1, or SP2) Setup Disk #3 into Drive A prompt appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #3 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the third disk is loaded successfully, the Please insert the disk labeled Windows XP (Home Edition or Professional) (Original Release-silent, SP1, or SP2) Setup Disk #4 into Drive A prompt appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #4 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the fourth disk is loaded successfully, the Please insert the disk labeled Windows XP (Home Edition or Professional) (Original Release-silent, SP1, or SP2) Setup Disk #5 into Drive A prompt appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #5 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the fifth disk is loaded successfully, the Please insert the disk labeled Windows XP (Home Edition or Professional) (Original Release-silent, SP1, or SP2) Setup Disk #6 into Drive A prompt appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) Setup Disk #6 into drive A. Press <span class="userInput">Enter</span> when ready.</li>
+		<li>After the sixth disk is loaded successfully, Welcome to Setup appears. Insert the Windows XP (Home or Pro) (Original Release, SP1, or SP2) product CD into the CD/DVD drive and proceed as needed:
+			<div class="imgInListItem"><img src="../images/w2kxp_setup_disks/wxpp_sp2_setup_welcome_to_setup_640x396.gif" style="border:0;width:640px;height:396px" alt="Booting A Computer From The Windows XP Setup Disks: Welcome To Setup" class="img" /></div>
+		</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc5"></a>5.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="http://support.microsoft.com/kb/197063" class="linkListItem">How To Create Setup Boot Disks For Windows 2000 (197063) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/310994" class="linkListItem">How To Obtain Windows XP Setup Disks For A Floppy Boot Installation (310994) (support.microsoft.com)</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>

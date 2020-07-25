@@ -1,0 +1,172 @@
+/* ---------- Introduction, notes, abbreviations. ----------
+ * Purpose: Primary style sheet for entire Web site.
+ * Used in: All Web pages.
+ * Last reviewed/updated (meaning styles, not comments): 06 Sep 2014.
+ * Published: 08 Jan 2014.
+ * Use em for scaling font-size throughout. Watch for possible inheritance issues with em.
+ * SF 3.1, not CH2.0, zoom in/out (Ctrl + +) scales better with em than px. Nonetheless, use em for font-size only.
+ * For body font-size: 12px, logical em values are; 0.08em (1px), 0.17em (2px), 0.25em (3px), 0.33em (4px), 0.42em (5px), 0.50em (6px), 0.58em (7px), 0.67em (8px), 0.75em (9px), 0.83em (10px), 0.92em (11px), 1.00em (12px), 1.08em (13px), 1.17em (14px), 1.25em (15px), 1.33em (16px), 1.42em (17px), 1.50em (18px), 1.58em (19px), 1.67em (20px), 1.75em (21px), 1.83em (22px), 1.92em (23px), 2.00em (24px).
+ * Property order convention: clear, float, width, height, line-height, font-family, font-size, font-weight, font-style, background-color, background, color, text-align, text-decoration, text-shadow, border, border-collapse, border-radius, box-shadow, list-style-type, cursor, margin, padding.
+ * Web browser support: IE8.0+, FF1.5+, SM1.0+, FL1.0+, SF3.1+, CH2.0+, OP9.5+, NT9.0+.
+ * Additional Web browser support: 1.) background: linear-gradient: IE10.0+, FF16.0+, SM2.13+, no SF5.1.7-, CH26.0+, OP12.10+; 2.) border-radius: IE9.0+, FF4.0+, SM2.1+, SF5.0+, CH4.0+, OP10.5+; 3.) box-shadow: IE9.0+, FF4.0+, SM2.1+, SF5.1+, CH10.0+, OP10.5+; 4.) text-shadow: IE10.0+, FF3.5+, SM2.0+, SF3.1+, CH2.0+, OP10.0+; In no case is lack of additional Web browser support a catastrophic fail. */
+
+/* ---------- Print friendly with/without images instructions. ----------
+ * 1.) Copy char.css to char_print_with_images.css.
+ * 2.) In char_print_with_images.css: a.) in .container change width to 100% and delete borders, padding; b.) change all instances of background, background-color, box-shadow that are not transparent or #ffffff to #ffffff, not transparent; c.) in .pageDescOrPath add style display: none.
+ * 3.) Copy char_print_with_images.css to char_print_without_images.css.
+ * 4.) In char_print_friendly_without_images.css uncomment out img { display: none }. */
+
+/* ---------- Elements. ----------
+ * In IE7.0-, not IE8,0+, if place overflow-y: scroll in body, get two vertical and horizontal scroll bars. */
+
+html { overflow-y: scroll; }
+body { font-family: arial, tahoma, sans-serif; font-size: 12px; background-color: #ffffff; color: #333333; margin: 0px; padding: 0px; }
+h1, p, hr, ol, ul, table { margin: 0px 0px 15px 0px; } /* Define Web page vertical spacing as margin-bottom on elements. Same done for classNames. */
+h1 { font-size: 1.42em; font-weight: bold; }
+ul { list-style-type: disc; }
+ol ol, ol ul, ul ol, ul ul { margin: 8px 0px 8px 0px; }
+table { border: 2px solid #333333; border-collapse: collapse; }
+th { font-weight: bold; background-color: #ffffff; border: 2px solid #333333; padding: 3px; }
+td { text-align: center; border: 2px solid #333333; padding: 3px; }
+code { font-family: "courier new", courier, monospace; }
+
+/* ---------- Header for all Web pages. ----------
+ * width: 960px; in .header, .pageDescOrPath, .container, .noscript. */
+
+.header { width: 960px; margin: 0px auto; padding: 0px; }
+.headerTopBar { font-size: 0.83em; text-align: right; padding-top: 5px; }
+.headerLogoTabBarContainer {} /* Deliberate. */
+.linkHeaderLogo { float: left; color: #333333; text-decoration: none; }
+.linkHeaderLogoTitle { font-size: 2.25em; text-shadow: 1px 1px 1px #666666; }
+.linkHeaderLogoSubtitle  { font-size: 1.08em; letter-spacing: 0.33em; text-shadow: 0px 0px 1px #666666; border-top: 1px solid #333333; }
+.linkHeaderTabItem { float: right; font-size: 1.42em; font-weight: bold; background-color: #ffffff; color: #ffffff; text-decoration: none; text-align: center; text-shadow: 1px 1px 1px #000000; border-top: 5px solid #f7f7f7; margin-left: 5px; padding: 14px 16px 14px 16px; } /* border-top determines space between logo and .pageDescOrPath. */
+.linkHeaderTabItem:hover { text-decoration: underline; }
+
+/* ---------- Container for content between header and footer, non-inclusive. For all Web pages. ----------
+ * width: 960px; in .header, .pageDescOrPath, .container, .noscript.
+ * .container width + (2 x padding width) + (2 x border width) = 960px. */
+
+.pageDescOrPath { clear: both; width: 920px; font-size: 1.00em; background-color: #ffffff; color: #ffffff; margin: auto; padding: 8px 20px 8px 20px; display: none }
+.container { width: 100%; background-color: #ffffff; margin: 0px auto 20px auto; }
+
+/* ---------- Version, For, Last Reviewed/Updated, toc, sections. For all Web pages. ---------- */
+
+.pageVersion, .for, .lastUpdated { font-size: 0.92em; font-weight: bold; margin: 0px 0px 15px 0px; }
+.siteGreen, .for { color: #226622; }
+.lastUpdated { color: #777777; margin-bottom: 20px; }
+.toc, .tocSectionOneThruNineSubsectionTitles, .tocSectionTenPlusSubsectionTitles, .tocSubSubsectionTitles { list-style-type: none; margin: 0px; padding: 0px; } /* Assigned to ol. No vertical spacing for ol in TOC. */
+.toc { margin-bottom: 15px; }
+.tocSectionTitle { font-size: 1.17em; font-weight: bold; }
+.tocSectionOneThruNineSubsectionTitles { padding-left: 21px; }
+.tocSectionTenPlusSubsectionTitles { padding-left: 29px; }
+.tocSubsectionTitle { font-weight: bold; }
+.tocSubSubsectionTitles, .tocSubSubsectionTitle {} /* Deliberate. */
+.sectionTitle { font-size: 1.17em; font-weight: bold; margin-bottom: 15px; }
+.section { margin-left: 20px; }
+.subsectionTitle { font-weight: bold; }
+.subSubsectionTitle {} /* Deliberate. */
+
+/* ---------- Links common. ----------
+ * Some links are interactive objects (IOs) that look and behave like hyperlinks but are styled text used as JavaScript event targets.
+ * .linkHeaderLogoLeft, .linkHeaderLinkBarItem are additive to same style rules in Header section above.
+ * Each Links common class is assigned focus. */
+
+.linkHeaderLogoLeft, .linkHeaderLogoRight, .linkHeaderLinkBarItem, .linkHeaderNavBar, .linkToc, .linkHoverColorUnderline { color: #333333; text-decoration: none; }
+.linkPageVersion, .linkListItem, .linkTableheader, .linkEndnote { color: #333333; text-decoration: underline; }
+.linkContent { color: #0055aa; text-decoration: none; }
+.linkListItem:visited { color: #999999; }
+.linkHeaderLogoRight:hover, .linkHeaderLinkBarItem:hover, .linkHeaderNavBar:hover { color: #999999; }
+.linkToc:hover, .linkHoverColorUnderline:hover { color: #999999; text-decoration: underline; }
+.linkPageVersion:hover, .linkListItem:hover, .linkTableheader:hover, .linkEndnote:hover { color: #999999; text-decoration: none; }
+.linkContent:hover { color: #333333; text-decoration: underline; }
+.linkHeaderLogoLeft:focus, .linkHeaderLogoRight:focus, .linkHeaderLinkBarItem:focus, .linkHeaderNavBar:focus, .linkEndnote:focus { outline: none; }
+.linkToc:focus, .linkHoverColorUnderline:focus, .linkPageVersion:focus, .linkListItem:focus, .linkTableheader:focus, .linkContent:focus { outline: thin dotted invert; }
+
+/* ---------- Notes, nesting notes in lists, nesting lists in notes, nesting lists in tables. ----------
+ * In .note, ol .note, ul .note, as compromise for browser +/- box-shadow support, use margin-bottom: 18px, not 15px, and not 15px + box-shadow 6px = 21px. */
+
+.note { margin: 0px 0px 18px 2px; }
+.noteMarker { float: left; width: 22px; font-family: georgia, "times new roman", serif; font-size: 1.67em; font-weight: bold; font-style: italic; text-align: left; padding-top: 2px; } /* Requires simultaneous use of either .noteMarkerNormal or .noteMarkerImportant. */
+.siteRed, .noteMarkerImportant { color: #882222; }
+.siteBlue, .noteMarkerNormal { color: #222288; }
+.noteContent { float: left; width: 75%; font-size: 0.92em; background-color: #ffffff; border: 1px solid #aaaaaa; border-radius: 6px; box-shadow: 0px 1px 6px 0px #ffffff; padding: 6px; }
+ol .note, ul .note { margin: 15px 0px 18px 2px; }
+.note ol, .note ul, table ol, table ul { margin: 0px; } /* No vertical spacing for ol/ul nested in notes and tables. */
+.olUlNestedInNotePaddingReduced, .olUlNestedInTablePaddingReduced { padding-left: 20px; }
+
+/* ---------- Tables. ---------- */
+
+.tableTitle { font-weight: bold; background-color: #ffffff; color: #000000; }
+.width100pct { width: 100%; }
+.width90pct { width: 90%; }
+.width80pct { width: 80%; }
+.width75pct { width: 75%; }
+.width70pct { width: 70%; }
+.width67pct { width: 67%; }
+.width60pct { width: 60%; }
+.width50pct { width: 50%; }
+.width40pct { width: 40%; }
+.width33pct { width: 33%; }
+.width30pct { width: 30%; }
+.width25pct { width: 25%; }
+.width20pct { width: 20%; }
+.width17pct { width: 17%; }
+.width13pct { width: 13%; }
+.width10pct { width: 10%; }
+.width650px { width: 650px; }
+.width600px { width: 600px; }
+.width500px { width: 500px; }
+.cellTextAlignLeft { text-align: left; }
+.cellTextAlignRight { text-align: right; }
+.cellTextAlignLeftTop { text-align: left; vertical-align: top; }
+.tableEndnote { text-align: left; }
+
+/* ---------- Misc. ----------
+ * width: 960px; in .header, .pageDescOrPath, .container, .noscript. */
+
+.noscript { width: 960px; font-size: 1.08em; margin: 0px auto 20px auto; }
+.linkNoScript { font-weight: bold; color: #333333; text-decoration: none; }
+img { display: none; }
+.img { box-shadow: 0px 1px 6px 0px #ffffff; }
+.imgInListItem { margin: 15px 0px 15px 0px; }
+.marginLeftOneTick { margin: 0px 0px 15px 20px; }
+.userInput { font-weight: bold; }
+.linethrough { text-decoration: line-through; }
+.overline { text-decoration: overline; }
+.highlight { background-color: #ffffff }
+.preReduceFontSize { font-size: 12px; } /* For learn_css_now.html. Keep hard coded px, not dynamic em. */
+.plusSign { font-size: 1.25em; }
+.minusSign { font-size: 1.25em; font-weight: bold; }
+.buttonSmall { font-size: 0.92em; }
+.cursorPointer { cursor: pointer; }
+.displayNone { display: none; }
+.clearBoth { clear: both; }
+
+/* ---------- For Computer Help (/public_html/index.html), Computer Resources (/public_html/resources.html) (chcr). ---------- */
+
+.chcrSectionTitle { font-size: 1.17em; font-weight: bold; background-color: #ffffff; color: #000000; margin: 0px 0px 12px 0px; padding: 4px; }
+.chcrDisplaySection { margin: 0px 0px 0px 20px; }
+.chcrPageTitle { font-size: 1.00em; font-weight: bold; border-bottom: 3px solid #e2e2e2; margin: 0px; padding-bottom: 1px; }
+.linkChcrPageTitle { color: #000000; text-decoration: none; }
+.linkChcrPageTitle:visited { color: #777777; }
+.linkChcrPageTitle:hover { color: #777777; }
+.chcrPageDesc { color: #555555; margin: 1px 0px 12px 0px; }
+.expandCollapseAllPointer { font-size: 0.92em; font-weight: bold; color: #777777; margin: 0px 0px 20px 0px; cursor: pointer; }
+.expandImageAndText { display: none; vertical-align: middle; cursor: pointer; }
+.collapseImageAndText { display: inline; vertical-align: middle; cursor: pointer; }
+
+/* ---------- Footer for Computer Help (/public_html/index.html), Computer Resources (/public_html/resources.html), What's 
+New (/public_html/whats_new.html) (chcrwn). ---------- */
+
+.chcrwnFooter { font-size: 0.83em; color: #777777; text-align: center; margin-bottom: 15px; }
+.linkChcrwnFooter { color: #777777; text-decoration: none; }
+.linkChcrwnFooter:hover { color: #000000; text-decoration: underline; }
+
+/* ---------- Footer for all Web pages except Computer Help (/public_html/index.html), Computer Resources (/public_html/resources.html), What's 
+New (/public_html/whats_new.html). ---------- */
+
+.footer { margin: 30px 0px 0px 0px; }
+.linkFooterLogo { float: left; color: #333333; text-decoration: none; margin-bottom: 16px; }
+.linkFooterLogoTitle { font-size: 1.75em; }
+.linkFooterLogoSubtitle  { font-size: 0.83em; letter-spacing: 0.33em; border-top: 1px solid #333333; }
+.footerCopyright { font-size: 0.92em; font-weight: bold; color: #777777; }

@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Secure A Clean Installation Of Windows 7/8.1/10</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="Windows 7, Windows 8.1, Windows 10, how to, secure, new, clean, installation" />
+<meta name="Description" content="Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update. Learn how to secure a clean installation of Windows 7/8.1/10." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>Secure A Clean Installation Of Windows 7/8.1/10</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows 7 (32/64) | Windows 8.1 (32/64) | Windows 10 (32/64)</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 18 Jul 2020 | Published: 14 Jan 2004 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Windows Vulnerabilities</a></span></li>
+			<li><span class="tocSubsectionTitle">1.2.&nbsp;&nbsp;<a href="#toc1_2" class="linkToc">Windows 7/8.1 Servicing Model Ending September 2016: Individual Security Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.3.&nbsp;&nbsp;<a href="#toc1_3" class="linkToc">Windows 7 SP1 And Windows 7 SP1 Convenience Rollup</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.3.1.&nbsp;&nbsp;<a href="#toc1_3_1" class="linkToc">Security Updates For Windows 7 From February 2011 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.3.2.&nbsp;&nbsp;<a href="#toc1_3_2" class="linkToc">Security Updates For Windows 7 Included In Windows 7 SP1 And Windows 7 SP1 Convenience Rollup</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.4.&nbsp;&nbsp;<a href="#toc1_4" class="linkToc">Windows 8.1 Update</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.4.1.&nbsp;&nbsp;<a href="#toc1_4_1" class="linkToc">Security Updates For Windows 8.1 Included In Windows 8.1 Update</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.5.&nbsp;&nbsp;<a href="#toc1_5" class="linkToc">Windows 7/8.1 Servicing Model Starting October 2016: Bundled Updates And Update Rollups Including Security Fixes</a></span></li>
+			<li><span class="tocSubsectionTitle">1.6.&nbsp;&nbsp;<a href="#toc1_6" class="linkToc">Windows 10 Servicing Model: Cumulative Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.7.&nbsp;&nbsp;<a href="#toc1_7" class="linkToc">Servicing Stack Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.8.&nbsp;&nbsp;<a href="#toc1_8" class="linkToc">Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.8.1.&nbsp;&nbsp;<a href="#toc1_8_1" class="linkToc">The Security Update Holes In Securing A Clean Installation Of Windows 7</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.8.2.&nbsp;&nbsp;<a href="#toc1_8_2" class="linkToc">The Security Update Hole In Securing A Clean Installation Of Windows 8.1</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.8.3.&nbsp;&nbsp;<a href="#toc1_8_3" class="linkToc">No Security Update Hole In Securing A Clean Installation Of Windows 10</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.9.&nbsp;&nbsp;<a href="#toc1_9" class="linkToc">Compiling The List Of Security Updates For Windows 7/8.1 That Resolve Vulnerabilities That Do Not Require User Interaction To Be Exploited</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.9.1.&nbsp;&nbsp;<a href="#toc1_9_1" class="linkToc">Listing And Reading The Microsoft Security Bulletins For Windows 7 SP1/8.1</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.9.2.&nbsp;&nbsp;<a href="#toc1_9_2" class="linkToc">Determining That A Security Update For Windows Resolves A Vulnerability That Requires User Interaction To Be Exploited</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.9.3.&nbsp;&nbsp;<a href="#toc1_9_3" class="linkToc">Determining That A Security Update For Windows Resolves A Vulnerability That Does Not Require User Interaction To Be Exploited</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.9.4.&nbsp;&nbsp;<a href="#toc1_9_4" class="linkToc">Policy On Security Update For Windows Supersedence And On Adding All Of The Security Updates In A Microsoft Security Bulletin To The List</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.10.&nbsp;&nbsp;<a href="#toc1_10" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 7/8.1/10</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.10.1.&nbsp;&nbsp;<a href="#toc1_10_1" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 7</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.10.2.&nbsp;&nbsp;<a href="#toc1_10_2" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 8.1</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.10.3.&nbsp;&nbsp;<a href="#toc1_10_3" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 10</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.11.&nbsp;&nbsp;<a href="#toc1_11" class="linkToc">Abbreviations</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 8.1</a></span></li>
+			<li><span class="tocSubsectionTitle">2.3.&nbsp;&nbsp;<a href="#toc2_3" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Secure A Clean Installation Of Windows 7/8.1/10</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Secure A Clean Installation Of Windows 7</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Secure A Clean Installation Of Windows 8.1</a></span></li>
+			<li><span class="tocSubsectionTitle">3.3.&nbsp;&nbsp;<a href="#toc3_3" class="linkToc">Secure A Clean Installation Of Windows 10</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Windows Vulnerabilities</p>
+
+	<p>Windows vulnerabilities are flaws in the Windows operating system code that render Windows susceptible to exploitation. The successful exploitation of a Windows vulnerability results in compromise.<!-- Need to define  compromise. --> Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited.</p>
+
+	<p>For the Windows vulnerabilities that require user interaction to be exploited, compromise requires user interaction on the computer besides placing the vulnerable computer online (i.e., connecting the computer to a network, be it an Intranet and/or the Internet). User interactions that can result in compromise, known as triggers, include attaching external/removable drives or network devices, visiting Web sites, accessing/receiving/opening emails, opening email attachments, creating/accessing/opening/installing/joining/connecting to network resources including but not limited to servers/domains/devices/shares/files/etc. In other words, for the Windows vulnerabilities that require user interaction to be exploited, in the absence of the appropriate user interaction required to trigger exploitation, compromise cannot occur simply by placing the vulnerable computer online.</p>
+
+	<p>For the Windows vulnerabilities that do not require user interaction to be exploited, compromise does not require any user interaction on the computer besides placing the vulnerable computer online. In other words, for the Windows vulnerabilities that do not require user interaction to be exploited, there is no trigger and compromise can occur simply by placing the vulnerable computer online.</p>
+
+	<p>After installing Windows, a common practice is to place the computer online and run Windows Update or Microsoft Update (Windows/Microsoft Update) to install the latest Windows Service Pack (Windows 7), Update (Windows 8.1), Security Monthly Quality Rollup (Windows 7/8.1), Cumulative Update (Windows 10), Security Updates (Windows 7/8.1/10), and non-security updates and fixes Windows (7/8.1/10). Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows/Microsoft Update is running.</p>
+
+	<p>Worms are the class of threat that automatically run themselves on, and automatically copy themselves from, computer to computer over a network without user interaction. To accomplishes this, worms exploit vulnerabilities that, themselves, do not require user interaction to be exploited and that allow remote code execution (RCE). First, the worm exploits the vulnerability, then it runs itself on the now compromised computer, including possibly delivering a destructive payload, and then it attempts to propagate itself to other vulnerable computers on the network, again without user interaction.</p>
+
+	<p>Worms are extremely dangerous because they can automatically infect a tremendous number of vulnerable networked computers seemingly simultaneously without any user interaction besides placing the vulnerable computers online. Infamous worms that exploit Windows vulnerabilities include <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081113-0229-99" class="linkContent">W32.Blaster.Worm (symantec.com)</a> (Discovered 11 Aug 2003 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms03-026.aspx" class="linkContent">MS03-026 (technet.microsoft.com)</a> published 16 Jul 2003), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081815-2308-99" class="linkContent">W32.Welchia.Worm (a.k.a., Nachi) (symantec.com)</a> (Discovered 18 Aug 2003 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms03-007.aspx" class="linkContent">MS03-007 (technet.microsoft.com)</a> published 17 Mar 2003 and <a href="https://technet.microsoft.com/en-us/library/security/ms03-026.aspx" class="linkContent">MS03-026 (technet.microsoft.com)</a> published 16 Jul 2003), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2004-050116-1831-99" class="linkContent">W32.Sasser.Worm (symantec.com)</a> (Discovered 30 Apr 2004 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms04-011.aspx" class="linkContent">MS04-011 (technet.microsoft.com)</a> published 13 Apr 2004), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2008-112203-2408-99" class="linkContent">W32.Downadup (a.k.a., Conficker) (symantec.com)</a> (Discovered 21 Aug 2008 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms08-067.aspx" class="linkContent">MS08-067 (technet.microsoft.com)</a> published 23 Oct 2008), and <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2017-051310-3522-99" class="linkContent">Ransom.Wannacry (symantec.com)</a> (Discovered 12 May 2017 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms17-010.aspx" class="linkContent">MS17-010 (technet.microsoft.com)</a> published 14 Mar 2017). Moreover, Blaster, Welchia, Sasser, and Downadup remain so prevalent that even today - years after they have been discovered - vulnerable Windows computers are still being compromised by these worms as soon as they are placed online, including during the time that Windows/Microsoft Update is running.</p>
+
+	<p>Fortunately, most of the Windows vulnerabilities that do not require user interaction to be exploited are not wormable (i.e., do not allow RCE and, therefore, are not suitable for worms). Instead, the impact of most Windows vulnerabilities that do not require user interaction to be exploited is to allow either denial of service, elevation of privilege (EOP), information disclosure, security feature bypass, or spoofing.</p>
+
+	<p>In some environments, the exploitability (i.e., the likelihood that a vulnerability will be exploited) of a Windows vulnerability that does not require user interaction to be exploited is low. However, in some environments, the exploitability of a Windows vulnerability that does not require user interaction to be exploited is high. Rather than trying to take environment, exploitability, impact, and other factors into account, and unnecessarily driving oneself mad in the process, a simpler and safer policy has been adopted: to secure a clean installation of Windows per this web page, it is necessary to resolve <em>all</em> known examples of Windows vulnerabilities that do not require user interaction to be exploited before, not after, placing the computer online.</p>
+
+<!--
+Now, someone in the room might say, who cares about a denial of service vulnerability...simply reboot the computer and carry on with your life. What if, however, the vulnerability actually allows an exhaustion of resources, which freezes the computer, which, in turn, causes the denial of service, and this occurs while your are running Windows/Microsoft Update, and the only solution is a hard reboot, and now the computer boots to a blue screen. Suddenly the seemingly innocuous denial of service vulnerability is not so innocuous.
+-->
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>The severity rating (e.g., low, moderate, important, and critical) and impact (e.g., denial of service, EOP, information disclosure, RCE, security feature bypass, or spoofing) of a Windows vulnerability does not matter. The only thing that matters is if the Windows vulnerability requires, or does not require, user interaction to be exploited.</li>
+					<li>Toward securing a clean installation of Windows, this Web page assumes the worse, including:
+						<ul>
+							<li>Your network administrator and/or Internet Service Provider is not filtering, or is doing a poor job of filtering, malicious network traffic.</li>
+							<li>A gateway/router is not being used to connect to the Internet, or is being used to connect to the Internet but is running outdated insecure firmware and/or is not properly configured.</li>
+							<li>Worms that can bridge gateways/routers, such as Downadup (a.k.a., Conficker), are not being blocked access to the LAN.</li>
+							<li>Your Intranet includes a compromised computer running malicious software and/or a malicious user which are attempting to use the Intranet (not physical access) to compromise other computers on the Intranet.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc1_2"></a>1.2.&nbsp;&nbsp;Windows 7/8.1 Servicing Model Ending September 2016: Individual Security Updates</p>
+
+	<p>On the second Tuesday of each month (a.k.a., Patch Tuesday) through March 2017, Microsoft released a Microsoft Security Bulletin Summary consisting of one or more Microsoft Security Bulletins. A Microsoft Security Bulletin describes a single vulnerability, or group of related vulnerabilities, typically in a Microsoft product. Through September 2016, Microsoft Security Bulletins describing Windows vulnerabilities provided links to one or more Security Updates for Windows. A Security Update for Windows (a.k.a., a patch) is a single file. Upon installation, the Security Update(s) for a Microsoft Security Bulletin resolve (a.k.a, patch) the vulnerability(s) described in the Microsoft Security Bulletin.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Microsoft Security Bulletins are assigned an alpha-numeric name with syntax, MS##-###, where MS## is the year, and -### is the Microsoft Security Bulletin released that year. For example, MS10-001 is the first Microsoft Security Bulletin released in 2010.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Security Updates for Windows can be installed in an automated, batch-like fashion via Windows/Microsoft Update. Security Updates for Windows can also be downloaded via the links in the Microsoft Security Bulletins and installed manually. To secure a clean installation of Windows 7/8.1 per this web page, it is necessary to install some Security Updates for Windows 7/8.1 before placing the computer online. This requires downloading and copying the Security Updates for Windows 7/8.1 to removable media before performing the clean installation of Windows 7/8.1.</p>
+
+	<p class="subsectionTitle"><a id="toc1_3"></a>1.3.&nbsp;&nbsp;Windows 7 SP1 And Windows 7 SP1 Convenience Rollup</p>
+
+	<p>Window 7 Service Pack 1 (Windows 7 SP1) is a single file that contains Updates for Windows 7, Security Updates for Windows 7, and new Windows 7 features.</p>
+
+	<p>Window 7 Service Pack 1 Convenience Rollup v4 May 2016 KB3125574 (Windows 7 SP1 Convenience Rollup) is a single file that contains Updates for Windows 7 and Security Updates for Windows 7.</p>
+
+	<p>Windows 7 SP1 Convenience Rollup requires Windows SP1. This means Window 7 SP1 must be installed before installing Windows 7 SP1 Convenience Rollup.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_3_1"></a>1.3.1.&nbsp;&nbsp;Security Updates For Windows 7 From February 2011 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup</p>
+
+	<p>Microsoft has not provided a list of the Security Updates for Windows 7 included/not included in Windows 7 SP1 Convenience Rollup. Moreover, upon installing Windows 7 SP1 Convenience Rollup, Windows Update | View update history lists Update for Windows (KB3125574), which is the Windows 7 SP1 Convenience Rollup itself, not the individual Security Updates for Windows 7 included in Windows 7 SP1 Convenience Rollup.</p>
+
+	<p>As a result, it is easier to determine the Security Updates for Windows 7 SP1 not included in, rather than included in, Windows 7 SP1 Convenience Rollup. This can be accomplished by; 1.) installing Windows 7 Includes SP1, 2.) installing Servicing Stack Update, 3.) installing Windows 7 SP1 Convenience Rollup, 4.) connecting to Windows Update and installing Microsoft Update, 5.) running Microsoft Update to list the available Security Updates for Windows 7, and 6.) identifying the Security Updates for Windows 7 that were released from February 2011 through April 2016. The following is the Security Updates for Windows 7 from February 2011 through April 2016 not included in Windows 7 SP1 Convenience Rollup:</p>
+
+	<table class="width80pct">
+		<tr>
+			<td colspan="3" class="tableTitle">Security Updates For Windows 7 From February 2011 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup <a id="endnote_1_convenience_rollup_return"></a><a href="#endnote_1_convenience_rollup" class="linkEndnote">(1)</a></td>
+		</tr>
+		<tr>
+			<th>Security Update</th>
+			<th>Released As Microsoft Security Advisory</th>
+			<th>Released As Microsoft Security Bulletin</th>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2667402" class="linkContent">KB2667402 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS12-020" class="linkContent">Microsoft Security Bulletin MS12-020 - Critical: Vulnerabilities In Remote Desktop Could Allow Remote Code Execution (2671387) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2676562" class="linkContent">KB2676562 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-034" class="linkContent">Microsoft Security Bulletin MS12-034 - Critical: Combined Security Update For Microsoft Office, Windows, .NET Framework, And Silverlight (2681578) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2698365" class="linkContent">KB2698365 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-045" class="linkContent">Microsoft Security Bulletin MS12-045 - Critical: Vulnerability In Microsoft Data Access Components Could Allow Remote Code Execution (2698365) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2706045" class="linkContent">KB2706045 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-056" class="linkContent">Microsoft Security Bulletin MS12-056 - Important: Vulnerability In JScript And VBScript Engines Could Allow Remote Code Execution (2706045) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2813347" class="linkContent">KB2813347 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms13-029" class="linkContent">Microsoft Security Bulletin MS13-029 - Critical: Vulnerability In Remote Desktop Client Could Allow Remote Code Execution (2828223) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2862330" class="linkContent">KB2862330 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms13-081" class="linkContent">Microsoft Security Bulletin MS13-081 - Critical: Vulnerabilities In Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2870008) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2984972" class="linkContent">KB2984972 (support.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/2871997" class="linkContent">Microsoft Security Advisory 2871997: Update To Improve Credentials Protection And Management (technet.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3004375" class="linkContent">KB3004375 (support.microsoft.com)</a><br />
+				<a id="endnote_2_convenience_rollup_return"></a><a href="#endnote_2_convenience_rollup" class="linkEndnote">(2)</a></td>
+			<td class="cellTextAlignLeft"><a href="https://technet.microsoft.com/library/security/3004375" class="linkContent">Microsoft Security Advisory 3004375: Update For Windows Command Line Auditing (technet.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInTablePaddingReduced">
+					<li><a href="https://technet.microsoft.com/library/security/MS15-011" class="linkContent">Microsoft Security Bulletin MS15-011 - Critical: Vulnerability In Group Policy Could Allow Remote Code Execution (3000483) (technet.microsoft.com)</a></li>
+					<li><a href="https://technet.microsoft.com/library/security/MS15-015" class="linkContent">Microsoft Security Bulletin MS15-015 - Important: Vulnerability In Microsoft Windows Could Allow Elevation Of Privilege (3031432) (technet.microsoft.com)</a></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3031432" class="linkContent">KB3031432 (support.microsoft.com)</a><br />
+				<a id="endnote_3_convenience_rollup_return"></a><a href="#endnote_3_convenience_rollup" class="linkEndnote">(3)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-015" class="linkContent">Microsoft Security Bulletin MS15-015 - Important: Vulnerability In Microsoft Windows Could Allow Elevation Of Privilege (3031432) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3046269" class="linkContent">KB3046269 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-037" class="linkContent">Microsoft Security Bulletin MS15-037 - Important: Vulnerability In Windows Task Scheduler Could Allow Elevation Of Privilege (3046269) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3059317" class="linkContent">KB3059317 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-060" class="linkContent">Microsoft Security Bulletin MS15-060 - Important: Vulnerability In Microsoft Common Controls Could Allow Remote Code Execution (3059317) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3123479" class="linkContent">KB3123479 (support.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/3123479" class="linkContent">Microsoft Security Advisory 3123479: Deprecation Of SHA-1 Hashing Algorithm For Microsoft Root Certificate Program (technet.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3145739" class="linkContent">KB3145739 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS16-039" class="linkContent">Microsoft Security Bulletin MS16-039 - Critical: Security Update For Microsoft Graphics Component (3148522) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td colspan="3" class="tableEndnote">
+			<a id="endnote_1_convenience_rollup"></a><a href="#endnote_1_convenience_rollup_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Procedure: 1.) Install MSDN subscriptions Windows 7 Professional With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso; 2.) Install Servicing Stack Update for Windows 7 Windows6.1-KB3020369-x64.msu; 3.) Install Windows 7 SP1 Convenience Rollup windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu; 4.) Open Windows Update, click the Get updates for other Microsoft products link, install Microsoft Update; and 5.) Run Microsoft Update. <a href="/images/windows_secure_installation/7p_sp1_64_install_7sp1_rollup_run_mu_20May16/" class="linkContent">Screenshots (char.learnwebcoding.com)</a>.<br />
+			<a id="endnote_2_convenience_rollup"></a><a href="#endnote_2_convenience_rollup_return" class="linkEndnote">(2)</a><a id="endnote_3_convenience_rollup"></a><a href="#endnote_3_convenience_rollup_return" class="linkEndnote">(3)</a>&nbsp;&nbsp;Omit if install MSDN subscriptions Windows 7 Home Premium With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_home_premium_with_sp1_x64_dvd_u_676549.iso instead of MSDN subscriptions Windows 7 Professional With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso. <a href="/images/windows_secure_installation/7hp_sp1_64_install_7sp1_rollup_run_mu_20May16/" class="linkContent">Screenshots (char.learnwebcoding.com)</a>.
+			</td>
+		</tr>
+	</table>
+
+	<p class="subSubsectionTitle"><a id="toc1_3_2"></a>1.3.2.&nbsp;&nbsp;Security Updates For Windows 7 Included In Windows 7 SP1 And Windows 7 SP1 Convenience Rollup</p>
+
+	<p>The release date of Windows 7 SP1 and Windows 7 SP1 Convenience Rollup does not indicate the cutoff date for the inclusion of Security Updates for Windows 7 in Windows 7 SP1 and Windows 7 SP1 Convenience Rollup.</p>
+
+	<p>Windows 7 SP1 was released to manufacturing (RTM) on February 9, 2011. Based on release date, one might assume that Windows 7 SP1 includes the Security Updates for Windows 7 through the Microsoft Security Bulletin Summary for February 2011, which was released on February 8, 2011 and includes through MS11-014. This assumption is wrong: Windows 7 SP1 includes the Security Update for Windows 7 for MS11-011, but does not include the Security Updates for Windows 7 for MS11-003, MS11-004, MS11-007, MS11-009, MS11-012, and MS11-013. Instead, Windows 7 SP1 only includes the Security Updates for Windows 7 through the Microsoft Security Bulletin Summary for January 2011, which was released on January 11, 2011 and includes through MS11-002.</p>
+
+	<p>Windows 7 SP1 Convenience Rollup was released on May 17, 2016. Based on release date, one might assume that Windows 7 SP1 Convenience Rollup includes the Security Updates for Windows 7 through the Microsoft Security Bulletin Summary for May 2016, which was released on May 10, 2016 and includes through MS16-067. This assumption is wrong: Windows 7 SP1 Convenience Rollup only includes most, <a href="#toc1_3_1" class="linkContent">not all (above)</a>, of the Security Updates for Windows 7 through the Microsoft Security Bulletin Summary for April 2016, which was released on April 12, 2016 and includes through MS16-050.</p>
+
+	<table>
+		<tr>
+			<td colspan="3" class="tableTitle">Security Updates For Windows 7 Included In Windows 7 SP1 And Windows 7 SP1 Convenience Rollup</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Release Date)</th>
+			<th>7 SP1<br />
+			(RTM: 09 Feb 2011)<br />
+			(Gen: 22 Feb 2011)</th><!-- http://blogs.windows.com/windows/b/bloggingwindows/archive/2011/02/09/announcing-availability-of-windows-7-and-windows-server-2008-r2-sp1.aspx,
+http://blogs.windows.com/windows/b/bloggingwindows/archive/2011/02/22/windows-7-sp1-now-available-for-everyone.aspx -->
+			<th>7 SP1 Convenience Rollup<br />
+			(Gen: 17 May 2016)</th><!-- https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/, https://support.microsoft.com/en-us/kb/3125574 -->
+		</tr>
+		<tr>
+			<td>Includes Security Updates For Windows 7<br />
+			(Through Date)</td>
+			<td>All through MS11-002.<br />
+			(Through 11 Jan 2011)</td><!-- 7SP1 includes all Security Updates for Windows 7 through Jan11, but only one Security Update for Windows 7 (MS11-011) for Feb11. -->
+			<td>Most from MS11-003 to MS16-050.<br />
+			(From 08 Feb 2011 through 12 Apr 2016)</td>
+		</tr>
+	</table>
+
+	<p class="subsectionTitle"><a id="toc1_4"></a>1.4.&nbsp;&nbsp;Windows 8.1 Update</p>
+
+	<p>Windows 8.1 Update April 2014 KB2919355 (Windows 8.1 Update) is an update to Windows 8.1 that contains Updates for Windows 8.1, Security Updates for Windows 8.1, and new Windows 8.1 features.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The Windows 8.1 Update Rollup November 2014 KB3000850 is named <q>Update Rollup</q>, not <q>Update</q>, requires Windows 8.1 Update April 2014 KB2919355, does not supersede Windows 8.1 Update April 2014 KB2919355, contains Updates for Windows 8.1, does not contain Security Updates for Windows 8.1, does not resolve any Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited), is not required for Windows 8.1 to receive future Updates/Security Updates for Windows 8.1, and does not need to be installed before placing the computer online. Toward securing a clean installation of Windows 8.1 per this web page, <q>Windows 8.1 Update</q> refers to Windows 8.1 Update April 2014 KB2919355, not Windows 8.1 Update Rollup November 2014 KB3000850. For additional information on Windows 8.1 Update Rollup November 2014 KB3000850, see <a href="https://support.microsoft.com/en-us/help/3000850/november-2014-update-rollup-for-windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2" class="linkContent">November 2014 Update Rollup For Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 (support.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subSubsectionTitle"><a id="toc1_4_1"></a>1.4.1.&nbsp;&nbsp;Security Updates For Windows 8.1 Included In Windows 8.1 Update</p>
+
+	<p>The release date of Windows 8.1 Update indicates the cutoff date for the inclusion of Security Updates for Windows 8.1 in Windows 8.1 Update.</p>
+
+	<table>
+		<tr>
+			<td colspan="2" class="tableTitle">Security Updates For Windows 8.1 Included In Windows 8.1 Update</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Release Date)</th>
+			<th>8.1 Update<br />
+			(Gen: 08 Apr 2014)</th><!-- http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/02/windows-8-1-update-important-refinements-to-the-windows-experience.aspx,
+http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-love-today-s-windows-8-1-update.aspx -->
+		</tr>
+		<tr>
+			<td>Includes Security Updates For Windows 8.1<br />
+			(Through Date)</td>
+			<td>All through MS14-019.<br />
+			(Through 08 Apr 2014)</td>
+		</tr>
+	</table>
+
+	<p class="subsectionTitle"><a id="toc1_5"></a>1.5.&nbsp;&nbsp;Windows 7/8.1 Servicing Model Starting October 2016: Bundled Updates And Update Rollups Including Security Fixes</p>
+
+	<p>Starting with the <a href="https://technet.microsoft.com/library/security/ms16-oct" class="linkContent">Microsoft Security Bulletin Summary For October 2016 (technet.microsoft.com)</a>, Microsoft replaced Security Updates for Windows 7/8.1 with bundled updates and update rollups including security fixes for Windows 7/8.1, of which there are three types:</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information, see <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/" class="linkContent">Simplifying Updates For Windows 7 And 8.1 (blogs.technet.microsoft.com)</a>, <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/08/15/further-simplifying-servicing-model-for-windows-7-and-windows-8-1/" class="linkContent">Further Simplifying Servicing Models For Windows 7 And Windows 8.1 (blogs.technet.microsoft.com)</a>, and <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">Windows 7/8.1 Servicing Model Starting October 2016: Bundled Updates And Update Rollups Including Security Fixes Types <a id="endnote_1_781servicing_return"></a><a href="#endnote_1_781servicing" class="linkEndnote">(1)</a></td>
+		</tr>
+		<tr>
+			<th>Type</th>
+			<th>Security Only Quality Update<br />
+			(a.k.a., Security Only)</th>
+			<th>Security Monthly Quality Rollup<br />
+			(a.k.a., Monthly Rollup)</th>
+			<th>Preview Of Monthly Quality Rollup<br />
+			(a.k.a., Preview Rollup)</th>
+		</tr>
+		<tr>
+			<td>Released On</td>
+			<td class="cellTextAlignLeftTop">Second Tuesday of the month (a.k.a., B week and Update Tuesday, formerly Patch Tuesday).</td>
+			<td class="cellTextAlignLeftTop">Second Tuesday of the month (a.k.a., B week and Update Tuesday, formerly Patch Tuesday).</td>
+			<td class="cellTextAlignLeftTop">Third Tuesday of the month (a.k.a., C week).</td>
+		</tr>
+		<tr>
+			<td>Is/<br />
+			Contains</td>
+			<td class="cellTextAlignLeftTop">A single update containing all new security fixes for that month.</td>
+			<td class="cellTextAlignLeftTop">A single update containing all new security fixes for that month (the same ones included in the security only update released at the same time), as well as fixes from all previous monthly rollups.</td>
+			<td class="cellTextAlignLeftTop">An additional monthly rollup containing a preview of new non-security fixes that will be included in the next monthly rollup, as well as fixes from all previous monthly rollups.</td>
+		</tr>
+		<tr>
+			<td>Available To Public Via</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li><a href="https://www.catalog.update.microsoft.com/Home.aspx" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Windows Update.</li>
+					<li><a href="https://www.catalog.update.microsoft.com/Home.aspx" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Windows Update.</li>
+					<li><a href="https://www.catalog.update.microsoft.com/Home.aspx" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Unique KB Number</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Includes Security Updates/Security Fixes For Windows 7/8.1<br />
+			(Through Date)</td>
+			<td>That month only.<br />
+			(That month only)</td>
+			<td colspan="2">From MS16-118 through those released on Update Tuesday that month.<br />
+			(From 11 Oct 2016 through Update Tuesday that month)</td>
+		</tr>
+		<tr>
+			<td colspan="4" class="tableEndnote">
+			<a id="endnote_1_781servicing"></a><a href="#endnote_1_781servicing_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Source: <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>.
+			</td>
+		</tr>
+	</table>
+
+	<p>The Windows 7/8.1 servicing model starting October 2016: bundled updates and update rollups including security fixes by diagram (Source: <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>):</p>
+
+	<p><img src="../images/windows_secure_installation/781_servicing_model_starting_Oct16/781_servicing_model_starting_Oct16.png" style="border:0;width:611px;height:355px" alt="Windows 7/8.1 Servicing Model Starting October 2016 By Diagram" class="img" /></p>
+
+	<p>In the Windows 7/8.1 servicing model starting October 2016: 1.) a Security Monthly Quality Rollup (Monthly Rollup) for Windows 7/8/1 is a single file that contains new security fixes, and all previous security and non-security fixes for Windows 7/8.1 back through October 2016; and 2.) a Preview Of Monthly Quality Rollup (Preview Rollup) for Windows 7/8.1 is a single file that contains new non-security fixes, and all previous security and non-security fixes for Windows 7/8.1 back through October 2016. In other words, in the Windows 7/8.1 servicing model starting October 2016, Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative back through October 2016. This means that to obtain the security fixes for Windows 7/8.1 from October 2016 through the present, it is only necessary to install the latest Security Monthly Quality Rollup for Windows 7/8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7/8.1.</p>
+
+	<p>Compared to the previous Windows 7/8.1 servicing model of individual Security Updates, the new Windows 7/8/1 servicing model of Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are more similar to the Windows 10 servicing model of Cumulative Updates for Windows 10 in that the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative in nature; however, unlike the Cumulative Updates for Windows 10, which are cumulative back through the initial release of the version of Windows 10, the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative only back through October 2016.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Microsoft intends to extend the cumulative aspect of the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 back in time, presumably back to, not through, Windows 7 SP1 Convenience Update for Windows 7 and Windows 8.1 Update for Windows 8.1 (in the diagram above, see the Older fixes box at the bottom of February 02C KB15). Until Microsoft announces that such as occurred, and/or it can be independently demonstrated that such as occurred, to secure a clean installation of Windows 7/8.1 per this web page, it is necessary to play it safe and to maintain that the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative only back through October 2016.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc1_6"></a>1.6.&nbsp;&nbsp;Windows 10 Servicing Model: Cumulative Updates</p>
+
+	<p>Microsoft intends to release a new version of Windows 10 (a.k.a., feature update) twice a year around March and September. On the second Tuesday of each month, Microsoft releases a Cumulative Update for Windows 10 (a.k.a., quality update) for the supported versions of Windows 10. Microsoft intends to support each version of Windows 10 Home and Pro with Cumulative Updates for at least 18 months:</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information on Windows 10 support, see <a href="https://technet.microsoft.com/en-us/windows/release-info" class="linkContent">Windows 10 Release Information (technet.microsoft.com)</a> and <a href="https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet" class="linkContent">Windows Lifecycle Fact Sheet (support.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<a id="windows_10_versions_support_status"></a>
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Jul 2020)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 1507<br />
+			(10.0.10240)</th><!-- Threshold 1. A.k.a., 10, 10 Initial Version, 10 Gold. --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4025338/windows-10-update-kb4025338" class="linkContent">July 11, 2017 - KB4025338 (OS Build 10240.17488) (support.microsoft.com)</a> -->
+			<th>10 Version 1511<br />
+			(10.0.10586.0)</th><!-- Threshold 2/November Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4041689/windows-10-update-kb4041689" class="linkContent">October 10, 2017 - KB4041689 (OS Build 10586.1176) (support.microsoft.com)</a> -->
+			<th>10 Version 1607<br />
+			(10.0.14393.0)</th><!-- Redstone 1/Anniversary Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4093119/windows-10-update-kb4093119" class="linkContent">April 10, 2018 - KB4093119 (OS Build 14393.2189) (support.microsoft.com)</a> -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td>
+			<td>29 Jul 2015</td>
+			<td>12 Nov 2015</td>
+			<td>02 Aug 2016</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="3">No</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Jul 2020)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 1703<br />
+			(10.0.15063.0)</th><!-- Redstone 2/Creators Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4462937/windows-10-update-kb4462937" class="linkContent">October 9, 2018 - KB4462937 (OS Build 15063.1387) (support.microsoft.com)</a> -->
+			<th>10 Version 1709<br />
+			(10.0.16299.15)</th><!-- Redstone 3/Fall Creators Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441" class="linkListItem">April 9, 2019 - KB4493441 (OS Build 16299.1087) (support.microsoft.com)</a> -->
+			<th>10 Version 1803<br />
+			(10.0.17134.1)</th><!-- Redstone 4/April 2018 Update -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td>
+			<td>11 Apr 2017</td>
+			<td>17 Oct 2017</td>
+			<td>30 Apr 2018</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="3">No</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="5" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Jul 2020)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 1809<br />
+			(10.0.17763.107) <a id="endnote_1_10support_return"></a><a href="#endnote_1_10support" class="linkEndnote">(1)</a><a id="endnote_2_10support_return"></a><a href="#endnote_2_10support" class="linkEndnote">(2)</a></th><!-- Redstone 5/October 2018 Update -->
+			<th>10 Version 1903<br />
+			(10.0.18362.30)</th><!-- 19H1/May 2019 Update -->
+			<th>10 Version 1909<br />
+			(10.0.18363.418)</th><!-- 19H2/November 2019 Update -->
+			<th>10 Version 2004<br />
+			(10.0.19041.264)</th><!-- 20H1/May 2020 Update -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td>
+			<td>13 Nov 2018</td>
+			<td>21 May 2019</td>
+			<td>12 Nov 2019</td>
+			<td>27 May 2020</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="4">Yes</td>
+		</tr>
+		<tr>
+			<td colspan="5" class="tableEndnote">
+			<a id="endnote_1_10support"></a><a href="#endnote_1_10support_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;There are two official releases of Windows 10 Version 1809; 1.) Build 10.0.17763.1 released 02 Oct 2018, and 2.) Build 10.0.17763.107 released 13 Nov 2018. With respect to Microsoft supporting Windows 10 Version 1809 with Cumulative Updates for at least 18 months, the general availability data for Windows 10 Version 1809 is 13 Nov 2018, not 02 Oct 2018. For additional information, see <a href="https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/" class="linkContent">Updated Version Of Windows 10 October 2018 Update Released To Windows Insiders (blogs.windows.com)</a> and <a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/" class="linkContent">Resuming The Rollout Of The Windows 10 October 2018 Update (blogs.windows.com)</a>.<br />
+			<a id="endnote_2_10support"></a><a href="#endnote_2_10support_return" class="linkEndnote">(2)</a>&nbsp;&nbsp;Due to COVID-19, Microsoft is extending support for Windows 10 Version 1809 Home and Pro from May 12, 2020 to November 10, 2020. For additional information, see <a href="https://support.microsoft.com/en-us/help/4549949/windows-10-update-kb4549949" class="linkContent">April 14, 2020 - KB4549949 (OS Build 17763.1158) (support.microsoft.com)</a>.
+			</td>
+		</tr>
+	</table>
+
+	<p>In the Windows 10 servicing model, a Cumulative Update for Windows 10 is a single file that contains new security and non-security fixes, and all previous security and non-security fixes (if there are any), for a version of Windows 10. In other words, in the Windows 10 servicing model, Cumulative Updates for Windows 10 are cumulative back through the initial release of the version of Windows 10. This means that to obtain the security (and non-security) fixes for Windows 10 from the initial release of the version of Windows 10 through the present, it is only necessary to install the latest Cumulative Update for Windows 10 for the version of Windows 10.</p>
+
+	<p class="subsectionTitle"><a id="toc1_7"></a>1.7.&nbsp;&nbsp;Servicing Stack Updates</p>
+
+	<p>Servicing is the process of installing a Windows Service Pack, Update, Security Monthly Quality Rollup, Cumulative Update, Security Update, non-security update, fix, component, role, etc. Depending on what is being installed, servicing is performed manually by the user and/or automatically by Windows/Microsoft Update. The Servicing Stack is the component of Windows that performs servicing. Like other Windows components, the Servicing Stack is periodically updated. A Servicing Stack Update improves the speed and reliability of servicing.</p>
+
+	<p class="subsectionTitle"><a id="toc1_8"></a>1.8.&nbsp;&nbsp;Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10</p>
+
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. Therefore, to secure a clean installation of Windows 7, upon installing the Windows 7 operating system, Windows 7 SP1, Windows 7 SP1 Convenience Rollup, and the latest Security Monthly Quality Rollup for Windows 7 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7, it is necessary to identify any security update holes into which Security Updates for Windows 7 have not been installed. And to secure a clean installation of Windows 8.1, upon installing the Windows 8.1 operating system, Windows 8.1 Update, and the latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1, it is necessary to identify any security update holes into which Security Updates for Windows 8.1 have not been installed. And to secure a clean installation of Windows 10, upon installing the Windows 10 operating system and the latest Cumulative Update for Windows 10, it is necessary to identify any security update holes into which Security Updates for Windows 10 have not been installed.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_8_1"></a>1.8.1.&nbsp;&nbsp;The Security Update Holes In Securing A Clean Installation Of Windows 7</p>
+
+	<p>Windows 7 SP1 resolves all Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) through January 2011, which is through MS11-002. Windows 7 SP1 Convenience Rollup resolves most, <a href="#toc1_3_1" class="linkContent">not all (above)</a>, Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) from February 2011 through April 2016, which is from MS11-003 through MS16-050. The latest Security Monthly Quality Rollup for Windows 7 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7 resolves all Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) from October 2016, which is from MS16-118, through the present. Therefore, after installing Windows 7 SP1 and the latest Security Monthly Quality Rollup for Windows 7 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7, there exists a security update hole: 1.) from February 2011 through April 2016, which if from MS11-003 through MS16-050, into which some Security Updates for Windows 7 have not been installed; and 2.) from May 2016 through April 2016, which if from MS16-051 through MS16-050, into which no Security Updates for Windows 7 have been installed.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_8_2"></a>1.8.2.&nbsp;&nbsp;The Security Update Hole In Securing A Clean Installation Of Windows 8.1</p>
+
+	<p>Windows 8.1 Update resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) through April 08, 2014, which is through MS14-019. The latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1 resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) from October 2016, which is from MS16-118, through the present. Therefore, after installing Windows 8.1 Update and the latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1, there exists a security update hole from May 2014 through September 2016, which if from MS14-020 through MS16-117, into which no Security Updates for Windows 8.1 have been installed.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_8_3"></a>1.8.3.&nbsp;&nbsp;No Security Update Hole In Securing A Clean Installation Of Windows 10</p>
+
+	<p>The latest Cumulative Update for a supported version of Windows 10 resolves all Windows 10 vulnerabilities (that do or do not require user interaction to be exploited) from the initial release of the version of Windows 10 through the present. Therefore, after installing the latest Cumulative Update for a supported version of Windows 10, there does not exist a security update hole into which no Security Updates for Windows 10 have been installed.</p>
+
+	<p class="subsectionTitle"><a id="toc1_9"></a>1.9.&nbsp;&nbsp;Compiling The List Of Security Updates For Windows 7/8.1 That Resolve Vulnerabilities That Do Not Require User Interaction To Be Exploited</p>
+
+	<p>After identifying the security update holes in securing a clean installation of Windows 7/8.1, the next steps are to list the Microsoft Security Bulletins for Windows 7 SP1 and Windows 8.1 (Windows 7 SP1/8.1), read the Microsoft Security Bulletins for Windows 7 SP1/8.1 that fall into the date range/Microsoft Security Bulletin number range of the security update holes in securing a clean installation of <a href="#toc1_8_1" class="linkContent">Windows 7 (above)</a> and <a href="#toc1_8_2" class="linkContent">Windows 8.1 (above)</a>, determine if a Security Update for Windows 7/8.1 resolves a vulnerability that requires, or does not require, user interaction to be exploited, and to make the list of Security Updates for Windows 7/8.1 that resolve vulnerabilities that do not require user interaction to be exploited:</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_9_1"></a>1.9.1.&nbsp;&nbsp;Listing And Reading The Microsoft Security Bulletins For Windows 7 SP1/8.1</p>
+
+	<p>To list the Microsoft Security Bulletins for Windows 7 SP1/8.1:</p>
+
+	<ol>
+		<li>Visit the <a href="https://technet.microsoft.com/security/bulletins" class="linkListItem">Microsoft Security Updates (technet.microsoft.com)</a> web page.</li>
+		<li>In the Filter bulletins by product or component dropdown, if you intend to install:
+			<ul>
+				<li>Windows 7 32-bit (edition does not matter), select Windows 7 for 32-bit Systems Service Pack 1.</li>
+				<li>Windows 7 64-bit (edition does not matter), select Windows 7 for x64-based Systems Service Pack 1.</li>
+				<li>Windows 8.1 32-bit (edition does not matter), select Windows 8.1 for 32-bit systems.</li>
+				<li>Windows 8.1 64-bit (edition does not matter), select Windows 8.1 for x64-based systems.</li>
+			</ul>
+		</li>
+		<li>The Microsoft Security Bulletins for Windows 7 SP1/8.1 (36/64-bit) are listed.</li>
+	</ol>
+
+	<p>It is not necessary to read the entire list of Microsoft Security Bulletins for Windows 7 SP1/8.1. Instead, it is <em>only</em> necessary to read the Microsoft Security Bulletins for Windows 7 SP1/8.1 that fall into the date range/Microsoft Security Bulletin number range of the security update holes in securing a clean installation of <a href="#toc1_8_1" class="linkContent">Windows 7 (above)</a> and <a href="#toc1_8_2" class="linkContent">Windows 8.1 (above)</a>.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_9_2"></a>1.9.2.&nbsp;&nbsp;Determining That A Security Update For Windows Resolves A Vulnerability That Requires User Interaction To Be Exploited</p>
+
+	<p>The language in Microsoft Security Bulletins makes it easy to determine if a vulnerability does not require user interaction to be exploited. If language similar to the following appears in a Microsoft Security Bulletin, the Security Update for Windows resolves a vulnerability that requires user interaction to be exploited.</p>
+
+	<ul>
+		<li><i>&quot;This vulnerability requires that a user be logged on and visiting a Web site for any malicious action to occur.&quot;</i> - Microsoft Security Bulletin MS10-035.</li>
+		<li><i>&quot;An attacker could exploit the vulnerability by constructing a specially crafted Web page.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;This vulnerability requires that a user open a specially crafted media file or receive specially crafted streaming content from a Web site or any application that delivers Web content.&quot;</i> - Microsoft Security Bulletin MS10-062.</li>
+		<li><i>&quot;An attacker could host a malicious Web site that hosts specially crafted media content that is designed to exploit this vulnerability through an internet browser and then convince a user to view the Web site and open the specially crafted media content.&quot;</i> - Microsoft Security Bulletin MS10-062.</li>
+		<li><i>&quot;In a Web-based attack scenario, an attacker could host a Web site that contains a Web page that is used to exploit this vulnerability. In addition, compromised Web sites and Web sites that accept or host user-provided content or advertisements could contain specially crafted content that could exploit this vulnerability. In all cases, however, an attacker would have no way to force users to visit these Web sites. Instead, an attacker would have to convince users to visit the Web site, typically by getting them to click a link in an e-mail message or Instant Messenger message that takes users to the attacker's Web site.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;An attacker could host a specially crafted Web site that is designed to exploit this vulnerability through Internet Explorer and then convince a user to view the Web site. The attacker could also take advantage of compromised Web sites and Web sites that accept or host user-provided content or advertisements. These Web sites could contain specially crafted content that could exploit this vulnerability. In all cases, however, an attacker would have no way to force users to view the attacker-controlled content. Instead, an attacker would have to convince users to take action, typically by clicking a link in an e-mail message or in an Instant Messenger message that takes users to the attacker's Web site, or by opening an attachment sent through e-mail.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;In an e-mail attack scenario, an attacker could exploit the vulnerability by sending a specially crafted e-mail message to the user and convincing the user to preview or open the e-mail.&quot;</i> - Microsoft Security Bulletin MS10-064.</li>
+		<li><i>&quot;The vulnerability cannot be exploited automatically through e-mail. For an attack to be successful, a user must click a link listed within an e-mail message.&quot;</i> - Microsoft Security Bulletin MS10-042.</li>
+		<li><i>&quot;If a user clicks a link in an e-mail message, the user could still be vulnerable to exploitation of this vulnerability through the Web-based attack scenario.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;The vulnerability cannot be exploited automatically through e-mail. For an attack to be successful, a user must open an attachment that is sent in an e-mail message.&quot;</i> - Microsoft Security Bulletin MS10-052.</li>
+		<li><i>&quot;In an e-mail attack scenario, an attacker could exploit the vulnerability by sending a specially crafted e-mail message containing an attachment to the user and by convincing the user to open the attachment. When the user attempts to open the attachment, an attacker specified malicious executable file could be run.&quot;</i> - Microsoft Security Bulletin MS10-045.</li>
+		<li><i>&quot;An attacker could exploit this vulnerability by setting up a malicious e-mail server and convincing the client to connect to this machine.&quot;</i> - Microsoft Security Bulletin MS10-030.</li>
+		<li><i>&quot;An attacker could host a specially crafted server that is designed to exploit this vulnerability and then convince a user to initiate a connection with it.&quot;</i> - Adapted from Microsoft Security Bulletins MS10-020.</li>
+		<li><i>&quot;This vulnerability requires that a user view a specially crafted file with an affected application.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-043.</li>
+		<li><i>&quot;This vulnerability requires a user to open a specially crafted file for any malicious action to occur.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-033.</li>
+		<li><i>&quot;Exploitation of this vulnerability requires that a user, Windows feature, or application run or install a specially crafted file.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-019.</li>
+		<li><i>&quot;An attacker must have valid logon credentials and be able to log on locally to exploit this vulnerability. The vulnerability could not be exploited remotely or by anonymous users.&quot;</i> - Microsoft Security Bulletin MS10-059.</li>
+		<li><i>&quot;An attacker must have valid logon credentials and be able to log on locally or remotely to exploit this vulnerability.&quot;</i> - Microsoft Security Bulletin MS10-069.</li>
+		<li><i>&quot;To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and take complete control over the affected system.&quot;</i> - Microsoft Security Bulletin MS10-059.</li>
+		<li><i>&quot;By default, printers are not shared on any of the currently supported Windows operating systems. Systems are only vulnerable to remote attack when sharing a printer and the remote attacker can access the printer share.&quot;</i> - Microsoft Security Bulletin MS10-061.</li>
+	</ul>
+
+	<p class="subSubsectionTitle"><a id="toc1_9_3"></a>1.9.3.&nbsp;&nbsp;Determining That A Security Update For Windows Resolves A Vulnerability That Does Not Require User Interaction To Be Exploited</p>
+
+	<p>The language in Microsoft Security Bulletins makes it difficult to determine if a vulnerability does not require user interaction to be exploited. If language similar to the following appears in a Microsoft Security Bulletin, the Security Update for Windows likely resolves a vulnerability that requires user interaction to be exploited.</p>
+
+	<ul>
+		<li><i>&quot;Any Windows system connected to a network or the Internet would be at risk.&quot;</i> - Microsoft Security Bulletin MS08-037.</li>
+		<li><i>&quot;On Microsoft Windows 2000, Windows XP, and Windows Server 2003 systems, an attacker could exploit this vulnerability without authentication to run arbitrary code. It is possible that this vulnerability could be used in the crafting of a wormable exploit.&quot;</i> - Microsoft Security Bulletin MS08-067.</li>
+		<li><i>&quot;On Microsoft Windows 2000, Windows XP, and Windows Server 2003 systems, any anonymous user with access to the target network could deliver a specially crafted network packet to the affected system in order to exploit this vulnerability.&quot;</i> - Microsoft Security Bulletin MS08-067.</li>
+		<li><i>&quot;An anonymous attacker could exploit the vulnerability by sending specially crafted TCP/IP packets to a computer that has a service listening over the network.&quot;</i> - Microsoft Security Bulletin MS09-048.</li>
+		<li><i>&quot;Only attackers on the local subnet would be able to exploit this vulnerability without interaction.&quot;</i> - Microsoft Security Bulletin MS09-063.</li>
+		<li><i>&quot;A remote unauthenticated attacker could exploit this vulnerability by creating a program to send a sequence of specially crafted packets to a target system.&quot;</i> - Microsoft Security Bulletin MS14-031.</li>
+		<li><i>&quot;To exploit the vulnerability, in most situations, an unauthenticated attacker could send a specially crafted packet to a targeted SMBv1 server.&quot;</i> - Microsoft Security Bulletin MS17-010.</li>
+	</ul>
+
+	<p>Final determination if a vulnerability does not require user interaction to be exploited often requires clicking the vulnerability's <a href="https://www.cve.mitre.org/images/cvebanner.gif" class="linkContent">Common Vulnerabilities And Exposures (CVE) (cve.mitre.org)</a> link, <a href="https://nvd.nist.gov/" class="linkContent">National Vulnerability Database (NVD) (nvd.nist.gov)</a> link, and examining, for example, the Attack Vector (AV), Privileges Required (PR)/Authentication (AU), and User Interaction (UI) analysis data.</p>
+
+	<p>If it is still unclear if a vulnerability does not require user interaction to be exploited, to secure a clean installation of Windows per this web page, it is necessary to play it safe and to include the Security Update for Windows in the list of Security Updates for Windows 7/8.1 that resolve vulnerabilities that do not require user interaction to be exploited.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_9_4"></a>1.9.4.&nbsp;&nbsp;Policy On Security Update For Windows Supersedence And On Adding All Of The Security Updates In A Microsoft Security Bulletin To The List</p>
+
+	<p>Sometimes a Microsoft Security Bulletin consists of one Security Update for Windows. Sometimes a Microsoft Security Bulletin consists of multiple Security Updates for Windows. Sometimes a new Security Update for Windows replaces an old Security Update for Windows. And sometimes when a Microsoft Security Bulletin consists of multiple Security Updates for Windows, only some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited.</p>
+
+	<p>When a new Security Update for Windows replaces an old Security Update for Windows, it is said that the new Security Update for Windows supersedes (i.e., takes the place of/replaces) the old Security Update for Windows. Security Update for Windows supersedence information is presented in the Updates Replaced column of the Affected Software section of the Microsoft Security Bulletin.</p>
+
+	<p>When an old Security Update for Windows is superseded by a new Security Update for Windows, it is not necessary to install both the old superseded and the new superseding Security Updates for Windows. Instead, it is only necessary to install the new superseding Security Update for Windows. If the old superseded Security Update for Windows is already installed, it is not necessary to uninstall it. Instead, leave the old superseded Security Update for Windows installed and simply install the new superseding Security Update for Windows. When finished, both the old superseded and the new superseding Security Updates for Windows are listed as being installed. In other words, there is nothing wrong with installing both the old superseded and the new superseding Security Updates for Windows except that it is extra work.</p>
+
+	<p>Over time, the supersedence of Security Updates for Windows has become increasingly confounding. Moreover, there have been a couple of instances where the stated supersedence of Security Updates for Windows is questionable and/or appears to be incorrect. Rather than trying to decipher the correct supersedence of Security Updates for Windows, and unnecessarily driving oneself mad in the process, a simpler and safer policy has been adopted: ignore supersedence and list all of the Microsoft Security Bulletins that include Security Updates for Windows that resolve Windows vulnerabilities that do not require user interaction to be exploited.</p>
+
+	<p>Lastly, when a Microsoft Security Bulletin consists of multiple Security Updates for Windows, and some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited, and some of the Security Updates for Windows resolve Windows vulnerabilities that require user interaction to be exploited; rather than omitting the Security Updates for Windows that resolve Windows vulnerabilities that require user interaction to be exploited, and possibly having someone wonder if a mistake was made, a simpler and less confusing policy has been adopted: list all of the Security Updates for Windows included in a Microsoft Security Bulletin, including those that resolve Windows vulnerabilities that require user interaction to be exploited.</p>
+
+	<p class="subsectionTitle"><a id="toc1_10"></a>1.10.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 7/8.1/10</p>
+
+	<p>Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited. The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not interacted with the computer in any way that could result in compromise, they can be resolved by placing the computer online and running Windows/Microsoft Update. The following are overviews of how to secure a clean installation of Windows 7/8.1/10 per this web page.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_10_1"></a>1.10.1.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 7</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">Extended support for Windows 7 ended on January 14, 2020. This means Microsoft does not intend to release any Security Updates or Security Monthly Quality Rollups for Windows 7 after January 14, 2020; and, therefore, it is not possible to secure Windows 7, and it is not possible to secure a clean installation of Windows 7, after January 14, 2020. As a result, Windows 7 users should stop using Windows 7.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 7 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 7 is free from compromise (i.e., clean). The default installation of Windows 7 ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows 7 to install offline can be built. In other words, the default installation of Windows 7 ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows 7 to install offline.</li>
+				<li>Install Windows 7 SP1. This resolves all Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) through January 2011, which is through MS11-002.</li>
+				<li>Install Windows 7 SP1 Convenience Rollup. This resolves most, <a href="#toc1_3_1" class="linkContent">not all (above)</a>, Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) from February 2011 through April 2016, which is from MS11-003 through MS16-050.</li>
+				<li>Install the Security Updates for Windows 7 from February 2011 through April 2016, which is from MS11-003 through MS16-050, not included in Windows 7 SP1 Convenience Rollup that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited. Combined with the above, this resolves all Windows 7 vulnerabilities that do not require user interaction to be exploited through April 2016, which is through MS16-050.</li>
+				<li>Install the Security Updates for Windows 7 from May 2016 through September 2016, which is from MS16-051 through MS16-117, that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited. Combined with the above, this resolves all Windows 7 vulnerabilities that do not require user interaction to be exploited through September 2016, which is through MS16-117.</li>
+				<li>Install the latest Security Monthly Quality Rollup for Windows 7. This resolves all Windows 7 vulnerabilities (that do or do not require user interaction to be exploited) from October 2016, which is from MS16-118, through the present. And, combined with the above, this resolves all Windows 7 vulnerabilities that do not require user interaction to be exploited through the present.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows 7. Combined with the above, this resolves all Windows 7 vulnerabilities that require user interaction to be exploited through the present.</li>
+			</ul>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_10_2"></a>1.10.2.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 8.1</p>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8.1 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 8.1 is free from compromise (i.e., clean). The default installation of Windows 8.1 ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows 8.1 to install offline can be built. In other words, the default installation of Windows 8.1 ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows 8.1 to install offline.</li>
+				<li>Install Windows 8.1 Update. This resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) through April 2014, which is through MS14-019.</li>
+				<li>Install the Security Updates for Windows 8.1 from May 2014 through September 2016, which is from MS14-020 through MS16-117, that resolve Windows 8.1 vulnerabilities that do not require user interaction to be exploited. Combined with the above, this resolves all Windows 8.1 vulnerabilities that do not require user interaction to be exploited through September 2016, which is through MS16-117.</li>
+				<li>Install the latest Security Monthly Quality Rollup for Windows 8.1. This resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) from October 2016, which is from MS16-118, through the present. And, combined with the above, this resolves all Windows 8.1 vulnerabilities that do not require user interaction to be exploited through the present.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows 8.1. Combined with the above, this resolves all Windows 8.1 vulnerabilities that require user interaction to be exploited through the present.</li>
+			</ul>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_10_3"></a>1.10.3.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 10</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The following is for the <a href="#windows_10_versions_support_status" class="linkContent">supported versions of Windows 10 (above)</a>. A clean installation of an <a href="#windows_10_versions_support_status" class="linkContent">unsupported version of Windows 10 (above)</a> cannot be made secure.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 10 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 10 is free from compromise (i.e., clean).</li>
+				<li>Install the latest Cumulative Update for the version of Windows 10. This resolves all Windows 10 vulnerabilities (that do or do not require user interaction to be exploited) through the present.</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc1_11"></a>1.11.&nbsp;&nbsp;Abbreviations</p>
+
+	<ul>
+		<li>Gen = general availability.</li>
+		<li>RTM = release to manufacturing.</li>
+		<li>SP = Service Pack.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10</p>
+
+<div class="section">
+
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. This requires downloading and copying one or more files to removable media before performing the clean installation of Windows 7/8.1/10. Because files on CDs/DVDs are far more difficult manipulate by malicious software/users than files on external hard disk drives and flash memory drives, CDs/DVDs are the removable media of choice.</p>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">Extended support for Windows 7 ended on January 14, 2020. This means Microsoft does not intend to release any Security Updates or Security Monthly Quality Rollups for Windows 7 after January 14, 2020. As a result, after January 14, 2020, it is not possible to secure Windows 7, it is not possible to secure a clean installation of Windows 7, and Windows 7 users should stop using Windows 7.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 7:</p>
+
+	<ol>
+		<li>Windows 7 SP1:
+			<ul>
+				<li>If the Windows product DVD is Windows 7 Initial Release:
+					<ul>
+						<li>Windows 7 SP1:
+							<ul>
+								<li>32-bit: The <code>windows6.1-KB976932-X86.exe</code> file: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=5842" class="linkListItem">Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a>.</li>
+								<li>64-bit: The <code>windows6.1-KB976932-X64.exe</code> file: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=5842" class="linkListItem">Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 7 With SP1:
+					<ul>
+						<li>The Windows product DVD includes Windows 7 SP1. Skip this step and go to the next step.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>Windows 7 SP1 Convenience Rollup:
+			<ol>
+				<li>Prerequisite for Windows 7 SP1 Convenience Rollup:
+					<ul>
+						<li><a href="https://support.microsoft.com/en-us/help/4490628/servicing-stack-update-for-windows-7-sp1-and-server-2008-r2-sp1" class="linkListItem">Servicing Stack Update For Windows 7 SP1 And Windows Server 2008 R2 SP1: March 12, 2019 (support.microsoft.com):</a>
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=4490628" class="linkListItem">2019-03 Servicing Stack Update For Windows 7 For x86-Based Systems (KB4490628) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=4490628" class="linkListItem">2019-03 Servicing Stack Update For Windows 7 For x64-Based Systems (KB4490628) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Windows 7 SP1 Convenience Rollup:
+					<ul>
+						<li><a href="https://support.microsoft.com/en-us/help/3125574/convenience-rollup-update-for-windows-7-sp1-and-windows-server-2008-r2" class="linkListItem">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com):</a>
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=3125574" class="linkListItem">Update For Windows 7 (KB3125574) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=3125574" class="linkListItem">Update For Windows 7 For x64-Based Systems (KB3125574) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>Security Updates for Windows 7 from February 2011 through April 2016, which is from MS11-003 through MS16-050, not included in Windows 7 SP1 Convenience Rollup that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited.
+			<ul>
+				<li>None. All of the Security Updates for Windows 7 from February 2011 through April 2016, which is from MS11-003 through MS16-050, not included in Windows 7 SP1 Convenience Rollup require user interaction to be exploited.</li>
+			</ul>
+		</li>
+		<li>Security Updates for Windows 7 from May 2016 through September 2016, which is from MS16-051 through MS16-117, that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited:
+			<ol>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-072" class="linkListItem">Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622) (technet.microsoft.com)</a>:
+<!-- KB3159398 contained in (last checked 09Aug17):
+No Security Monthly Quality Rollup for Windows 7 for x64-based Systems.
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52857" class="linkListItem">Security Update For Windows 7 (KB3159398) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52864" class="linkListItem">Security Update For Windows 7 For x64-Based Systems (KB3159398) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-077" class="linkListItem">Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">The MS16-077 vulnerability that does not require user interaction to be exploited is CVE-2016-3236, not CVE-2016-3213. Therefore, it is not necessary to also install the MS16-063 Security Update For Windows 7 (KB3160005) per the MS16-077 Update FAQ.</div>
+						<div class="clearBoth"></div>
+					</div>
+<!-- KB3161949 contained in (last checked 09Aug17):
+No Security Monthly Quality Rollup for Windows 7 for x64-based Systems.
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52916" class="linkListItem">Security Update For Windows 7 (KB3161949) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52912" class="linkListItem">Security Update For Windows 7 For x64-Based Systems (KB3161949) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+				<li><a href="https://technet.microsoft.com/library/security/ms17-004" class="linkListItem">Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771) (technet.microsoft.com)</a>:</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms17-010" class="linkListItem">Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389) (technet.microsoft.com)</a>:</li>
+-->
+			</ol>
+		</li>
+		<li>Latest Security Monthly Quality Rollup for Windows 7:
+<!-- Comment out this note due to following Preview Of Monthly Quality Rollup issues: 2.) NIC settings are replaced or static IP address settings are lost after you install KB4088875 or KB4088878 (https://support.microsoft.com/en-us/help/4099950/nic-settings-are-replaced-or-static-ip-address-settings-are-lost-after); and 2.) April 17, 2018 - KB4093113 (Preview of Monthly Rollup) (https://support.microsoft.com/en-us/help/4093113/windows-7-update-kb4093113) (https://www.bleepingcomputer.com/forums/t/675987/update-issues-with-kbkb4093118-64-bit/).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">If a Preview Of Monthly Quality Rollup for Windows 7 has been released subsequent to, not prior to, the Security Monthly Quality Rollup for Windows 7 listed below, the Preview Of Monthly Quality Rollup for Windows 7 can be downloaded and copied to CD/DVD instead of the Security Monthly Quality Rollup for Windows 7 below. However, to keep things simple, this web page will only link to, and will only be updated to link to, the latest Security Monthly Quality Rollup for Windows 7.</div>
+				<div class="clearBoth"></div>
+			</div>
+-->
+			<ol>
+				<li>Prerequisites for the latest Security Monthly Quality Rollup for Windows 7:
+					<ol>
+						<li><a href="https://support.microsoft.com/en-us/help/4474419/sha-2-code-signing-support-update" class="linkListItem">SHA-2 Code Signing Support Update For Windows Server 2008 R2, Windows 7, And Windows Server 2008: September 23, 2019 (support.microsoft.com)</a>:
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419" class="linkListItem">2019-09 Security Update For Windows 7 For x86-Based Systems (KB4474419) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=kb4474419" class="linkListItem">2019-09 Security Update For Windows 7 For x64-Based Systems (KB4474419) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+						<li><a href="https://support.microsoft.com/en-us/help/4536952/servicing-stack-update-for-windows-7-sp1-and-server-2008-r2-sp1" class="linkListItem">Servicing Stack Update For Windows 7 SP1 And Server 2008 R2 SP1: January 14, 2020 (support.microsoft.com):</a>
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=4536952" class="linkListItem">2020-01 Servicing Stack Update For Windows 7 For x86-Based Systems (KB4536952) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/search.aspx?q=4536952" class="linkListItem">2020-01 Servicing Stack Update For Windows 7 For x64-Based Systems (KB4536952) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>Latest Security Monthly Quality Rollup for Windows 7:
+					<ul>
+						<li><a href="https://support.microsoft.com/en-us/help/4534310/windows-7-update-kb4534310" class="linkListItem">January 14, 2020 - KB4534310 (Monthly Rollup) (support.microsoft.com)</a>:
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4534310" class="linkListItem">2020-01 Security Monthly Quality Rollup For Windows 7 For x86-Based Systems (KB4534310) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4534310" class="linkListItem">2020-01 Security Monthly Quality Rollup For Windows 7 For x64-Based Systems (KB4534310) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 7, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 8.1</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 8.1:</p>
+
+	<ol>
+		<li>Windows 8.1 Update:
+			<ul>
+				<li>If the Windows product DVD is Windows 8.1 Initial Release:
+					<ol>
+						<li>Prerequisite for Windows 8.1 Update:
+							<ul>
+								<li><a href="http://support.microsoft.com/kb/2919442" class="linkListItem">March 2014 Servicing Stack Update For Windows 8.1 And Windows Server 2012 R2 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=42135" class="linkListItem">Update For Windows 8.1 (KB2919442) (microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=42162" class="linkListItem">Update For Windows 8.1 For x64-Based Systems (KB2919442) (microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Windows 8.1 Update:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/2919355/windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2-update-april-2" class="linkListItem">Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: All seven files: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=42327" class="linkListItem">Windows 8.1 Update (KB2919355) (microsoft.com)</a>.</li>
+										<li>64-bit: All seven files: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=42335" class="linkListItem">Windows 8.1 Update For x64-Based Systems (KB2919355) (microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If the Windows product DVD is Windows 8.1 With Update:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">There are two Windows 8.1 product DVDs known as Windows 8.1 With Update: one that includes Update Rollup November 2014 KB3000850, and one that does not include Update Rollup November 2014 KB3000850. Both, however, include Windows 8.1 Update April 2014 KB2919355, which is what the <q>With Update</q> in <q>Windows 8.1 With Update</q> means. Toward securing a clean installation of Windows 8.1 per this web page, <q>Windows 8.1 With Update</q> refers to the Windows 8.1 With Update product DVD that includes Update Rollup November 2014 KB3000850 and/or the Windows 8.1 With Update product DVD that does not include Update Rollup November 2014 KB3000850. For additional information on Windows 8.1 Update April 2014 KB2919355 and Windows 8.1 Update Rollup November 2014 KB3000850, see <a href="#toc1_4" class="linkContent">Windows 8.1 Update (above)</a>.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>The Windows product DVD includes Windows 8.1 Update. Skip this step and go to the next step.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>Security Updates for Windows 8.1 from May 2014 through September 2016, which is from MS14-020 through MS16-117, that resolve Windows 8.1 vulnerabilities that do not require user interaction to be exploited:
+			<ol>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-031" class="linkListItem">Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial of Service (2962478) (technet.microsoft.com)</a>:
+<!-- KB2957189 contained in (last checked 09Aug17):
+April 2017, 2017-05, 2017-06, 2017-07, and 2017-08 Security Monthly Quality Rollup for Windows 8.1 for x64-based Systems
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43144" class="linkListItem">Security Update For Windows 8.1 (KB2957189) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43134" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB2957189) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-066" class="linkListItem">Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611) (technet.microsoft.com)</a>:
+<!-- KB2992611 contained in (last checked 09Aug17):
+2017-06, 2017-07, and 2017-08 Security Monthly Quality Rollup for Windows 8.1 for x64-based Systems
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44628" class="linkListItem">Security Update For Windows 8.1 (KB2992611) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44626" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB2992611) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms15-005" class="linkListItem">Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777) (technet.microsoft.com)</a>:
+<!-- KB3022777 contained in (last checked 09Aug17):
+No Security Monthly Quality Rollup for Windows 8.1 for x64-based Systems.
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45452" class="linkListItem">Security Update For Windows 8.1 (KB3022777) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45471" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3022777) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- Remove MS15-034 14Dec15. MS15-034 is for 7/8/81, not Vista/10. For "netsh http show servicestate" command, see https://isc.sans.edu/forums/diary/MS15034+HTTPsys+IIS+DoS+And+Possible+Remote+Code+Execution+PATCH+NOW/19583. On default install 81, the "netsh http show servicestate" command reports nothing/blank.
+				<li><a href="https://technet.microsoft.com/library/security/ms15-034" class="linkListItem">Microsoft Security Bulletin MS15-034 - Critical: Vulnerability In HTTP.sys Could Allow Remote Code Execution (3042553) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46520" class="linkListItem">Security Update For Windows 8.1 (KB3042553) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46512" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3042553) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+-->
+				<li><a href="https://technet.microsoft.com/library/security/ms16-072" class="linkListItem">Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622) (technet.microsoft.com)</a>:
+<!-- KB3159398 contained in (last checked 09Aug17):
+No Security Monthly Quality Rollup for Windows 8.1 for x64-based Systems.
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52837" class="linkListItem">Security Update For Windows 8.1 (KB3159398) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52822" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3159398) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-077" class="linkListItem">Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">The MS16-077 vulnerability that does not require user interaction to be exploited is CVE-2016-3236, not CVE-2016-3213. Therefore, it is not necessary to also install the MS16-063 Security Update For Windows 8.1 (KB3160005) per the MS16-077 Update FAQ.</div>
+						<div class="clearBoth"></div>
+					</div>
+<!-- KB3161949 contained in (last checked 09Aug17):
+No Security Monthly Quality Rollup for Windows 8.1 for x64-based Systems.
+-->
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52928" class="linkListItem">Security Update For Windows 8.1 (KB3161949) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52908" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3161949) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+				<li><a href="https://technet.microsoft.com/library/security/ms17-010" class="linkListItem">Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389) (technet.microsoft.com)</a>:</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms17-012.aspx" class="linkListItem">Microsoft Security Bulletin MS17-012 - Critical: Security Update For Microsoft Windows (4013078) (technet.microsoft.com)</a>:</li>
+-->
+			</ol>
+		</li>
+		<li>Latest Security Monthly Quality Rollup for Windows 8.1:
+<!-- Comment out this note due to following Preview Of Monthly Quality Rollup issues: 2.) NIC settings are replaced or static IP address settings are lost after you install KB4088875 or KB4088878 (https://support.microsoft.com/en-us/help/4099950/nic-settings-are-replaced-or-static-ip-address-settings-are-lost-after); and 2.) April 17, 2018 - KB4093113 (Preview of Monthly Rollup) (https://support.microsoft.com/en-us/help/4093113/windows-7-update-kb4093113) (https://www.bleepingcomputer.com/forums/t/675987/update-issues-with-kbkb4093118-64-bit/).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">If a Preview Of Monthly Quality Rollup for Windows 8.1 has been released subsequent to, not prior to, the Security Monthly Quality Rollup for Windows 8.1 listed below, the Preview Of Monthly Quality Rollup for Windows 8.1 can be downloaded and copied to CD/DVD instead of the Security Monthly Quality Rollup for Windows 8.1 below. However, to keep things simple, this web page will only link to, and will only be updated to link to, the latest Security Monthly Quality Rollup for Windows 8.1.</div>
+				<div class="clearBoth"></div>
+			</div>
+-->
+			<ol>
+				<li>Prerequisite for the latest Security Monthly Quality Rollup for Windows 8.1:
+					<ul>
+						<li><a href="https://support.microsoft.com/en-us/help/4566425/servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2" class="linkListItem">Servicing Stack Update For Windows 8.1, RT 8.1, And Server 2012 R2: July 14, 2020 (support.microsoft.com)</a>:
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566425" class="linkListItem">2020-07 Servicing Stack Update For Windows 8.1 For x86-Based Systems (KB4566425) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566425" class="linkListItem">2020-07 Servicing Stack Update For Windows 8.1 For x64-Based Systems (KB4566425) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Latest Security Monthly Quality Rollup for Windows 8.1:
+					<ul>
+						<li><a href="https://support.microsoft.com/en-us/help/4565541/windows-8-1-kb4565541" class="linkListItem">July 14, 2020 - KB4565541 (Monthly Rollup) (support.microsoft.com)</a>:
+							<ul>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565541" class="linkListItem">2020-07 Security Monthly Quality Rollup For Windows 8.1 For x86-Based Systems (KB4565541) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565541" class="linkListItem">2020-07 Security Monthly Quality Rollup For Windows 8.1 For x64-Based Systems (KB4565541) (catalog.update.microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 8.1, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_3"></a>2.3.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 10:</p>
+
+	<ol>
+		<li>Latest Cumulative Update for Windows 10:
+			<ul>
+				<li>If the Windows product DVD is Windows 10 Version 1507, 1511, 1607, 1703, 1709, or 1803:
+					<ul>
+						<li>Windows 10 Version 1507, 1511, 1607, 1703, 1709, and 1803 are <a href="#windows_10_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 10. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">media creation tool (microsoft.com)</a> to create a Windows product DVD containing the latest version of Windows 10.
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">The Windows product DVD created by the media creation tool automatically contains the latest version of Windows 10.</div>
+								<div class="clearBoth"></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 10 Version 1809:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">There are two official releases of Windows 10 Version 1809; 1.) Build 10.0.17763.1 released 02 Oct 2018, and 2.) Build 10.0.17763.107 released 13 Nov 2018. With respect to the latest Cumulative Update for Windows 10 Version 1809, it does not matter if the Windows product DVD is Windows 10 Version 1809 Build 10.0.17763.1 released 02 Oct 2018 or Build 10.0.17763.107 released 13 Nov 2018.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Prerequisite for the latest Cumulative Update for Windows 10 Version 1809:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4558997/compatibility-update-for-installing-windows-10-version-1809" class="linkListItem">Servicing Stack Update For Windows 10, Version 1809: July 14, 2020 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4558997" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1809 For x86-Based Systems (KB4558997) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4558997" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1809 For x64-Based Systems (KB4558997) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Latest Cumulative Update for Windows 10 Version 1809:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4558998/windows-10-update-kb4558998" class="linkListItem">July 14, 2020 - KB4558998 (OS Build 17763.1339) (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4558998" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1809 For x86-Based Systems (KB4558998) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4558998" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1809 For x64-Based Systems (KB4558998) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If the Windows product DVD is Windows 10 Version 1903:
+					<ol>
+						<li>Prerequisite for the latest Cumulative Update for Windows 10 Version 1903:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4565554/compatibility-update-for-installing-windows-10-version-1903-1909" class="linkListItem">Servicing Stack Update For Windows 10, Version 1903 And 1909: July 14, 2020 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565554" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1903 For x86-Based Systems (KB4565554) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565554" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1903 For x64-Based Systems (KB4565554) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Latest Cumulative Update for Windows 10 Version 1903:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4565483/windows-10-update-kb4565483" class="linkListItem">July 14, 2020 - KB4565483 (OS Builds 18362.959 And 18363.959) (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565483" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1903 For x86-Based Systems (KB4565483) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565483" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1903 For x64-Based Systems (KB4565483) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If the Windows product DVD is Windows 10 Version 1909:
+					<ol>
+						<li>Prerequisite for the latest Cumulative Update for Windows 10 Version 1909:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4565554/compatibility-update-for-installing-windows-10-version-1903-1909" class="linkListItem">Servicing Stack Update For Windows 10, Version 1903 And 1909: July 14, 2020 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565554" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1909 For x86-Based Systems (KB4565554) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565554" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 1909 For x64-Based Systems (KB4565554) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Latest Cumulative Update for Windows 10 Version 1909:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4565483/windows-10-update-kb4565483" class="linkListItem">July 14, 2020 - KB4565483 (OS Builds 18362.959 And 18363.959) (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565483" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1909 For x86-Based Systems (KB4565483) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565483" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 1909 For x64-Based Systems (KB4565483) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If the Windows product DVD is Windows 10 Version 2004:
+					<ol>
+						<li>Prerequisite for the latest Cumulative Update for Windows 10 Version 2004:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4566785/servicing-stack-update-for-windows-10-version-2004" class="linkListItem">Servicing Stack Update For Windows 10, Version 2004: July 14, 2020 (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566785" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 2004 For x86-Based Systems (KB4566785) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4566785" class="linkListItem">2020-07 Servicing Stack Update For Windows 10 Version 2004 For x64-Based Systems (KB4566785) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Latest Cumulative Update for Windows 10 Version 2004:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/4565503/windows-10-update-kb4565503" class="linkListItem">July 14, 2020 - KB4565503 (OS Build 19041.388) (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565503" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 2004 For x86-Based Systems (KB4565503) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4565503" class="linkListItem">2020-07 Cumulative Update For Windows 10 Version 2004 For x64-Based Systems (KB4565503) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 10, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Secure A Clean Installation Of Windows 7/8.1/10</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Secure A Clean Installation Of Windows 7</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">Extended support for Windows 7 ended on January 14, 2020. This means Microsoft does not intend to release any Security Updates or Security Monthly Quality Rollups for Windows 7 after January 14, 2020. As a result, after January 14, 2020, it is not possible to secure Windows 7, it is not possible to secure a clean installation of Windows 7, and Windows 7 users should stop using Windows 7.</div>
+			<div class="clearBoth"></div>
+		</div>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 7 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 7 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Install Windows: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom (advanced)</span>.</li>
+						<li>The <span class="userInput">Install Windows: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">Drive options (advanced) | New</span>, create one or more drives, select a drive for the installation of Windows 7, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install Windows 7 SP1:
+					<ul>
+						<li>If Windows 7 Initial Release was installed:
+							<ul>
+								<li>Install the Windows 7 SP1 KB976932 file.</li>
+							</ul>
+						</li>
+						<li>If Windows 7 With SP1 was installed:
+							<ul>
+								<li>The installation of Windows 7 includes Windows 7 SP1. Skip this step and go to the next step.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+<!-- To be deleted in revised instructions Feb20
+				<li>From CD/DVD, install the latest Servicing Stack Update for Windows 7:
+					<ul>
+						<li>Install the 2020-01 Servicing Stack Update For Windows 7 KB4536952 file.</li>
+					</ul>
+				</li>
+-->
+				<li>From CD/DVD, install Windows 7 SP1 Convenience Rollup:
+					<ol>
+						<li>Install the prerequisite for Windows 7 SP1 Convenience Rollup:
+							<ul>
+								<li>Install the 2019-03 Servicing Stack Update For Windows 7 KB4490628 file.
+									<div class="note">
+										<div class="noteMarker noteMarkerNormal">i</div>
+										<div class="noteContent">Do not substitute the latest Servicing Stack Update For Windows 7 for the 2019-03 Servicing Stack Update For Windows 7 KB4490628 file. The 2019-03 Servicing Stack Update For Windows 7 KB4490628 file is a prerequisite for; 1.) the Windows 7 SP1 Convenience Rollup, and 2.) the latest Servicing Stack Update For Windows 7.</div>
+										<div class="clearBoth"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Install Windows 7 SP1 Convenience Rollup:
+							<ul>
+								<li>Install the Update For Windows 7 KB3125574 file.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the Security Updates for Windows 7 from February 2011 through April 2016, which is from MS11-003 through MS16-050, not included in Windows 7 SP1 Convenience Rollup that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited:
+					<ul>
+						<li>None. All of the Security Updates for Windows 7 from February 2011 through April 2016, which is from MS11-003 through MS16-050, not included in Windows 7 SP1 Convenience Rollup require user interaction to be exploited.</li>
+					</ul>
+				</li>
+				<li>From CD/DVD, install the Security Updates for Windows 7 from May 2016 through September 2016, which is from MS16-051 through MS16-117, that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Install the MS16-072 (KB3163622) Security Update For Windows 7 KB3159398 file.</li>
+						<li>Install the MS16-077 (KB3165191) Security Update For Windows 7 KB3161949 file.</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+						<li>Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771).</li>
+						<li>Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389).</li>
+-->
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Security Monthly Quality Rollup for Windows 7:
+<!-- Comment out this note due to following Preview Of Monthly Quality Rollup issues: 2.) NIC settings are replaced or static IP address settings are lost after you install KB4088875 or KB4088878 (https://support.microsoft.com/en-us/help/4099950/nic-settings-are-replaced-or-static-ip-address-settings-are-lost-after); and 2.) April 17, 2018 - KB4093113 (Preview of Monthly Rollup) (https://support.microsoft.com/en-us/help/4093113/windows-7-update-kb4093113) (https://www.bleepingcomputer.com/forums/t/675987/update-issues-with-kbkb4093118-64-bit/).
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">If you have on CD/DVD the Preview Of Monthly Quality Rollup for Windows 7 released subsequent to, not prior to, the Security Monthly Quality Rollup for Windows 7 listed below, the Preview Of Monthly Quality Rollup for Windows 7 can be installed instead of the Security Monthly Quality Rollup for Windows 7 below.</div>
+						<div class="clearBoth"></div>
+					</div>
+-->
+					<ol>
+						<li>Install the prerequisites for the latest Security Monthly Quality Rollup for Windows 7:
+							<ol>
+								<li>Install the 2019-09 Security Update For Windows 7 KB4474419 file (SHA-2 Support Update).
+									<div class="note">
+										<div class="noteMarker noteMarkerNormal">i</div>
+										<div class="noteContent">Restart the computer after installing the SHA-2 Support Update.</div>
+										<div class="clearBoth"></div>
+									</div>
+								</li><!-- The SHA-2 Support Update became a prerequisite for Windows 7 SSUs & SMQRs in the middle of 2019. In other words, after the middle of 2019, the Windows 7 SSUs & SMQRs require the SHA-2 Support Update. If not installed, attempting to install the latest Windows 7 SSUs & SMQRs reports the following error: "A certificate chain could not be built to a trusted root authority." -->
+								<li>Install the 2020-01 Servicing Stack Update For Windows 7 KB4536952 file.
+									<div class="note">
+										<div class="noteMarker noteMarkerNormal">i</div>
+										<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+										<div class="clearBoth"></div>
+									</div>
+								</li>
+							</ol>
+						</li>
+						<li>Install the latest Security Monthly Quality Rollup for Windows 7:
+							<ul>
+								<li>Install the 2020-01 Security Monthly Quality Rollup For Windows 7 KB4534310 file.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If not installed by Windows 7, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install:
+					<ul>
+						<li>The Security Updates and any security fixes for Windows 7.</li>
+						<li>Any non-security updates and fixes for Windows 7. If a Preview Of Monthly Quality Rollup for Windows 7 is listed, and if it resolves an issue affecting your computer, install it. Otherwise, it is recommended that you do not install Preview Of Monthly Quality Rollups for Windows 7. Instead, it is recommended that you only install Security Monthly Quality Rollups for Windows 7.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 7. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Secure A Clean Installation Of Windows 8.1</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8.1 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 8.1 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 8.1, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the files to bring the installation of Windows 8.1 to Windows 8.1 Update:
+					<ul>
+						<li>If Windows 8.1 Initial Release was installed:
+							<ol>
+								<li>Install the prerequisite for Windows 8.1 Update:
+									<ul>
+										<li>Install the Update For Windows 8.1 KB2919442 file.</li>
+									</ul>
+								</li>
+								<li>Install Windows 8.1 Update:
+									<ul>
+										<li>Install the seven Windows 8.1 Update KB2919355 files in the following order:
+											<div class="note">
+												<div class="noteMarker noteMarkerNormal">i</div>
+												<div class="noteContent">
+													<ul class="olUlNestedInNotePaddingReduced">
+														<li>The <code>clearcompressionflag.exe</code> file simply runs and does not indicate &quot;completed.&quot; Therefore, after double clicking <code>clearcompressionflag.exe</code>, wait 30 seconds, and then install the next file.</li>
+														<li>If prompted to restart the computer, restart the computer.</li>
+													</ul>
+												</div>
+												<div class="clearBoth"></div>
+											</div>
+											<ol>
+												<li>The <code>clearcompressionflag.exe</code> file.</li>
+												<li>The KB2919355 file.</li>
+												<li>The KB2932046 file.</li>
+												<li>The KB2959977 file.</li>
+												<li>The KB2937592 file.</li>
+												<li>The KB2938439 file.</li>
+												<li>The KB2934018 file.</li>
+											</ol>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>If Windows 8.1 With Update was installed:
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">There are two Windows 8.1 product DVDs known as Windows 8.1 With Update: one that includes Update Rollup November 2014 KB3000850, and one that does not include Update Rollup November 2014 KB3000850. Both, however, include Windows 8.1 Update April 2014 KB2919355, which is what the <q>With Update</q> in <q>Windows 8.1 With Update</q> means. Toward securing a clean installation of Windows 8.1 per this web page, <q>Windows 8.1 With Update</q> refers to the Windows 8.1 With Update product DVD that includes Update Rollup November 2014 KB3000850 and/or the Windows 8.1 With Update product DVD that does not include Update Rollup November 2014 KB3000850. For additional information on Windows 8.1 Update April 2014 KB2919355 and Windows 8.1 Update Rollup November 2014 KB3000850, see <a href="#toc1_4" class="linkContent">Windows 8.1 Update (above)</a>.</div>
+								<div class="clearBoth"></div>
+							</div>
+							<ul>
+								<li>The installation of Windows 8.1 includes Windows 8.1 Update. Skip this step and go to the next step.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>From CD/DVD, install the Security Updates for Windows 8.1 from May 2014 through September 2016, which is from MS14-020 through MS16-117, that resolve Windows 8.1 vulnerabilities that do not require user interaction to be exploited.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">
+							<ul class="olUlNestedInNotePaddingReduced">
+								<li>Depending upon the path taken to reach this point, some of the following Security Updates for Windows might report <q>The update is not applicable to you computer.</q> This is OK. Skip that Security Update for Windows and proceed with the next one.</li>
+								<li>It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</li>
+							</ul>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Install the MS14-031 (KB2962478) Security Update For Windows 8.1 KB2957189 file.</li>
+						<li>Install the MS14-066 (KB2992611) Security Update For Windows 8.1 KB2992611 file.</li>
+						<li>Install the MS15-005 (KB3022777) Security Update For Windows 8.1 KB3022777 file.</li>
+						<li>Install the MS16-072 (KB3163622) Security Update For Windows 8.1 KB3159398 file.</li>
+						<li>Install the MS16-077 (KB3165191) Security Update For Windows 8.1 KB3161949 file.</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+						<li>Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389).</li>
+						<li>Microsoft Security Bulletin MS17-012 - Critical: Security Update For Microsoft Windows (4013078).</li>
+-->
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Security Monthly Quality Rollup for Windows 8.1:
+<!-- Comment out this note due to following Preview Of Monthly Quality Rollup issues: 2.) NIC settings are replaced or static IP address settings are lost after you install KB4088875 or KB4088878 (https://support.microsoft.com/en-us/help/4099950/nic-settings-are-replaced-or-static-ip-address-settings-are-lost-after); and 2.) April 17, 2018 - KB4093113 (Preview of Monthly Rollup) (https://support.microsoft.com/en-us/help/4093113/windows-7-update-kb4093113) (https://www.bleepingcomputer.com/forums/t/675987/update-issues-with-kbkb4093118-64-bit/).
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">If you have on CD/DVD the Preview Of Monthly Quality Rollup for Windows 8.1 released subsequent to, not prior to, the Security Monthly Quality Rollup for Windows 8.1 listed below, the Preview Of Monthly Quality Rollup for Windows 8.1 can be installed instead of the Security Monthly Quality Rollup for Windows 8.1 below.</div>
+						<div class="clearBoth"></div>
+					</div>
+-->
+					<ol>
+						<li>Install the prerequisite for the latest Security Monthly Quality Rollup for Windows 8.1:
+							<ul>
+								<li>Install the 2020-07 Servicing Stack Update For Windows 8.1 KB4566425 file.
+									<div class="note">
+										<div class="noteMarker noteMarkerNormal">i</div>
+										<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+										<div class="clearBoth"></div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>Install the latest Security Monthly Quality Rollup for Windows 8.1:
+							<ul>
+								<li>Install the 2020-07 Security Monthly Quality Rollup For Windows 8.1 KB4565541 file.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If not installed by Windows 8.1, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install:
+					<ul>
+						<li>The Security Updates and any security fixes for Windows 8.1.</li>
+						<li>Any non-security updates and fixes for Windows 8.1. If a Preview Of Monthly Quality Rollup for Windows 8.1 is listed, and if it resolves an issue affecting your computer, install it. Otherwise, it is recommended that you do not install Preview Of Monthly Quality Rollups for Windows 8.1. Instead, it is recommended that you only install Security Monthly Quality Rollups for Windows 8.1.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 8.1. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_3"></a>3.3.&nbsp;&nbsp;Secure A Clean Installation Of Windows 10</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 10 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 10 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 10, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Cumulative Update for Windows 10:
+					<ul>
+						<li>If Windows 10 Version 1809 was installed:
+							<ol>
+								<li>Install the prerequisite for the latest Cumulative Update for Windows 10 Version 1809:
+									<ul>
+										<li>Install the 2020-07 Servicing Stack Update For Windows 10 Version 1809 KB4558997 file.
+											<div class="note">
+												<div class="noteMarker noteMarkerNormal">i</div>
+												<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+												<div class="clearBoth"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>Install the latest Cumulative Update for Windows 10 Version 1809:
+									<ul>
+										<li>Install the 2020-07 Cumulative Update For Windows 10 Version 1809 KB4558998 file.</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>If Windows 10 Version 1903 was installed:
+							<ol>
+								<li>Install the prerequisite for the latest Cumulative Update for Windows 10 Version 1903:
+									<ul>
+										<li>Install the 2020-07 Servicing Stack Update For Windows 10 Version 1903 KB4565554 file.
+											<div class="note">
+												<div class="noteMarker noteMarkerNormal">i</div>
+												<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+												<div class="clearBoth"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>Install the latest Cumulative Update for Windows 10 Version 1903:
+									<ul>
+										<li>Install the 2020-07 Cumulative Update For Windows 10 Version 1903 KB4565483 file.</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>If Windows 10 Version 1909 was installed:
+							<ol>
+								<li>Install the prerequisite for the latest Cumulative Update for Windows 10 Version 1909:
+									<ul>
+										<li>Install the 2020-07 Servicing Stack Update For Windows 10 Version 1909 KB4565554 file.
+											<div class="note">
+												<div class="noteMarker noteMarkerNormal">i</div>
+												<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+												<div class="clearBoth"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>Install the latest Cumulative Update for Windows 10 Version 1909:
+									<ul>
+										<li>Install the 2020-07 Cumulative Update For Windows 10 Version 1909 KB4565483 file.</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+						<li>If Windows 10 Version 2004 was installed:
+							<ol>
+								<li>Install the prerequisite for the latest Cumulative Update for Windows 10 Version 2004:
+									<ul>
+										<li>Install the 2020-07 Servicing Stack Update For Windows 10 Version 2004 KB4566785 file.
+											<div class="note">
+												<div class="noteMarker noteMarkerNormal">i</div>
+												<div class="noteContent">It is not necessary to restart the computer after installing the Servicing Stack Update.</div>
+												<div class="clearBoth"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>Install the latest Cumulative Update for Windows 10 Version 2004:
+									<ul>
+										<li>Install the 2020-07 Cumulative Update For Windows 10 Version 2004 KB4565503 file.</li>
+									</ul>
+								</li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 10, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install:
+					<ul>
+						<li>Any Security Updates and any security fixes for Windows 10.</li>
+						<li>Any non-security updates and fixes for Windows 10.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 10. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="https://support.microsoft.com/en-us/help/824684/description-of-the-standard-terminology-that-is-used-to-describe-micro" class="linkListItem">Description Of The Standard Terminology That Is Used To Describe Microsoft Software Updates (824684) (support.microsoft.com)</a></li>
+		<li><a href="https://technet.microsoft.com/en-us/library/cc700845.aspx" class="linkListItem">Update Management Process (technet.microsoft.com)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=36982" class="linkListItem">Microsoft Security Bulletin Data (microsoft.com)</a></li>
+		<li><a href="https://www.cve.mitre.org/" class="linkListItem">Common Vulnerabilities And Exposures (CVE) (cve.mitre.org)</a></li>
+		<li><a href="https://nvd.nist.gov/" class="linkListItem">National Vulnerability Database (NVD) (nvd.nist.gov)</a></li>
+		<li><a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081113-0229-99" class="linkListItem">W32.Blaster.Worm (symantec.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/826955" class="linkListItem">Virus Alert About The Blaster Worm And Its Variants (support.microsoft.com)</a></li>
+		<li><a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081815-2308-99" class="linkListItem">W32.Welchia.Worm (a.k.a., Nachi) (symantec.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/826234/virus-alert-about-the-nachi-worm" class="linkListItem">Virus Alert About The Nachi Worm (support.microsoft.com)</a></li>
+		<li><a href="https://www.symantec.com/security_response/writeup.jsp?docid=2004-050116-1831-99" class="linkListItem">W32.Sasser.Worm (symantec.com)</a></li>
+		<li><a href="https://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Win32%2fSasser" class="linkListItem">Win32/Sasser (microsoft.com)</a></li>
+		<li><a href="https://www.symantec.com/security_response/writeup.jsp?docid=2008-112203-2408-99" class="linkListItem">W32.Downadup (a.k.a., Conficker) (symantec.com)</a></li>
+		<li><a href="https://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Win32%2fConficker" class="linkListItem">Win32/Conficker (microsoft.com)</a></li>
+		<li><a href="https://www.symantec.com/security_response/writeup.jsp?docid=2017-051310-3522-99" class="linkListItem">Ransom.Wannacry (symantec.com)</a></li>
+		<li><a href="https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt" class="linkListItem">Ransom: Win32/WannaCrypt (microsoft.com)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=269" class="linkListItem">Documentation For Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/askpfeplat/2016/05/20/windows-7-sp1-and-server-2008-r2-sp1-convenience-roll-up-now-available-at-a-download-location-near-you-kb3125574/" class="linkListItem">Download Windows 7 SP1 And Server 2008 R2 SP1 Convenience Roll-up Now Available At A Download Location Near You! (KB3125574) (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/3125574/convenience-rollup-update-for-windows-7-sp1-and-windows-server-2008-r2" class="linkListItem">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com)</a></li>
+		<li><a href="https://download.microsoft.com/download/E/B/0/EB084E02-4173-444E-9438-53972AE2F9E0/3125574.csv" class="linkListItem">Files Included In Windows 7 SP1 Convenience Rollup (.csv) (download.microsoft.com)</a></li>
+<!--
+		<li><a href="https://www.catalog.update.microsoft.com/search.aspx?q=3125574" class="linkListItem">Microsoft Update Catalog: Search Results For &quot;3125574&quot; (catalog.update.microsoft.com)</a> (Download Windows 7 SP1 And Server 2008 R2 SP1 Convenience Roll-Up KB3125574)</li>
+		<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup (KB3125574) (download.windowsupdate.com)</a></li>
+		<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup For x64-Based Systems (KB3125574) (download.windowsupdate.com)</a></li>
+-->
+		<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-7-servicing-stack-updates-managing-change-and/ba-p/260434" class="linkListItem">Windows 7 Servicing Stack Updates: Managing Change And Appreciating Cumulative Updates (techcommunity.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/astoica/2017/01/03/windows-7-refreshed-media-creation/" class="linkListItem">Windows 7 Refreshed Media Creation (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/" class="linkListItem">Simplifying Updates For Windows 7 And 8.1 (blogs.technet.microsoft.com)</a></li>
+        <li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/08/15/further-simplifying-servicing-model-for-windows-7-and-windows-8-1/" class="linkListItem">Further Simplifying Servicing Models For Windows 7 And Windows 8.1 (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkListItem">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/msrc/2016/11/08/furthering-our-commitment-to-security-updates/" class="linkListItem">Furthering Our Commitment To Security Updates (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/15356" class="linkListItem">Install The Windows 8.1 Update (KB 2919355) (windows.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/2919355/windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2-update-april-2" class="linkListItem">Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014 (support.microsoft.com)</a></li>
+		<li><a href="https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/" class="linkListItem">Updated Version Of Windows 10 October 2018 Update Released To Windows Insiders (blogs.windows.com)</a></li>
+		<li><a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/" class="linkListItem">Resuming The Rollout Of The Windows 10 October 2018 Update (blogs.windows.com)</a></li>
+		<li><a href="https://technet.microsoft.com/en-us/windows/release-info" class="linkListItem">Windows 10 Release Information (technet.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-quick-start" class="linkListItem">Quick Guide To Windows As A Service (docs.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview" class="linkListItem">Overview Of Windows As A Service (docs.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/4018124/windows-10-update-history" class="linkListItem">Windows 10 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/servicing-stack-updates" class="linkListItem">Servicing Stack Updates (docs.microsoft.com)</a></li>
+		<li><a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001" class="linkListItem">ADV990001 | Latest Servicing Stack Updates (portal.msrc.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus" class="linkListItem">2019 SHA-2 Code Signing Support Requirement For Windows And WSUS (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet" class="linkListItem">Windows Lifecycle Fact Sheet (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/help/12373/windows-update-faq" class="linkListItem">Windows Update: FAQ (support.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/joscon/2010/06/15/servicing-windows-part-one/" class="linkListItem">Servicing Windows: Part One (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://technet.microsoft.com/en-us/library/security/dn631938.aspx" class="linkListItem">Security Bulletin Summaries (technet.microsoft.com)</a></li>
+		<li><a href="https://technet.microsoft.com/en-us/library/security/dn631937.aspx" class="linkListItem">Security Bulletins (technet.microsoft.com)</a></li>
+		<li><a href="https://technet.microsoft.com/en-us/security/bulletins" class="linkListItem">Microsoft Security Updates (technet.microsoft.com)</a></li>
+		<li><a href="https://portal.msrc.microsoft.com/en-us/security-guidance" class="linkListItem">Security Update Guide (portal.msrc.microsoft.com)</a></li>
+		<li><a href="https://catalog.update.microsoft.com/v7/site/Home.aspx" class="linkListItem">Microsoft Update Catalog (catalog.update.microsoft.com)</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>

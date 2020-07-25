@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Secure A New Installation Of Windows Vista/7/8/8.1</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="Windows Vista, Windows 7, Windows 8, Windows 8.1, how to, secure, new, clean, installation" />
+<meta name="Description" content="Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a new installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update. Learn how to secure a new installation of Windows Vista/7/8/8.1." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>Secure A New Installation Of Windows Vista/7/8/8.1</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows Vista (32/64) | Windows 7 (32/64) | Windows 8 (32/64) | Windows 8.1 (32/64)</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 25 Jun 2017 | Published: 14 Jan 2004 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Windows Vulnerabilities</a></span></li>
+			<li><span class="tocSubsectionTitle">1.2.&nbsp;&nbsp;<a href="#toc1_2" class="linkToc">Security Updates For Windows</a></span></li>
+			<li><span class="tocSubsectionTitle">1.3.&nbsp;&nbsp;<a href="#toc1_3" class="linkToc">Windows 7/8.1 Servicing Model (Bundled Updates And Update Rollups Including Security Fixes) Starting October 2016</a></span></li>
+			<li><span class="tocSubsectionTitle">1.4.&nbsp;&nbsp;<a href="#toc1_4" class="linkToc">Microsoft Security Fix Documentation (Security Update Guide) Starting April 2017</a></span></li>
+			<li><span class="tocSubsectionTitle">1.5.&nbsp;&nbsp;<a href="#toc1_5" class="linkToc">Windows Service Packs/Convenience Rollups/Point Releases/Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.6.&nbsp;&nbsp;<a href="#toc1_6" class="linkToc">Overview: How To Secure A New Installation Of Windows</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.6.1.&nbsp;&nbsp;<a href="#toc1_6_1" class="linkToc">Overview: How To Secure A New Installation Of Windows Vista</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.6.2.&nbsp;&nbsp;<a href="#toc1_6_2" class="linkToc">Overview: How To Secure A New Installation Of Windows 7</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.6.3.&nbsp;&nbsp;<a href="#toc1_6_3" class="linkToc">Overview: How To Secure A New Installation Of Windows 8</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.6.4.&nbsp;&nbsp;<a href="#toc1_6_4" class="linkToc">Overview: How To Secure A New Installation Of Windows 8.1</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.7.&nbsp;&nbsp;<a href="#toc1_7" class="linkToc">Creating The List Of Security Updates For Windows That Resolve Windows Vulnerabilities That Do Not Require User Interaction To Be Exploited</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.7.1.&nbsp;&nbsp;<a href="#toc1_7_1" class="linkToc">Listing The Microsoft Security Bulletins Released After The Latest Versions Of Windows Vista/7/8/8.1</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.7.2.&nbsp;&nbsp;<a href="#toc1_7_2" class="linkToc">Security Updates For Windows 7 SP1 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.7.3.&nbsp;&nbsp;<a href="#toc1_7_3" class="linkToc">Identifying The Security Updates For Windows That Resolve Windows Vulnerabilities That Require User Interaction To Be Exploited</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.7.4.&nbsp;&nbsp;<a href="#toc1_7_4" class="linkToc">Identifying The Security Updates For Windows That Resolve Windows Vulnerabilities That Do Not Require User Interaction To Be Exploited</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.7.5.&nbsp;&nbsp;<a href="#toc1_7_5" class="linkToc">Policy On Security Update For Windows Supersedence And On Listing All Of The Security Updates For Windows Included In A Microsoft Security Bulletin</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.8.&nbsp;&nbsp;<a href="#toc1_8" class="linkToc">Abbreviations</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Files To Copy To CD/DVD To Secure A New Installation Of Windows Vista/7/8/8.1</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Files To Copy To CD/DVD To Secure A New Installation Of Windows Vista</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Files To Copy To CD/DVD To Secure A New Installation Of Windows 7</a></span></li>
+			<li><span class="tocSubsectionTitle">2.3.&nbsp;&nbsp;<a href="#toc2_3" class="linkToc">Files To Copy To CD/DVD To Secure A New Installation Of Windows 8</a></span></li>
+			<li><span class="tocSubsectionTitle">2.4.&nbsp;&nbsp;<a href="#toc2_4" class="linkToc">Files To Copy To CD/DVD To Secure A New Installation Of Windows 8.1</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Secure A New Installation Of Windows Vista/7/8/8.1</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Secure A New Installation Of Windows Vista</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Secure A New Installation Of Windows 7</a></span></li>
+			<li><span class="tocSubsectionTitle">3.3.&nbsp;&nbsp;<a href="#toc3_3" class="linkToc">Secure A New Installation Of Windows 8</a></span></li>
+			<li><span class="tocSubsectionTitle">3.4.&nbsp;&nbsp;<a href="#toc3_4" class="linkToc">Secure A New Installation Of Windows 8.1</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a new installation of Windows, it is necessary to resolve the known examples of these Windows vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Windows Vulnerabilities</p>
+
+	<p>Windows vulnerabilities are flaws in the Windows operating system code that render Windows susceptible to exploitation. The successful exploitation of a Windows vulnerability results in compromise.<!-- Define compromise, and that everything from worms to RCE to resource exhaustion are examples of compromise.--> Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited.</p>
+
+	<p>For the Windows vulnerabilities that require user interaction to be exploited, compromise requires user interaction on the computer besides placing the vulnerable computer online (i.e., connecting the computer to a network, be it an Intranet and/or the Internet). User interactions that can result in compromise, known as triggers, include attaching external/removable drives or network devices, visiting Web sites, accessing/receiving/opening emails, opening email attachments, creating/accessing/opening/installing/joining/connecting to network resources including but not limited to servers/domains/devices/shares/files/etc. In other words, for the Windows vulnerabilities that require user interaction to be exploited, in the absence of the appropriate user interaction required to trigger exploitation, compromise cannot occur simply by placing the vulnerable computer online.</p>
+
+	<p>For the Windows vulnerabilities that do not require user interaction to be exploited, compromise does not require any user interaction on the computer besides placing the vulnerable computer online. In other words, for the Windows vulnerabilities that do not require user interaction to be exploited, there is no trigger and compromise can occur simply by placing the vulnerable computer online.</p>
+
+	<p>After installing Windows, a common practice is to place the computer online and run Windows Update or Microsoft Update (Windows/Microsoft Update) to install the latest Windows Service Packs and Security Updates for Windows. Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows/Microsoft Update is running and installing the latest Windows Service Packs and Security Updates for Windows.</p>
+
+	<p>Worms are the class of threat that automatically run themselves on, and automatically copy themselves from, computer to computer over a network without user interaction. In order to do this, worms exploit Windows vulnerabilities that, themselves, do not require user interaction to be exploited. Then, after the worm has exploited the Windows vulnerability, it runs itself on the now compromised computer, including possibly delivering a destructive payload, and then attempts to copy itself to other vulnerable computers on the network, again without user interaction.</p>
+
+	<p>Worms are extremely dangerous because they can automatically infect a tremendous number of vulnerable networked Windows computers seemingly simultaneously without any user interaction besides placing the vulnerable computers online. Particularly infamous Worms are mentioned on the evening news and include <a href="http://www.symantec.com/security_response/writeup.jsp?docid=2003-081113-0229-99" class="linkContent">W32.Blaster.Worm (symantec.com)</a>, <a href="http://www.symantec.com/security_response/writeup.jsp?docid=2003-081815-2308-99" class="linkContent">W32.Welchia.Worm (a.k.a., Nachi) (symantec.com)</a>, <a href="http://www.symantec.com/security_response/writeup.jsp?docid=2004-050116-1831-99" class="linkContent">W32.Sasser.Worm (symantec.com)</a>, <a href="http://www.symantec.com/security_response/writeup.jsp?docid=2008-112203-2408-99" class="linkContent">W32.Downadup (a.k.a., Conficker) (symantec.com)</a>, and <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2017-051310-3522-99" class="linkContent">Ransom.Wannacry (symantec.com)</a>. Moreover, Blaster, Welchia, Sasser, and Downadup remain so prevalent that even today - years after they were developed - vulnerable Windows computers are still being compromised by these worms as soon as they are placed online, including during the time that Windows/Microsoft Update is running.</p>
+
+	<p>Fortunately, most of the Windows vulnerabilities that do not require user interaction to be exploited are not wormable (i.e., are not suitable for worms). Instead, most of the Windows vulnerabilities that do not require user interaction to be exploited require that an attacker sends specially crafted packets over the network to the vulnerable computer. Although this requirement reduces the likelihood of compromise in many environments, it does not completely eliminate the possibility, and, therefore, to secure a new installation of Windows, it is necessary to resolve the known examples of the Windows vulnerabilities that do not require user interaction to be exploited before, not after, placing the computer online.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>The severity rating (e.g., low, moderate, important, and critical) and security impact (e.g., denial of service, elevation of privilege, information disclosure, remote code execution, and spoofing) of a Windows vulnerability does not matter. For example, if the exploitation of a vulnerability is likely to cause the seemingly innocent exhaustion of resources, which causes the computer to stop responding and forces a hard reboot, and if the computer was installing Windows/Microsoft Updates at the time of compromise and now boots to a blue screen instead of booting normally, then the seemingly innocent exhaustion of resources is not so innocent. Therefore, the severity rating and security impact of a Windows vulnerability does not matter. Instead, the only thing that matters is whether the Windows vulnerability requires or does not require user interaction to be exploited.</li>
+					<li>Toward securing a new installation of Windows, this Web page assumes the worse, including:
+						<ul>
+							<li>Your network administrator and/or Internet Service Provider (ISP) is not filtering, or is doing a poor job of filtering, malicious network traffic.</li>
+							<li>A gateway/router is either not being used to connect to the Internet, or is being used to connect to the Internet but does not have the latest firmware installed and/or is not properly configured.</li>
+							<li>Your Intranet includes a compromised computer and/or attacker that is attempting to use the Intranet (not physical access) to compromise the other computers on the Intranet.</li>
+							<li>Worms that can bridge gateways/routers, such as Downadup (a.k.a., Conficker), are present in your environment.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc1_2"></a>1.2.&nbsp;&nbsp;Security Updates for Windows</p>
+
+	<p>In the past Microsoft released a Microsoft Security Bulletin Summary on the second Tuesday of each month (a.k.a., Patch Tuesday) for the supported versions of Windows. A Microsoft Security Bulletin Summary consists of one or more Microsoft Security Bulletins. A Microsoft Security Bulletin describes one or more vulnerabilities in a Microsoft product, and describes and provides a link to one or more Security Updates for Windows. A Security Update for Windows is a file that resolves (a.k.a, patches) a vulnerability in a Microsoft product upon being installed.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Microsoft Security Bulletins are assigned an alpha-numeric name with syntax, MS##-###, where MS## is the year, and -### is the Microsoft Security Bulletin released that year. For example, MS10-001 is the first Microsoft Security Bulletin released in 2010.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Security Updates for Windows can be installed manually via the links provided in the Microsoft Security Bulletins, which direct one to the Microsoft Download Center, or they can be installed in an automated, batch-like fashion via Windows/Microsoft Update. Per this Web page, some Security Updates are installed before placing the computer online. This requires downloading the Security Updates for Windows from the Microsoft Download Center and copying them to CD/DVD.</p>
+
+	<p class="subsectionTitle"><a id="toc1_3"></a>1.3.&nbsp;&nbsp;Windows 7/8.1 Servicing Model (Bundled Updates And Update Rollups Including Security Fixes) Starting October 2016</p>
+
+	<p>The <a href="https://technet.microsoft.com/library/security/ms16-sep" class="linkContent">Microsoft Security Bulletin Summary For September 2016 (technet.microsoft.com)</a>, which includes through MS16-117, was the last Microsoft Security Bulletin Summary with individual Security Updates for Windows 7/8.1. Starting with the <a href="https://technet.microsoft.com/library/security/ms16-oct" class="linkContent">Microsoft Security Bulletin Summary For October 2016 (technet.microsoft.com)</a>, Microsoft replaced the monthly release of individual Security Updates for Windows 7/8.1 with the monthly release of bundled updates and update rollups including security fixes for Windows 7/8.1, of which there are three types:</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information, see <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/" class="linkContent">Simplifying Updates For Windows 7 And 8.1 (blogs.technet.microsoft.com)</a>, <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/08/15/further-simplifying-servicing-model-for-windows-7-and-windows-8-1/" class="linkContent">Further Simplifying Servicing Models For Windows 7 And Windows 8.1 (blogs.technet.microsoft.com)</a>, and <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">Windows 7/8.1 Servicing Model (Bundled Updates And Update Rollups Including Security Fixes) Starting October 2016 <a id="endnote_1_servicing_return"></a><a href="#endnote_1_servicing" class="linkEndnote">(1)</a></td>
+		</tr>
+		<tr>
+			<th>Bundled Update And Update Rollup Type/<br />
+				Description</th>
+			<th>Security Only Quality Update<br />
+				(a.k.a., Security Only)</th>
+			<th>Security Monthly Quality Rollup<br />
+				(a.k.a., Monthly Rollup)</th>
+			<th>Preview Of Monthly Quality Rollup<br />
+				(a.k.a., Preview Rollup)</th>
+		</tr>
+		<tr>
+			<td>Released On</td>
+			<td class="cellTextAlignLeftTop">Second Tuesday of the month (a.k.a., B week and Update Tuesday, formerly Patch Tuesday).</td>
+			<td class="cellTextAlignLeftTop">Second Tuesday of the month (a.k.a., B week and Update Tuesday, formerly Patch Tuesday).</td>
+			<td class="cellTextAlignLeftTop">Third Tuesday of the month (a.k.a., C week).</td>
+		</tr>
+		<tr>
+			<td>Contains</td>
+			<td class="cellTextAlignLeftTop">A single update containing all new security fixes for that month.</td>
+			<td class="cellTextAlignLeftTop">A single update containing all new security fixes for that month (the same ones included in the security only update released at the same time), as well as fixes from all previous monthly rollups.</td>
+			<td class="cellTextAlignLeftTop">An additional monthly rollup containing a preview of new non-security fixes that will be included in the next monthly rollup, as well as fixes from all previous monthly rollups.</td>
+		</tr>
+		<tr>
+			<td>Available To Public Via</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li><a href="https://catalog.update.microsoft.com/" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Windows Update.</li>
+					<li><a href="https://catalog.update.microsoft.com/" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Windows Update.</li>
+					<li><a href="https://catalog.update.microsoft.com/" class="linkContent">Microsoft Update Catalog (catalog.update.microsoft.com)</a>.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Unique KB Number</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td colspan="4" class="tableEndnote">
+			<a id="endnote_1_servicing"></a><a href="#endnote_1_servicing_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Source: <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>.
+			</td>
+		</tr>
+	</table>
+
+	<p>The Windows 7/8.1 servicing model (bundled updates and update rollups including security fixes) starting October 2016 by diagram (Source: <a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkContent">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a>):</p>
+
+	<p><img src="../images/windows_secure_installation/781_servicing_model_starting_Oct16/781_servicing_model_starting_Oct16.png" style="border:0;width:611px;height:355px" alt="Windows 7/8.1 Servicing Model Starting October 2016 By Diagram" class="img" /></p>
+
+	<p class="subsectionTitle"><a id="toc1_4"></a>1.4.&nbsp;&nbsp;Microsoft Security Fix Documentation (Security Update Guide) Starting April 2017</p>
+
+	<p>The <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023, was the last Microsoft Security Bulletin Summary, and <a href="https://technet.microsoft.com/library/security/MS17-023" class="linkContent">MS17-023</a> was the last Microsoft Security Bulletin. Starting in April 2017,  Microsoft:</p>
+
+	<ul>
+		<li>Replaced the monthly release of a Microsoft Security Bulletin Summary with the monthly release of a Release Notes: Security Release.
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">For an example of a:
+					<ul>
+						<li>Microsoft Security Bulletin Summary, see <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>.</li>
+						<li>Release Notes: Security Release, see <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/42b8fa28-9d09-e711-80d9-000d3a32fc99" class="linkContent">Release Notes: April 2017 Security Release (portal.msrc.microsoft.com)</a>.</li>
+					</ul>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>Replaced the monthly release of Microsoft Security Bulletins and the monthly update of the <a href="https://technet.microsoft.com/en-us/security/bulletins" class="linkContent">Microsoft Security Bulletin (technet.microsoft.com)</a> web site with the bimonthly update of the <a href="https://portal.msrc.microsoft.com/en-us/security-guidance" class="linkContent">Security Update Guide (portal.msrc.microsoft.com)</a> web site.</li>
+	</ul>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent"> For additional information, see <a href="https://blogs.technet.microsoft.com/msrc/2016/11/08/furthering-our-commitment-to-security-updates/" class="linkContent">Furthering Our Commitment To Security Updates (blogs.technet.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc1_5"></a>1.5.&nbsp;&nbsp;Windows Service Packs/Convenience Rollups/Point Releases/Updates</p>
+
+	<p>In the past Microsoft released a Windows Service Pack (SP) for the supported versions of Windows approximately every 12-24 months. It appears, however, that Microsoft is moving away from releasing Windows Service Packs. For instance, there were four Windows Service Packs for Windows 2000, three Windows Service Packs for Windows XP, two Windows Service Packs for Windows Vista, and it appears there will only be one Windows Service Pack for Windows 7. In addition, for Windows 8, Microsoft has introduced a new Windows Point Release scheme (as in Windows 8.1) and a new Windows Update scheme (as in Windows 8.1 Update) for delivering what might have been previously considered Windows Service Packs.</p>
+
+	<p>Window 7 Service Pack 1 (Windows 7 SP1) is a single file that contains multiple previously released Updates for Windows 7, multiple previously released Security Updates for Windows 7, and new Windows 7 features. Therefore, toward securing a new installation of Windows 7, the installation of Window 7 SP1 resolves multiple old Windows 7 vulnerabilities.</p>
+
+	<p>Window 7 Service Pack 1 Convenience Rollup (KB3125574) (Windows 7 SP1 Convenience Rollup) is a single file that contains multiple previously released Updates for Windows 7 SP1 and multiple previously released Security Updates for Windows 7 SP1. Therefore, toward securing a new installation of Windows 7 SP1, the installation of Window 7 SP1 Convenience Rollup resolves multiple old Windows 7 SP1 vulnerabilities.</p>
+
+	<p>The Update To Windows 8.1 (pronounced Windows eight point one; hence, the categorization of the Update To Windows 8.1 as a Windows Point Release) is an update to Windows 8 that contains multiple previously released Updates for Windows 8, multiple previously released Security Updates for Windows 8, and new Windows 8 features. Therefore, toward securing a new installation of Windows 8, the installation of the Update To Windows 8.1 resolves multiple old Windows 8 vulnerabilities.</p>
+
+	<p>Windows 8.1 Update (Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014, KB2919355) is an update to Windows 8.1 that contains multiple previously released Updates for Windows 8.1, multiple previously released Security Updates for Windows 8.1, and new Windows 8.1 features. Therefore, toward securing a new installation of Windows 8.1, the installation of Windows 8.1 Update resolves multiple old Windows 8.1 vulnerabilities.</p>
+
+	<p>Over time multiple Windows Service Packs, Windows Convenience Rollups, Windows Point Releases, and/or Windows Updates (Windows Service Packs/Convenience Rollups/Point Releases/Updates) might be released for a particular version of Windows. Some Windows Service Packs/Convenience Rollups/Point Releases/Updates are cumulative and, therefore, do not require the installation of a previous Windows Service Pack/Convenience Rollup/Point Release/Update. Some Windows Service Packs/Convenience Rollups/Point Releases/Updates are not cumulative and, therefore, require the installation of a previous Windows Service Pack/Convenience Rollup/Point Release/Update.</p>
+
+	<table>
+		<tr>
+			<td colspan="7" class="tableTitle">Windows Vista/7/8/8.1 Service Packs/Convenience Rollups/Point Releases/Updates Installation Requirements</td>
+		</tr>
+		<tr>
+			<th>Windows</th>
+			<th colspan="2">Vista</th>
+			<th colspan="2">7</th>
+			<th colspan="2">8</th>
+		</tr>
+		<tr>
+			<td>Service Pack/Convenience Rollup/Point Release/Update</td>
+			<td>SP1</td>
+			<td>SP2</td>
+			<td>SP1</td>
+			<td>SP1 Convenience Rollup</td>
+			<td>8.1</td>
+			<td>8.1 Update</td>
+		</tr>
+		<tr>
+			<td>Requires Installation Of Service Pack/Convenience Rollup/Point Release/Update</td>
+			<td class="minusSign">-</td>
+			<td>SP1</td>
+			<td class="minusSign">-</td>
+			<td>SP1</td>
+			<td class="minusSign">-</td>
+			<td>8.1</td>
+		</tr>
+	</table>
+
+	<p>The release date of a Windows Service Pack/Convenience Rollup/Point Release/Update does not necessarily indicate the cutoff date for the inclusion of Security Updates for Windows in the Windows Service Pack/Convenience Rollup/Point Release/Update. For example, Windows 7 SP1 was released to manufacturing (RTM) on February 9, 2011. Based on release date, one might assume that Windows 7 SP1 includes all of the Security Updates for Windows 7 released through the Microsoft Security Bulletin Summary for February 2011, which was released on February 8, 2011 and includes through MS11-014. This assumption is wrong: Windows 7 SP1 includes the Security Update for Windows 7 for MS11-011, but does not include the Security Updates for Windows 7 for MS11-003, MS11-004, MS11-007, MS11-009, MS11-012, and MS11-013. Instead, Windows 7 SP1 only includes all of the Security Updates for Windows 7 released through the Microsoft Security Bulletin Summary for January 2011, which was released on January 11, 2011 and includes through MS11-002. In addition, Windows 7 SP1 Convenience Rollup was released on May 17, 2016. Based on release date, one might assume that Windows 7 SP1 Convenience Rollup includes all of the Security Updates for Windows 7 SP1 released through the Microsoft Security Bulletin Summary for May 2016, which was released on May 10, 2016 and includes through MS16-067. This assumption is wrong: Windows 7 SP1 Convenience Rollup includes most, not all of the Security Updates for Windows 7 SP1 released through the Microsoft Security Bulletin Summary for April 2016, which was released on April 12, 2016 and includes through MS16-050.</p>
+
+<!--
+	<p>The release date of a Windows Service Pack/Point Release/Update does not necessarily indicate a cutoff date for the inclusion of Security Updates for Windows in the Windows Service Pack/Point Release/Update. For example, Windows 7 SP1 was released to manufacturing (RTM) on February 9, 2011. Based on release date, one might assume that Windows 7 SP1 includes all of the Security Updates for Windows 7 released through the Microsoft Security Bulletin Summary for February 2011, which includes MS11-003 through MS11-014 and was released on February 8, 2011. This assumption is wrong: Windows 7 SP1 includes the Security Update for Windows 7 for MS11-011, but does not include the Security Updates for Windows 7 for MS11-003, MS11-004, MS11-007, MS11-009, MS11-012, and MS11-013. Instead, Windows 7 SP1 only includes all of the Security Updates for Windows 7 released through the Microsoft Security Bulletin Summary for January 2011, which includes through MS11-002 and was released on January 11, 2011.</p>
+-->
+
+	<table>
+		<tr>
+			<td colspan="5" class="tableTitle">Security Updates For Windows Included In The Latest Windows Vista/7/8/8.1 Service Pack/Convenience Rollup/Point Release/Update</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+		</tr>
+		<tr>
+			<th>Windows</th>
+			<th>Vista</th>
+			<th colspan="2">7</th>
+			<th>8</th>
+		</tr>
+		<tr>
+			<td>Latest Service Pack/Convenience Rollup/Point Release/Update<br />
+			(Release Date)</td>
+			<td>SP2<br />
+			(RTM: 28 Apr 2009)<br />
+			(Gen: 26 May 2009)</td><!-- http://blogs.windows.com/windows/archive/b/windowsvista/archive/2009/04/28/windows-vista-sp2-rtm-windows-vista-sp1-blocker-tool-removed.aspx, http://blogs.windows.com/windows/archive/b/windowsvista/archive/2009/05/26/windows-vista-and-windows-server-2008-sp2-rtw.aspx -->
+			<td>SP1<br />
+			(RTM: 09 Feb 2011)<br />
+			(Gen: 22 Feb 2011)</td><!-- http://blogs.windows.com/windows/b/bloggingwindows/archive/2011/02/09/announcing-availability-of-windows-7-and-windows-server-2008-r2-sp1.aspx,
+http://blogs.windows.com/windows/b/bloggingwindows/archive/2011/02/22/windows-7-sp1-now-available-for-everyone.aspx -->
+			<td>SP1 Convenience Rollup<br />
+			(Gen: 17 May 2016)</td><!-- https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/, https://support.microsoft.com/en-us/kb/3125574 -->
+			<td>8.1 Update<br />
+			(Gen: 08 Apr 2014)</td><!-- http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/02/windows-8-1-update-important-refinements-to-the-windows-experience.aspx,
+http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-love-today-s-windows-8-1-update.aspx -->
+		</tr>
+		<tr>
+			<td>Includes Security Updates For Windows<br />
+			(Release Date)</td>
+			<td>All through MS09-015.<br />
+			(14 Apr 2009)</td>
+			<td>All through MS11-002.<br />
+			(11 Jan 2011)</td><!-- 7SP1 includes all Security Updates for Windows 7 through Jan11, but only one Security Update for Windows 7 (MS11-011) for Feb11. -->
+			<td>Most from MS11-003 to MS16-050.<br />
+			(08 Feb 2011 to 12 Apr 2016)</td>
+			<td>All through MS14-019.<br />
+			(08 Apr 2014)</td>
+		</tr>
+	</table>
+
+	<p>Per this Web page, whenever possible, Windows Service Packs/Convenience Rollups/Point Releases/Updates are installed before placing the computer online. This requires downloading the available Windows Service Packs/Convenience Rollups/Point Releases/Updates from Microsoft and copying them to CD/DVD.</p>
+
+<!--
+<p>Windows Service Packs/Updates can be installed manually via the Microsoft Download Center, or they can be installed in an automated fashion via Windows/Microsoft Update. Per this Web page, Windows Service Packs/Updates are installed before placing the computer online. This requires downloading the Windows Service Packs/Updates from the Microsoft Download Center and copying them to CD/DVD.</p>
+-->
+
+	<p class="subsectionTitle"><a id="toc1_6"></a>1.6.&nbsp;&nbsp;Overview: How To Secure A New Installation Of Windows</p>
+
+	<p>Per this Web page, securing Windows means to resolve all known Windows vulnerabilities before they can be exploited. Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited.</p>
+
+	<p>The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not and interacted with the computer in any way that could result in compromise, (e.g., by visiting Web sites, receiving/opening emails, opening email attachments, creating/accessing shares, opening/running/installing shared files, accessing/opening/running/installing downloaded or otherwise acquired files, etc.), they can be resolved by placing the computer online and running Windows/Microsoft Update. The following overviews of how to secure a new installation of Windows Vista/7/8/8.1 resolve all known Windows vulnerabilities before they can be exploited and, therefore, secure the new installations of Windows Vista/7/8/8.1:</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_6_1"></a>1.6.1.&nbsp;&nbsp;Overview: How To Secure A New Installation Of Windows Vista</p>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows Vista onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows Vista is free from compromise. The default installation of Windows Vista ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows Vista to install offline can be built. In other words, the default installation of Windows Vista ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows Vista to install offline.</li>
+				<li>Install Windows Vista SP2. This resolves old Windows Vista vulnerabilities.</li>
+				<li>Install the Security Updates for Windows Vista released after Windows Vista SP2 that resolve Windows Vista vulnerabilities that do not require user interaction to be exploited. This resolves newly discovered Windows Vista vulnerabilities that do not require user interaction to be exploited.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install the Security Updates for Windows Vista. This resolves newly discovered Windows Vista vulnerabilities that require user interaction to be exploited.</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_6_2"></a>1.6.2.&nbsp;&nbsp;Overview: How To Secure A New Installation Of Windows 7</p>
+
+	<p>Instead of releasing Windows 7 SP2, Microsoft decided to release Windows 7 SP1 Convenience Rollup. In addition, in Windows 7 SP1 Convenience Rollup, instead of including all of the Security Updates for Windows 7 SP1 released through April 2016, Microsoft decided to include most of the Security Updates for Windows 7 SP1 released through April 2016.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For information on the Security Updates for Windows 7 SP1 through April 2016 not included in Windows 7 SP1 Convenience Rollup, see <a href="https://support.microsoft.com/en-us/kb/3125574" class="linkContent">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div> 	
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 7 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 7 is free from compromise. The default installation of Windows 7 ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows 7 to install offline can be built. In other words, the default installation of Windows 7 ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows 7 to install offline.</li>
+				<li>Install Windows 7 SP1 and Windows 7 SP1 Convenience Rollup. This resolves old Windows 7 vulnerabilities.</li>
+				<li>Install the Security Updates for Windows 7 released through Windows 7 SP1 Convenience Rollup, but not included in Windows 7 SP1 Convenience Rollup, that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited. This resolves old Windows 7 vulnerabilities that do not require user interaction to be exploited.</li>
+				<li>Install the Security Updates for Windows 7 released after Windows 7 SP1 Convenience Rollup, and before the first Security Monthly Quality Rollup for Windows 7, that resolve Windows 7 vulnerabilities that do not require user interaction to be exploited. This resolves old Windows 7 vulnerabilities that do not require user interaction to be exploited.</li>
+				<li>Install the latest Security Monthly Quality Rollup for Windows 7. This resolves newly discovered Windows 7 vulnerabilities that do or do not require user interaction to be exploited.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows 7. This resolves old Windows 7 vulnerabilities that require user interaction to be exploited.</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_6_3"></a>1.6.3.&nbsp;&nbsp;Overview: How To Secure A New Installation Of Windows 8</p>
+
+	<p>Instead of releasing the free Update To Windows 8.1 for download from Microsoft as a standalone/offline installer, Microsoft decided to release the free Update To Windows 8.1 from the Windows Store as an online installer. In addition, Microsoft decided the free Update To Windows 8.1 should automatically install Windows 8.1 Update and the Security Updates for Windows 8.1 released after Windows 8.1 Update.</p>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 8 is free from compromise. The default installation of Windows 8 ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows 8 to install offline can be built. In other words, the default installation of Windows 8 ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows 8 to install offline.</li>
+				<li>Install the Security Updates for Windows 8 that resolve Windows 8 Original Release vulnerabilities that do not require user interaction to be exploited.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Go to the Windows Store and install the Update To Windows 8.1. The Update To Windows 8.1 is an upgrade installation that replaces the Windows 8 operating system with the Windows 8.1 operating system and keeps your files, accounts, settings, and applications. The Update To Windows 8.1:
+					<ul>
+						<li>Installs Windows 8.1. This resolves old Windows 8 vulnerabilities.</li>
+						<li>Installs Windows 8.1 Update. This resolves old Windows 8.1 vulnerabilities.</li>
+						<li>Installs the Security Updates for Windows 8.1 released after Windows 8.1 Update. This resolves newly discovered Windows 8.1 vulnerabilities that do or do not require user interaction to be exploited.</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_6_4"></a>1.6.4.&nbsp;&nbsp;Overview: How To Secure A New Installation Of Windows 8.1</p>
+
+	<p>Instead of releasing Windows 8.1 SP1, Microsoft decided to release Windows 8.1 Update.</p>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8.1 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 8.1 is free from compromise. The default installation of Windows 8.1 ensures a single, common baseline of started/stopped services from which the list of Security Updates for Windows 8.1 to install offline can be built. In other words, the default installation of Windows 8.1 ensures that no unexpected services are started/stopped as might influence the list of Security Updates for Windows 8.1 to install offline.</li>
+				<li>Install Windows 8.1 Update. This resolves old Windows 8.1 vulnerabilities.</li>
+				<li>Install the Security Updates for Windows 8.1 released after Windows 8.1 Update, and before the first Security Monthly Quality Rollup for Windows 8.1, that resolve Windows 8.1 vulnerabilities that do not require user interaction to be exploited. This resolves old Windows 8.1 vulnerabilities that do not require user interaction to be exploited.</li>
+				<li>Install the latest Security Monthly Quality Rollup for Windows 8.17. This resolves newly discovered Windows 8.1 vulnerabilities that do or do not require user interaction to be exploited.</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows 8.1. This resolves old Windows 8.1 vulnerabilities that require user interaction to be exploited.</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc1_7"></a>1.7.&nbsp;&nbsp;Creating The List Of Security Updates For Windows That Resolve Windows Vulnerabilities That Do Not Require User Interaction To Be Exploited</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_7_1"></a>1.7.1.&nbsp;&nbsp;Listing The Microsoft Security Bulletins Released After The Latest Versions Of Windows Vista/7/8/8.1</p>
+
+	<p>One of the steps to secure a new installation of Windows is to install the Security Updates for Windows released after Windows Vista SP2, after Windows 7 SP1 Convenience Rollup, after Windows 8 Original Release, and after Windows 8.1 Update that resolve Windows vulnerabilities that do not require user interaction to be exploited. To do this, it is necessary to read all of the Microsoft Security Bulletins released after these versions of Windows Vista/7/8/8.1. The following lists all of the Microsoft Security Bulletins released after the latest versions of Windows Vista/7/8/8.1:</p>
+
+	<ol>
+		<li>Visit the <a href="http://technet.microsoft.com/en-us/security/dn481339" class="linkContent">Security TechCenter: Microsoft Security Bulletin (technet.microsoft.com)</a> Web page.</li>
+		<li>In the Filter bulletins by product or component dropdown, select the version of Windows that you intend to install including the latest Windows Service Pack, if applicable. For example, if you intend to install Windows Vista 64-bit Original Release, Includes Service Pack 1, or Includes Service Pack 2, select Windows Vista x64 Edition Service Pack 2. If you intend to install Windows 7 64-bit Original Release or Includes Service Pack 1, select Windows 7 for x64-based Systems Service Pack 1. If you intend to install Windows 8 64-bit Original Release, select Windows 8 for x64-based Systems. If you intent to install Windows 8.1 64-bit, select Windows 8.1 for x64-based Systems.</li>
+		<li>The Microsoft Security Bulletins released after the selected version of Windows are listed.
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">The Filter bulletins by product or component dropdown includes Windows 7 SP1, not Windows 7 SP1 Convenience Rollup, and includes Windows 8.1, not Windows 8.1 Update. As a result, for Windows 7 the Microsoft Security Bulletins released after Windows 7 SP1, not Windows 7 SP1 Convenience Rollup, are listed, and for Windows 8.1 the Microsoft Security Bulletins released after Windows 8.1, not Windows 8.1 Update, are listed. Fortunately, from the table above, it is known that Windows 7 SP1 Convenience Rollup includes most of the Security Updates for Windows 7 SP1 through MS16-050, and Windows 8.1 Update includes all of the Security Updates for Windows 8.1 through MS14-019. Therefore, for the Microsoft Security Bulletins released after Windows 7 SP1, it is only necessary to read MS16-051+, and for the Microsoft Security Bulletins released after Windows 8.1, it is only necessary to read MS14-020+.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+	</ol>
+
+	<p class="subSubsectionTitle"><a id="toc1_7_2"></a>1.7.2.&nbsp;&nbsp;Security Updates For Windows 7 SP1 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup</p>
+
+	<p>Microsoft has not provided a list of the Security Updates for Windows 7 SP1 included/not included in Windows 7 SP1 Convenience Rollup. Instead, Microsoft provided a list of the <a href="http://download.microsoft.com/download/E/B/0/EB084E02-4173-444E-9438-53972AE2F9E0/3125574.csv" class="linkContent">Files Included In Windows 7 SP1 Convenience Rollup (.csv) (download.microsoft.com)</a> which, because it does not indicate the Security Updates for Windows 7 SP1 to which the files belong, is virtually useless for determining the Security Updates for Windows 7 SP1 included/not included in Windows 7 SP1 Convenience Rollup. In addition, upon installing Windows 7 SP1 Convenience Rollup, Control Panel | System and Security | Windows Update | Review update history lists Update for Windows (KB3125574), which is the Windows 7 SP1 Convenience Rollup itself, not the Security Updates for Windows 7 SP1 included in Windows 7 SP1 Convenience Rollup. As a result, it is easier to determine the Security Updates for Windows 7 SP1 not included in Windows 7 SP1 Convenience Rollup than the Security Updates for Windows 7 SP1 included in Windows 7 SP1. This can be accomplished by installing Windows 7 Includes SP1, installing the Windows 7 SP1 Convenience Rollup prerequisite, installing Windows 7 SP1 Convenience Rollup, installing Microsoft Update, running Microsoft Update to list the available Security Updates, and then identifying the Security Updates that were released before or during April 2016. The identified Security Updates constitute the Security Updates for Windows 7 SP1 through April 2016 not included in Windows 7 SP1 Convenience Rollup.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For information on the Security Updates for Windows 7 SP1 through April 2016 not included in Windows 7 SP1 Convenience Rollup, see <a href="https://support.microsoft.com/en-us/kb/3125574" class="linkContent">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div> 	
+
+	<table>
+		<tr>
+			<td colspan="3" class="tableTitle">Security Updates For Windows 7 SP1 Through April 2016 Not Included In Windows 7 SP1 Convenience Rollup <a id="endnote_1_convenience_rollup_return"></a><a href="#endnote_1_convenience_rollup" class="linkEndnote">(1)</a></td>
+		</tr>
+		<tr>
+			<th>Security Update</th>
+			<th>Released As Microsoft Security Advisory</th>
+			<th>Released As Microsoft Security Bulletin</th>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2667402" class="linkContent">KB2667402 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS12-020" class="linkContent">Microsoft Security Bulletin MS12-020 - Critical: Vulnerabilities In Remote Desktop Could Allow Remote Code Execution (2671387) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2676562" class="linkContent">KB2676562 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-034" class="linkContent">Microsoft Security Bulletin MS12-034 - Critical: Combined Security Update For Microsoft Office, Windows, .NET Framework, And Silverlight (2681578) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2698365" class="linkContent">KB2698365 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-045" class="linkContent">Microsoft Security Bulletin MS12-045 - Critical: Vulnerability In Microsoft Data Access Components Could Allow Remote Code Execution (2698365) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2706045" class="linkContent">KB2706045 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms12-056" class="linkContent">Microsoft Security Bulletin MS12-056 - Important: Vulnerability In JScript And VBScript Engines Could Allow Remote Code Execution (2706045) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2813347" class="linkContent">KB2813347 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms13-029" class="linkContent">Microsoft Security Bulletin MS13-029 - Critical: Vulnerability In Remote Desktop Client Could Allow Remote Code Execution (2828223) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2862330" class="linkContent">KB2862330 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/ms13-081" class="linkContent">Microsoft Security Bulletin MS13-081 - Critical: Vulnerabilities In Windows Kernel-Mode Drivers Could Allow Remote Code Execution (2870008) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/2984972" class="linkContent">KB2984972 (support.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/2871997" class="linkContent">Microsoft Security Advisory 2871997: Update To Improve Credentials Protection And Management (technet.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3004375" class="linkContent">KB3004375 (support.microsoft.com)</a><br />
+				<a id="endnote_2_convenience_rollup_return"></a><a href="#endnote_2_convenience_rollup" class="linkEndnote">(2)</a></td>
+			<td class="cellTextAlignLeft"><a href="https://technet.microsoft.com/library/security/3004375" class="linkContent">Microsoft Security Advisory 3004375: Update For Windows Command Line Auditing (technet.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInTablePaddingReduced">
+					<li><a href="https://technet.microsoft.com/library/security/MS15-011" class="linkContent">Microsoft Security Bulletin MS15-011 - Critical: Vulnerability In Group Policy Could Allow Remote Code Execution (3000483) (technet.microsoft.com)</a></li>
+					<li><a href="https://technet.microsoft.com/library/security/MS15-015" class="linkContent">Microsoft Security Bulletin MS15-015 - Important: Vulnerability In Microsoft Windows Could Allow Elevation Of Privilege (3031432) (technet.microsoft.com)</a></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3031432" class="linkContent">KB3031432 (support.microsoft.com)</a><br />
+				<a id="endnote_3_convenience_rollup_return"></a><a href="#endnote_3_convenience_rollup" class="linkEndnote">(3)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-015" class="linkContent">Microsoft Security Bulletin MS15-015 - Important: Vulnerability In Microsoft Windows Could Allow Elevation Of Privilege (3031432) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3046269" class="linkContent">KB3046269 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-037" class="linkContent">Microsoft Security Bulletin MS15-037 - Important: Vulnerability In Windows Task Scheduler Could Allow Elevation Of Privilege (3046269) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3059317" class="linkContent">KB3059317 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS15-060" class="linkContent">Microsoft Security Bulletin MS15-060 - Important: Vulnerability In Microsoft Common Controls Could Allow Remote Code Execution (3059317) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3123479" class="linkContent">KB3123479 (support.microsoft.com)</a></td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/3123479" class="linkContent">Microsoft Security Advisory 3123479: Deprecation Of SHA-1 Hashing Algorithm For Microsoft Root Certificate Program (technet.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+		</tr>
+		<tr>
+			<td><a href="https://support.microsoft.com/kb/3145739" class="linkContent">KB3145739 (support.microsoft.com)</a></td>
+			<td class="minusSign">-</td>
+			<td class="cellTextAlignLeftTop"><a href="https://technet.microsoft.com/library/security/MS16-039" class="linkContent">Microsoft Security Bulletin MS16-039 - Critical: Security Update For Microsoft Graphics Component (3148522) (technet.microsoft.com)</a></td>
+		</tr>
+		<tr>
+			<td colspan="3" class="tableEndnote">
+			<a id="endnote_1_convenience_rollup"></a><a href="#endnote_1_convenience_rollup_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Procedure: 1.) Install MSDN subscriptions Windows 7 Professional With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso; 2.) Install Windows 7 SP1 Convenience Rollup prerequisite Windows6.1-KB3020369-x64.msu; 3.) Install Windows 7 SP1 Convenience Rollup windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu; 4.) Open Windows Update, click the Get updates for other Microsoft products link, install Microsoft Update; and 5.) Run Microsoft Update. <a href="/images/windows_secure_installation/7p_sp1_64_install_7sp1_rollup_run_mu_20May16/" class="linkContent">Screenshots</a>.<br />
+			<a id="endnote_2_convenience_rollup"></a><a href="#endnote_2_convenience_rollup_return" class="linkEndnote">(2)</a> <a id="endnote_3_convenience_rollup"></a><a href="#endnote_3_convenience_rollup_return" class="linkEndnote">(3)</a>&nbsp;&nbsp;Omit if install MSDN subscriptions Windows 7 Home Premium With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_home_premium_with_sp1_x64_dvd_u_676549.iso instead of MSDN subscriptions Windows 7 Professional With Service Pack 1 (x64) - DVD (English) Media Refresh en_windows_7_professional_with_sp1_x64_dvd_u_676939.iso. <a href="/images/windows_secure_installation/7hp_sp1_64_install_7sp1_rollup_run_mu_20May16/" class="linkContent">Screenshots</a>.
+			</td>
+		</tr>
+	</table>
+
+	<p class="subSubsectionTitle"><a id="toc1_7_3"></a>1.7.3.&nbsp;&nbsp;Identifying The Security Updates For Windows That Resolve Windows Vulnerabilities That Require User Interaction To Be Exploited</p>
+
+	<p>When reading the Microsoft Security Bulletins, the following language (taken from actual Microsoft Security Bulletins) identifies Security Updates for Windows that resolve Windows vulnerabilities that require user interaction to be exploited:</p>
+
+	<ul>
+		<li><i>&quot;This vulnerability requires that a user be logged on and visiting a Web site for any malicious action to occur.&quot;</i> - Microsoft Security Bulletin MS10-035.</li>
+		<li><i>&quot;An attacker could exploit the vulnerability by constructing a specially crafted Web page.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;This vulnerability requires that a user open a specially crafted media file or receive specially crafted streaming content from a Web site or any application that delivers Web content.&quot;</i> - Microsoft Security Bulletin MS10-062.</li>
+		<li><i>&quot;An attacker could host a malicious Web site that hosts specially crafted media content that is designed to exploit this vulnerability through an internet browser and then convince a user to view the Web site and open the specially crafted media content.&quot;</i> - Microsoft Security Bulletin MS10-062.</li>
+		<li><i>&quot;In a Web-based attack scenario, an attacker could host a Web site that contains a Web page that is used to exploit this vulnerability. In addition, compromised Web sites and Web sites that accept or host user-provided content or advertisements could contain specially crafted content that could exploit this vulnerability. In all cases, however, an attacker would have no way to force users to visit these Web sites. Instead, an attacker would have to convince users to visit the Web site, typically by getting them to click a link in an e-mail message or Instant Messenger message that takes users to the attacker's Web site.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;An attacker could host a specially crafted Web site that is designed to exploit this vulnerability through Internet Explorer and then convince a user to view the Web site. The attacker could also take advantage of compromised Web sites and Web sites that accept or host user-provided content or advertisements. These Web sites could contain specially crafted content that could exploit this vulnerability. In all cases, however, an attacker would have no way to force users to view the attacker-controlled content. Instead, an attacker would have to convince users to take action, typically by clicking a link in an e-mail message or in an Instant Messenger message that takes users to the attacker's Web site, or by opening an attachment sent through e-mail.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;In an e-mail attack scenario, an attacker could exploit the vulnerability by sending a specially crafted e-mail message to the user and convincing the user to preview or open the e-mail.&quot;</i> - Microsoft Security Bulletin MS10-064.</li>
+		<li><i>&quot;The vulnerability cannot be exploited automatically through e-mail. For an attack to be successful, a user must click a link listed within an e-mail message.&quot;</i> - Microsoft Security Bulletin MS10-042.</li>
+		<li><i>&quot;If a user clicks a link in an e-mail message, the user could still be vulnerable to exploitation of this vulnerability through the Web-based attack scenario.&quot;</i> - Microsoft Security Bulletin MS10-053.</li>
+		<li><i>&quot;The vulnerability cannot be exploited automatically through e-mail. For an attack to be successful, a user must open an attachment that is sent in an e-mail message.&quot;</i> - Microsoft Security Bulletin MS10-052.</li>
+		<li><i>&quot;In an e-mail attack scenario, an attacker could exploit the vulnerability by sending a specially crafted e-mail message containing an attachment to the user and by convincing the user to open the attachment. When the user attempts to open the attachment, an attacker specified malicious executable file could be run.&quot;</i> - Microsoft Security Bulletin MS10-045.</li>
+		<li><i>&quot;An attacker could exploit this vulnerability by setting up a malicious e-mail server and convincing the client to connect to this machine.&quot;</i> - Microsoft Security Bulletin MS10-030.</li>
+		<li><i>&quot;An attacker could host a specially crafted XYZ server that is designed to exploit this vulnerability and then convince a user to initiate an XYZ connection with it. Additionally, an attacker on the local network could perform a man-in-the-middle attack to respond to a legitimate XYZ request with a malformed XYZ response.&quot;</i> - Adapted from Microsoft Security Bulletins MS10-020 and MS10-066.</li>
+		<li><i>&quot;This vulnerability requires that a user view a specially crafted XYZ file with an affected application.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-043.</li>
+		<li><i>&quot;This vulnerability requires a user to open a specially crafted XYZ file for any malicious action to occur.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-033.</li>
+		<li><i>&quot;Exploitation of this vulnerability requires that a user, Windows feature, or application run or install a specially crafted XYZ file.&quot;</i> - Adapted from Microsoft Security Bulletin MS10-019.</li>
+		<li><i>&quot;An attacker must have valid logon credentials and be able to log on locally to exploit this vulnerability. The vulnerability could not be exploited remotely or by anonymous users.&quot;</i> - Microsoft Security Bulletin MS10-059.</li>
+		<li><i>&quot;An attacker must have valid logon credentials and be able to log on locally or remotely to exploit this vulnerability.&quot;</i> - Microsoft Security Bulletin MS10-069.</li>
+		<li><i>&quot;To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and...&quot;</i> - Microsoft Security Bulletin MS10-059.</li>
+		<li><i>&quot;By default, printers are not shared on any of the currently supported Windows operating systems. Systems are only vulnerable to remote attack when sharing a printer and the remote attacker can access the printer share.&quot;</i> - Microsoft Security Bulletin MS10-061.</li>
+	</ul>
+
+	<p class="subSubsectionTitle"><a id="toc1_7_4"></a>1.7.4.&nbsp;&nbsp;Identifying The Security Updates For Windows That Resolve Windows Vulnerabilities That Do Not Require User Interaction To Be Exploited</p>
+
+	<p>When reading the Microsoft Security Bulletins, the following language (taken from actual Microsoft Security Bulletins) identifies Security Updates for Windows that resolve Windows vulnerabilities that do not require user interaction to be exploited:</p>
+
+	<ul>
+		<li><i>&quot;Any Windows system connected to a network or the Internet would be at risk.&quot;</i> - Microsoft Security Bulletin MS08-037.</li>
+		<li><i>&quot;On Microsoft Windows 2000, Windows XP, and Windows Server 2003 systems, an attacker could exploit this vulnerability without authentication to run arbitrary code. It is possible that this vulnerability could be used in the crafting of a wormable exploit.&quot;</i> - Microsoft Security Bulletin MS08-067.</li>
+		<li><i>&quot;On Microsoft Windows 2000, Windows XP, and Windows Server 2003 systems, any anonymous user with access to the target network could deliver a specially crafted network packet to the affected system in order to exploit this vulnerability.&quot;</i> - Microsoft Security Bulletin MS08-067.</li>
+		<li><i>&quot;An anonymous attacker could exploit the vulnerability by sending specially crafted TCP/IP packets to a computer that has a service listening over the network.&quot;</i> - Microsoft Security Bulletin MS09-048.</li>
+		<li><i>&quot;Only attackers on the local subnet would be able to exploit this vulnerability without interaction.&quot;</i> - Microsoft Security Bulletin MS09-063.</li>
+		<li><i>&quot;A remote unauthenticated attacker could exploit this vulnerability by creating a program to send a sequence of specially crafted packets to a target system.&quot;</i> - Microsoft Security Bulletin MS14-031.</li>
+	</ul>
+
+	<p class="subSubsectionTitle"><a id="toc1_7_5"></a>1.7.5.&nbsp;&nbsp;Policy On Security Update For Windows Supersedence And On Listing All Of The Security Updates For Windows Included In A Microsoft Security Bulletin</p>
+
+	<p>Sometimes a Microsoft Security Bulletin consists of one Security Update for Windows. Sometimes a Microsoft Security Bulletin consists of multiple Security Updates for Windows. Sometimes a new Security Update for Windows replaces an old Security Update for Windows. And sometimes when a Microsoft Security Bulletin consists of multiple Security Updates for Windows, only some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited.</p>
+
+	<p>When a new Security Update for Windows replaces an old Security Update for Windows, it is said that the new Security Update for Windows supersedes (i.e., takes the place of/replaces) the old Security Update for Windows. Security Update for Windows supersedence information is presented in the Updates Replaced column of the Affected Software section of each Microsoft Security Bulletin.</p>
+
+	<p>When an old Security Update for Windows is superseded by a new Security Update for Windows, it is not necessary to install both the old superseded and the new superseding Security Updates for Windows. Instead, it is only necessary to install the new superseding Security Update for Windows. If the old superseded Security Update for Windows is already installed, it is not necessary to uninstall it. Instead, leave the old superseded Security Update for Windows installed and simply install the new superseding Security Update for Windows. When finished, both the old superseded and the new superseding Security Updates for Windows are listed as being installed. In other words, there is nothing wrong with installing both the old superseded and the new superseding Security Updates for Windows except that it is extra work.</p>
+
+	<p>Over time, the supersedence of Security Updates for Windows has become increasingly confounding. Moreover, in the last couple of years, there have been a couple of instances where the stated supersedence of Security Updates for Windows is questionable and/or appears to be incorrect. In short, instead of trying to decipher the correct supersedence of Security Updates for Windows (including writing emails to Microsoft asking them to check on supersedence), the following policy on Security Update for Windows supersedence has been adopted: ignore any supersedence and simply list all of the Microsoft Security Bulletins that include Security Updates for Windows that resolve Windows vulnerabilities that do not require user interaction to be exploited. Yes, this policy results in listing more Microsoft Security Bulletins than are absolutely necessary; but, it is far better than the alternative, which is possibly missing/not listing a Microsoft Security Bulletin that includes Security Updates for Windows that resolve Windows vulnerabilities that do not require user interaction to be exploited.</p>
+
+	<p>Lastly, when a Microsoft Security Bulletin consists of multiple Security Updates for Windows and only some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited, the following policy on listing the Security Updates for Windows has been adopted: when a Microsoft Security Bulletin consists of multiple Security Updates for Windows and only some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited, list all of the Security Updates for Windows included in the Microsoft Security Bulletin, including those that do not resolve Windows vulnerabilities that do not require user interaction to be exploited. Yes, this policy results in listing more Security Updates for Windows than are absolutely necessary; but, it is better than the alternative, which is someone wondering why some of the Security Updates for Windows in a Microsoft Security Bulletin were not listed.</p>
+
+	<p class="subsectionTitle"><a id="toc1_8"></a>1.8.&nbsp;&nbsp;Abbreviations</p>
+
+	<ul>
+		<li>Gen. = general availability.</li>
+		<li>Original Release = without an included Windows Service Pack, Windows Service Pack Rollup, Windows Point Release, or Windows Update.</li>
+		<li>RTM = release to manufacturing.</li>
+		<li>SP = Service Pack.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Files To Copy To CD/DVD To Secure A New Installation Of Windows Vista/7/8/8.1</p>
+
+<div class="section">
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Per this Web page, Windows Service Packs/Convenience Rollups/Point Releases/Updates, Security Updates for Windows, and Security Monthly Quality Rollups are copied to removable media for offline installation. Because files on CDs/DVDs are far more difficult to manipulate by viruses and intruders than files on external hard disk drives and flash memory drives, CDs/DVDs are the removable media of choice.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Files To Copy To CD/DVD To Secure A New Installation Of Windows Vista</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD to secure a new installation of Windows Vista:</p>
+
+	<ol>
+		<li>The files that bring your installation of Windows Vista to Windows Vista SP 2:
+			<ul>
+				<li>If your Windows product DVD is Windows Vista Original Release:
+					<ol>
+						<li>Windows Vista SP1:
+							<ul>
+								<li>32-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=910" class="linkListItem">Windows Vista Service Pack 1 All Language Standalone (KB936330) (microsoft.com)</a>.</li>
+								<li>64-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=21766" class="linkListItem">Windows Vista Service Pack 1 All Language Standalone For x64-Based Systems (KB936330) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+						<li>Windows Vista SP2:
+							<ul>
+								<li>32-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=15278" class="linkListItem">Windows Server 2008 Service Pack 2 And Windows Vista Service Pack 2 - All Language Standalone (KB948465) (microsoft.com)</a>.</li>
+								<li>64-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=718" class="linkListItem">Windows Server 2008 Service Pack 2 And Windows Vista Service Pack 2 - All Language Standalone For x64-Based Systems (KB948465) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If your Windows product DVD is Windows Vista Includes SP1:
+					<ol>
+						<li>Windows Vista SP2:
+							<ul>
+								<li>32-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=15278" class="linkListItem">Windows Server 2008 Service Pack 2 And Windows Vista Service Pack 2 - All Language Standalone (KB948465) (microsoft.com)</a>.</li>
+								<li>64-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=718" class="linkListItem">Windows Server 2008 Service Pack 2 And Windows Vista Service Pack 2 - All Language Standalone For x64-Based Systems (KB948465) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If your Windows product DVD is Windows Vista Includes SP2:
+					<ul>
+						<li>Your installation of Windows Vista includes Windows Vista SP2. Skip this step and go to the next step.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>The Security Updates for Windows Vista that resolve Windows Vista SP2 vulnerabilities that do not require user interaction to be exploited:
+			<div class="note">
+				<div class="noteMarker noteMarkerImportant">!</div>
+				<div class="noteContent">Extended support for Windows Vista ended on April 11, 2017. This means Microsoft does not intend to release any Microsoft Security Bulletins or Security Updates for Windows Vista after April 11, 2017. This also means, technically, it is not possible to ensure a secure installation of Windows Vista after April 11, 2017.</div>
+				<div class="clearBoth"></div>
+			</div>
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">The following are through the <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/releasenotedetail/42b8fa28-9d09-e711-80d9-000d3a32fc99" class="linkContent">Release Notes: April 2017 Security Updates (portal.msrc.microsoft.com)</a>, which includes through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023, which was the last Microsoft Security Bulletin.</div>
+				<div class="clearBoth"></div>
+			</div>
+			<ol>
+				<li><a href="https://technet.microsoft.com/library/security/ms09-048" class="linkListItem">Microsoft Security Bulletin MS09-048 - Critical: Vulnerabilities In Windows TCP/IP Could Allow Remote Code Execution (967723) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=24751" class="linkListItem">Security Update For Windows Vista (KB967723) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=15859" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB967723) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista SMB Server service is Administrative Tools | Services | Server. Service name: LanmanServer. Display name: Server. Path to executable: C:\Windows\system32\svchost.exe -k netsvcs. Startup type: Automatic. Service status: Started. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms09-050" class="linkListItem">Microsoft Security Bulletin MS09-050 - Critical: Vulnerabilities In SMBv2 Could Allow Remote Code Execution (975517) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=2578" class="linkListItem">Security Update For Windows Vista (KB975517) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=12010" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB975517) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms09-063" class="linkListItem">Microsoft Security Bulletin MS09-063 - Critical: Vulnerability In Web Services On Devices API Could Allow Remote Code Execution (973565) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=12023" class="linkListItem">Security Update For Windows Vista (KB973565) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=14757" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB973565) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms10-009" class="linkListItem">Microsoft Security Bulletin MS10-009 - Critical: Vulnerabilities In Windows TCP/IP Could Allow Remote Code Execution (974145) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=24429" class="linkListItem">Security Update For Windows Vista (KB974145) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=12293" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB974145) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista SMB Server service is Administrative Tools | Services | Server. Service name: LanmanServer. Display name: Server. Path to executable: C:\Windows\system32\svchost.exe -k netsvcs. Startup type: Automatic. Service status: Started. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms10-012" class="linkListItem">Microsoft Security Bulletin MS10-012 - Important: Vulnerabilities In SMB Server Could Allow Remote Code Execution (971468) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=1286" class="linkListItem">Security Update For Windows Vista (KB971468) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=10671" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB971468) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms10-029" class="linkListItem">Microsoft Security Bulletin MS10-029 - Moderate: Vulnerability In Windows ISATAP Component Could Allow Spoofing (978338) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=8039" class="linkListItem">Security Update For Windows Vista (KB978338) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=2567" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB978338) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista SMB Server service is Administrative Tools | Services | Server. Service name: LanmanServer. Display name: Server. Path to executable: C:\Windows\system32\svchost.exe -k netsvcs. Startup type: Automatic. Service status: Started. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms10-054" class="linkListItem">Microsoft Security Bulletin MS10-054 - Critical: Vulnerabilities In SMB Server Could Allow Remote Code Execution (982214) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=24090" class="linkListItem">Security Update For Windows Vista (KB982214) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22840" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB982214) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms10-058" class="linkListItem">Microsoft Security Bulletin MS10-058 - Important: Vulnerabilities In TCP/IP Could Allow Elevation Of Privilege (978886) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=566" class="linkListItem">Security Update For Windows Vista (KB978886) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=24929" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB978886) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista SMB Server service is Administrative Tools | Services | Server. Service name: LanmanServer. Display name: Server. Path to executable: C:\Windows\system32\svchost.exe -k netsvcs. Startup type: Automatic. Service status: Started. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms11-019" class="linkListItem">Microsoft Security Bulletin MS11-019 - Critical: Vulnerabilities In SMB Client Could Allow Remote Code Execution (2511455) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=15878" class="linkListItem">Security Update For Windows Vista (KB2511455) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17239" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2511455) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms11-020" class="linkListItem">Microsoft Security Bulletin MS11-020 - Critical: Vulnerability In SMB Server Could Allow Remote Code Execution (2508429) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=11451" class="linkListItem">Security Update For Windows Vista (KB2508429) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=24971" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2508429) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms11-030" class="linkListItem">Microsoft Security Bulletin MS11-030 - Critical: Vulnerability In DNS Resolution Could Allow Remote Code Execution (2509553) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=16392" class="linkListItem">Security Update For Windows Vista (KB2509553) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22925" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2509553) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms11-042" class="linkListItem">Microsoft Security Bulletin MS11-042 - Critical: Vulnerabilities In Distributed File System Could Allow Remote Code Execution (2535512) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26449" class="linkListItem">Security Update For Windows Vista (KB2535512) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26458" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2535512) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista SMB Server service is Administrative Tools | Services | Server. Service name: LanmanServer. Display name: Server. Path to executable: C:\Windows\system32\svchost.exe -k netsvcs. Startup type: Automatic. Service status: Started. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms11-048" class="linkListItem">Microsoft Security Bulletin MS11-048 - Important: Vulnerability In SMB Server Could Allow Denial Of Service (2536275) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26335" class="linkListItem">Security Update For Windows Vista (KB2536275) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26395" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2536275) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms11-053" class="linkListItem">Microsoft Security Bulletin MS11-053 - Critical: Vulnerability In Bluetooth Stack Could Allow Remote Code Execution (2566220) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26749" class="linkListItem">Security Update For Windows Vista (KB2532531) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26740" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2532531) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms11-064" class="linkListItem">Microsoft Security Bulletin MS11-064 - Important: Vulnerabilities In TCP/IP Stack Could Allow Denial Of Service (2563894) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=27089" class="linkListItem">Security Update For Windows Vista (KB2563894) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=27046" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2563894) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms11-083.aspx" class="linkListItem">Microsoft Security Bulletin MS11-083 - Critical: Vulnerability In TCP/IP Could Allow Remote Code Execution (2588516) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=27893" class="linkListItem">Security Update For Windows Vista (KB2588516) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=27891" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2588516) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms12-032.aspx" class="linkListItem">Microsoft Security Bulletin MS12-032 - Important: Vulnerability In TCP/IP Could Allow Elevation Of Privilege (2688338) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=29792" class="linkListItem">Security Update For Windows Vista (KB2688338) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=29828" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2688338) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- On Vista/7: 1.) Security Update KB2705219 in MS12-054 resolves Remote Administration Protocol Denial of Service Vulnerability - CVE-2012-1850, which apparently does not require user interaction to be exploited; and 2.) Security Update KB2712808 in MS12-054 resolves Print Spooler Service Format String Vulnerability - CVE-2012-1851, which apparently does not require user interaction to be exploited and is apparently wormable per Microsoft SRD post: http://blogs.technet.com/b/srd/archive/2012/08/14/ms12-054-not-all-remote-pre-auth-vulnerabilities-are-equally-appetizing-for-worms.aspx. -->
+				<li><a href="https://technet.microsoft.com/library/security/ms12-054" class="linkListItem">Microsoft Security Bulletin MS12-054 - Critical: Vulnerabilities In Windows Networking Components Could Allow Remote Code Execution (2733594) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerImportant">!</div>
+						<div class="noteContent">On October 9, 2012 Microsoft revised Microsoft Security Bulletin MS12-054 to announce that a new version of the Security Update KB2705219 file had been released for Windows Vista, and that Windows Vista users who successfully installed the previous version need to install the new version. The new version of the Security Update KB2705219 file has &quot;v2&quot; in the filename. For additional information, see <a href="https://technet.microsoft.com/library/security/ms12-054" class="linkContent">Microsoft Security Bulletin MS12-054 - Critical: Vulnerabilities In Windows Networking Components Could Allow Remote Code Execution (2733594) (technet.microsoft.com)</a>.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30544" class="linkListItem">Security Update For Windows Vista (KB2705219) (microsoft.com)</a> (v2).</li>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30552" class="linkListItem">Security Update For Windows Vista (KB2712808) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30501" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2705219) (microsoft.com)</a> (v2).</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=30523" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2712808) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-018.aspx" class="linkListItem">Microsoft Security Bulletin MS13-018 - Important: Vulnerability In TCP/IP Could Allow Denial Of Service (2790655) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36669" class="linkListItem">Security Update For Windows Vista (KB2790655) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36643" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2790655) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-049.aspx" class="linkListItem">Microsoft Security Bulletin MS13-049 - Important: Vulnerability In Kernel-Mode Driver Could Allow Denial Of Service (2845690) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39194" class="linkListItem">Security Update For Windows Vista (KB2845690) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39201" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2845690) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-065.aspx" class="linkListItem">Microsoft Security Bulletin MS13-065 - Important: Vulnerability In ICMPv6 Could Allow Denial Of Service (2868623) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39855" class="linkListItem">Security Update For Windows Vista (KB2868623) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39883" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2868623) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-031" class="linkListItem">Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial Of Service (2962478) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43137" class="linkListItem">Security Update For Windows Vista (KB2957189) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43145" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2957189) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-066" class="linkListItem">Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerImportant">!</div>
+						<div class="noteContent">On December 9, 2014 Microsoft revised Microsoft Security Bulletin MS14-066 to announce that a new version of the Security Update KB2992611 file had been released for Windows Vista, and that Windows Vista users who successfully installed the previous version need to install the new version. The new version of the Security Update KB2992611 file has &quot;v2&quot; in the filename. For additional information, see <a href="https://technet.microsoft.com/library/security/ms14-066" class="linkContent">Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611) (technet.microsoft.com)</a>.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44613" class="linkListItem">Security Update For Windows Vista (KB2992611) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44634" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB2992611) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms15-005" class="linkListItem">Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45477" class="linkListItem">Security Update For Windows Vista (KB3022777) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45437" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB3022777) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-072" class="linkListItem">Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52818" class="linkListItem">Security Update For Windows Vista (KB3159398) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52869" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB3159398) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-077" class="linkListItem">Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">The MS16-077 vulnerability that does not require user interaction to be exploited is CVE-2016-3236, not CVE-2016-3213. Therefore, it is not necessary to also install the MS16-063 Security Update For Windows Vista (KB3160005) per the MS16-077 Update FAQ.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52910" class="linkListItem">Security Update For Windows Vista (KB3161949) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52906" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB3161949) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms17-004" class="linkListItem">Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3216775" class="linkListItem">Security Update For Windows Vista (KB3216775) (catalog.update.microsoft.com)</a>.</li>
+						<li>64-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3216775" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB3216775) (catalog.update.microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms17-010" class="linkListItem">Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4012598" class="linkListItem">Security Update For Windows Vista (KB4012598) (catalog.update.microsoft.com)</a>.</li>
+						<li>64-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4012598" class="linkListItem">Security Update For Windows Vista For x64-Based Systems (KB4012598) (catalog.update.microsoft.com)</a>.</li>
+					</ul>
+				</li>
+			</ol>
+			<div class="note">
+				<div class="noteMarker noteMarkerImportant">!</div>
+				<div class="noteContent">Extended support for Windows Vista ended on April 11, 2017. This means Microsoft does not intend to release any Microsoft Security Bulletins or Security Updates for Windows Vista after April 11, 2017. This also means, technically, it is not possible to ensure a secure installation of Windows Vista after April 11, 2017.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows Vista, the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;Files To Copy To CD/DVD To Secure A New Installation Of Windows 7</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD to secure a new installation of Windows 7:</p>
+
+	<ol>
+		<li>The files that brings your installation of Windows 7 to Windows 7 SP1:
+			<ul>
+				<li>If your Windows product DVD is Windows 7 Original Release:
+					<ol>
+						<li>Windows 7 SP1:
+							<ul>
+								<li>32-bit: The windows6.1-KB976932-X86.exe file: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=5842" class="linkListItem">Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a>.</li>
+								<li>64-bit: The windows6.1-KB976932-X64.exe file: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=5842" class="linkListItem">Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If your Windows product DVD is Windows 7 Includes SP1:
+					<ul>
+						<li>Your installation of Windows 7 includes Windows 7 SP1. Skip this step and go to the next step.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>The files that bring your installation of Windows 7 SP1 to Windows 7 SP1 Convenience Rollup:
+			<ol>
+				<li>Windows 7 SP1 Convenience Rollup prerequisite: <a href="https://support.microsoft.com/kb/3020369" class="linkListItem">April 2015 Servicing Stack Update For Windows 7 And Windows Server 2008 R2 (support.microsoft.com):</a>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46827" class="linkListItem">Update For Windows 7 (KB3020369) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46817" class="linkListItem">Update For Windows 7 For x64-Based Systems (KB3020369) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li>Windows 7 SP1 Convenience Rollup: <a href="https://support.microsoft.com/kb/3125574" class="linkListItem">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com):</a>
+					<ul>
+						<li>32-bit: <a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup (KB3125574) (download.windowsupdate.com)</a>.</li>
+						<li>64-bit: <a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup For x64-Based Systems (KB3125574) (download.windowsupdate.com)</a>.</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>The Security Updates for Windows 7 that resolve Windows 7 SP1 vulnerabilities through April 2016 not included in Windows 7 SP1 Convenience Rollup that do not require user interaction to be exploited:
+			<ul>
+				<li>None. All of the Security Updates for Windows 7 that resolve Windows 7 SP1 vulnerabilities through April 2016 not included in Windows 7 SP1 Convenience Rollup require user interaction to be exploited.</li>
+			</ul>
+		</li>
+		<li>The Security Updates for Windows 7 that resolve Windows 7 SP1 Convenience Rollup vulnerabilities before the first Security Monthly Quality Rollup for Windows 7 that do not require user interaction to be exploited:
+			<ol>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-072" class="linkListItem">Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52857" class="linkListItem">Security Update For Windows 7 (KB3159398) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52864" class="linkListItem">Security Update For Windows 7 For x64-Based Systems (KB3159398) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-077" class="linkListItem">Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">The MS16-077 vulnerability that does not require user interaction to be exploited is CVE-2016-3236, not CVE-2016-3213. Therefore, it is not necessary to also install the MS16-063 Security Update For Windows 7 (KB3160005) per the MS16-077 Update FAQ.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52916" class="linkListItem">Security Update For Windows 7 (KB3161949) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52912" class="linkListItem">Security Update For Windows 7 For x64-Based Systems (KB3161949) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+				<li><a href="https://technet.microsoft.com/library/security/ms17-004" class="linkListItem">Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771) (technet.microsoft.com)</a>:</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms17-010" class="linkListItem">Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389) (technet.microsoft.com)</a>:</li>
+-->
+			</ol>
+		</li>
+		<li>The latest Security Monthly Quality Rollup for Windows 7:
+			<ul>
+				<li><a href="https://support.microsoft.com/help/4022719" class="linkListItem">June 13, 2017 - KB4022719 (Monthly Rollup) (support.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4022719" class="linkListItem">2017-06 Security Monthly Quality Rollup For Windows 7 For x86-Based Systems (KB4022719) (catalog.update.microsoft.com)</a>.</li>
+						<li>64-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4022719" class="linkListItem">2017-06 Security Monthly Quality Rollup For Windows 7 For x64-Based Systems (KB4022719) (catalog.update.microsoft.com)</a>.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 7, the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_3"></a>2.3.&nbsp;&nbsp;Files To Copy To CD/DVD To Secure A New Installation Of Windows 8</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD to secure a new installation of Windows 8:</p>
+
+	<ol>
+		<li>The Security Updates for Windows 8 that resolve Windows 8 Original Release vulnerabilities that do not require user interaction to be exploited:
+			<div class="note">
+				<div class="noteMarker noteMarkerImportant">!</div>
+				<div class="noteContent">Support for Windows 8 ended on January 12, 2016. This means Microsoft does not intend to release any Microsoft Security Bulletins or Security Updates for Windows 8 after January 12, 2016. This also means, technically, it is not possible to ensure a secure installation of Windows 8 after January 12, 2016.</div>
+				<div class="clearBoth"></div>
+			</div>
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">The following are through the <a href="https://technet.microsoft.com/library/security/ms16-jan" class="linkContent">Microsoft Security Bulletin Summary For January 2016 (technet.microsoft.com)</a>, which includes through MS16-010.</div>
+				<div class="clearBoth"></div>
+			</div>
+			<ol>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-018.aspx" class="linkListItem">Microsoft Security Bulletin MS13-018 - Important: Vulnerability In TCP/IP Could Allow Denial Of Service (2790655) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36665" class="linkListItem">Security Update For Windows 8 (KB2790655) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=36681" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2790655) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-049.aspx" class="linkListItem">Microsoft Security Bulletin MS13-049 - Important: Vulnerability In Kernel-Mode Driver Could Allow Denial Of Service (2845690) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39216" class="linkListItem">Security Update For Windows 8 (KB2845690) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39175" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2845690) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms13-065.aspx" class="linkListItem">Microsoft Security Bulletin MS13-065 - Important: Vulnerability In ICMPv6 Could Allow Denial Of Service (2868623) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39870" class="linkListItem">Security Update For Windows 8 (KB2868623) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39850" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2868623) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-006" class="linkListItem">Microsoft Security Bulletin MS14-006 - Important: Vulnerability In IPv6 Could Allow Denial Of Service (2904659) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=41720" class="linkListItem">Security Update For Windows 8 (KB2904659) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=41719" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2904659) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-031" class="linkListItem">Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial Of Service (2962478) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43142" class="linkListItem">Security Update For Windows 8 (KB2957189) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43151" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2957189) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-066" class="linkListItem">Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44652" class="linkListItem">Security Update For Windows 8 (KB2992611) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44617" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB2992611) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms15-005" class="linkListItem">Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45449" class="linkListItem">Security Update For Windows 8 (KB3022777) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45456" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB3022777) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- Remove MS15-034 14Dec15. MS15-034 is for 7/8/81, not Vista/10. For "netsh http show servicestate" command, see https://isc.sans.edu/forums/diary/MS15034+HTTPsys+IIS+DoS+And+Possible+Remote+Code+Execution+PATCH+NOW/19583. On default install 8, the "netsh http show servicestate" command reports nothing/blank.
+				<li><a href="https://technet.microsoft.com/library/security/ms15-034" class="linkListItem">Microsoft Security Bulletin MS15-034 - Critical: Vulnerability In HTTP.sys Could Allow Remote Code Execution (3042553) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46513" class="linkListItem">Security Update For Windows 8 (KB3042553) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46521" class="linkListItem">Security Update For Windows 8 For x64-Based Systems (KB3042553) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+-->
+			</ol>
+			<div class="note">
+				<div class="noteMarker noteMarkerImportant">!</div>
+				<div class="noteContent">Support for Windows 8 ended on January 12, 2016. This means Microsoft does not intend to release any Microsoft Security Bulletins or Security Updates for Windows 8 after January 12, 2016. This also means, technically, it is not possible to ensure a secure installation of Windows 8 after January 12, 2016.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 8, the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_4"></a>2.4.&nbsp;&nbsp;Files To Copy To CD/DVD To Secure A New Installation Of Windows 8.1</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD to secure a new installation of Windows 8.1:</p>
+
+	<ol>
+		<li>The files that brings your installation of Windows 8.1 to Windows 8.1 Update:
+			<ul>
+				<li>If your Windows product DVD is Windows 8.1 Original Release:
+					<ol>
+						<li>Windows 8.1 Update prerequisite: <a href="http://support.microsoft.com/kb/2919442" class="linkListItem">March 2014 Servicing Stack Update For Windows 8.1 And Windows Server 2012 R2 (support.microsoft.com)</a>:
+						<ul>
+							<li>32-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=42135" class="linkListItem">Update For Windows 8.1 (KB2919442) (microsoft.com)</a>.</li>
+							<li>64-bit: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=42162" class="linkListItem">Update For Windows 8.1 For x64-Based Systems (KB2919442) (microsoft.com)</a>.</li>
+						</ul>
+						</li>
+<!-- KB300850 released Nov14 does not include Security Updates. November 2014 update rollup for Windows RT 8.1, Windows 8.1, and Windows Server 2012 R2: https://support.microsoft.com/en-us/kb/3000850300850. -->
+						<li>Windows 8.1 Update: <a href="http://support.microsoft.com/kb/2919355" class="linkListItem">Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014 (support.microsoft.com)</a>:
+							<ul>
+								<li>32-bit: All seven files: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=42327" class="linkListItem">Windows 8.1 Update (KB2919355) (microsoft.com)</a>.</li>
+								<li>64-bit: All seven files: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=42335" class="linkListItem">Windows 8.1 Update For x64-Based Systems (KB2919355) (microsoft.com)</a>.</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li>If your Windows product DVD is Windows 8.1 Update:
+					<ul>
+						<li>Your installation of Windows 8.1 includes Windows 8.1 Update. Skip this step and go to the next step.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>The Security Updates for Windows 8.1 that resolve Windows 8.1 Update vulnerabilities before the first Security Monthly Quality Rollup for Windows 8.1 that do not require user interaction to be exploited:
+			<ol>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-031" class="linkListItem">Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial of Service (2962478) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43144" class="linkListItem">Security Update For Windows 8.1 (KB2957189) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=43134" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB2957189) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms14-066" class="linkListItem">Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44628" class="linkListItem">Security Update For Windows 8.1 (KB2992611) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=44626" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB2992611) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms15-005" class="linkListItem">Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45452" class="linkListItem">Security Update For Windows 8.1 (KB3022777) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=45471" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3022777) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!-- Remove MS15-034 14Dec15. MS15-034 is for 7/8/81, not Vista/10. For "netsh http show servicestate" command, see https://isc.sans.edu/forums/diary/MS15034+HTTPsys+IIS+DoS+And+Possible+Remote+Code+Execution+PATCH+NOW/19583. On default install 81, the "netsh http show servicestate" command reports nothing/blank.
+				<li><a href="https://technet.microsoft.com/library/security/ms15-034" class="linkListItem">Microsoft Security Bulletin MS15-034 - Critical: Vulnerability In HTTP.sys Could Allow Remote Code Execution (3042553) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46520" class="linkListItem">Security Update For Windows 8.1 (KB3042553) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=46512" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3042553) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+-->
+				<li><a href="https://technet.microsoft.com/library/security/ms16-072" class="linkListItem">Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622) (technet.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52837" class="linkListItem">Security Update For Windows 8.1 (KB3159398) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52822" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3159398) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+				<li><a href="https://technet.microsoft.com/library/security/ms16-077" class="linkListItem">Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191) (technet.microsoft.com)</a>:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">The MS16-077 vulnerability that does not require user interaction to be exploited is CVE-2016-3236, not CVE-2016-3213. Therefore, it is not necessary to also install the MS16-063 Security Update For Windows 8.1 (KB3160005) per the MS16-077 Update FAQ.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ul>
+						<li>32-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52928" class="linkListItem">Security Update For Windows 8.1 (KB3161949) (microsoft.com)</a>.</li>
+						<li>64-bit: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52908" class="linkListItem">Security Update For Windows 8.1 For x64-Based Systems (KB3161949) (microsoft.com)</a>.</li>
+					</ul>
+				</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+				<li><a href="https://technet.microsoft.com/library/security/ms17-010" class="linkListItem">Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389) (technet.microsoft.com)</a>:</li>
+				<li><a href="https://technet.microsoft.com/en-us/library/security/ms17-012.aspx" class="linkListItem">Microsoft Security Bulletin MS17-012 - Critical: Security Update For Microsoft Windows (4013078) (technet.microsoft.com)</a>:</li>
+-->
+			</ol>
+		</li>
+		<li>The latest Security Monthly Quality Rollup for Windows 8.1:
+			<ul>
+				<li><a href="https://support.microsoft.com/help/4022726" class="linkListItem">June 13, 2017 - KB4022726 (Monthly Rollup) (support.microsoft.com)</a>:
+					<ul>
+						<li>32-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4022726" class="linkListItem">2017-06 Security Monthly Quality Rollup For Windows 8.1 For x86-Based Systems (KB4022726) (catalog.update.microsoft.com)</a>.</li>
+						<li>64-bit: <a href="http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4022726" class="linkListItem">2017-06 Security Monthly Quality Rollup For Windows 8.1 For x64-Based Systems (KB4022726) (catalog.update.microsoft.com)</a>.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 8.1, the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Secure A New Installation Of Windows Vista/7/8/8.1</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Secure A New Installation Of Windows Vista</p>
+
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows Vista onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows Vista product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Install Windows: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom (advanced)</span>.</li>
+						<li>The <span class="userInput">Install Windows: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">Drive options (advanced) | New</span>, create one or more drives, select a drive for the installation of Windows Vista, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the files that bring your installation of Windows Vista to Windows Vista SP2:
+					<ul>
+						<li>If you installed Windows Vista Original Release:
+							<ol>
+								<li>Windows Vista Service Pack 1.</li>
+								<li>Windows Vista Service Pack 2.</li>
+							</ol>
+						</li>
+						<li>If you installed Windows Vista Includes SP1:
+							<ol>
+								<li>Windows Vista SP2.</li>
+							</ol>
+						</li>
+						<li>If you installed Windows Vista Includes SP2:
+							<ul>
+								<li>Your installation of Windows Vista includes Windows Vista SP2. Skip this step and go to the next step.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>As previously copied to CD/DVD, install the Security Updates for Windows Vista that resolve Windows Vista SP2 vulnerabilities that do not require user interaction to be exploited:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Microsoft Security Bulletin MS09-048 - Critical: Vulnerabilities In Windows TCP/IP Could Allow Remote Code Execution (967723).</li>
+						<li>Microsoft Security Bulletin MS09-050 - Critical: Vulnerabilities In SMBv2 Could Allow Remote Code Execution (975517).</li>
+						<li>Microsoft Security Bulletin MS09-063 - Critical: Vulnerability In Web Services On Devices API Could Allow Remote Code Execution (973565).</li>
+						<li>Microsoft Security Bulletin MS10-009 - Critical: Vulnerabilities In Windows TCP/IP Could Allow Remote Code Execution (974145).</li>
+						<li>Microsoft Security Bulletin MS10-012 - Important: Vulnerabilities In SMB Server Could Allow Remote Code Execution (971468).</li>
+						<li>Microsoft Security Bulletin MS10-029 - Moderate: Vulnerability In Windows ISATAP Component Could Allow Spoofing (978338).</li>
+						<li>Microsoft Security Bulletin MS10-054 - Critical: Vulnerabilities In SMB Server Could Allow Remote Code Execution (982214).</li>
+						<li>Microsoft Security Bulletin MS10-058 - Important: Vulnerabilities In TCP/IP Could Allow Elevation Of Privilege (978886).</li>
+						<li>Microsoft Security Bulletin MS11-019 - Critical: Vulnerabilities In SMB Client Could Allow Remote Code Execution (2511455).</li>
+						<li>Microsoft Security Bulletin MS11-020 - Critical: Vulnerability In SMB Server Could Allow Remote Code Execution (2508429).</li>
+						<li>Microsoft Security Bulletin MS11-030 - Critical: Vulnerability In DNS Resolution Could Allow Remote Code Execution (2509553).</li>
+						<li>Microsoft Security Bulletin MS11-042 - Critical: Vulnerabilities In Distributed File System Could Allow Remote Code Execution (2535512).</li>
+						<li>Microsoft Security Bulletin MS11-048 - Important: Vulnerability In SMB Server Could Allow Denial Of Service (2536275).</li>
+						<li>Microsoft Security Bulletin MS11-053 - Critical: Vulnerability In Bluetooth Stack Could Allow Remote Code Execution (2566220).</li>
+						<li>Microsoft Security Bulletin MS11-064 - Important: Vulnerabilities In TCP/IP Stack Could Allow Denial Of Service (2563894).</li>
+						<li>Microsoft Security Bulletin MS11-083 - Critical: Vulnerability In TCP/IP Could Allow Remote Code Execution (2588516).</li>
+						<li>Microsoft Security Bulletin MS12-032 - Important: Vulnerability In TCP/IP Could Allow Elevation Of Privilege (2688338).</li>
+						<li>Microsoft Security Bulletin MS12-054 - Critical: Vulnerabilities In Windows Networking Components Could Allow Remote Code Execution (2733594).</li>
+						<li>Microsoft Security Bulletin MS13-018 - Important: Vulnerability In TCP/IP Could Allow Denial Of Service (2790655).</li>
+						<li>Microsoft Security Bulletin MS13-049 - Important: Vulnerability In Kernel-Mode Driver Could Allow Denial Of Service (2845690).</li>
+						<li>Microsoft Security Bulletin MS13-065 - Important: Vulnerability In ICMPv6 Could Allow Denial Of Service (2868623).</li>
+						<li>Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial Of Service (2962478).</li>
+						<li>Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611).</li>
+						<li>Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777).</li>
+						<li>Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622).</li>
+						<li>Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191).</li>
+						<li>Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771).</li>
+						<li>Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389).</li>
+					</ol>
+				</li>
+				<li>If not installed by Windows Vista, as located on a disc included with your computer or as previously copied to CD/DVD, install the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install the Security Updates for Windows.</li>
+				<li>Run Windows/Microsoft Update and install the non-security related updates.</li>
+			</ol>
+		</li>
+		<li>You have secured the new installation of Windows Vista. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Secure A New Installation Of Windows 7</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 7 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 7 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Install Windows: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom (advanced)</span>.</li>
+						<li>The <span class="userInput">Install Windows: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">Drive options (advanced) | New</span>, create one or more drives, select a drive for the installation of Windows 7, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the files that brings your installation of Windows 7 to Windows 7 SP1:
+					<ul>
+						<li>If you installed Windows 7 Original Release:
+							<ol>
+								<li>Windows 7 SP1.</li>
+							</ol>
+						</li>
+						<li>If you installed Windows 7 Includes SP1:
+							<ul>
+								<li>Your installation of Windows 7 includes Windows 7 SP1. Skip this step and go to the next step.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>As previously copied to CD/DVD, install the files that bring your installation of Windows 7 SP1 to Windows 7 SP1 Convenience Rollup:
+					<ol>
+						<li>Windows 7 SP1 Convenience Rollup prerequisite: April 2015 Servicing Stack Update For Windows 7 And Windows Server 2008 R2:
+							<ol>
+								<li>The file for KB3020369.</li>
+							</ol>
+						</li>
+						<li>Windows 7 SP1 Convenience Rollup: Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1:
+							<ol>
+								<li>The file for KB3125574.</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the Security Updates for Windows 7 that resolve Windows 7 SP1 vulnerabilities through April 2016 not included in Windows 7 SP1 Convenience Rollup that do not require user interaction to be exploited:
+					<ul>
+						<li>None. All of the Security Updates for Windows 7 that resolve Windows 7 SP1 vulnerabilities through April 2016 not included in Windows 7 SP1 Convenience Rollup require user interaction to be exploited.</li>
+					</ul>
+				</li>
+				<li>As previously copied to CD/DVD, install the Security Updates for Windows 7 that resolve Windows 7 SP1 Convenience Rollup vulnerabilities before the first Security Monthly Quality Rollup for Windows 7 that do not require user interaction to be exploited:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622).</li>
+						<li>Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191).</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+						<li>Microsoft Security Bulletin MS17-004 - Important: Security Update For Local Security Authority Subsystem Service (3216771).</li>
+						<li>Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389).</li>
+-->
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the latest Security Monthly Quality Rollup for Windows 7:
+					<ul>
+						<li>June 13, 2017 - KB4022719 (Monthly Rollup).</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 7, as located on a disc included with your computer or as previously copied to CD/DVD, install the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows.</li>
+				<li>Run Windows/Microsoft Update and install the non-security related updates.</li>
+			</ol>
+		</li>
+		<li>You have secured the new installation of Windows 7. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_3"></a>3.3.&nbsp;&nbsp;Secure A New Installation Of Windows 8</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 8 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">Drive options (advanced) | New</span>, create one or more drives, select a drive for the installation of Windows 8, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the Security Updates for Windows 8 that resolve Windows 8 Original Release vulnerabilities that do not require user interaction to be exploited:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Microsoft Security Bulletin MS13-018 - Important: Vulnerability In TCP/IP Could Allow Denial Of Service (2790655).</li>
+						<li>Microsoft Security Bulletin MS13-049 - Important: Vulnerability In Kernel-Mode Driver Could Allow Denial Of Service (2845690).</li>
+						<li>Microsoft Security Bulletin MS13-065 - Important: Vulnerability In ICMPv6 Could Allow Denial Of Service (2868623).</li>
+						<li>Microsoft Security Bulletin MS14-006 - Important: Vulnerability In IPv6 Could Allow Denial Of Service (2904659).</li>
+						<li>Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial of Service (2962478).</li>
+						<li>Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611).</li>
+						<li>Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777).</li>
+					</ol>
+				</li>
+				<li>If not installed by Windows 8, as located on a disc included with your computer or as previously copied to CD/DVD, install the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Go to the Windows Store and install the Update To Windows 8.1:
+					<ol>
+						<li>On the Metro interface, click <span class="userInput">Windows Store | Update to Windows 8.1 for free | Download</span>.
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">If Update to Windows 8.1 for free does not appear in the Windows Store, see <a href="http://windows.microsoft.com/en-us/windows-8/why-can-t-find-update-store" class="linkContent">Why Can't I Find The Update In The Store? (windows.microsoft.com)</a>. For information on the Update To Windows 8.1, see <a href="http://windows.microsoft.com/en-us/windows-8/update-from-windows-8-tutorial" class="linkContent">Update To Windows 8.1 From Windows 8 (windows.microsoft.com)</a> and <a href="http://windows.microsoft.com/en-us/windows-8/upgrade-to-windows-8" class="linkContent">Update To Windows 8.1: FAQ (windows.microsoft.com)</a>.</div>
+								<div class="clearBoth"></div>
+							</div>
+						</li>
+						<li>When the installation of the Update To Windows 8.1 is completed, the Windows 8.1 desktop appears.</li>
+					</ol>
+				<li>Run Windows/Microsoft Update and install the non-security related updates.</li>
+			</ol>
+		</li>
+		<li>You have secured the new installation of Windows 8. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_4"></a>3.4.&nbsp;&nbsp;Secure A New Installation Of Windows 8.1</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 8.1 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 8.1 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 8.1, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the files that bring your installation of Windows 8.1 to Windows 8.1 Update:
+					<ul>
+						<li>If you installed Windows 8.1 Original Release:
+							<ol>
+								<li>Windows 8.1 Update prerequisite: March 2014 Servicing Stack Update For Windows 8.1 And Windows Server 2012 R2:
+									<ol>
+										<li>The file for KB2919442.</li>
+									</ol>
+								</li>
+								<li>Windows 8.1 Update: Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014:
+									<div class="note">
+										<div class="noteMarker noteMarkerNormal">i</div>
+										<div class="noteContent">Install the seven files in the following order. The clearcompressionflag.exe file simply runs and does not indicate &quot;completed.&quot; Restart the computer if so prompted.</div>
+										<div class="clearBoth"></div>
+									</div>
+									<ol>
+										<li>clearcompressionflag.exe.</li>
+										<li>The file for KB2919355.</li>
+										<li>The file for KB2932046.</li>
+										<li>The file for KB2959977.</li>
+										<li>The file for KB2937592.</li>
+										<li>The file for KB2938439.</li>
+										<li>The file for KB2934018.</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li>If you installed Windows 8.1 Update:
+							<ul>
+								<li>Your installation of Windows 8.1 includes the Windows 8.1 Update. Skip this step and go to the next step.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>As previously copied to CD/DVD, install the Security Updates for Windows 8.1 that resolve Windows 8.1 Update vulnerabilities before the first Security Monthly Quality Rollup for Windows 8.1 that do not require user interaction to be exploited:
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">It is not necessary to restart the computer after installing each Security Update for Windows. Therefore, if prompted to restart the computer after installing a Security Update for Windows, do not restart the computer until after installing the last Security Update for Windows.</div>
+						<div class="clearBoth"></div>
+					</div>
+					<ol>
+						<li>Microsoft Security Bulletin MS14-031 - Important: Vulnerability In TCP Protocol Could Allow Denial of Service (2962478).</li>
+						<li>Microsoft Security Bulletin MS14-066 - Critical: Vulnerability In Schannel Could Allow Remote Code Execution (2992611).</li>
+						<li>Microsoft Security Bulletin MS15-005 - Important: Vulnerability In Network Location Awareness Service Could Allow Security Feature Bypass (3022777).</li>
+						<li>Microsoft Security Bulletin MS16-072 - Important: Security Update For Group Policy (3163622).</li>
+						<li>Microsoft Security Bulletin MS16-077 - Important: Security Update For WPAD (3165191).</li>
+<!--
+Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" class="linkContent">Microsoft Security Bulletin Summary For March 2017 (technet.microsoft.com)</a>, which includes through MS17-023 and is the last Microsoft Security Bulletin Summary. Security fixes for Windows 7/8.1 after MS16-117 delivered via bundled updates; hence, the following commented out.
+						<li>Microsoft Security Bulletin MS17-010 - Critical: Security Update For Microsoft Windows SMB Server (4013389).</li>
+						<li>Microsoft Security Bulletin MS17-012 - Critical: Security Update For Microsoft Windows (4013078).</li>
+-->
+					</ol>
+				</li>
+				<li>As previously copied to CD/DVD, install the latest Security Monthly Quality Rollup for Windows 8.1:
+					<ul>
+						<li>June 13, 2017 - KB4022726 (Monthly Rollup).</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 8.1, as located on a disc included with your computer or as previously copied to CD/DVD, install the driver for your network device (i.e., dial-up modem or ethernet adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Run Windows/Microsoft Update and install any Security Updates for Windows.</li>
+				<li>Run Windows/Microsoft Update and install the non-security related updates.</li>
+			</ol>
+		</li>
+		<li>You have secured the new installation of Windows 8.1. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="http://support.microsoft.com/kb/824684" class="linkListItem">Description Of The Standard Terminology That Is Used To Describe Microsoft Software Updates (824684) (support.microsoft.com)</a></li>
+		<li><a href="http://technet.microsoft.com/en-us/library/cc700845.aspx" class="linkListItem">Update Management Process (technet.microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=36982" class="linkListItem">Microsoft Security Bulletin Data (microsoft.com)</a></li>
+		<li><a href="http://technet.microsoft.com/en-us/library/cc749061(v=ws.10).aspx" class="linkListItem">Hotfixes And Security Updates Included In Windows Vista Service Pack 1 (technet.microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=910" class="linkListItem">Windows Vista Service Pack 1 All Language Standalone (KB936330) (microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=21766" class="linkListItem">Windows Vista Service Pack 1 All Language Standalone For x64-Based Systems (KB936330) (microsoft.com)</a></li>
+		<li><a href="http://windows.microsoft.com/en-us/windows-vista/learn-how-to-install-windows-vista-service-pack-2-sp2" class="linkListItem">Learn How To Install Windows Vista Service Pack 2 (SP2) (windows.microsoft.com)</a></li>
+		<li><a href="http://technet.microsoft.com/en-us/library/dd335033.aspx" class="linkListItem">Hotfixes And Security Updates In Windows Server 2008 SP2 And Windows Vista SP2 (technet.microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=15278" class="linkListItem">Windows Server 2008 Service Pack 2 And Windows Vista Service Pack 2 - All Language Standalone (KB948465) (microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=718" class="linkListItem">Windows Server 2008 Service Pack 2 and Windows Vista Service Pack 2 - All Language Standalone For x64-Based Systems (KB948465) (microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=269" class="linkListItem">Documentation For Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=5842" class="linkListItem">Windows 7 And Windows Server 2008 R2 Service Pack 1 (KB976932) (microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/" class="linkListItem">Simplifying Updates For Windows 7 And 8.1 (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/kb/3125574" class="linkListItem">Convenience Rollup Update For Windows 7 SP1 And Windows Server 2008 R2 SP1 (support.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/askpfeplat/2016/05/20/windows-7-sp1-and-server-2008-r2-sp1-convenience-roll-up-now-available-at-a-download-location-near-you-kb3125574/" class="linkListItem">Windows 7 SP1 And Server 2008 R2 SP1 Convenience Roll-up Now Available At A Download Location Near You! (KB3125574) (blogs.technet.microsoft.com)</a></li>
+		<li><a href="http://catalog.update.microsoft.com/Search.aspx?q=3125574" class="linkListItem">Microsoft Update Catalog: Search Results For &quot;3125574&quot; (catalog.update.microsoft.com)</a></li>
+		<li><a href="http://download.microsoft.com/download/E/B/0/EB084E02-4173-444E-9438-53972AE2F9E0/3125574.csv" class="linkListItem">Files Included In Windows 7 SP1 Convenience Rollup (.csv) (download.microsoft.com)</a></li>
+		<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup (KB3125574) (download.windowsupdate.com)</a></li>
+		<li><a href="http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu" class="linkListItem">Windows 7 Service Pack 1 Convenience Rollup For x64-Based Systems (KB3125574) (download.windowsupdate.com)</a></li>
+		<li><a href="http://windows.microsoft.com/en-us/windows-8/why-can-t-find-update-store" class="linkListItem">Why Can't I Find The Update In The Store? (windows.microsoft.com)</a></li>
+		<li><a href="http://windows.microsoft.com/en-us/windows-8/update-from-windows-8-tutorial" class="linkListItem">Update To Windows 8.1 From Windows 8 (windows.microsoft.com)</a></li>
+		<li><a href="http://windows.microsoft.com/en-us/windows-8/upgrade-to-windows-8" class="linkListItem">Update To Windows 8.1: FAQ (windows.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/2919355" class="linkListItem">Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014 (support.microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=42327" class="linkListItem">Windows 8.1 Update (KB2919355) (microsoft.com)</a></li>
+		<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=42335" class="linkListItem">Windows 8.1 Update For x64-Based Systems (KB2919355) (microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/05/17/simplifying-updates-for-windows-7-and-8-1/" class="linkListItem">Simplifying Updates For Windows 7 And 8.1 (blogs.technet.microsoft.com)</a></li>
+        <li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/08/15/further-simplifying-servicing-model-for-windows-7-and-windows-8-1/" class="linkListItem">Further Simplifying Servicing Models For Windows 7 And Windows 8.1 (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/windowsitpro/2016/10/07/more-on-windows-7-and-windows-8-1-servicing-changes/" class="linkListItem">More On Windows 7 And Windows 8.1 Servicing Changes (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://blogs.technet.microsoft.com/msrc/2016/11/08/furthering-our-commitment-to-security-updates/" class="linkListItem">Furthering Our Commitment To Security Updates (blogs.technet.microsoft.com)</a></li>
+		<li><a href="https://portal.msrc.microsoft.com/en-us/security-guidance" class="linkListItem">Security Update Guide (portal.msrc.microsoft.com)</a></li>
+		<li><a href="https://catalog.update.microsoft.com/" class="linkListItem">Microsoft Update Catalog (catalog.update.microsoft.com)</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>

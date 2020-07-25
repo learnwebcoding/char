@@ -1,0 +1,7 @@
+# robots.txt
+# Last reviewed/updated: 01 Aug 2017.
+
+User-agent: *
+Disallow: /library/
+Disallow: /resources/
+Sitemap: https://char.learnwebcoding.com/sitemap.xml

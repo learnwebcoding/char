@@ -1,0 +1,763 @@
+2017-08 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4034664) 
+Last Modified: 8/5/2017 
+Size: 194.1 MB
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4034664
+
+This update has been replaced by the following updates:
+n/a
+
+This update replaces the following updates:
+2017-07 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4025341) 
+Security Update for Windows 7 for x64-based Systems (KB2511455) 
+Security Update for Windows 7 for x64-based Systems (KB2544893) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB2676562) 
+Security Update for Windows 7 for x64-based Systems (KB2712808) 
+Security Update for Windows 7 for x64-based Systems (KB2839894) 
+Security Update for Windows 7 for x64-based Systems (KB2840149) 
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB2957189) 
+Security Update for Windows 7 for x64-based Systems (KB2961072) 
+Security Update for Windows 7 for x64-based Systems (KB2993651) 
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3042553) 
+Security Update for Windows 7 for x64-based Systems (KB3069762) 
+Security Update for Windows 7 for x64-based Systems (KB3072630) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3079757) 
+Security Update for Windows 7 for x64-based Systems (KB3080446) 
+Security Update for Windows 7 for x64-based Systems (KB3087039) 
+Security Update for Windows 7 for x64-based Systems (KB3108670) 
+Security Update for Windows 7 for x64-based Systems (KB3109094) 
+Security Update for Windows 7 for x64-based Systems (KB3123479) 
+Security Update for Windows 7 for x64-based Systems (KB3126446) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) 
+Security Update for Windows 7 for x64-based Systems (KB3146706) 
+Security Update for Windows 7 for x64-based Systems (KB3146963) 
+Security Update for Windows 7 for x64-based Systems (KB3149090) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3156013) 
+Security Update for Windows 7 for x64-based Systems (KB3156017) 
+Security Update for Windows 7 for x64-based Systems (KB3161561) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3164035) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177186) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3184471) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2829104) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2929733) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3014406) 
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3118401) 
+Update for Windows 7 for x64-based Systems (KB3121255) 
+Update for Windows 7 for x64-based Systems (KB3138901) 
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3148851) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3198591) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+Update for Windows 7 for x64-based Systems (KB4012864) 
+Update for Windows 7 for x64-based Systems (KB4015193) 
+Update for Windows 7 for x64-based Systems (KB4023136)
+
+---
+
+2017-07 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4025341) 
+Last Modified: 7/10/2017 
+Size: 191.6 MB
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4025341
+
+This update has been replaced by the following updates:
+2017-08 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4034664) 
+
+This update replaces the following updates: 
+2017-06 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4022168) 
+2017-06 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4022719) 
+Security Update for Windows 7 for x64-based Systems (KB2511455) 
+Security Update for Windows 7 for x64-based Systems (KB2544893) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB2676562) 
+Security Update for Windows 7 for x64-based Systems (KB2712808) 
+Security Update for Windows 7 for x64-based Systems (KB2839894) 
+Security Update for Windows 7 for x64-based Systems (KB2840149) 
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB2957189) 
+Security Update for Windows 7 for x64-based Systems (KB2961072) 
+Security Update for Windows 7 for x64-based Systems (KB2993651) 
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3042553) 
+Security Update for Windows 7 for x64-based Systems (KB3069762) 
+Security Update for Windows 7 for x64-based Systems (KB3072630) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3079757) 
+Security Update for Windows 7 for x64-based Systems (KB3080446) 
+Security Update for Windows 7 for x64-based Systems (KB3087039) 
+Security Update for Windows 7 for x64-based Systems (KB3108670) 
+Security Update for Windows 7 for x64-based Systems (KB3109094) 
+Security Update for Windows 7 for x64-based Systems (KB3123479) 
+Security Update for Windows 7 for x64-based Systems (KB3126446) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) 
+Security Update for Windows 7 for x64-based Systems (KB3146706) 
+Security Update for Windows 7 for x64-based Systems (KB3146963) 
+Security Update for Windows 7 for x64-based Systems (KB3149090) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3156013) 
+Security Update for Windows 7 for x64-based Systems (KB3156017) 
+Security Update for Windows 7 for x64-based Systems (KB3161561) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3164035) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177186) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3184471) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2829104) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3014406) 
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3118401) 
+Update for Windows 7 for x64-based Systems (KB3121255) 
+Update for Windows 7 for x64-based Systems (KB3138901) 
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3148851) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3198591) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+Update for Windows 7 for x64-based Systems (KB4012864) 
+Update for Windows 7 for x64-based Systems (KB4015193) 
+Update for Windows 7 for x64-based Systems (KB4023136)
+
+---
+
+2017-06 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4022719) 
+Last Modified: 6/9/2017 
+Size: 181.3 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4022719
+
+(* = listed in 2017-06 Security Only Quality Update for Windows 7 for x64-based Systems (KB4022722))
+(# = listed in previous below)
+
+This update has been replaced by the following updates:
+2017-07 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4025341) 
+
+This update replaces the following updates: 
+2017-05 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4019265) 
+2017-05 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4019264) 
+Security Update for Windows 7 for x64-based Systems (KB2511455) 
+Security Update for Windows 7 for x64-based Systems (KB2544893) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB2676562) *
+Security Update for Windows 7 for x64-based Systems (KB2712808) *
+Security Update for Windows 7 for x64-based Systems (KB2839894) *
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB2957189) 
+Security Update for Windows 7 for x64-based Systems (KB2961072) 
+Security Update for Windows 7 for x64-based Systems (KB2993651) *
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3069762) 
+Security Update for Windows 7 for x64-based Systems (KB3072630) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3079757) *
+Security Update for Windows 7 for x64-based Systems (KB3080446) *
+Security Update for Windows 7 for x64-based Systems (KB3087039) *
+Security Update for Windows 7 for x64-based Systems (KB3108670) *
+Security Update for Windows 7 for x64-based Systems (KB3109094) 
+Security Update for Windows 7 for x64-based Systems (KB3123479) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) *
+Security Update for Windows 7 for x64-based Systems (KB3146706) 
+Security Update for Windows 7 for x64-based Systems (KB3146963) 
+Security Update for Windows 7 for x64-based Systems (KB3149090) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) *
+Security Update for Windows 7 for x64-based Systems (KB3153199) *
+Security Update for Windows 7 for x64-based Systems (KB3156013) *
+Security Update for Windows 7 for x64-based Systems (KB3156017) 
+Security Update for Windows 7 for x64-based Systems (KB3161561) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) *
+Security Update for Windows 7 for x64-based Systems (KB3164033) *
+Security Update for Windows 7 for x64-based Systems (KB3164035) *
+Security Update for Windows 7 for x64-based Systems (KB3167679) *
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) *
+Security Update for Windows 7 for x64-based Systems (KB3177186) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) *
+Security Update for Windows 7 for x64-based Systems (KB3178034) *
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3184471) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2829104) *
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3014406) *
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3118401) 
+Update for Windows 7 for x64-based Systems (KB3138901) 
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3148851) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) *
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) *
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3198591) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+Update for Windows 7 for x64-based Systems (KB4012864) 
+Update for Windows 7 for x64-based Systems (KB4015193) 
+
+---
+
+2017-05 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4019264) 
+Last Modified: 5/5/2017 
+Size: 162.9 MB
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4019264
+
+(* = listed in 2017-05 Security Only Quality Update for Windows 7 for x64-based Systems (KB4019263))
+(# = listed in next above)
+
+This update has been replaced by the following updates: 
+2017-06 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4022719) 
+
+This update replaces the following updates: 
+April, 2017 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4015552) 
+April, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4015549) 
+Security Update for Windows 7 for x64-based Systems (KB2511455) #
+Security Update for Windows 7 for x64-based Systems (KB2544893) #
+Security Update for Windows 7 for x64-based Systems (KB2570947) #
+Security Update for Windows 7 for x64-based Systems (KB2676562) *#
+Security Update for Windows 7 for x64-based Systems (KB2839894) #
+Security Update for Windows 7 for x64-based Systems (KB2868626) *#
+Security Update for Windows 7 for x64-based Systems (KB2957189) *#
+Security Update for Windows 7 for x64-based Systems (KB2961072) *#
+Security Update for Windows 7 for x64-based Systems (KB2993651) *#
+Security Update for Windows 7 for x64-based Systems (KB3005607) #
+Security Update for Windows 7 for x64-based Systems (KB3033889) #
+Security Update for Windows 7 for x64-based Systems (KB3033929) #
+Security Update for Windows 7 for x64-based Systems (KB3069762) #
+Security Update for Windows 7 for x64-based Systems (KB3072630) #
+Security Update for Windows 7 for x64-based Systems (KB3076949) #
+Security Update for Windows 7 for x64-based Systems (KB3087039) #
+Security Update for Windows 7 for x64-based Systems (KB3108670) #
+Security Update for Windows 7 for x64-based Systems (KB3109094) #
+Security Update for Windows 7 for x64-based Systems (KB3123479) *#
+Security Update for Windows 7 for x64-based Systems (KB3138962) #
+Security Update for Windows 7 for x64-based Systems (KB3139940) #
+Security Update for Windows 7 for x64-based Systems (KB3145739) #
+Security Update for Windows 7 for x64-based Systems (KB3146706) *#
+Security Update for Windows 7 for x64-based Systems (KB3146963) #
+Security Update for Windows 7 for x64-based Systems (KB3149090) #
+Security Update for Windows 7 for x64-based Systems (KB3153171) *#
+Security Update for Windows 7 for x64-based Systems (KB3153199) *#
+Security Update for Windows 7 for x64-based Systems (KB3156013) *#
+Security Update for Windows 7 for x64-based Systems (KB3156017) *#
+Security Update for Windows 7 for x64-based Systems (KB3161561) *#
+Security Update for Windows 7 for x64-based Systems (KB3161664) *#
+Security Update for Windows 7 for x64-based Systems (KB3164033) #
+Security Update for Windows 7 for x64-based Systems (KB3164035) *#
+Security Update for Windows 7 for x64-based Systems (KB3167679) *#
+Security Update for Windows 7 for x64-based Systems (KB3168965) #
+Security Update for Windows 7 for x64-based Systems (KB3175024) *#
+Security Update for Windows 7 for x64-based Systems (KB3177186) *#
+Security Update for Windows 7 for x64-based Systems (KB3177725) *#
+Security Update for Windows 7 for x64-based Systems (KB3178034) #
+Security Update for Windows 7 for x64-based Systems (KB3184122) *#
+Security Update for Windows 7 for x64-based Systems (KB3184471) #
+Security Update for Windows 7 for x64-based Systems (KB3185911) #
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2829104) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3014406) *
+Update for Windows 7 for x64-based Systems (KB3040272) *
+Update for Windows 7 for x64-based Systems (KB3118401) 
+Update for Windows 7 for x64-based Systems (KB3138901) *
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3148851) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) *
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) *
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3198591) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+Update for Windows 7 for x64-based Systems (KB4012864) 
+Update for Windows 7 for x64-based Systems (KB4015193) 
+
+---
+
+April, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4015549) 
+Last Modified: 4/8/2017 
+Size: 159.9 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4015549
+(* = listed in April, 2017 Security Only Quality Update for Windows 7 for x64-based Systems (KB4015546))
+
+This update has been replaced by the following updates: 
+2017-05 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4019264) 
+
+This update replaces the following updates: 
+March, 2017 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4012218) 
+March, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4012215) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB2601626) 
+Security Update for Windows 7 for x64-based Systems (KB2620712) 
+Security Update for Windows 7 for x64-based Systems (KB2621146) 
+Security Update for Windows 7 for x64-based Systems (KB2644615) 
+Security Update for Windows 7 for x64-based Systems (KB2655992) 
+Security Update for Windows 7 for x64-based Systems (KB2658846) 
+Security Update for Windows 7 for x64-based Systems (KB2659262) 
+Security Update for Windows 7 for x64-based Systems (KB2665364) 
+Security Update for Windows 7 for x64-based Systems (KB2676562) 
+Security Update for Windows 7 for x64-based Systems (KB2709715) 
+Security Update for Windows 7 for x64-based Systems (KB2724197) 
+Security Update for Windows 7 for x64-based Systems (KB2743555) 
+Security Update for Windows 7 for x64-based Systems (KB2753842) 
+Security Update for Windows 7 for x64-based Systems (KB2769369) 
+Security Update for Windows 7 for x64-based Systems (KB2772930) 
+Security Update for Windows 7 for x64-based Systems (KB2785220) 
+Security Update for Windows 7 for x64-based Systems (KB2790113) 
+Security Update for Windows 7 for x64-based Systems (KB2799494) 
+Security Update for Windows 7 for x64-based Systems (KB2813170) 
+Security Update for Windows 7 for x64-based Systems (KB2830290) 
+Security Update for Windows 7 for x64-based Systems (KB2834886) 
+Security Update for Windows 7 for x64-based Systems (KB2835361) 
+Security Update for Windows 7 for x64-based Systems (KB2839894) 
+Security Update for Windows 7 for x64-based Systems (KB2847311) 
+Security Update for Windows 7 for x64-based Systems (KB2849470) 
+Security Update for Windows 7 for x64-based Systems (KB2855844) 
+Security Update for Windows 7 for x64-based Systems (KB2859537) 
+Security Update for Windows 7 for x64-based Systems (KB2862966) 
+Security Update for Windows 7 for x64-based Systems (KB2862973) 
+Security Update for Windows 7 for x64-based Systems (KB2862973) 
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB2868725) 
+Security Update for Windows 7 for x64-based Systems (KB2872339) 
+Security Update for Windows 7 for x64-based Systems (KB2876284) 
+Security Update for Windows 7 for x64-based Systems (KB2876331) 
+Security Update for Windows 7 for x64-based Systems (KB2916036) 
+Security Update for Windows 7 for x64-based Systems (KB2918614) 
+Security Update for Windows 7 for x64-based Systems (KB2922229) 
+Security Update for Windows 7 for x64-based Systems (KB2957503) 
+Security Update for Windows 7 for x64-based Systems (KB2957509) 
+Security Update for Windows 7 for x64-based Systems (KB2976897) 
+Security Update for Windows 7 for x64-based Systems (KB2978668) 
+Security Update for Windows 7 for x64-based Systems (KB2982378) 
+Security Update for Windows 7 for x64-based Systems (KB2993651) 
+Security Update for Windows 7 for x64-based Systems (KB2993958) 
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3006226) 
+Security Update for Windows 7 for x64-based Systems (KB3019215) 
+Security Update for Windows 7 for x64-based Systems (KB3023266) 
+Security Update for Windows 7 for x64-based Systems (KB3023562) 
+Security Update for Windows 7 for x64-based Systems (KB3032323) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3033890) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3035131) 
+Security Update for Windows 7 for x64-based Systems (KB3036493) 
+Security Update for Windows 7 for x64-based Systems (KB3045171) 
+Security Update for Windows 7 for x64-based Systems (KB3045999) 
+Security Update for Windows 7 for x64-based Systems (KB3046049) 
+Security Update for Windows 7 for x64-based Systems (KB3046306) 
+Security Update for Windows 7 for x64-based Systems (KB3046482) 
+Security Update for Windows 7 for x64-based Systems (KB3061518) 
+Security Update for Windows 7 for x64-based Systems (KB3063858) 
+Security Update for Windows 7 for x64-based Systems (KB3067505) 
+Security Update for Windows 7 for x64-based Systems (KB3069392) 
+Security Update for Windows 7 for x64-based Systems (KB3069762) 
+Security Update for Windows 7 for x64-based Systems (KB3072630) 
+Security Update for Windows 7 for x64-based Systems (KB3072633) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3077657) 
+Security Update for Windows 7 for x64-based Systems (KB3079904) 
+Security Update for Windows 7 for x64-based Systems (KB3083992) 
+Security Update for Windows 7 for x64-based Systems (KB3087039) 
+Security Update for Windows 7 for x64-based Systems (KB3088195) 
+Security Update for Windows 7 for x64-based Systems (KB3097966) 
+Security Update for Windows 7 for x64-based Systems (KB3101746) 
+Security Update for Windows 7 for x64-based Systems (KB3108670) 
+Security Update for Windows 7 for x64-based Systems (KB3109094) 
+Security Update for Windows 7 for x64-based Systems (KB3121212) 
+Security Update for Windows 7 for x64-based Systems (KB3121918) 
+Security Update for Windows 7 for x64-based Systems (KB3123479) 
+Security Update for Windows 7 for x64-based Systems (KB3124000) 
+Security Update for Windows 7 for x64-based Systems (KB3124001) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139852) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3140410) 
+Security Update for Windows 7 for x64-based Systems (KB3140735) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) 
+Security Update for Windows 7 for x64-based Systems (KB3146706) 
+Security Update for Windows 7 for x64-based Systems (KB3146963) 
+Security Update for Windows 7 for x64-based Systems (KB3149090) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3156013) 
+Security Update for Windows 7 for x64-based Systems (KB3156017) 
+Security Update for Windows 7 for x64-based Systems (KB3161561) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3164035) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177186) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3184471) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Internet Explorer 11 for Windows 7 for x64-based Systems (KB4016446) 
+Update for Windows 7 for x64-based Systems (KB2607712) 
+Update for Windows 7 for x64-based Systems (KB2616676) 
+Update for Windows 7 for x64-based Systems (KB2639308) 
+Update for Windows 7 for x64-based Systems (KB2641690) 
+Update for Windows 7 for x64-based Systems (KB2661254) 
+Update for Windows 7 for x64-based Systems (KB2677070) 
+Update for Windows 7 for x64-based Systems (KB2679255) 
+Update for Windows 7 for x64-based Systems (KB2699779) 
+Update for Windows 7 for x64-based Systems (KB2709981) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2732500) 
+Update for Windows 7 for x64-based Systems (KB2749655) 
+Update for Windows 7 for x64-based Systems (KB2756822) 
+Update for Windows 7 for x64-based Systems (KB2779562) 
+Update for Windows 7 for x64-based Systems (KB2786400) 
+Update for Windows 7 for x64-based Systems (KB2794119) 
+Update for Windows 7 for x64-based Systems (KB2829104) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2847077) 
+Update for Windows 7 for x64-based Systems (KB2863058) 
+Update for Windows 7 for x64-based Systems (KB2890882) 
+Update for Windows 7 for x64-based Systems (KB2904266) 
+Update for Windows 7 for x64-based Systems (KB2922717) 
+Update for Windows 7 for x64-based Systems (KB2923398) 
+Update for Windows 7 for x64-based Systems (KB2981580) 
+Update for Windows 7 for x64-based Systems (KB2998527) 
+Update for Windows 7 for x64-based Systems (KB2999226) 
+Update for Windows 7 for x64-based Systems (KB3000988) 
+Update for Windows 7 for x64-based Systems (KB3001554) 
+Update for Windows 7 for x64-based Systems (KB3004394) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3008627) 
+Update for Windows 7 for x64-based Systems (KB3009736) 
+Update for Windows 7 for x64-based Systems (KB3013410) 
+Update for Windows 7 for x64-based Systems (KB3020338) 
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3065979) 
+Update for Windows 7 for x64-based Systems (KB3075249) 
+Update for Windows 7 for x64-based Systems (KB3077715) 
+Update for Windows 7 for x64-based Systems (KB3112148) 
+Update for Windows 7 for x64-based Systems (KB3118401) 
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3148851) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3198591) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+Update for Windows 7 for x64-based Systems (KB4012864) 
+
+---
+
+March, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4012215) 
+Last Modified: 3/12/2017 
+Size: 145.5 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB4012215
+
+This update has been replaced by the following updates:
+April, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4015549) 
+
+This update replaces the following updates: 
+January, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3212646) 
+Security Update for Windows 7 for x64-based Systems (KB3146963) 
+Security Update for Windows 7 for x64-based Systems (KB3161561) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177186) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Internet Explorer 11 for Windows 7 for x64-based Systems (KB3192665) 
+Update for Internet Explorer 11 for Windows 7 for x64-based Systems (KB3199375) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+
+---
+
+No Feb17 due to MS patch gen issue.
+
+---
+
+January, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3212646) 
+Last Modified: 1/11/2017 
+Size: 142.7 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3212646
+
+This update has been replaced by the following updates: 
+March, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB4012215) 
+
+This update replaces the following updates: 
+December, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3207752) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3087039) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3164035) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+
+---
+
+December, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3207752) 
+Last Modified: 12/12/2016 
+Size: 142.7 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3207752
+
+This update has been replaced by the following updates
+January, 2017 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3212646) 
+
+This update replaces the following updates: 
+November, 2016 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3197869) 
+November, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3197868) 
+Security Update for Windows 7 for x64-based Systems (KB2993651) 
+Security Update for Windows 7 for x64-based Systems (KB3109094) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3164035) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Security Update for Windows 7 for x64-based Systems (KB3185911) 
+Update for Windows 7 for x64-based Systems (KB2829104) 
+Update for Windows 7 for x64-based Systems (KB3139923) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+Update for Windows 7 for x64-based Systems (KB3203884) 
+
+---
+
+November, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3197868) 
+Last Modified: 12/12/2016 
+Size: 133.9 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3197868
+
+This update has been replaced by the following updates: 
+December, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3207752) 
+
+This update replaces the following updates: 
+Cumulative Security Update for Internet Explorer 11 for Windows 7 for x64-based Systems (KB3185319) 
+October, 2016 Preview of Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3192403) 
+October, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3185330) 
+Security Update for Windows 7 for x64-based Systems (KB2511455) 
+Security Update for Windows 7 for x64-based Systems (KB2544893) 
+Security Update for Windows 7 for x64-based Systems (KB2570947) 
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3033889) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3087039) 
+Security Update for Windows 7 for x64-based Systems (KB3124280) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139852) 
+Security Update for Windows 7 for x64-based Systems (KB3139940) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3164033) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Security Update for Windows 7 for x64-based Systems (KB3184122) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3153731) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3162835) 
+Update for Windows 7 for x64-based Systems (KB3177723) 
+Update for Windows 7 for x64-based Systems (KB3182203) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+Update for Windows 7 for x64-based Systems (KB3192321) 
+Update for Windows 7 for x64-based Systems (KB3200006) 
+
+---
+
+October, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3185330) 
+Last Modified: 10/17/2016 
+Size: 119.4 MB 
+https://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB3185330
+
+This update has been replaced by the following updates: 
+November, 2016 Security Monthly Quality Rollup for Windows 7 for x64-based Systems (KB3197868) 
+
+This update replaces the following updates: 
+Cumulative Security Update for Internet Explorer 11 for Windows 7 for x64-based Systems (KB3185319) 
+Security Update for Windows 7 for x64-based Systems (KB2544893) 
+Security Update for Windows 7 for x64-based Systems (KB2868626) 
+Security Update for Windows 7 for x64-based Systems (KB3005607) 
+Security Update for Windows 7 for x64-based Systems (KB3033929) 
+Security Update for Windows 7 for x64-based Systems (KB3076949) 
+Security Update for Windows 7 for x64-based Systems (KB3124280) 
+Security Update for Windows 7 for x64-based Systems (KB3138962) 
+Security Update for Windows 7 for x64-based Systems (KB3139852) 
+Security Update for Windows 7 for x64-based Systems (KB3140410) 
+Security Update for Windows 7 for x64-based Systems (KB3145739) 
+Security Update for Windows 7 for x64-based Systems (KB3153171) 
+Security Update for Windows 7 for x64-based Systems (KB3153199) 
+Security Update for Windows 7 for x64-based Systems (KB3161664) 
+Security Update for Windows 7 for x64-based Systems (KB3167679) 
+Security Update for Windows 7 for x64-based Systems (KB3168965) 
+Security Update for Windows 7 for x64-based Systems (KB3175024) 
+Security Update for Windows 7 for x64-based Systems (KB3177725) 
+Security Update for Windows 7 for x64-based Systems (KB3178034) 
+Update for Windows 7 for x64-based Systems (KB2718704) 
+Update for Windows 7 for x64-based Systems (KB2846960) 
+Update for Windows 7 for x64-based Systems (KB3006625) 
+Update for Windows 7 for x64-based Systems (KB3040272) 
+Update for Windows 7 for x64-based Systems (KB3156417) 
+Update for Windows 7 for x64-based Systems (KB3185278) 
+Update for Windows 7 for x64-based Systems (KB3187022) 
+
+----------
+
+09/13/2016  Windows 7 for x64-based Systems Service Pack 1    3175024   Security Update      
+09/13/2016  Windows 7 for x64-based Systems Service Pack 1    3177186   Security Update      
+09/13/2016  Windows 7 for x64-based Systems Service Pack 1    3184122   Security Update      
+09/13/2016  Windows 7 for x64-based Systems Service Pack 1    3184471   Security Update      
+09/13/2016  Windows 7 for x64-based Systems Service Pack 1    3185911   Security Update      
+
+08/09/2016  Windows 7 for x64-based Systems Service Pack 1    3177725   Security Update      
+08/09/2016  Windows 7 for x64-based Systems Service Pack 1    3178034   Security Update      
+  
+07/12/2016  Windows 7 for x64-based Systems Service Pack 1    3168965   Security Update      
+07/12/2016  Windows 7 for x64-based Systems Service Pack 1    3170455   Security Update      
+
+06/16/2016  Windows 7 for x64-based Systems Service Pack 1    3161958   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3159398   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3161561   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3161664   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3161949   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3161949   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3164033   Security Update      
+06/14/2016  Windows 7 for x64-based Systems Service Pack 1    3164035   Security Update      
+
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3150220   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3153171   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3153199   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3155178   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3156013   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3156016   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3156017   Security Update      
+05/10/2016  Windows 7 for x64-based Systems Service Pack 1    3156019   Security Update      
+
+04/12/2016  Windows 7 for x64-based Systems Service Pack 1    3145739   Security Update      
+04/12/2016  Windows 7 for x64-based Systems Service Pack 1    3146706   Security Update      
+04/12/2016  Windows 7 for x64-based Systems Service Pack 1    3149090   Security Update  
+
+Nothing before Apr 16

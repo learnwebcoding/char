@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Computer Help And Resources Site Map (XML Version Per Sitemaps.org)-->
+<!-- Last Reviewed/Updated: 25 Apr 2016 | Status: To Be Continued -->
+
+<!-- /public_html/ Home -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/index.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/sitemap.xml</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/sitemap.html</loc>
+	</url>
+
+<!-- /public_html/ Home | Header Links -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/whats_new.html</loc>
+	</url>
+
+<!-- /public_html/other/ Home | Computer Help | Hardware -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/help/builders_guide_desktop_components.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/intel_desktop_chipset_windows_driver_support.html</loc>
+	</url>
+
+<!-- /public_html/other/ Home | Computer Help | Windows -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/help/windows_system_requirements.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/windows_versions_software_bundled.html</loc>
+	</url>
+<!--
+	<url>
+		<loc>http://char.learnwebcoding.com/other/windows_processes_default.html</loc>
+	</url>
+-->
+	<url>
+		<loc>http://char.learnwebcoding.com/help/windows_secure_installation.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/windows_notification_area_network_icon.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/windows_network_activity_networx.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/w2kxp_setup_disks.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/wxp_changing_default_gui.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/w2kxp_show_hidden_files_folders_file_extensions.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/help/w9xme_startup_disk.html</loc>
+	</url>
+
+<!-- /public_html/other/ Home | Computer Help | Internet Explorer -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/help/ie_favorites_organize.html</loc>
+	</url>
+
+<!-- /public_html/other/ Home | Computer Help | Outlook Express/Windows Mail -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/help/olexp_wmail_disable_preview_pane.html</loc>
+	</url>
+
+<!-- /public_html/other/ Home | Computer Help | Misc -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/help/rescue_disk_comparison.html</loc>
+	</url>
+
+<!-- /public_html/resources/ Home | Computer Resources -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/network_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/security_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/internet_freedom_privacy_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/firewall_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/antimalware_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/hardware_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/case_power_supply_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/mobo_bios_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/processor_heatsink_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/memory_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/monitor_gpu_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/hard_drive_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/cd_dvd_bd_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/linux_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/dos_windows_command_line_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/windows_resources.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/miscellaneous_resources.html</loc>
+	</url>
+
+<!-- /public_html/resources/ Home | Useful Links -->
+
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/free_download_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/microsoft_com_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/saved_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/free_system_utility_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/free_alternative_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/tech_news_portal_web_site_links.html</loc>
+	</url>
+	<url>
+		<loc>http://char.learnwebcoding.com/resources/comparison_shopping_web_site_links.html</loc>
+	</url>
+
+</urlset>

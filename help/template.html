@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web Page Template For CHAR</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="Web page, template, Computer Help And Resources, cap words as if used in sentence" />
+<meta name="Description" content="Web page template for Computer Help And Resources." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>Web Page Template For CHAR</h1>
+
+<!-- for form elements: type size maxlength value name id data-xyz onclick class -->
+<!-- required works only if submit button is nested in form. -->
+
+<!-- Next two sections (Page Version and For) not applicable for "resources" nor "misc" pages. -->
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">Web Browser Support: Internet Explorer 8.0+ | Firefox 1.5+ | SeaMonkey 1.0+ | Safari 3.1+ | Chrome 2.0+ | Opera 9.5+</p>
+
+<!-- web_browser_user_agent_values.html is only page where all Web browsers are listed as "for Windows" -->
+<!-- <p class="for">Web Browser Support: Windows 95 | Windows 98 | Windows ME | Windows 2000 Professional | Windows XP (32) | Windows Vista (32/64) | Windows 7 (32/64) | Windows 8 (32/64) | Windows 8.1 (32/64) | Linux (32/64) | Internet Explorer 5.0+ for Windows | Firefox 0.8+ for Windows | SeaMonkey 1.0+ for Windows | Safari 3.1+ for Windows | Chrome 2.0+ for Windows | Opera 5.0+ for Windows | Flock 1.0+ for Windows | Netscape 6.0+ for Windows | Mozilla 0.6+ for Windows | Netscape Navigator 4.0+ for Windows | Internet Explorer for Windows 98 | Internet Explorer for Windows ME | Internet Explorer for Windows 2000 Professional | Internet Explorer for Windows XP (32) | Internet Explorer for Windows Vista (32/64) | Internet Explorer for Windows 7 (32/64) | Internet Explorer for Windows 8 (32/64) | Internet Explorer for Windows 8.1 (32/64)</p> -->
+
+<p class="lastUpdated">Last Reviewed/Updated: 06 Sep 2014 | Published: 08 Jan 2014 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Abbreviations</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">TOC And Page Sections</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">TOC HTML</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">TOC CSS</a></span></li>
+			<li><span class="tocSubsectionTitle">2.3.&nbsp;&nbsp;<a href="#toc2_3" class="linkToc">TOC Example</a></span></li>
+			<li><span class="tocSubsectionTitle">2.4.&nbsp;&nbsp;<a href="#toc2_4" class="linkToc">Page Sections HTML</a></span></li>
+			<li><span class="tocSubsectionTitle">2.5.&nbsp;&nbsp;<a href="#toc2_5" class="linkToc">Page Sections CSS</a></span></li>
+			<li><span class="tocSubsectionTitle">2.6.&nbsp;&nbsp;<a href="#toc2_6" class="linkToc">Page Sections Example</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Page Section Template For Copying</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Subsection Title</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">3.1.1.&nbsp;&nbsp;<a href="#toc3_1_1" class="linkToc">SubSubsection Title</a></span></li>
+					<li><span class="tocSubSubsectionTitle">3.1.2.&nbsp;&nbsp;<a href="#toc3_1_2" class="linkToc">SubSubsection Title</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Subsection Title</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Paragraphs</a></span></li>
+	<li><span class="tocSectionTitle">5.&nbsp;&nbsp;<a href="#toc5" class="linkToc">Lists</a></span></li>
+	<li><span class="tocSectionTitle">6.&nbsp;&nbsp;<a href="#toc6" class="linkToc">Lists In Lists</a></span></li>
+	<li><span class="tocSectionTitle">7.&nbsp;&nbsp;<a href="#toc7" class="linkToc">Notes</a></span></li>
+	<li><span class="tocSectionTitle">8.&nbsp;&nbsp;<a href="#toc8" class="linkToc">Lists In Notes</a></span></li>
+	<li><span class="tocSectionTitle">9.&nbsp;&nbsp;<a href="#toc9" class="linkToc">Notes In Lists</a></span></li>
+	<li><span class="tocSectionTitle">10.&nbsp;&nbsp;<a href="#toc10" class="linkToc">Tables</a></span></li>
+	<li><span class="tocSectionTitle">11.&nbsp;&nbsp;<a href="#toc11" class="linkToc">Lists In Tables</a></span></li>
+	<li><span class="tocSectionTitle">12.&nbsp;&nbsp;<a href="#toc12" class="linkToc">Hyperlinks</a></span>
+		<ol class="tocSectionTenPlusSubsectionTitles">
+			<li><span class="tocSubsectionTitle">12.1.&nbsp;&nbsp;<a href="#toc12_1" class="linkToc">Table Endnotes</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">13.&nbsp;&nbsp;<a href="#toc13" class="linkToc">Images</a></span>
+		<ol class="tocSectionTenPlusSubsectionTitles">
+			<li><span class="tocSubsectionTitle">13.1.&nbsp;&nbsp;<a href="#toc13_1" class="linkToc">+/- Located In A List And +/- Styled With <code>box-shadow</code></a></span></li>
+			<li><span class="tocSubsectionTitle">13.2.&nbsp;&nbsp;<a href="#toc13_2" class="linkToc">Web Page Version: Default, Print Friendly With Images, And Print Friendly Without Images</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">14.&nbsp;&nbsp;<a href="#toc14" class="linkToc">Text Conventions</a></span>
+		<ol class="tocSectionTenPlusSubsectionTitles">
+			<li><span class="tocSubsectionTitle">14.1.&nbsp;&nbsp;<a href="#toc14_1" class="linkToc">Margin Left One Tick</a></span></li>
+			<li><span class="tocSubsectionTitle">14.2.&nbsp;&nbsp;<a href="#toc14_2" class="linkToc">Code</a></span></li>
+			<li><span class="tocSubsectionTitle">14.3.&nbsp;&nbsp;<a href="#toc14_3" class="linkToc">Quoted Text</a></span></li>
+			<li><span class="tocSubsectionTitle">14.4.&nbsp;&nbsp;<a href="#toc14_4" class="linkToc">Email Address And URI</a></span></li>
+			<li><span class="tocSubsectionTitle">14.5.&nbsp;&nbsp;<a href="#toc14_5" class="linkToc">File System Path, Folder Name, Filename, And DOS Prompt</a></span></li>
+			<li><span class="tocSubsectionTitle">14.6.&nbsp;&nbsp;<a href="#toc14_6" class="linkToc">Object To Click</a></span></li>
+			<li><span class="tocSubsectionTitle">14.7.&nbsp;&nbsp;<a href="#toc14_7" class="linkToc">Keyboard Key To Press And String To Type</a></span></li>
+			<li><span class="tocSubsectionTitle">14.8.&nbsp;&nbsp;<a href="#toc14_8" class="linkToc">Dialog Title And Text</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">15.&nbsp;&nbsp;<a href="#toc15" class="linkToc">Miscellaneous</a></span>
+		<ol class="tocSectionTenPlusSubsectionTitles">
+			<li><span class="tocSubsectionTitle">15.1.&nbsp;&nbsp;<a href="#toc15_1" class="linkToc">Character Named Entities</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">16.&nbsp;&nbsp;<a href="#toc16" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+<!-- Language mirrored in template.html and coding.html. -->
+
+	<p>With the exception of some specialty Web pages, this Web page is the template used for every Web page at Computer Help And Resources (CHAR). This Web page contains an example of almost every HTML structure/CSS presentation construct used throughout CHAR, including table of contents, Web page sectioning, paragraphs, notes, lists, tables, links, lists nested in lists, lists nested in notes, notes nested in lists, lists nested in tables, etc.</p>
+
+	<p>Traditionally, frames were used to display the same content on multiple Web pages. Frames, however, fell out of favor. As a substitute for frames, many authors use external JavaScript (.js) files with the <code>document.write()</code> method. The following .js files display the same content on multiple Web pages at CHAR:</p>
+
+	<table>
+		<tr>
+			<td colspan="2" class="tableTitle">.JS Files For Content At CHAR</td>
+		</tr>
+		<tr>
+			<th>.JS File</th>
+			<th>Content</th>
+		</tr>
+		<tr>
+			<td>header.js</td>
+			<td>Header for all Web pages except some specialty Web pages.</td>
+		</tr>
+		<tr>
+			<td>footer.js</td>
+			<td>Footer for all Web pages except the site home page and some specialty Web pages.</td>
+		</tr>
+	</table>
+
+	<p>With the exception of some specialty Web pages, every Web page at CHAR is valid HTML5 per the <a href="http://validator.w3.org/" class="linkContent">W3C Markup Validation Service (validator.w3.org)</a>. To confirm, click the W3C Valid HTML5 button near the bottom of each validating Web page, including this one.</p>
+
+	<p>With the exception of some specialty Web pages, every Web page at CHAR is styled by a single external style sheet which styles the entire Web page, including header, main body, and footer content. Regardless the source, all styles and style sheets at CHAR are valid CSS3 per the <a href="http://jigsaw.w3.org/css-validator/" class="linkContent">W3C CSS Validation Service (jigsaw.w3.org)</a>. To confirm, click the W3C Valid CSS button near the bottom of each Web page, including this one.</p>
+
+	<p>With the exception of some specialty Web pages, every Web page at CHAR includes the print friendly option. For the Web pages with the print friendly option, there are three Web page versions; 1.) Default, 2.) Print Friendly With Images, and 3.) Print Friendly Without Images. For all three Web page versions the same .html file is used. The only difference between the versions is the external style sheet that is used. For the Default version, the external style sheet is char.css. For the Print Friendly With Images version, the external style sheet is char_print_with_images.css. And for the Print Friendly Without Images version, the external style sheet is char_print_without_images.css. In each case, the single external style sheet styles the entire Web page, including header, main body, and footer content. Site-wide, it is much easier to have one .html file and three .css files representing each Web page version than it is to have three .html files representing each Web page version and one .css file. For example, if a Web site had 100 Web pages, the former would entail 103 Web documents (100 .html files + 3 .css files), while the later would entail 303 Web documents ((3 x 100) .html files + 3 .css files). The following are the external style sheets for the Web pages with the print friendly option at CHAR.</p>
+
+	<table>
+		<tr>
+			<td colspan="2" class="tableTitle">External Style Sheets For Web Pages With Print Friendly Option At CHAR</td>
+		</tr>
+		<tr>
+			<th>Web Page Version</th>
+			<th>External Style Sheet</th>
+		</tr>
+		<tr>
+			<td>Default</td>
+			<td>char.css</td>
+		</tr>
+		<tr>
+			<td>Print Friendly With Images</td>
+			<td>char_print_with_images.css</td>
+		</tr>
+		<tr>
+			<td>Print Friendly Without Images</td>
+			<td>char_print_without_images.css</td>
+		</tr>
+	</table>
+
+	<p>The abbreviations subsection is always placed as the last item in Section 1, including if the abbreviations are used earlier in Section 1.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Abbreviations</p>
+
+	<p>From JavaScript Property And Method Reference:</p>
+
+	<ul>
+		<li>IE = Internet Explorer.</li>
+		<li>FF = Firefox.</li>
+		<li>SM = SeaMonkey.</li>
+		<li>SF = Safari.</li>
+		<li>CH = Chrome.</li>
+		<li>OP = Opera.</li>
+		<li>NA = Not applicable.</li>
+	</ul>
+
+	<p>From Versions Of Internet Explorer Bundled With And Supported By Windows 98/ME/2000/XP/Vista/7/8/8.1:</p>
+
+	<ul>
+		<li>IE = Internet Explorer.</li>
+		<li>Orig = Original Release = operating system without a Service Pack/Update.</li>
+		<li>SP# = Service Pack #.</li>
+		<li>98 = Windows 98 = Windows 98 Second Edition.</li>
+		<li>ME = Windows ME = Windows Millennium Edition.</li>
+		<li>2000 Pro = Windows 2000 Pro = Windows 2000 Professional.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;TOC And Page Sections</p>
+
+<div class="section">
+
+	<p>Table of contents (TOC) and page sections mirror each other with respect to content, markup, and styles. For example, TOC section title corresponds to page section section title in that both are styled <code>{ font-size: 1.17em; font-weight: bold; }</code>.</p>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;TOC HTML</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;ol class=&quot;toc&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSectionTitle&quot;&gt;98.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc98&quot; class=&quot;linkToc&quot;&gt;TOC Section Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol class=&quot;tocSectionTenPlusSubsectionTitles&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSubsectionTitle&quot;&gt;98.1.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc98_1&quot; class=&quot;linkToc&quot;&gt;TOC Subsection Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol class=&quot;tocSubSubsectionTitles&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSubSubsectionTitle&quot;&gt;98.1.1.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc98_1_1&quot; class=&quot;linkToc&quot;&gt;TOC SubSubsection Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSubSubsectionTitle&quot;&gt;98.1.2.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc98_1_2&quot; class=&quot;linkToc&quot;&gt;TOC SubSubsection Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSubsectionTitle&quot;&gt;98.2.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc98_2&quot; class=&quot;linkToc&quot;&gt;TOC Subsection Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;span class=&quot;tocSectionTitle&quot;&gt;99.&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#toc99&quot; class=&quot;linkToc&quot;&gt;TOC Section Title First Letter Each Word Cap&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;<br />
+		&lt;/ol&gt;
+		</code></p>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;TOC CSS</p>
+
+		<p class="marginLeftOneTick"><code>
+		.toc, .tocSectionOneThruNineSubsectionTitles, .tocSectionTenPlusSubsectionTitles, .tocSubSubsectionTitles { list-style-type: none; margin: 0px; padding: 0px; } /* Assigned to ol. No vertical spacing for ol in TOC. */<br />
+		.toc { margin-bottom: 15px; }<br />
+		.tocSectionTitle { font-size: 1.17em; font-weight: bold; }<br />
+		.tocSectionOneThruNineSubsectionTitles { padding-left: 21px; }<br />
+		.tocSectionTenPlusSubsectionTitles { padding-left: 29px; }<br />
+		.tocSubsectionTitle { font-weight: bold; }<br />
+		.tocSubSubsectionTitles, .tocSubSubsectionTitle {} /* Deliberate. */
+		</code></p>
+
+	<p class="subsectionTitle"><a id="toc2_3"></a>2.3.&nbsp;&nbsp;TOC Example</p>
+
+</div>
+
+	<ol class="toc">
+		<li><span class="tocSectionTitle">98.&nbsp;&nbsp;<a href="#toc98" class="linkToc">TOC Section Title First Letter Each Word Cap</a></span>
+			<ol class="tocSectionTenPlusSubsectionTitles">
+				<li><span class="tocSubsectionTitle">98.1.&nbsp;&nbsp;<a href="#toc98_1" class="linkToc">TOC Subsection Title First Letter Each Word Cap</a></span>
+					<ol class="tocSubSubsectionTitles">
+						<li><span class="tocSubSubsectionTitle">98.1.1.&nbsp;&nbsp;<a href="#toc98_1_1" class="linkToc">TOC SubSubsection Title First Letter Each Word Cap</a></span></li>
+						<li><span class="tocSubSubsectionTitle">98.1.2.&nbsp;&nbsp;<a href="#toc98_1_2" class="linkToc">TOC SubSubsection Title First Letter Each Word Cap</a></span></li>
+					</ol>
+				</li>
+				<li><span class="tocSubsectionTitle">98.2.&nbsp;&nbsp;<a href="#toc98_2" class="linkToc">TOC Subsection Title First Letter Each Word Cap</a></span></li>
+			</ol>
+		</li>
+		<li><span class="tocSectionTitle">99.&nbsp;&nbsp;<a href="#toc99" class="linkToc">TOC Section Title First Letter Each Word Cap</a></span></li>
+	</ol>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc2_4"></a>2.4.&nbsp;&nbsp;Page Sections HTML</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;p class=&quot;sectionTitle&quot;&gt;&lt;a id=&quot;toc98&quot;&gt;&lt;/a&gt;98.&amp;nbsp;&amp;nbsp;TOC Section Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+
+		&lt;div class=&quot;section&quot;&gt;<br /><br />
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;subsectionTitle&quot;&gt;&lt;a id=&quot;toc98_1&quot;&gt;&lt;/a&gt;98.1.&amp;nbsp;&amp;nbsp;TOC Subsection Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;subSubsectionTitle&quot;&gt;&lt;a id=&quot;toc98_1_1&quot;&gt;&lt;/a&gt;98.1.1.&amp;nbsp;&amp;nbsp;TOC SubSubsection Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;subSubsectionTitle&quot;&gt;&lt;a id=&quot;toc98_1_2&quot;&gt;&lt;/a&gt;98.1.2.&amp;nbsp;&amp;nbsp;TOC SubSubsection Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;subsectionTitle&quot;&gt;&lt;a id=&quot;toc98_2&quot;&gt;&lt;/a&gt;98.2.&amp;nbsp;&amp;nbsp;TOC Subsection Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+
+		&lt;/div&gt;<br /><br />
+
+		&lt;p class=&quot;sectionTitle&quot;&gt;&lt;a id=&quot;toc99&quot;&gt;&lt;/a&gt;99.&amp;nbsp;&amp;nbsp;TOC Section Title First Letter Each Word Cap&lt;/p&gt;<br /><br />
+		</code></p>
+
+	<p class="subsectionTitle"><a id="toc2_5"></a>2.5.&nbsp;&nbsp;Page Sections CSS</p>
+
+		<p class="marginLeftOneTick"><code>
+		.sectionTitle { font-size: 1.17em; font-weight: bold; margin-bottom: 15px; }<br />
+		.section { margin-left: 20px; }<br />
+		.subsectionTitle { font-weight: bold; }<br />
+		.subSubsectionTitle {} /* Deliberate. */<br />
+		</code></p>
+
+	<p class="subsectionTitle"><a id="toc2_6"></a>2.6.&nbsp;&nbsp;Page Sections Example</p>
+
+</div>
+
+<p class="sectionTitle"><a id="toc98"></a>98.&nbsp;&nbsp;TOC Section Title First Letter Each Word Cap</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc98_1"></a>98.1.&nbsp;&nbsp;TOC Subsection Title First Letter Each Word Cap</p>
+
+	<p class="subSubsectionTitle"><a id="toc98_1_1"></a>98.1.1.&nbsp;&nbsp;TOC SubSubsection Title First Letter Each Word Cap</p>
+
+	<p class="subSubsectionTitle"><a id="toc98_1_2"></a>98.1.2.&nbsp;&nbsp;TOC SubSubsection Title First Letter Each Word Cap</p>
+
+	<p class="subsectionTitle"><a id="toc98_2"></a>98.2.&nbsp;&nbsp;TOC Subsection Title First Letter Each Word Cap</p>
+
+</div>
+
+<p class="sectionTitle"><a id="toc99"></a>99.&nbsp;&nbsp;TOC Section Title First Letter Each Word Cap</p>
+
+<div class="section">
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Page Section Template For Copying</p>
+
+<div class="section">
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Subsection Title</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<p class="subSubsectionTitle"><a id="toc3_1_1"></a>3.1.1.&nbsp;&nbsp;SubSubsection Title</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<p class="subSubsectionTitle"><a id="toc3_1_2"></a>3.1.2.&nbsp;&nbsp;SubSubsection Title</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Subsection Title</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Paragraphs</p>
+
+<div class="section">
+
+	<p>Paragraphs use the <code>p</code> element. The <code>p</code> element is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		p { margin: 0px 0px 15px 0px; }
+		</code></p>
+
+	<p>For paragraphs, simply use the <code>p</code> element not classed.</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc5"></a>5.&nbsp;&nbsp;Lists</p>
+
+<div class="section">
+
+	<p>Lists use the <code>ol</code>, <code>ul</code>, and <code>li</code> elements. The <code>ol</code> and <code>ul</code> elements are assigned style. The <code>li</code> element is not assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		ol, ul { margin: 0px 0px 15px 0px; }<br />
+		ul { list-style-type: disc; } /* Forces use of list item marker disc throughout deeply nested unordered lists. */
+		</code></p>
+
+	<p>For lists, simply use the <code>ol</code>, <code>ul</code>, and <code>li</code> elements not classed.</p>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<p>Standalone ordered list.</p>
+
+	<ol>
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 5.1).</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Standalone unordered list.</p>
+
+	<ul>
+		<li>List item of unordered list with the <code>ul</code> and <code>li</code> elements not classed (Id: 5.2).</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph (with the <code>p</code> element not classed) as introductory text ending with period (Id: 5.3).</p>
+
+	<ol>
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph (with the <code>p</code> element not classed) as introductory text ending with semicolon (Id: 5.4):</p>
+
+	<ol>
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph (with the <code>p</code> element not classed) as introductory text ending with period (Id: 5.5).</p>
+
+	<ul>
+		<li>List item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph (with the <code>p</code> element not classed) as introductory text ending with semicolon (Id: 5.6):</p>
+
+	<ul>
+		<li>list item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+		<li>for each list item, if completing a sentence already started, first letter first word not cap and end with period. Otherwise, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc6"></a>6.&nbsp;&nbsp;Lists In Lists</p>
+
+<div class="section">
+
+	<p>The <code>ol ol</code>, <code>ol ul</code>, <code>ul ol</code>, and <code>ul ul</code> descendant selectors are assigned style. The <code>li</code> element is not assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		ol ol, ol ul, ul ol, ul ul { margin: 8px 0px 8px 0px; } /* Assigns style to all possible list nesting combinations. */
+		</code></p>
+
+	<p>For lists in lists, simply use the <code>ol</code>, <code>ul</code>, and <code>li</code> elements not classed.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">The only time the <code>ol</code> and <code>ul</code> elements are classed is when they appear in a note or table without introductory text. The <code>li</code> element is never classed.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Examples might not be all inclusive. For combinations not shown, follow established patterns including the following:</p>
+
+	<ul>
+		<li>To convert a list from ordered to unordered, or vice versa, simply change <code>ol</code> to <code>ul</code>.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with semicolon (Id: 6.2):
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 6.3).
+			<ul>
+				<li>List item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ul>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with semicolon (Id: 6.4):
+			<ul>
+				<li>list item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+				<li>for each list item, if completing a sentence already started, first letter first word not cap and end with period. Otherwise, first letter first word Cap and end with period.</li>
+			</ul>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>For further nesting, simply follow established pattern. For example:</p>
+
+	<ol>
+		<li>List item of ordered list (Id: 6.5).
+			<ol>
+				<li>List item of ordered list.
+					<ol>
+						<li>List item of ordered list.
+							<ol>
+								<li>List item of ordered list.</li>
+								<li>List item of ordered list.</li>
+							</ol>
+						</li>
+						<li>List item of ordered list.</li>
+					</ol>
+				</li>
+				<li>List item of ordered list.</li>
+			</ol>
+		</li>
+		<li>List item of ordered list.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ul>
+		<li>List item of unordered list (with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 6.6).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ul>
+		<li>List item of unordered list (with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with semicolon (Id: 6.7):
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ul>
+		<li>List item of unordered list (with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 6.8).
+			<ul>
+				<li>List item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ul>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ul>
+		<li>List item of unordered list (with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with semicolon (Id: 6.9):
+			<ul>
+				<li>list item of unordered list with the <code>ul</code> and <code>li</code> elements not classed.</li>
+				<li>for each list item, if completing a sentence already started, first letter first word not cap and end with period. Otherwise, first letter first word Cap and end with period.</li>
+			</ul>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ul>
+
+	<p>For further nesting, simply follow established pattern. For example:</p>
+
+	<ul>
+		<li>List item of unordered list (Id: 6.10).
+			<ul>
+				<li>List item of unordered list.
+					<ul>
+						<li>List item of unordered list.
+							<ul>
+								<li>List item of unordered list.</li>
+								<li>List item of unordered list.</li>
+							</ul>
+						</li>
+						<li>List item of unordered list.</li>
+					</ul>
+				</li>
+				<li>List item of unordered list.</li>
+			</ul>
+		</li>
+		<li>List item of unordered list.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc7"></a>7.&nbsp;&nbsp;Notes</p>
+
+<div class="section">
+
+	<p>Notes are for text that should be separated from the normal flow of text. There are two note types; 1.) normal notes, and 2.) important notes.</p>
+
+	<p>Notes (normal and important) consist of:</p>
+
+	<ol>
+		<li>A container: <code>&lt;div class=&quot;note&quot;&gt;&lt;/div&gt;</code>.</li>
+		<li>A marker that is floated left in the container. Currently, the marker is simply styled text:
+			<ul>
+				<li>Marker for normal notes: <code>&lt;div class=&quot;noteMarker noteMarkerNormal&quot;&gt;i&lt;/div&gt;</code>.</li>
+				<li>Marker for important notes: <code>&lt;div class=&quot;noteMarker noteMarkerImportant&quot;&gt;!&lt;/div&gt;</code>.</li>
+			</ul>
+		<li>Note content that is floated left in the container after the marker: <code>&lt;div class=&quot;noteContent&quot;&gt;Note content here.&lt;/div&gt;</code>.</li>
+		<li>Clear floating: <code>&lt;div class=&quot;clearBoth&quot;&gt;&lt;/div&gt;</code>.</li>
+	</ol>
+
+	<p>A normal note:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;div class=&quot;note&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;noteMarker noteMarkerNormal&quot;&gt;i&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;noteContent&quot;&gt;Normal note content.&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;clearBoth&quot;&gt;&lt;/div&gt;<br />
+		&lt;/div&gt;
+		</code></p>
+
+	<p>An important note:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;div class=&quot;note&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;noteMarker noteMarkerImportant&quot;&gt;!&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;noteContent&quot;&gt;Important note content.&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;clearBoth&quot;&gt;&lt;/div&gt;<br />
+		&lt;/div&gt;
+		</code></p>
+
+	<p>Note styles:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.note { margin: 0px 0px 18px 2px; }<br />
+		.noteMarker { float: left; width: 22px; font-family: georgia, "times new roman", serif; font-size: 1.67em; font-weight: bold; font-style: italic; text-align: left; padding-top: 2px; } /* Requires simultaneous use of either .noteMarkerNormal or .noteMarkerImportant. */<br />
+		.noteMarkerImportant { color: #882222; }<br />
+		.noteMarkerNormal { color: #222288; }<br />
+		.noteContent { float: left; width: 75%; font-size: 0.92em; background-color: #f7f7f7; border: 1px solid #aaaaaa; border-radius: 6px; box-shadow: 0px 1px 6px 0px #cccccc; padding: 6px; }<br />
+		.clearBoth { clear: both; }
+		</code></p>
+
+	<p>To convert a note from normal to important, or vice versa:</p>
+
+	<ol>
+		<li>Change the marker text from <code>i</code> to <code>!</code>.</li>
+		<li>Change the marker class from <code>noteMarkerNormal</code> to <code>noteMarkerImportant</code>.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Normal note content (Id: 7.1).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">Important note content. (Id: 7.2).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">First paragraph of normal note.<br /><br />
+			Second paragraph of same note topic. (Id: 7.3).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">First paragraph of important note.<br /><br />
+			Second paragraph of same note topic. (Id: 7.4).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For xyz, see <a href="" class="linkContent">hyperlink to any Web page other than this one (domain.com)</a> and <a href="" class="linkContent">hyperlink within this Web page (above/below)</a> (Id: 7.5).<br /><br />
+			For links, include either (domain.com) for links to any Web page other than the current Web page, or include (above/below) for links within the current Web page.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For information on xyz, see <a href="" class="linkContent">hyperlink to any Web page other than this one (domain.com)</a> and <a href="" class="linkContent">hyperlink within this Web page (above/below)</a> (Id: 7.6).<br /><br />
+			For when the topic has not been broached, or has been broached only indirectly.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information, see <a href="" class="linkContent">hyperlink to any Web page other than this one (domain.com)</a> and <a href="" class="linkContent">hyperlink within this Web page (above/below)</a> (Id: 7.7).<br /><br />
+			For when it is clear on what topic the additional information refers.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information on xyz, see <a href="" class="linkContent">hyperlink to any Web page other than this one (domain.com)</a> and <a href="" class="linkContent">hyperlink within this Web page (above/below)</a> (Id: 7.8).<br /><br />
+			For when it might not be clear on what topic the additional information refers.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Note 1 (Id: 7.9).</li>
+					<li>Note 2 on topic related/unrelated to note 1.</li>
+					<li>Note 3 on topic related/unrelated to note 1 and/or note 2.</li>
+					<li>For notes on related/unrelated topics, use single note with each individual note as a list item of an unordered list.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The only time to use separate consecutive notes is if one note is a normal note and the other note is an important note (Id: 7.10).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">The only time to use separate consecutive notes is if one note is a normal note and the other note is an important note (Id: 7.11).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Use an ordered list when the list items describe a step-wise process (Id: 7.12).
+				<ol>
+					<li>First step of a step-wise process.</li>
+					<li>Second step of a step-wise process.</li>
+					<li>Third step of a step-wise process.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Use an unordered list when the list items do not describe a step-wise process (Id: 7.13).
+				<ul>
+					<li>Some item not of a step-wise process.</li>
+					<li>Some item not of a step-wise process.</li>
+					<li>Some item not of a step-wise process.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">An Office security measure initially released for Office 2010 that was subsequently back-ported to Word/Excel/PowerPoint Viewers and Office 2003/2007. For additional information, including installation requirements, see <a href="" class="linkContent">Microsoft Security Advisory: Microsoft Office File Validation For Office 2003, 2007 Office, and Office 2010: April 12, 2011 (2501584) (support.microsoft.com)</a> (Id: 7.14).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The Firefox 3.0 user-agent string value is (Id: 7.15):
+				<ul>
+					<li>similar to the Firefox 3.0 Release Candidate 1 user-agent string value.</li>
+					<li>identical to the Firefox 3.0 Release Candidate 2 - 3 user-agent string values.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Further discussion of the XYZ is beyond the scope of this page. For information on how to do this and how to do that, see the XYZ documentation.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc8"></a>8.&nbsp;&nbsp;Lists In Notes</p>
+
+<div class="section">
+
+	<p>Procedure:</p>
+
+	<ol>
+		<li>Create list per the above. The amount of nesting does not matter.</li>
+		<li>Create note per the above. However, leave the note content section empty where the list goes.</li>
+		<li>Insert the list +/- any introductory text into the note's empty note content section:
+			<ul>
+				<li>If the list does not have introductory text, class the list's outermost <code>ol/ul</code> element <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code>.</li>
+				<li>If the list has introductory text, place the introductory text in the note content section above/before the list.</li>
+			</ul>
+		</li>
+	</ol>
+
+	<p>The <code>olUlNestedInNotePaddingReduced</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.olUlNestedInNotePaddingReduced { padding-left: 20px; }
+		</code></p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">The only time the <code>ol</code> and <code>ul</code> elements are classed is when they appear in a note or table without introductory text. The <code>li</code> element is never classed.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Examples might not be all inclusive. For combinations not shown, follow established patterns including the following:</p>
+
+	<ul>
+		<li>To convert a note from normal to important note, or vice versa:
+			<ol>
+				<li>Change the marker text from <code>i</code> to <code>!</code>.</li>
+				<li>Change the marker class from <code>noteMarkerNormal</code> to <code>noteMarkerImportant</code>.</li>
+			</ol>
+		</li>
+		<li>To convert a list from ordered to unordered, or vice versa, simply change <code>ol</code> to <code>ul</code>.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.1 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ol class="olUlNestedInNotePaddingReduced">
+					<li>List item of ordered list in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed (Id: 8.1 - 5.1/7.1).</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.2 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>List item of unordered list in note without introductory text and therefore with the <code>ul</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed (Id: 8.2 - 5.2/7.1).</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.3 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.3 - 5.3/7.1).
+				<ol>
+					<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.4 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with semicolon (Id: 8.4 - 5.4/7.1):
+				<ol>
+					<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.5 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.5 - 5.5/7.1).
+				<ul>
+					<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 5.6 inserted into note Id: 7.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with semicolon (Id: 8.6 - 5.6/7.1):
+				<ul>
+					<li>list item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+					<li>for each list item, if completing a sentence already started, first letter first word not cap and end with period. Otherwise, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list 6.1 inserted into note Id: 8.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ol class="olUlNestedInNotePaddingReduced">
+					<li>List item of ordered list (in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period (Id: 8.7 - 6.1/8.1).
+						<ol>
+							<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ol>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.3 inserted into note Id: 8.1. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ol class="olUlNestedInNotePaddingReduced">
+					<li>List item of ordered list (in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period (Id: 8.8 - 6.3/8.1).
+						<ul>
+							<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ul>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.6 inserted into note Id: 8.2. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>List item of unordered list (in note without introductory text and therefore with the <code>ul</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period (Id: 8.9 - 6.6/8.2).
+						<ol>
+							<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ol>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.8 inserted into note Id: 8.2. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>List item of unordered list (in note without introductory text and therefore with the <code>ul</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period (Id: 8.10 - 6.8/8.2).
+						<ul>
+							<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ul>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.1 inserted into note Id: 8.3. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.11 - 6.1/8.3).
+				<ol>
+					<li>List item of ordered list (in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period.
+						<ol>
+							<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ol>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.3 inserted into note Id: 8.3. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.12 - 6.3/8.3).
+				<ol>
+					<li>List item of ordered list (in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period.
+						<ul>
+							<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ul>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.6 inserted into note Id: 8.3. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.13 - 6.6/8.3).
+				<ul>
+					<li>List item of unordered list (in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period.
+						<ol>
+							<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ol>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+		<div class="note"><!-- Like list Id: 6.8 inserted into note Id: 8.3. -->
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Introductory text ending with period (Id: 8.14 - 6.8/8.3).
+				<ul>
+					<li>List item of unordered list (in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period.
+						<ul>
+							<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+							<li>For each list item, first letter first word Cap and end with period.</li>
+						</ul>
+					</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc9"></a>9.&nbsp;&nbsp;Notes In Lists</p>
+
+<div class="section">
+
+	<p>Procedure:</p>
+
+	<ol>
+		<li>Create note per the above. The amount of nesting does not matter.</li>
+		<li>Create list per the above. The amount of nesting does not matter.</li>
+		<li>Insert the note into a list item (i.e., <code>&lt;li&gt;List item content.&lt;/li&gt;</code>) after the list item content and before the list item closing <code>&lt;/li&gt;</code> tag.</li>
+	</ol>
+
+	<p>Examples might not be all inclusive. For combinations not shown, follow established patterns including the following:</p>
+
+	<ul>
+		<li>To convert a note from normal to important note, or vice versa:
+			<ol>
+				<li>Change the marker text from <code>i</code> to <code>!</code>.</li>
+				<li>Change the marker class from <code>noteMarkerNormal</code> to <code>noteMarkerImportant</code>.</li>
+			</ol>
+		</li>
+		<li>To convert a list from ordered to unordered, or vice versa, change <code>ol</code> to <code>ul</code>.</li>
+	</ul>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 7.1 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.1 - 7.1/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">Normal note content.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.1 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.2 - 8.1/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">
+					<ol class="olUlNestedInNotePaddingReduced">
+						<li>List item of ordered list in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed.</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ol>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.3 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.3 - 8.3/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">Introductory text ending with period.
+					<ol>
+						<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ol>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.5 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.4 - 8.5/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">Introductory text ending with period.
+					<ul>
+						<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ul>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.7 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.5 - 8.7/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">
+					<ol class="olUlNestedInNotePaddingReduced">
+						<li>List item of ordered list (in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period.
+							<ol>
+								<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ol>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.9 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.6 - 8.9/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">
+					<ul class="olUlNestedInNotePaddingReduced">
+						<li>List item of unordered list (in note without introductory text and therefore with the <code>ul</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period.
+							<ol>
+								<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ul>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.11 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.7 - 8.11/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">Introductory text ending with period.
+					<ol>
+						<li>List item of ordered list (in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period.
+							<ol>
+								<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ol>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.13 inserted into list Id: 5.1. -->
+		<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed (Id: 9.8 - 8.13/5.1).
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">Introductory text ending with period.
+					<ul>
+						<li>List item of unordered list (in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period.
+							<ol>
+								<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</li>
+						<li>For each list item, first letter first word Cap and end with period.</li>
+					</ul>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 7.1 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.9 - 7.1/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">Normal note content.</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.1 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.10 - 8.1/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">
+							<ol class="olUlNestedInNotePaddingReduced">
+								<li>List item of ordered list in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.3 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.11 - 8.3/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">Introductory text ending with period.
+							<ol>
+								<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.5 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.12 - 8.5/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">Introductory text ending with period.
+							<ul>
+								<li>List item of unordered list in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed.</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ul>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.7 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.13 - 8.7/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">
+							<ol class="olUlNestedInNotePaddingReduced">
+								<li>List item of ordered list (in note without introductory text and therefore with the <code>ol</code> element classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period.
+									<ol>
+										<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+										<li>For each list item, first letter first word Cap and end with period.</li>
+									</ol>
+								</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.9 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.14 - 8.9/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">
+							<ul class="olUlNestedInNotePaddingReduced">
+								<li>List item of unordered list (in note without introductory text and therefore with the <code>ul</code> classed <code>class=&quot;olUlNestedInNotePaddingReduced&quot;</code> and the <code>li</code> element not classed) as introductory text ending with period.
+									<ol>
+										<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+										<li>For each list item, first letter first word Cap and end with period.</li>
+									</ol>
+								</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ul>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.11 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.15 - 8.11/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">Introductory text ending with period.
+							<ol>
+								<li>List item of ordered list (in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period.
+									<ol>
+										<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+										<li>For each list item first letter first word Cap and end with period.</li>
+									</ol>
+								</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ol>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+	<ol><!-- Like note Id: 8.13 inserted into list Id: 6.1. -->
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as introductory text ending with period (Id: 9.16 - 8.13/6.1).
+			<ol>
+				<li>List item of ordered list with the <code>ol</code> and <code>li</code> elements not classed.
+					<div class="note">
+						<div class="noteMarker noteMarkerNormal">i</div>
+						<div class="noteContent">Introductory text ending with period.
+							<ul>
+								<li>List item of unordered list (in note with introductory text and therefore with the <code>ul</code> and <code>li</code> elements not classed) as introductory text ending with period.
+									<ol>
+										<li>List item of ordered list in note with introductory text and therefore with the <code>ol</code> and <code>li</code> elements not classed.</li>
+										<li>For each list item, first letter first word Cap and end with period.</li>
+									</ol>
+								</li>
+								<li>For each list item, first letter first word Cap and end with period.</li>
+							</ul>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+				</li>
+				<li>For each list item, first letter first word Cap and end with period.</li>
+			</ol>
+		</li>
+		<li>For each list item, first letter first word Cap and end with period.</li>
+	</ol>
+
+	<p>Paragraph with the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc10"></a>10.&nbsp;&nbsp;Tables</p>
+
+<div class="section">
+
+	<p>Tables use the <code>table</code>, <code>tr</code>, <code>th</code>, and <code>td</code> elements. The <code>table</code>, <code>th</code>, and <code>td</code> elements are assigned style. The <code>tr</code> element is not assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		table { border: 2px solid #333333; border-collapse: collapse; }<br />
+		th { font-weight: bold; background-color: #e2e2e2; color: #000000; border: 2px solid #333333; padding: 3px; }<br />
+		td { text-align: center; border: 2px solid #333333; padding: 3px; }
+		</code></p>
+
+	<p>For tables, simply use the <code>table</code>, <code>tr</code>, <code>th</code>, and <code>td</code> elements not classed.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<table>
+		<tr>
+			<td colspan="3" class="tableTitle">Optional Table Title First Letter Each Word Cap (Id: 10.1)<br />
+			<code>&lt;td class=&quot;tableTitle&quot;&gt;&lt;/td&gt;</code><br />
+			<code class="cellTextAlignLeftTop">.tableTitle { font-weight: bold; background-color: #b9b9b9; color: #000000; }</code></td>
+		</tr>
+		<tr>
+			<th class="width25pct">Table Heading First Letter Each Word Cap (Id: 10.2)</th>
+			<th class="width33pct"><code>&lt;th&gt;&lt;/th&gt;</code></th>
+			<th class="cellTextAlignLeftTop"><code>th { font-weight: bold; background-color: #e2e2e2; color: #000000; border: 2px solid #333333; padding: 3px; }</code></th>
+		</tr>
+		<tr>
+			<td>Cell (Id: 10.3)</td>
+			<td><code>&lt;td&gt;&lt;/td&gt;</code></td>
+			<td class="cellTextAlignLeftTop"><code>td { text-align: center; border: 2px solid #333333; padding: 3px; }</code></td>
+		</tr>
+		<tr>
+			<td>If cell text is a sentence, end with period (Id: 10.4).</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>If cell text is not a sentence, do not end with period (Id: 10.5)</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeft">Cell text align left (Id: 10.6)</td>
+			<td><br /><code>&lt;td class=&quot;cellTextAlignLeft&quot;&gt;&lt;/td&gt;</code><br /><br /></td>
+			<td class="cellTextAlignLeftTop"><code>.cellTextAlignLeft { text-align: left; }</code><br /><br /></td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignRight">Cell text align right (Id: 10.7)</td>
+			<td><br /><code>&lt;td class=&quot;cellTextAlignRight&quot;&gt;&lt;/td&gt;</code><br /><br /></td>
+			<td class="cellTextAlignLeftTop"><code>.cellTextAlignRight { text-align: right; }</code><br /><br /></td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">Cell text align left top (Id: 10.8)</td>
+			<td><br /><code>&lt;td class=&quot;cellTextAlignLeftTop&quot;&gt;&lt;/td&gt;</code><br /><br /></td>
+			<td class="cellTextAlignLeftTop"><code>.cellTextAlignLeftTop { text-align: left; vertical-align: top; }</code><br /><br /></td>
+		</tr>
+		<tr>
+			<td><span class="plusSign">+</span> (plus sign) (Id: 10.9)</td>
+			<td><code>&lt;span class=&quot;plusSign&quot;&gt;+&lt;/span&gt;</code></td>
+			<td class="cellTextAlignLeftTop"><code>.plusSign { font-size: 1.25em; }</code></td>
+		</tr>
+		<tr>
+			<td><span class="minusSign">-</span> (minus sign) (Id: 10.10)</td>
+			<td><code>&lt;span class=&quot;minusSign&quot;&gt;-&lt;/span&gt;</code></td>
+			<td class="cellTextAlignLeftTop"><code>.minusSign { font-size: 1.25em; font-weight: bold; }</code></td>
+		</tr>
+	</table>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc11"></a>11.&nbsp;&nbsp;Lists In Tables</p>
+
+<div class="section">
+
+	<p>Procedure:</p>
+
+	<ol>
+		<li>Create list per the above. The amount of nesting does not matter.</li>
+		<li>Create table per the above. However, leave the cell empty where the list goes and class the empty cell <code>td</code> element <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+		<li>Insert the list +/- any introductory text into the empty cell:
+			<ul>
+				<li>If the list does not have introductory text, class the list's outermost <code>ol/ul</code> element <code>class=&quot;olUlNestedInTablePaddingReduced&quot;</code>.</li>
+				<li>If the list has introductory text, place the introductory text in the cell above/before the list.</li>
+			</ul>
+		</li>
+	</ol>
+
+	<p>The <code>cellTextAlignLeftTop</code> and <code>olUlNestedInTablePaddingReduced</code> class selectors are assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.cellTextAlignLeftTop { text-align: left; vertical-align: top; }<br />
+		.olUlNestedInTablePaddingReduced { padding-left: 20px; }
+		</code></p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerImportant">!</div>
+			<div class="noteContent">The only time the <code>ol</code> and <code>ul</code> elements are classed is when they appear in a note or table without introductory text. The <code>li</code> element is never classed.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p>Examples might not be all inclusive. For combinations not shown, follow established patterns including the following:</p>
+
+	<ul>
+		<li>To convert a note from normal to important note, or vice versa:
+			<ol>
+				<li>Change the marker text from <code>i</code> to <code>!</code>.</li>
+				<li>Change the marker class from <code>noteMarkerNormal</code> to <code>noteMarkerImportant</code>.</li>
+			</ol>
+		</li>
+		<li>To convert a list from ordered to unordered, or vice versa, change <code>ol</code> to <code>ul</code>.</li>
+	</ul>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<table>
+		<tr>
+			<td class="tableTitle">Optional Table Title First Letter Each Word Cap (Id: 11.1)</td>
+		</tr>
+		<tr>
+			<th>Table Heading First Letter Each Word Cap (Id: 11.2)</th>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop"><!-- Like list Id: 5.1 inserted into note Id: 7.1. -->
+				<ol class="olUlNestedInTablePaddingReduced">
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>List item of ordered list in table without introductory text and therefore the <code>ol</code> element classed <code>class=&quot;olUlNestedInTablePaddingReduced&quot;</code> and the <code>li</code> element not classed (Id: 11.3 - 8.1).</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>List item of unordered list in table without introductory text and therefore the <code>ul</code> element classed <code>class=&quot;olUlNestedInTablePaddingReduced&quot;</code> and the <code>li</code> element not classed (Id: 11.4 - 8.2).</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">Introductory text ending with period (Id: 11.5 - 8.3).
+				<ol>
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>List item of ordered list in table with introductory text and therefore the <code>ol</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">Introductory text ending with semicolon (Id: 11.6 - 8.4):
+				<ol>
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>List item of ordered list in table with introductory text and therefore the <code>ol</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">Introductory text ending with period (Id: 11.7 - 8.5).
+				<ul>
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>List item of unordered list with introductory text and therefore the <code>ul</code> and <code>li</code> elements not classed.</li>
+					<li>For each list item, first letter first word Cap and end with period.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">Introductory text ending with semicolon (Id: 11.8 - 8.6):
+				<ul>
+					<li>List item of ordered list in table and therefore the <code>td</code> element classed <code>class=&quot;cellTextAlignLeftTop&quot;</code>.</li>
+					<li>list item of unordered list with introductory text and therefore the <code>ul</code> and <code>li</code> elements not classed.</li>
+					<li>for each list item, if completing a sentence already started, first letter first word not cap and end with period. Otherwise, first letter first word Cap and end with period.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc12"></a>12.&nbsp;&nbsp;Hyperlinks</p>
+
+<div class="section">
+
+	<p>The approach taken for hyperlinks is highly granular. The <code>a</code> element is not assigned style. All hyperlinks are classed.</p>
+
+	<p>Except for the Print Friendly and TOC hyperlinks, there are two primary hyperlink types inside <code>.container</code>:</p>
+
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">The Two Primary Hyperlink Types Inside <code>.container</code> (Except For The Print Friendly And TOC Hyperlinks</td>
+		</tr>
+		<tr>
+			<th class="width13pct">Hyperlink Type</th>
+			<th class="width17pct">Description</th>
+			<th class="width13pct">HTML</th>
+			<th>CSS</th>
+		</tr>
+		<tr>
+			<td>Hyperlinks in content, including in <code>p</code>, <code>li</code>, <code>th</code>, <code>td</code>, etc. elements.</td>
+			<td>Blue text not underline. Visited blue text not underline. Hover black text underline. Focus outline.</td>
+			<td><code>class=<br />
+			"linkContent"</code></td>
+			<td class="cellTextAlignLeftTop"><code>.linkContent { color: #0055aa; text-decoration: none; }<br />
+			.linkContent:hover { color: #333333; text-decoration: underline; }<br />
+			.linkContent:focus { outline: thin dotted invert; }</code></td>
+		</tr>
+		<tr>
+			<td>Hyperlinks as list items in an unordered list of one or more hyperlinks as list items.</td>
+			<td>Black text underline. Visited grey text underline. Hover grey text not underline. Focus outline.</td>
+			<td><code>class=<br />
+			"linkListItem"</code></td>
+			<td class="cellTextAlignLeftTop"><code>.linkListItem  { color: #333333; text-decoration: underline; }<br />
+			.linkListItem:visited { color: #999999 }<br />
+			.linkListItem:hover { color: #999999; text-decoration: none }<br />
+			.linkListItem:focus { outline: thin dotted invert; }</code></td>
+		</tr>
+	</table>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p>This is an example of a <a href="" class="linkContent">hyperlink</a> in <code>p</code> element content. The 
+hyperlink <code>a</code> element classed <code>class=&quot;linkContent&quot;</code> (Id: 12.1.1)</p>
+
+	<ul>
+		<li>This is an example of a <a href="" class="linkContent">hyperlink</a> in <code>li</code> element content. Whether the list is ordered or unordered, and/or the list is in a list or not in a list, and/or the list is in a note or not in a note, and/or the list in a table or not in a table is irrelevant. The hyperlink <code>a</code> element classed <code>class=&quot;linkContent&quot;</code> (Id: 12.1.2).</li>
+		<li>Notice this list is not an unordered list of one or more hyperlinks as list items.</li>
+	</ul>
+
+	<ul>
+		<li><a href="" class="linkListItem">This is an example of a hyperlink as a list item in an unordered list of one or more hyperlinks as list items. The hyperlink <code>a</code> element classed <code>class=&quot;linkListItem&quot;</code> (Id: 12.1.3)</a>.</li>
+		<li><a href="" class="linkListItem">Notice this list is an unordered list of one or more hyperlinks as list items</a>.</li>
+	</ul>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">This is an example of a <a href="" class="linkContent">hyperlink</a> in note content. Whether the note is normal or important, and/or the note is in a list or not in list is irrelevant. The hyperlink <code>a</code> element classed <code>class=&quot;linkContent&quot;</code> (Id: 12.1.4).</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<table>
+		<tr>
+			<td class="tableTitle">Optional Table Title First Letter Each Word Cap</td>
+		</tr>
+		<tr>
+			<th>Table Heading First Letter Each Word Cap</th>
+		</tr>
+		<tr>
+			<td>This is an example of a <a href="" class="linkContent">hyperlink</a> in <code>td</code> element content. Whether the <code>td</code> element is classed or not classed is irrelevant. The hyperlink <code>a</code> element classed <code>class=&quot;linkContent&quot;</code> (Id: 12.1.5).</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>This is an example of a <a href="" class="linkContent">hyperlink</a> in <code>li</code> element content. Whether the list is ordered or unordered, and/or the list is in a list or not in a list, and/or the list is in a note or not in a note, and/or the list is in a table or not in a table is irrelevant. The hyperlink <code>a</code> element classed <code>class=&quot;linkContent&quot;</code> (Id: 12.1.6).</li>
+					<li>Notice this list is not an unordered list of one or more hyperlinks as list items.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li><a href="" class="linkListItem">This is an example of a hyperlink as a list item in an unordered list of one or more hyperlinks as list items. The hyperlink <code>a</code> element classed <code>class=&quot;linkListItem&quot;</code> (Id: 12.1.7)</a>.</li>
+					<li><a href="" class="linkListItem">Notice this list is an unordered list of one or more hyperlinks as list items</a>.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc12_1"></a>12.1.&nbsp;&nbsp;Table Endnotes</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<table>
+		<tr>
+			<td class="tableTitle">Optional Table Title With Endnote <a id="endnote_1_return"></a><a href="#endnote_1" class="linkEndnote">(1)</a> (Id: 12.2)</td>
+		</tr>
+		<tr>
+			<th>Table Heading With Endnote <a id="endnote_2_return"></a><a href="#endnote_2" class="linkEndnote">(2)</a></th>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">If a Web page has only one table with endnotes:
+				<ul>
+					<li>All endnote link origins use syntax:<br />
+			<code>&lt;a id=&quot;endnote_1_return&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#endnote_1&quot; class=&quot;linkEndnote&quot;&gt;(1)&lt;/a&gt;</code>.</li>
+					<li>All endnote link returns use syntax:<br />
+			<code>&lt;a id=&quot;endnote_1&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#endnote_1_return&quot; class=&quot;linkEndnote&quot;&gt;(1)&lt;/a&gt;&amp;nbsp;&amp;nbsp;</code>Endnote 1 description.</li>
+					<li>Cell with endnote <a id="endnote_3_return"></a><a href="#endnote_3" class="linkEndnote">(3)</a>.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="tableEndnote">
+			<a id="endnote_1"></a><a href="#endnote_1_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Endnote 1 description.<br />
+			<a id="endnote_2"></a><a href="#endnote_2_return" class="linkEndnote">(2)</a>&nbsp;&nbsp;Endnote 2 description.<br />
+			<a id="endnote_3"></a><a href="#endnote_3_return" class="linkEndnote">(3)</a>&nbsp;&nbsp;Endnote 3 description.
+			</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td class="tableTitle">Optional Table Title With Endnote <a id="endnote_1_tabletitleasdescriptor_return"></a><a href="#endnote_1_tabletitleasdescriptor" class="linkEndnote">(1)</a> (Id: 12.3)</td>
+		</tr>
+		<tr>
+			<th>Table Heading With Endnote <a id="endnote_2_tabletitleasdescriptor_return"></a><a href="#endnote_2_tabletitleasdescriptor" class="linkEndnote">(2)</a></th>
+		</tr>
+		<tr>
+			<td class="cellTextAlignLeftTop">If a Web page has multiple tables with endnotes:
+				<ul>
+					<li>All endnote link origins use syntax:<br />
+			<code>&lt;a id=&quot;endnote_1_tabletitleasdescriptor_return&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#endnote_1_tabletitleasdescriptor&quot; class=&quot;linkEndnote&quot;&gt;(1)&lt;/a&gt;</code>.</li>
+					<li>All endnote link returns use syntax:<br />
+			<code>&lt;a id=&quot;endnote_1_tabletitleasdescriptor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#endnote_1_tabletitleasdescriptor_return&quot; class=&quot;linkEndnote&quot;&gt;(1)&lt;/a&gt;&amp;nbsp;&amp;nbsp;</code>Endnote 1 description.</li>
+					<li>Cell with endnote <a id="endnote_3_tabletitleasdescriptor_return"></a><a href="#endnote_3_tabletitleasdescriptor" class="linkEndnote">(3)</a>.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="tableEndnote">
+			<a id="endnote_1_tabletitleasdescriptor"></a><a href="#endnote_1_tabletitleasdescriptor_return" class="linkEndnote">(1)</a>&nbsp;&nbsp;Endnote 1 description.<br />
+			<a id="endnote_2_tabletitleasdescriptor"></a><a href="#endnote_2_tabletitleasdescriptor_return" class="linkEndnote">(2)</a>&nbsp;&nbsp;Endnote 2 description.<br />
+			<a id="endnote_3_tabletitleasdescriptor"></a><a href="#endnote_3_tabletitleasdescriptor_return" class="linkEndnote">(3)</a>&nbsp;&nbsp;Endnote 3 description.
+			</td>
+		</tr>
+	</table>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc13"></a>13.&nbsp;&nbsp;Images</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc13_1"></a>13.1.&nbsp;&nbsp;+/- Located In A List And +/- Styled With <code>box-shadow</code></p>
+
+	<p>Images are located in a list or not in a list. Images located in a list (ordered or unordered is irrelevant) are placed in a <code>div</code> element classed <code>class="imgInListItem"</code> and then inserted into a list item (i.e., <code>&lt;li&gt;List item content.&lt;/li&gt;</code>) after optional list item introductory text always end with semicolon and before the list item closing <code>&lt;/li&gt;</code> tag. Images located not in a list are placed in the <code>p</code> element not classed.</p>
+
+	<p>The <code>imgInListItem</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.imgInListItem { margin: 15px 0px 15px 0px; }
+		</code></p>
+
+	<p>Images can also be styled or not styled with the CSS <code>box-shadow</code> property. Images styled with <code>box-shadow</code> have the <code>img</code> element classed <code>class=&quot;img&quot;</code>. Images not styled with <code>box-shadow</code> have the <code>img</code> element not classed.</p>
+
+	<p>The <code>img</code> class selector is assigned the CSS <code>box-shadow</code> property:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.img { box-shadow: 0px 1px 6px 0px #cccccc; }
+		</code></p>
+
+	<p>Therefore, there are four image possibilities: +/- located in a list (ordered or unordered is irrelevant), and +/- styled with <code>box-shadow</code>.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<ol>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as optional introductory text always end with semicolon for image in a list with <code>box-shadow</code> (Id: 13.1.1):
+			<div class="imgInListItem"><img src="../images/HTML5_Logo_48.gif" style="border:0;width:48px;height:48px" alt="Image Description First Letter Each Word Capital" class="img" /></div>
+		</li>
+		<li>List item of ordered list (with the <code>ol</code> and <code>li</code> elements not classed) as optional introductory text always end with semicolon for image in a list without <code>box-shadow</code> (Id: 13.1.2):
+			<div class="imgInListItem"><img src="../images/HTML5_Logo_48.gif" style="border:0;width:48px;height:48px" alt="Image Description First Letter Each Word Capital" /></div>
+		</li>
+	</ol>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p>Introductory text always end with semicolon for image not in a list with <code>box-shadow</code> (Id: 13.1.3):</p>
+
+	<p><img src="../images/HTML5_Logo_48.gif" style="border:0;width:48px;height:48px" alt="Image Description First Letter Each Word Capital" class="img" /></p>
+
+	<p>Introductory text always end with semicolon for image not in a list without <code>box-shadow</code> (Id: 13.1.4):</p>
+
+	<p><img src="../images/HTML5_Logo_48.gif" style="border:0;width:48px;height:48px" alt="Image Description First Letter Each Word Capital" /></p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc13_2"></a>13.2.&nbsp;&nbsp;Web Page Version: Default, Print Friendly With Images, And Print Friendly Without Images</p>
+
+	<p>The <code>img</code> element is assigned style. However, for Web Page Version: Default (char.css) and Web Page Version: Print Friendly With Images (char_print_with_images.css), the <code>img</code> style rule is commented out, which means images are displayed:</p>
+
+		<p class="marginLeftOneTick"><code>
+		/* img { display: none; } In char_print_without_images.css, uncomment out this style rule. */
+		</code></p>
+
+	<p>For Web Page Version: Print Friendly Without Images (char_print_without_images.css), the <code>img</code> style rule is uncommented out, which means images are not displayed:</p>
+
+		<p class="marginLeftOneTick"><code>
+		img { display: none; }
+		</code></p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc14"></a>14.&nbsp;&nbsp;Text Conventions</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc14_1"></a>14.1.&nbsp;&nbsp;Margin Left One Tick</p>
+
+	<p>To indent text &quot;one tick&quot; compared to paragraphs, use the <code>p</code> element classed <code>class=&quot;marginLeftOneTick&quot;</code>. The <code>marginLeftOneTick</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.marginLeftOneTick { margin: 0px 0px 15px 20px; }
+		</code></p>
+
+	<p class="subsectionTitle"><a id="toc14_2"></a>14.2.&nbsp;&nbsp;Code</p>
+
+	<p>Code includes language keywords, identifiers, source code text, source code comments, etc. To indicate code, use the <code>code</code> element. The <code>code</code> element is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		code { font-family: "courier new", courier, monospace; }
+		</code></p>
+
+	<p>To indicate a single word related to code, use the <code>code</code> element.</p>
+
+	<p>Single word related to code syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;code&gt;keyword&lt;/code&gt;
+		</code></p>
+
+	<p>Single word related to code examples:</p>
+
+	<p>For example, the <code>color</code> property is a characteristic of text, and the <code>black</code> value is a specific option of color that can be assigned to a property, such as <code>color</code>. The colon (<code>:</code>) in the declaration assigns the value to the property, thereby defining a style.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p>To indicate a line or block of source code, use <code>&lt;p class=&quot;marginLeftOneTick&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt;</code>. The <code>marginLeftOneTick</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.marginLeftOneTick { margin: 0px 0px 15px 20px; }
+		</code></p>
+
+	<p>Line or block of source code syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;p class=&quot;marginLeftOneTick&quot;&gt;&lt;code&gt;<br />
+		selector { declaration block } /* This is a comment. */<br />
+		selector { declaration block } /* Comments associated with lines and blocks of source code are treated as code, itself, and, therefore, are included along with the source code inside &lt;p class=&quot;marginLeftOneTick&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/p&gt; tags. */<br />
+		selector { declaration block } /* Comments use the comment syntax of the source code language. In this example, the source code is CSS. Therefore, the comment uses CSS comment syntax, not HTML or some other language comment syntax. */<br />
+		selector { declaration block } /* Comment first letter first word Cap and end with period. */<br />
+		&lt;/code&gt;&lt;/p&gt;
+		</code></p>
+
+	<p>Line and block of source code examples:</p>
+
+		<p class="marginLeftOneTick"><code>
+		h1 { font-style: italic; text-decoration: underline; }
+		</code></p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+		<p class="marginLeftOneTick"><code>
+		h1 { font-style: italic; text-decoration: underline; } /* Style rule with two declarations (i.e., styles). */
+		</code></p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+		<p class="marginLeftOneTick"><code>
+		h1 { font-style: italic; text-decoration: underline; } /* Style rule with two declarations (i.e., styles). */<br />
+		.red { color: #ff0000 } /* Optional semicolon (;) not used after the last/only declaration in the declaration block. */<br />
+		:link { color: #000000; } /* Optional semicolon (;) used after the last/only declaration in the declaration block. */
+		</code></p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_3"></a>14.3.&nbsp;&nbsp;Quoted Text</p>
+
+	<p>To indicate quoted text, use <code>&lt;p class=&quot;marginLeftOneTick&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/p&gt;</code>. The source is normal text. The <code>marginLeftOneTick</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.marginLeftOneTick { margin: 0px 0px 15px 20px; }
+		</code></p>
+
+	<p>Quoted text syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;p class=&quot;marginLeftOneTick&quot;&gt;&lt;i&gt;&amp;quot;Quoted text&amp;quot;&lt;/i&gt; - Source&lt;/p&gt;
+		</code></p>
+
+	<p>Quoted text example:</p>
+
+ 		<p class="marginLeftOneTick"><i>&quot;The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.&quot;</i> - W3C CSS2 Recommendation</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_4"></a>14.4.&nbsp;&nbsp;Email Address And URI</p>
+
+	<p>To indicate an email address or URI as text, use the <code>i</code> element. To indicate an email address or URI as a hyperlink, do not use the <code>i</code> element. Instead simply use the <code>a</code> element classed either <code>class=&quot;linkContent&quot;</code> or <code>class=&quot;linkListItem&quot;</code> per <a href="#toc12" class="linkContent">12.&nbsp;&nbsp;Hyperlinks (above)</a>.</p>
+
+	<p>Email address and URI syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;i&gt;Email address as text&lt;/i&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;i&gt;URI as text&lt;/i&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;a href=&quot;mailto:user@company.com&quot; class=&quot;linkContent&quot;&gt;Email address as mailto hyperlink&lt;/a&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;a href=&quot;http://char.learnwebcoding.com/&quot; class=&quot;linkContent&quot;&gt;URI as hyperlink in normal content&lt;/a&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;a href=&quot;http://char.learnwebcoding.com/&quot; class=&quot;linkListItem&quot;&gt;URI as hyperlink in an unordered list of one or more hyperlinks as list items&lt;/a&gt;
+		</code></p>
+
+	<p>Email address and URI example:</p>
+
+	<p>The email address as text is <i>user@company.com</i>.</p>
+
+	<p>The URI as text is <i>http://char.learnwebcoding.com/</i>.</p>
+
+	<p>The email address as mailto hyperlink is <a href="mailto:user@company.com" class="linkContent">email</a>.</p>
+
+	<p>The URI as hyperlink in normal content is <a href="" class="linkContent">http://char.learnwebcoding.com/</a>.</p>
+
+	<ul>
+		<li>The URI as hyperlink in an unordered list of one or more hyperlinks as list items is <a href="" class="linkListItem">http://char.learnwebcoding.com/</a>.</li>
+	</ul>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_5"></a>14.5.&nbsp;&nbsp;File System Path, Folder Name, Filename, And DOS Prompt</p>
+
+	<p>To indicate a file system path, folder name, filename, or DOS prompt, use the <code>code</code> element. The <code>code</code> element is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		code { font-family: "courier new", courier, monospace; }
+		</code></p>
+
+	<p>File system path, folder name, filename, and DOS prompt syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;code&gt;File system path&lt;/code&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;code&gt;Folder name&lt;/code&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;code&gt;Filename&lt;/code&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;code&gt;DOS prompt&lt;/code&gt;
+		</code></p>
+
+	<p>File system path, folder name, filename, and DOS prompt example:</p>
+
+	<p>The file system path is <code>C:\Windows\System32\wscript.exe</code>.</p>
+
+	<p>The folder is the <code>System32</code> folder.</p>
+
+	<p>The file is the <code>wscript.exe</code> file, which is located in the <code>System32</code> folder, and, therefore, has the file system path <code>C:\Windows\System32\wscript.exe</code>.</p>
+
+	<p>The DOS prompt at <code>A:\></code> appears.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_6"></a>14.6.&nbsp;&nbsp;Object To Click</p>
+
+	<p>To indicate an object to click, use the <code>span</code> element classed <code>class=&quot;userInput&quot;</code>. To indicate a sequence of objects to click, separate the objects with the | character, which is also included in the <code>span</code> element classed <code>class=&quot;userInput&quot;</code>. &quot;Click&quot; objects, not &quot;Press&quot; objects. For tabs, buttons, etc, do not include the word &quot;tab,&quot; &quot;button,&quot; etc. The <code>userInput</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.userInput { font-weight: bold; }
+		</code></p>
+
+	<p>Object to click syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;span class=&quot;userInput&quot;&gt;Object to click&lt;/span&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;span class=&quot;userInput&quot;&gt;First object to click | Second object to click | Third object to click&lt;/span&gt;
+		</code></p>
+
+	<p>Object to click examples:</p>
+
+	<p>Click <span class="userInput">OK</span>.</p>
+
+	<p>Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 8.1, and click <span class="userInput">Next</span>
+
+	<p>For example, in Opera 12.17, click <span class="userInput">Menu | Settings | Preferences | Advanced | Content | Style Options</span>.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_7"></a>14.7.&nbsp;&nbsp;Keyboard Key To Press And String To Type</p>
+
+	<p>To indicate a keyboard key to press, use the <code>span</code> element classed <code>class=&quot;userInput&quot;</code>. To indicate a combination of keys to press simultaneously, separate the keys with the + character, which is also included in the <code>span</code> element classed <code>class=&quot;userInput&quot;</code>. &quot;Press&quot; key, not &quot;Click&quot; key. &quot;Type&quot; string, not &quot;enter,&quot; &quot;press,&quot; nor &quot;click&quot; string. The <code>userInput</code> class selector is assigned style:</p>
+
+		<p class="marginLeftOneTick"><code>
+		.userInput { font-weight: bold; }
+		</code></p>
+
+	<p>Keyboard key to press and string to type syntax:</p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;span class=&quot;userInput&quot;&gt;Key to press&lt;/span&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;span class=&quot;userInput&quot;&gt;Key to press+Key to press+Key to press&lt;/span&gt;
+		</code></p>
+
+		<p class="marginLeftOneTick"><code>
+		&lt;span class=&quot;userInput&quot;&gt;String of text to type&lt;/span&gt;
+		</code></p>
+
+	<p>Keyboard key to press and string to type examples:</p>
+
+	<p>Press <span class="userInput">Enter</span>.</p>
+
+	<p>Press <span class="userInput">Ctrl+Alt+Del</span>.</p>
+
+	<p>Type <span class="userInput">fdisk /mbr</span> and press <span class="userInput">Enter</span>.</p>
+
+	<p>Paragraph using the <code>p</code> element not classed as reference.</p>
+
+	<p class="subsectionTitle"><a id="toc14_8"></a>14.8.&nbsp;&nbsp;Dialog Title And Text</p>
+
+	<p>To indicate a dialog title and text, use the <code>b</code> element. Always use the dialog title. Dialog text is optional. If use dialog text, separate dialog title from dialog text with the : character. &quot;Dialog,&quot; not &quot;dialog box.&quot; Use the same spelling, uppercase/lowercase letters, and punctuation as the dialog.</p>
+
+	<p>Dialog title and text syntax:</p>
+
+	<p><b>Dialog title</b></p>
+
+	<p><b>Dialog title: Dialog text</b></p>
+
+	<p>Dialog title and text examples:</p>
+
+	<p>The <b>Windows Setup</b> dialog appears.</p>
+
+	<p>The <b>Windows Setup: Which type of installation do you want?</b> dialog appears.</p>
+
+	<p>The <b>Windows Setup: Where do you want to install Windows?</b> dialog appears.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc15"></a>15.&nbsp;&nbsp;Miscellaneous</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc15_1"></a>15.1.&nbsp;&nbsp;Character Named Entities</p>
+
+	<p>Some characters have special meaning in HTML and, therefore, should be replaced in certain contexts with either their corresponding named entity or numeric entity. The following characters are replaced with their named entities in the specified contexts:</p>
+
+	<table>
+		<tr>
+			<td colspan="3" class="tableTitle">Optional Table Title First Letter Each Word Cap (Id: 16.1)</td>
+		</tr>
+		<tr>
+			<th>Character</th>
+			<th>Named Entity</th>
+			<th>Replace Character With Named Entity...</th>
+		</tr>
+		<tr>
+			<td>ampersand (&amp;)</td>
+			<td>&amp;amp;</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>In URIs being represented in HTML.</li>
+					<li>In source code being represented in HTML.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>less than sign (&lt;)</td>
+			<td>&amp;lt;</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Anytime not being used explicitly as markup (i.e., as part of an HTML tag).</li>
+					<li>In source code being represented in HTML.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>greater than sign (&gt;)</td>
+			<td>&amp;gt;</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Anytime not being used explicitly as markup (i.e., as part of an HTML tag).</li>
+					<li>In source code being represented in HTML.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>double quote (&quot;)</td>
+			<td>&amp;quot;</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>Anytime not being used explicitly as markup (i.e., inside an HTML tag).</li>
+					<li>In source code being represented in HTML.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc16"></a>16.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="" class="linkListItem">Page Title First Letter Each Word Capital (domain.com)</a></li>
+		<li><a href="" class="linkListItem">microATX First Letter Each Word Not Capital If Convention Is Not Capital (domain.com)</a></li>
+		<li><a href="" class="linkListItem">Page Title First Letter Each Word Capital (.pdf) (domain.com)</a></li>
+		<li><a href="" class="linkListItem">Page Title First Letter Each Word Capital (video) (techrepublic.com)</a></li>
+		<li><a href="" class="linkListItem">Video: Page Title Starts With Video Colon (video) (techrepublic.com)</a></li>
+		<li><a href="" class="linkListItem">Page Title First Letter Each Word Capital (domain.com)</a> (Thanks name.)</li>
+		<li><a href="" class="linkListItem">Page Title First Letter Each Word Capital (domain.com)</a> (Jim Taylor.) (Everett Murdock.) (Formerly Bob Watson's MS-DOS7 Commands.) (Formerly at siteprocentral.com/html_color_code.html.) (Formerly at RobertGraham.com.) (Mandrakesoft plus Conectiva.) (Formerly Caldera.) (Windows XP/Vista/7.) (Windows/Mac OS X/Linux.) (Windows.) (Includes a forum.) (Data: Apr11.) (Published: 14Feb12.) (Intel.) (The Webmaster.) (Infineon and Kingston.) (Thanks name.) (Always end in period, regardless if sentence or not.)
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">(Id: 17.1) The following are link description examples that belong in a note, not after the link in (parentheses):
+					<ul>
+						<li>Always end in period, regardless if sentence or not.</li>
+						<li>Where The Webmaster is a moderator.</li>
+						<li>From Upgrading And Repairing PCs, 20th Edition, by Scott Mueller and Que Publishing.</li>
+						<li>Much applies to networking in general including on Windows.</li>
+						<li>50+ videos on topics including telecommunications tools, cabling, product demonstrations, structured cable, Toshiba business telephone, and Cisco phone interactive.</li>
+						<li>OpenDNS server IP addresses: 208.67.222.222 and 208.67.220.220.</li>
+						<li>Hosted by Kaspersky Lab.</li>
+						<li>SmartScreen Filter is a component of Internet Explorer 8+.</li>
+						<li>To detect/remove infection by newer all known malware, download and run newer version. New version released daily.</li>
+						<li>Single scan type: memory and system startup files.</li>
+						<li>To scan a Web page, click scan a URL.</li>
+						<li>To install, double click the downloaded virus definition file.</li>
+						<li>On Microsoft Systems Management Server (SMS) and Microsoft Baseline Security Analyzer (MBSA) downloading files that contain hundreds of thousands of items that might be scanned by anti-virus programs.</li>
+						<li>Link is to the description/download page, not the test file itself.</li>
+						<li>Includes ATX12V Specific Guidelines 2.3.</li>
+						<li>Powered by eXtreme Power Supply Calculator.</li>
+						<li>Free download with registration.</li>
+						<li>Elapsed time one pass 2GB DDR2-800 SDRAM on Intel DG33FB motherboard 16 minutes.</li>
+						<li>Reportedly used by Geek Squad at one time.</li>
+						<li>Hard disk manufacturers provide tools, free for download from their Web sites, for testing and repairing hard disk problems...</li>
+						<li>Downloadable book.</li>
+						<li>Free, online, pre-edited/draft version of the O'Reilly book, DOM Enlightenment (Published: 2013).</li>
+						<li>Includes Search Microsoft Security Bulletins by; 1.) Product or Component, and 2.) Number.</li>
+						<li>Microsoft no longer offers Windows Media Tools v4.1 for download. Hence, the link to neda.net.ir.</li>
+						<li>Detects/reports the version of Adobe Flash Player used by your Web Browser and lists the current version of Adobe Flash Player for various platforms and Web Browsers.</li>
+						<li>Download Adobe Flash Player 11 for manual offline installation.</li>
+						<li>Download Adobe Flash Player uninstaller.</li>
+						<li>To view/print, not create/edit, Excel 97/2000/2002/2003/2007/2010 files.</li>
+						<li>On a Word template issue.</li>
+						<li>Instructions for installing Amdk6upd.exe.</li>
+						<li>Includes Windows 7 Upgrade installation options (i.e., upgrade or custom) verses the installed version of Windows XP/Vista.</li>
+						<li>On XP opens Windows Explorer to My Computer and on Vista/7 opens Windows Explorer to Computer.</li>
+						<li>Displays hardware, software, and Microsoft Security Updates information and includes CIS benchmark.</li>
+						<li>Includes CPU-Z, PC-Wizard, PerfMonitor, HWMonitor, and TMonitor.</li>
+						<li>OpenOffice.org source code being developed by The Document Foundation.</li>
+					</ul>
+				</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li><a href="http://support.microsoft.com/kb/923737" class="linkListItem">Microsoft Knowledge Base Article Title (923737) (support.microsoft.com)</a></li>
+		<li><a href="" class="linkListItem">Some Organization Name (SON) (domain.com)</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>

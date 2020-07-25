@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>On The Windows 9x/ME Startup Disk</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="windows 95, windows 98, windows me, startup disk, startup boot disk, boot floppy disk, floppy disk" />
+<meta name="Description" content="Information on the Windows 9x/ME Startup Disk. 1. Introduction | 2. The Windows 9x/ME Startup Disk Is A Bootable Floppy Disk | 3. Creating The Windows 9x/ME Startup Disk | 4. Booting A Computer From The Windows 9x/ME Startup | 5. The Windows 98/ME Startup Disk EBD.CAB File And RAMDrive | 6. The Windows 98/ME Startup Disk DOS Mode CD/DVD Drive Support | 7. The Windows 9x/ME Startup Disk Utilities | 8. Can The Windows 98/ME Startup Disk Be Used To Prepare For And Initialize The Installation Of Windows 9x/ME From The Windows 9x/ME Product CD? | 9. Resources And Additional Information." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>On The Windows 9x/ME Startup Disk</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows 95 | Windows 98 | Windows ME</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 06 Apr 2020 | Published: 23 Sep 2002 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Abbreviations</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">The Windows 9x/ME Startup Disk Is A Bootable Floppy Disk</a></span></li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Creating The Windows 9x/ME Startup Disk</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Creating The Windows 9x Startup Disk</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Creating The Windows ME Startup Disk</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Booting A Computer From The Windows 9x/ME Startup Disk</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">4.1.&nbsp;&nbsp;<a href="#toc4_1" class="linkToc">Booting A Computer From The Windows 95 Startup Disk</a></span></li>
+			<li><span class="tocSubsectionTitle">4.2.&nbsp;&nbsp;<a href="#toc4_2" class="linkToc">Booting A Computer From The Windows 98 Startup Disk</a></span></li>
+			<li><span class="tocSubsectionTitle">4.3.&nbsp;&nbsp;<a href="#toc4_3" class="linkToc">Booting A Computer From The Windows ME Startup Disk</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">5.&nbsp;&nbsp;<a href="#toc5" class="linkToc">The Windows 98/ME Startup Disk EBD.CAB File And RAMDrive</a></span></li>
+	<li><span class="tocSectionTitle">6.&nbsp;&nbsp;<a href="#toc6" class="linkToc">The Windows 98/ME Startup Disk DOS Mode CD/DVD Drive Support</a></span></li>
+	<li><span class="tocSectionTitle">7.&nbsp;&nbsp;<a href="#toc7" class="linkToc">The Windows 9x/ME Startup Disk Utilities</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">7.1.&nbsp;&nbsp;<a href="#toc7_1" class="linkToc">Running The Windows 9x/ME Startup Disk Utilities</a></span></li>
+			<li><span class="tocSubsectionTitle">7.2.&nbsp;&nbsp;<a href="#toc7_2" class="linkToc">The Windows 9x/ME Startup Disk Utilities For Fixing Hard Drive Problems</a></span></li>
+			<li><span class="tocSubsectionTitle">7.3.&nbsp;&nbsp;<a href="#toc7_3" class="linkToc">The Windows 9x/ME Startup Disk Utilities For Preparing A Hard Drive For The Installation Of Windows 9x/ME</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">8.&nbsp;&nbsp;<a href="#toc8" class="linkToc">Can The Windows 98/ME Startup Disk Be Used To Prepare For And Initialize The Installation Of Windows 9x/ME From The Windows 9x/ME Product CD?</a></span>
+		<ol class="tocSectionOneThruNineSubsectionTitles">
+			<li><span class="tocSubsectionTitle">8.1.&nbsp;&nbsp;<a href="#toc8_1" class="linkToc">Initializing The Installation Of Windows 9x/ME From The Windows 9x/ME Product CD After Booting A Computer From The Windows 98/ME Startup Disk</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">9.&nbsp;&nbsp;<a href="#toc9" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>The Windows 95, Windows 98, and Windows ME (Windows 9x/ME) Startup Disk is a bootable floppy disk that provides functionalities and utilities for: 1.) fixing hard drive problems, 2.) preparing a hard drive for the installation of Windows 9x/ME, and, 3.) if the computer is booted from the Windows 98/ME Startup Disk, not the Windows 95 Startup Disk, initiating the installation of Windows 9x/ME from the Windows 9x/ME product CD.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Abbreviations</p>
+
+	<ul>
+		<li>9x = Windows 95 and Windows 98 Second Edition.</li>
+		<li>98 = Windows 98 = Windows 98 Second Edition.</li>
+		<li>ME = Windows ME = Windows Millennium Edition.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;The Windows 9x/ME Startup Disk Is A Bootable Floppy Disk From Which A Near Minimal Version Of MS-DOS Is Loaded</p>
+
+<div class="section">
+
+	<p>A floppy disk is data storage media. A floppy disk drive is a hardware device that copies the data to, and reads the data from, a floppy disk.</p>
+
+	<p>A drive is a partition assigned a drive letter by an operating system. A floppy disk can only have one partition/drive.</p>
+
+	<p>A bootable drive is a drive from which an operating system is loaded. A floppy disk can only have one bootable drive. A floppy disk with a bootable drive is known as a bootable floppy disk. The Windows 9x/ME Startup Disk is a bootable floppy disk from which a near minimal version of MS-DOS is loaded.</p>
+
+	<p>IO.SYS, MSDOS.SYS, and COMMAND.COM are the minimal MS-DOS operating system files and, as such, are known as MS-DOS system files. Copying the system files to a drive, however, does not constitute a bootable drive. To make a bootable drive, the drive's boot record must include the instruction to pass the boot process to the system files. In the absence of this instruction, a drive containing the system files functions merely as data storage.</p>
+
+<!-- Because IO.SYS, MSDOS.SYS, and COMMAND.COM are system files, they might have the hidden file attribute and might not appear in a directory listing. -->
+
+	<p>The command, FORMAT X: /S, where X: is a drive, creates a bootable drive X. In other words, FORMAT X: /S formats drive X, writes the drive X boot record to include the instruction to pass the boot process to the MS-DOS system files, and copies the MS-DOS system files to drive X.</p>
+
+	<p>To create the Windows 9x/ME Startup Disk, boot the computer to Windows 9x/ME, go to Add/Remove Programs | Startup Disk, and click the Create Disk button. When the Create Disk button is clicked, FORMAT A: /S, or an equivalent, is issued and additional program files are copied to drive A.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Unlike a floppy disk/floppy disk drive, a hard drive (a.k.a., hard disk or hard disk drive) combines the data storage media and the hardware device that copies the data to, and reads the data from, the media into a single self-contained hardware component. Unlike a floppy disk, a hard drive can have have multiple partitions/drives. Unlike a floppy disk, a hard drive can have multiple bootable drives. Like making a bootable drive on a floppy disk, to make a bootable drive on a hard drive, the drive's boot record must include the instruction to pass the boot process to the system files. Unlike making a bootable drive on a floppy disk, to make a bootable drive on a hard drive, the drive must be marked active.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Creating The Windows 9x/ME Startup Disk</p>
+
+<div class="section">
+
+	<p>Creating the Windows 9x Startup Disk requires one floppy disk, starting a computer to Windows 9x, and the Windows 9x product CD. Creating the Windows ME Startup Disk requires one floppy disk and starting a computer to Windows ME.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Floppy disks are extremely unreliability. Therefore, it is strongly recommended that you create at least two copies of the Windows 9x/ME Startup Disk. Moreover, if an error message appears while creating the Windows 9x/ME Startup Disk, the floppy disk is probably bad. Try again with a different floppy disk.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Creating The Windows 9x Startup Disk</p>
+
+	<ol>
+		<li>Start the computer to Windows 9x.</li>
+		<li>Insert the Windows 9x product CD into the CD/DVD drive. If the Windows 9x product CD autoruns, close the dialogs that appear.</li>
+		<li>Click <span class="userInput">Start | Settings | Control Panel | Add/Remove Programs | Startup Disk | Create Disk</span>.
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">If the Insert Disk: Please insert the disk labeled 'Windows 9x CD-ROM' and then click OK prompt appears, and if the Windows 9x product CD is already in the CD/DVD drive, in the Copy files from field, type either <span class="userInput">X:\WIN95</span>, where X is the CD/DVD drive with the Windows 95 product CD, or <span class="userInput">X:\WIN98</span>, where X is the CD/DVD drive with the Windows 98 product CD, and click <span class="userInput">OK</span>.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>The Label a disk &quot;Windows 9x Startup Disk&quot; and insert it into drive A prompt appears. Label a floppy disk according to the prompt, insert it into drive A, and click <span class="userInput">OK</span>.</li>
+		<li>After the Windows 9x Startup Disk is created successfully, the progress bar disappears and the Create Disk button becomes active again. Remove the Windows 9x Startup Disk from drive A. To create another Windows 9x Startup Disk, click <span class="userInput">Create Disk</span>. When finished, click <span class="userInput">OK</span>.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Creating The Windows ME Startup Disk</p>
+
+	<ol>
+		<li>Start the computer to Windows ME.</li>
+		<li>Click <span class="userInput">Start | Settings | Control Panel | Add/Remove Programs | Startup Disk | Create Disk</span>.</li>
+		<li>The Label a disk &quot;Windows Millennium Edition Startup Disk&quot; and insert it into drive A prompt appears. Label a floppy disk according to the prompt, insert it into drive A, and click <span class="userInput">OK</span>.</li>
+		<li>After the Windows ME Startup Disk is created successfully, the progress bar disappears and the Create Disk button becomes active again. Remove the Windows ME Startup Disk from drive A. To create another Windows ME Startup Disk, click <span class="userInput">Create Disk</span>. When finished, click <span class="userInput">OK</span>.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Booting A Computer From The Windows 9x/ME Startup Disk</p>
+
+<div class="section">
+
+	<p>To boot a computer from the Windows 9x/ME Startup Disk, insert the Windows 9x/ME Startup Disk into the floppy disk drive and power on/restart the computer. If the computer does not boot from the Windows 9x/ME Startup Disk as described below and the computer has multiple floppy disk drives, insert the Windows 9x/ME Startup Disk into the other floppy disk drives and try again. If the computer still does not boot from the Windows 9x/ME Startup Disk as described below, and if the Windows 9x/ME Startup Disk was created successfully and is functional, and if the floppy disk drive(s) are functional, then either: 1.) the computer BIOS does not support booting from floppy disk drives, which is unlikely for computers with floppy disk drives, or 2.) the computer BIOS is not configured to boot from floppy disk drives, which means, to boot the computer from the Windows 9x/ME Startup Disk, you must enter the BIOS setup program and configure the BIOS to boot from floppy disk drives.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">Further discussion of the BIOS is beyond the scope of this page. For information on how to enter the BIOS setup program and how to configure the BIOS to boot from floppy disk drives, see the computer motherboard/BIOS documentation.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc4_1"></a>4.1.&nbsp;&nbsp;Booting A Computer From The Windows 95 Startup Disk</p>
+
+	<ol>
+		<li>Insert the Windows 95 Startup Disk into the floppy disk drive and power on/restart the computer.</li>
+		<li>The near minimal version of MS-DOS is loaded from the Windows 95 Startup Disk and the DOS prompt (a.k.a., system prompt or command prompt) at A:\> appears:
+			<div class="imgInListItem"><img src="../images/w9xme_startup_disk/w95_startup_disk_dos_prompt_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows 95 Startup Disk: DOS Prompt" class="img" /></div>
+		</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc4_2"></a>4.2.&nbsp;&nbsp;Booting A Computer From The Windows 98 Startup Disk</p>
+
+	<ol>
+		<li>Insert the Windows 98 Startup Disk into the floppy disk drive and power on/restart the computer.</li>
+		<li>The near minimal version of MS-DOS is loaded from the Windows 98 Startup Disk and the Microsoft Windows 98 Startup Menu appears:
+			<div class="imgInListItem"><img src="../images/w9xme_startup_disk/w98_startup_disk_startup_menu_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows 98 Startup Disk: Microsoft Windows 98 Startup Menu" class="img" /></div>
+		</li>
+		<li>To start the computer with CD/DVD drive support, press <span class="userInput">1 | Enter</span>. Otherwise, press <span class="userInput">2 | Enter</span>.
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">The only difference between starting the computer with or without CD/DVD drive support is that starting the computer with CD/DVD drive support loads DOS mode CD/DVD device drivers that enable CD/DVD drive function. Since loading the drivers approximately doubles the boot time, if you are in a hurry and do not need to use a CD/DVD drive, it is recommended to start the computer without CD/DVD drive support.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>The DOS prompt at A:\> appears:
+			<div class="imgInListItem"><img src="../images/w9xme_startup_disk/w98_startup_disk_dos_prompt_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows 98 Startup Disk: DOS Prompt" class="img" /></div>
+		</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc4_3"></a>4.3.&nbsp;&nbsp;Booting A Computer From The Windows ME Startup Disk</p>
+
+	<ol>
+		<li>Insert the Windows ME Startup Disk into the floppy disk drive and power on/restart the computer.</li>
+		<li>The near minimal version of MS-DOS is loaded from the Windows ME Startup Disk and the Microsoft Windows ME Startup Menu appears:
+			<div class="imgInListItem"><img src="../images/w9xme_startup_disk/wme_startup_disk_startup_menu_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows ME Startup Disk: Microsoft Windows ME Startup Menu" class="img" /></div>
+		</li>
+		<li>To start the computer with CD/DVD drive support, press <span class="userInput">2 | Enter</span>. Otherwise, press <span class="userInput">3 | Enter</span>.
+			<div class="note">
+				<div class="noteMarker noteMarkerNormal">i</div>
+				<div class="noteContent">The only difference between starting the computer with or without CD/DVD drive support is that starting the computer with CD/DVD drive support loads DOS mode CD/DVD device drivers that enable CD/DVD drive function. Since loading the drivers approximately doubles the boot time, if you are in a hurry and do not need to use a CD/DVD drive, it is recommended to start the computer without CD/DVD drive support.</div>
+				<div class="clearBoth"></div>
+			</div>
+		</li>
+		<li>The DOS prompt at A:\> appears:
+			<div class="imgInListItem"><img src="../images/w9xme_startup_disk/wme_startup_disk_dos_prompt_640x400.gif" style="border:0;width:640px;height:400px" alt="Booting A Computer From The Windows ME Startup Disk: DOS Prompt" class="img" /></div>
+		</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc5"></a>5.&nbsp;&nbsp;The Windows 98/ME Startup Disk EBD.CAB File And RAMDrive</p>
+
+<div class="section">
+
+	<p>When a computer is booted from the Windows 98/ME Startup Disk, a temporary virtual drive is created in memory known as a RAMDrive, and the compressed Windows 98/ME Startup Disk file, EBD.CAB, is extracted to the RAMDrive. The RAMDrive is assigned a drive letter next in line after hard disk partitions formatted with the FAT or FAT32 file system, and before any CD/DVD drives. For example, if a computer with a hard disk FAT32 partition and a CD/DVD drive is booted from the Windows 98/ME Startup Disk and CD/DVD drive support is selected, then the hard disk FAT32 partition is drive C, the RAMDrive is drive D, and the CD/DVD drive is drive E. And if a computer with a hard disk having no partitions, or only NTFS partitions, and a CD/DVD drive is booted from the Windows 98/ME Startup Disk and CD/DVD drive support is selected, then the RAMDrive is drive C and the CD/DVD drive is drive D. In other words, when a computer is booted from the Windows 98/ME Startup Disk and CD/DVD drive support is selected, the drive letters assigned to CD/DVD drives might be different than if the computer was started to Windows installed on the computer hard drive.</p>
+
+	<p>The RAMDrive is 2MB and you can read, write, and execute files in the RAMDrive from the DOS prompt. The use of file compression/extraction and the RAMDrive gives the Windows 98/ME Startup Disk a virtual capacity that exceeds the floppy disk 1.44MB physical capacity, which, in turn, allows the Windows 98/ME Startup Disk to provide functionality not included on the Windows 95 Startup Disk.</p>
+
+	<p>The RAMDrive is temporary and only exists when a computer is booted from the Windows 98/ME Startup Disk. In other words, if the Windows 98/ME Startup Disk is removed from the floppy disk drive and the computer is powered on/restarted, the RAMDrive is erased from memory and no longer exists.</p>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc6"></a>6.&nbsp;&nbsp;The Windows 98/ME Startup Disk DOS Mode CD/DVD Drive Support</p>
+
+<div class="section">
+
+	<p>When a computer is booted from the Windows 98/ME Startup Disk and CD/DVD drive support is selected, DOS mode (a.k.a., Real mode or 16-bit) CD/DVD device drivers are loaded from the Windows 98/ME Startup Disk that enable CD/DVD drive function. Because of this functionality, you can initiate the installation of Windows 9x/ME from the Windows 9x/ME product CD after booting a computer from the Windows 98/ME Startup Disk.</p>
+
+	<p>The Windows 95 Startup Disk does not provide DOS mode CD/DVD drive support. The differences in the Windows 98/ME Startup Disk compared to the Windows 95 Startup Disk with respect to DOS mode CD/DVD drive support are as follows:</p>
+
+	<ul>
+		<li>AUTOEXEC.BAT file added, including the line:
+			<ul>
+				<li>LH %ramd%:\MSCDEX.EXE /D:MSCD001 /L:%CDROM%</li>
+			</ul>
+		</li>
+		<li>MSCDEX.EXE file added.</li>
+		<li>Lines added to CONFIG.SYS:
+			<ul>
+				<li>DEVICE=OAKCDROM.SYS /D:MSCD001</li>
+				<li>DEVICE=BTCDROM.SYS /D:MSCD001</li>
+				<li>DEVICE=ASPICD.SYS /D:MSCD001</li>
+				<li>LASTDRIVE=Z</li>
+			</ul>
+		</li>
+		<li>DOS mode CD/DVD device driver files added:
+			<ul>
+				<li>OAKCDROM.SYS</li>
+				<li>BTCDROM.SYS</li>
+				<li>ASPICD.SYS</li>
+			</ul>
+		</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc7"></a>7.&nbsp;&nbsp;The Windows 9x/ME Startup Disk Utilities</p>
+
+<div class="section">
+
+	<p>After booting the computer from the Windows 9x/ME Startup Disk and the DOS prompt at A:\> appears, the system is ready to accept commands and you can run the utilities provided by the Windows 9x/ME Startup Disk. So the utilities extracted from the Windows 98/ME Startup Disk EBD.CAB file to the RAMDrive, and programs located on CD/DVD discs, can be run from the DOS prompt at A:\>, the Windows 98/ME Startup Disk, not the Windows 95 Startup Disk, includes an AUTOEXEC.BAT file with the line, path=%RAMD%:\;a:\;%CDROM%:\.</p>
+
+	<p class="subsectionTitle"><a id="toc7_1"></a>7.1.&nbsp;&nbsp;Running The Windows 9x/ME Startup Disk Utilities</p>
+
+	<ol>
+		<li>Boot the computer from the Windows 9x/ME Startup Disk.</li>
+		<li>The DOS prompt at A:\> appears. Type <span class="userInput">filename.exe</span>, where filename.exe is the utility executable file, and press <span class="userInput">Enter</span>.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc7_2"></a>7.2.&nbsp;&nbsp;The Windows 9x/ME Startup Disk Utilities For Fixing Hard Drive Problems</p>
+
+	<ul>
+		<li>CHKDSK.EXE: Fix basic hard drive problems.</li>
+		<li>SCANDISK.EXE: Fix a wider range of hard drive problems.</li>
+	</ul>
+
+	<p class="subsectionTitle"><a id="toc7_3"></a>7.3.&nbsp;&nbsp;The Windows 9x/ME Startup Disk Utilities For Preparing A Hard Drive For The Installation Of Windows 9x/ME</p>
+
+	<ul>
+		<li>FDISK.EXE: Create/delete partitions (i.e., drives).</li>
+		<li>FORMAT.COM: Apply the FAT file system to partitions/drives.</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc8"></a>8.&nbsp;&nbsp;Can The Windows 98/ME Startup Disk Be Used To Prepare For And Initialize The Installation Of Windows 9x/ME From The Windows 9x/ME Product CD?</p>
+
+<div class="section">
+
+	<p>Yes, the Windows 98/ME Startup Disk can be used to prepare for and initialize the installation of Windows 9x/ME from the Windows 9x/ME product CD. All of the programs included on the Windows 98/ME Startup Disk, including FDISK.COM and FORMAT.COM, are compatible with Windows 9x/ME. Moreover, because the Windows 98/ME Startup Disk provides DOS mode CD/DVD drive support and improved memory management, it is strongly recommended that the Windows 98/ME Startup Disk is used to prepare for and initialize the installation of Windows 95 (and Windows 98/ME) from the Windows 95 (and Windows 98/ME) product CD.</p>
+
+	<p class="subsectionTitle"><a id="toc8_1"></a>8.1.&nbsp;&nbsp;Initializing The Installation Of Windows 9x/ME From The Windows 9x/ME Product CD After Booting A Computer From The Windows 98/ME Startup Disk</p>
+
+	<ol>
+		<li>Boot the computer from the Windows 98/ME Startup Disk.</li>
+		<li>The Microsoft Windows 98/ME Startup Menu appears. Start the computer with CD/DVD drive support:
+			<ul>
+				<li>Windows 98 Startup Disk: Press <span class="userInput">1 | Enter</span>.</li>
+				<li>Windows ME Startup Disk: Press <span class="userInput">2 | Enter</span>.</li>
+			</ul>
+		</li>
+		<li>The DOS prompt at A:\> appears.</li>
+		<li>Insert the Windows 9x/ME product CD into the CD/DVD drive.</li>
+		<li>To initialize the installation of Windows 9x/ME from the Windows 9x/ME product CD, type <span class="userInput">SETUP.EXE</span> and press <span class="userInput">Enter</span>.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc9"></a>9.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="http://support.microsoft.com/kb/259066" class="linkListItem">Windows 98 Or Windows 95 Startup Disk Tools And Capabilities (259066) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/190303" class="linkListItem">How To Use Real-Mode CD-ROM Drivers From Windows 98 Startup Disk (190303) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/135174" class="linkListItem">Cannot Access CD-ROM Drive From MS-DOS Mode Or Command Prompt (135174) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/142943" class="linkListItem">Contents Of Windows 95 And Microsoft Plus! Startup Disks (142943) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/296532" class="linkListItem">How To Create A Windows 98 Startup Disk (296532) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/185645" class="linkListItem">Contents Of The Windows 98 Startup Disk (185645) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/187632" class="linkListItem">How To Create A Windows 98 Startup Disk That Supports FAT32 (187632) (support.microsoft.com)</a></li>
+ 		<li><a href="http://support.microsoft.com/kb/255292" class="linkListItem">How To Create A Windows 98 Boot Disk After You Upgrade To Windows 2000 (255292) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/267287" class="linkListItem">How To Create A Startup Disk In Windows ME (267287) (support.microsoft.com)</a></li>
+		<li><a href="http://support.microsoft.com/kb/262502" class="linkListItem">Contents Of The Windows Millennium Startup Disk (262502) (support.microsoft.com)</a></li>
+		<li><a href="http://www.bootdisk.com" class="linkListItem">BootDisk.com</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>
