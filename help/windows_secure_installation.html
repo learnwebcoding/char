@@ -4,8 +4,8 @@
 <title>Secure A Clean Installation Of Windows 7/8.1/10</title>
 <meta charset="UTF-8" />
 <meta name="Author" content="Steve Taylor" />
-<meta name="Keywords" content="Windows 7, Windows 8.1, Windows 10, how to, secure, new, clean, installation" />
-<meta name="Description" content="Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update. Learn how to secure a clean installation of Windows 7/8.1/10." />
+<meta name="Keywords" content="Windows 7, Windows 8.1, Windows 10, Windows 11, how to, secure, new, clean, installation" />
+<meta name="Description" content="Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update. Learn how to secure a clean installation of Windows 7/8.1/10/11." />
 <link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
 <script src="../library/char.js"></script>
 </head>
@@ -19,13 +19,13 @@
 
 <div class="container">
 
-<h1>Secure A Clean Installation Of Windows 7/8.1/10</h1>
+<h1>Secure A Clean Installation Of Windows 7/8.1/10/11</h1>
 
 <p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
 
-<p class="for">For: Windows 7 (32/64) | Windows 8.1 (32/64) | Windows 10 (32/64)</p>
+<p class="for">For: Windows 7 (32/64) | Windows 8.1 (32/64) | Windows 10 (32/64) | Windows 11</p>
 
-<p class="lastUpdated">Last Reviewed/Updated: 24 Sep 2021 | Published: 14 Jan 2004 | Status: Active</p>
+<p class="lastUpdated">Last Reviewed/Updated: 09 Nov 2021 | Published: 14 Jan 2004 | Status: Active</p>
 
 <ol class="toc">
 	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
@@ -44,17 +44,18 @@
 				</ol>
 			</li>
 			<li><span class="tocSubsectionTitle">1.5.&nbsp;&nbsp;<a href="#toc1_5" class="linkToc">Windows 7/8.1 Servicing Model Starting October 2016: Bundled Updates And Update Rollups Including Security Fixes</a></span></li>
-			<li><span class="tocSubsectionTitle">1.6.&nbsp;&nbsp;<a href="#toc1_6" class="linkToc">Windows 10 Servicing Model: Cumulative Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.6.&nbsp;&nbsp;<a href="#toc1_6" class="linkToc">Windows 10/11 Servicing Model: Cumulative Updates</a></span></li>
 			<li><span class="tocSubsectionTitle">1.7.&nbsp;&nbsp;<a href="#toc1_7" class="linkToc">Servicing Stack Updates</a></span>
 				<ol class="tocSubSubsectionTitles">
 					<li><span class="tocSubSubsectionTitle">1.7.1.&nbsp;&nbsp;<a href="#toc1_7_1" class="linkToc">Starting March 2021, Servicing Stack Updates For Windows 10 Version 2004 And Newer Are Included In The Cumulative Updates For Windows 10 Version 2004 And Newer</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.7.2.&nbsp;&nbsp;<a href="#toc1_7_2" class="linkToc">Servicing Stack Updates For Windows 11 Are Included In The Cumulative Updates For Windows 11</a></span></li>
 				</ol>
 			</li>
-			<li><span class="tocSubsectionTitle">1.8.&nbsp;&nbsp;<a href="#toc1_8" class="linkToc">Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10</a></span>
+			<li><span class="tocSubsectionTitle">1.8.&nbsp;&nbsp;<a href="#toc1_8" class="linkToc">Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10/11</a></span>
 				<ol class="tocSubSubsectionTitles">
 					<li><span class="tocSubSubsectionTitle">1.8.1.&nbsp;&nbsp;<a href="#toc1_8_1" class="linkToc">The Security Update Holes In Securing A Clean Installation Of Windows 7</a></span></li>
 					<li><span class="tocSubSubsectionTitle">1.8.2.&nbsp;&nbsp;<a href="#toc1_8_2" class="linkToc">The Security Update Hole In Securing A Clean Installation Of Windows 8.1</a></span></li>
-					<li><span class="tocSubSubsectionTitle">1.8.3.&nbsp;&nbsp;<a href="#toc1_8_3" class="linkToc">No Security Update Hole In Securing A Clean Installation Of Windows 10</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.8.3.&nbsp;&nbsp;<a href="#toc1_8_3" class="linkToc">No Security Update Hole In Securing A Clean Installation Of Windows 10/11</a></span></li>
 				</ol>
 			</li>
 			<li><span class="tocSubsectionTitle">1.9.&nbsp;&nbsp;<a href="#toc1_9" class="linkToc">Compiling The List Of Security Updates For Windows 7/8.1 That Resolve Vulnerabilities That Do Not Require User Interaction To Be Exploited</a></span>
@@ -65,28 +66,30 @@
 					<li><span class="tocSubSubsectionTitle">1.9.4.&nbsp;&nbsp;<a href="#toc1_9_4" class="linkToc">Policy On Security Update For Windows Supersedence And On Adding All Of The Security Updates In A Microsoft Security Bulletin To The List</a></span></li>
 				</ol>
 			</li>
-			<li><span class="tocSubsectionTitle">1.10.&nbsp;&nbsp;<a href="#toc1_10" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 7/8.1/10</a></span>
+			<li><span class="tocSubsectionTitle">1.10.&nbsp;&nbsp;<a href="#toc1_10" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 7/8.1/10/11</a></span>
 				<ol class="tocSubSubsectionTitles">
 					<li><span class="tocSubSubsectionTitle">1.10.1.&nbsp;&nbsp;<a href="#toc1_10_1" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 7</a></span></li>
 					<li><span class="tocSubSubsectionTitle">1.10.2.&nbsp;&nbsp;<a href="#toc1_10_2" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 8.1</a></span></li>
-					<li><span class="tocSubSubsectionTitle">1.10.3.&nbsp;&nbsp;<a href="#toc1_10_3" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 10</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.10.3.&nbsp;&nbsp;<a href="#toc1_10_3" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 10/11</a></span></li>
 				</ol>
 			</li>
 			<li><span class="tocSubsectionTitle">1.11.&nbsp;&nbsp;<a href="#toc1_11" class="linkToc">Abbreviations</a></span></li>
 		</ol>
 	</li>
-	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10</a></span>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10/11</a></span>
 		<ol class="tocSectionOneThruNineSubsectionTitles">
 			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7</a></span></li>
 			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 8.1</a></span></li>
 			<li><span class="tocSubsectionTitle">2.3.&nbsp;&nbsp;<a href="#toc2_3" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10</a></span></li>
+			<li><span class="tocSubsectionTitle">2.4.&nbsp;&nbsp;<a href="#toc2_4" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 11</a></span></li>
 		</ol>
 	</li>
-	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Secure A Clean Installation Of Windows 7/8.1/10</a></span>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Secure A Clean Installation Of Windows 7/8.1/10/11</a></span>
 		<ol class="tocSectionOneThruNineSubsectionTitles">
 			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Secure A Clean Installation Of Windows 7</a></span></li>
 			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Secure A Clean Installation Of Windows 8.1</a></span></li>
 			<li><span class="tocSubsectionTitle">3.3.&nbsp;&nbsp;<a href="#toc3_3" class="linkToc">Secure A Clean Installation Of Windows 10</a></span></li>
+			<li><span class="tocSubsectionTitle">3.4.&nbsp;&nbsp;<a href="#toc3_4" class="linkToc">Secure A Clean Installation Of Windows 11</a></span></li>
 		</ol>
 	</li>
 	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Resources And Additional Information</a></span></li>
@@ -108,7 +111,7 @@
 
 	<p>For the Windows vulnerabilities that do not require user interaction to be exploited, compromise does not require any user interaction on the computer besides placing the vulnerable computer online. In other words, for the Windows vulnerabilities that do not require user interaction to be exploited, there is no trigger and compromise can occur simply by placing the vulnerable computer online.</p>
 
-	<p>After installing Windows, a common practice is to place the computer online and run Windows Update or Microsoft Update (Windows/Microsoft Update) to install the latest Windows Service Pack (Windows 7), Update (Windows 8.1), Security Monthly Quality Rollup (Windows 7/8.1), Cumulative Update (Windows 10), Security Updates (Windows 7/8.1/10), and non-security updates and fixes Windows (7/8.1/10). Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows/Microsoft Update is running.</p>
+	<p>After installing Windows, a common practice is to place the computer online and run Windows Update or Microsoft Update (Windows/Microsoft Update) to install the latest Windows Service Pack (Windows 7), Update (Windows 8.1), Security Monthly Quality Rollup (Windows 7/8.1), Cumulative Update (Windows 10/11), Security Updates (Windows 7/8.1/10/11), and non-security updates and fixes Windows (7/8.1/10/11). Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows/Microsoft Update is running.</p>
 
 	<p>Worms are the class of threat that automatically run themselves on, and automatically copy themselves from, computer to computer over a network without user interaction. To accomplishes this, worms exploit vulnerabilities that, themselves, do not require user interaction to be exploited and that allow remote code execution (RCE). First, the worm exploits the vulnerability, then it runs itself on the now compromised computer, including possibly delivering a destructive payload, and then it attempts to propagate itself to other vulnerable computers on the network, again without user interaction.</p>
 
@@ -403,7 +406,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p>In the Windows 7/8.1 servicing model starting October 2016: 1.) a Security Monthly Quality Rollup (Monthly Rollup) for Windows 7/8/1 is a single file that contains new security fixes, and all previous security and non-security fixes for Windows 7/8.1 back through October 2016; and 2.) a Preview Of Monthly Quality Rollup (Preview Rollup) for Windows 7/8.1 is a single file that contains new non-security fixes, and all previous security and non-security fixes for Windows 7/8.1 back through October 2016. In other words, in the Windows 7/8.1 servicing model starting October 2016, Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative back through October 2016. This means that to obtain the security fixes for Windows 7/8.1 from October 2016 through the present, it is only necessary to install the latest Security Monthly Quality Rollup for Windows 7/8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7/8.1.</p>
 
-	<p>Compared to the previous Windows 7/8.1 servicing model of individual Security Updates, the new Windows 7/8/1 servicing model of Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are more similar to the Windows 10 servicing model of Cumulative Updates for Windows 10 in that the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative in nature; however, unlike the Cumulative Updates for Windows 10, which are cumulative back through the initial release of the version of Windows 10, the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative only back through October 2016.</p>
+	<p>Compared to the previous Windows 7/8.1 servicing model of individual Security Updates, the new Windows 7/8.1 servicing model of Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are more similar to the Windows 10/11 servicing model of Cumulative Updates for Windows 10/11 in that the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative in nature; however, unlike the Cumulative Updates for Windows 10/11, which are cumulative back through the initial release of the version of Windows 10/11, the Security Monthly Quality Rollups for Windows 7/8.1 and Preview Of Monthly Quality Rollups for Windows 7/8.1 are cumulative only back through October 2016.</p>
 
 		<div class="note">
 			<div class="noteMarker noteMarkerNormal">i</div>
@@ -411,21 +414,21 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 			<div class="clearBoth"></div>
 		</div>
 
-	<p class="subsectionTitle"><a id="toc1_6"></a>1.6.&nbsp;&nbsp;Windows 10 Servicing Model: Cumulative Updates</p>
+	<p class="subsectionTitle"><a id="toc1_6"></a>1.6.&nbsp;&nbsp;Windows 10/11 Servicing Model: Cumulative Updates</p>
 
-	<p>Microsoft intends to release a new version of Windows 10 (a.k.a., feature update) twice a year around March and September. On the second Tuesday of each month, Microsoft releases a Cumulative Update for Windows 10 (a.k.a., quality update) for the supported versions of Windows 10. Microsoft intends to support each version of Windows 10 Home and Pro with Cumulative Updates for at least 18 months:</p>
+	<p>Microsoft intends to release a new version (a.k.a., feature update) of Windows 10 twice a year around March and September, and Windows 11 once a year in the second half of the year. On the second Tuesday of each month, Microsoft releases a Cumulative Update (a.k.a., quality update) for Windows 10/11 for the supported versions of Windows 10/11. Microsoft intends to support each version of Windows 10 Home and Pro with Cumulative Updates for 18 - 30 months, and each version of Windows 11 Home and Pro with Cumulative Updates for 24 months:</p>
 
 		<div class="note">
 			<div class="noteMarker noteMarkerNormal">i</div>
-			<div class="noteContent">For additional information on Windows 10 support, see <a href="https://technet.microsoft.com/en-us/windows/release-info" class="linkContent">Windows 10 Release Information (technet.microsoft.com)</a> and <a href="https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet" class="linkContent">Windows Lifecycle Fact Sheet (support.microsoft.com)</a>.</div>
+			<div class="noteContent">For additional information on Windows 10/11 support, see <a href="https://docs.microsoft.com/en-us/windows/release-health/release-information" class="linkContent">Windows 10 Release Information (docs.microsoft.com)</a>, <a href="https://docs.microsoft.com/en-us/windows/release-health/windows11-release-information" class="linkContent">Windows 11 Release Information (docs.microsoft.com)</a>, and <a href="https://docs.microsoft.com/en-us/lifecycle/faq/windows" class="linkContent">Lifecycle FAQ - Windows (docs.microsoft.com)</a>.</div>
 			<div class="clearBoth"></div>
 		</div>
 
-	<a id="windows_10_versions_support_status"></a>
+	<a id="windows_1011_versions_support_status"></a>
 	<table>
 		<tr>
 			<td colspan="6" class="tableTitle">Windows 10 Versions Support Status<br />
-			(Last Reviewed/Updated: 24 Sep 2021)</td>
+			(Last Reviewed/Updated: 09 Nov 2021)</td>
 		</tr>
 		<tr>
 			<th>Windows<br />
@@ -459,7 +462,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 	<table>
 		<tr>
 			<td colspan="6" class="tableTitle">Windows 10 Versions Support Status<br />
-			(Last Reviewed/Updated: 24 Sep 2021)</td>
+			(Last Reviewed/Updated: 09 Nov 2021)</td>
 		</tr>
 		<tr>
 			<th>Windows<br />
@@ -503,7 +506,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 	<table>
 		<tr>
 			<td colspan="4" class="tableTitle">Windows 10 Versions Support Status<br />
-			(Last Reviewed/Updated: 24 Sep 2021)</td>
+			(Last Reviewed/Updated: 09 Nov 2021)</td>
 		</tr>
 		<tr>
 			<th>Windows<br />
@@ -528,7 +531,30 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 		</tr>
 	</table>
 
-	<p>In the Windows 10 servicing model, a Cumulative Update for Windows 10 is a single file that contains new security and non-security fixes, and all previous security and non-security fixes (if there are any), for a version of Windows 10. In other words, in the Windows 10 servicing model, Cumulative Updates for Windows 10 are cumulative back through the initial release of the version of Windows 10. This means that to obtain the security (and non-security) fixes for Windows 10 from the initial release of the version of Windows 10 through the present, it is only necessary to install the latest Cumulative Update for Windows 10 for the version of Windows 10.</p>
+	<table>
+		<tr>
+			<td colspan="4" class="tableTitle">Windows 11 Versions Support Status<br />
+			(Last Reviewed/Updated: 09 Nov 2021)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>11 Original Release<br />
+			(10.0.22000.194)</th><!-- 21H2 -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			<td>05 Oct 2021</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="1">Yes</td>
+		</tr>
+	</table>
+
+
+	<p>In the Windows 10/11 servicing model, a Cumulative Update for Windows 10/11 is a single file that contains new security and non-security fixes, and all previous security and non-security fixes (if there are any), for a version of Windows 10/11. In other words, in the Windows 10/11 servicing model, Cumulative Updates for Windows 10/11 are cumulative back through the initial release of the version of Windows 10/11. This means that to obtain the security (and non-security) fixes for Windows 10/11 from the initial release of the version of Windows 10/11 through the present, it is only necessary to install the latest Cumulative Update for Windows 10/11 for the version of Windows 10/11.</p>
 
 	<p class="subsectionTitle"><a id="toc1_7"></a>1.7.&nbsp;&nbsp;Servicing Stack Updates</p>
 
@@ -538,9 +564,13 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p>Starting in March 2021, the Servicing Stack Updates for Windows 10 Version 2004 and newer are no longer released as standalone Updates. Instead, they are included in the Cumulative Updates for Windows 10 Version 2004 and newer. However, a special Servicing Stack Update for Windows 10 Version 2004 and newer (KB5005260) is a prerequisite for installing the latest Cumulative Update for Windows 10 Version 2004 and newer.</p>
 
-	<p class="subsectionTitle"><a id="toc1_8"></a>1.8.&nbsp;&nbsp;Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10</p>
+	<p class="subSubsectionTitle"><a id="toc1_7_2"></a>1.7.2.&nbsp;&nbsp;Servicing Stack Updates For Windows 11 Are Included In The Cumulative Updates For Windows 11</p>
 
-	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. Therefore, to secure a clean installation of Windows 7, upon installing the Windows 7 operating system, Windows 7 SP1, Windows 7 SP1 Convenience Rollup, and the latest Security Monthly Quality Rollup for Windows 7 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7, it is necessary to identify any security update holes into which Security Updates for Windows 7 have not been installed. And to secure a clean installation of Windows 8.1, upon installing the Windows 8.1 operating system, Windows 8.1 Update, and the latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1, it is necessary to identify any security update holes into which Security Updates for Windows 8.1 have not been installed. And to secure a clean installation of Windows 10, upon installing the Windows 10 operating system and the latest Cumulative Update for Windows 10, it is necessary to identify any security update holes into which Security Updates for Windows 10 have not been installed.</p>
+	<p>The Servicing Stack Updates for Windows 11 are included in the Cumulative Updates for Windows 11.</p>
+
+	<p class="subsectionTitle"><a id="toc1_8"></a>1.8.&nbsp;&nbsp;Identifying The Security Update Holes In Securing A Clean Installation Of Windows 7/8.1/10/11</p>
+
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. Therefore, to secure a clean installation of Windows 7, upon installing the Windows 7 operating system, Windows 7 SP1, Windows 7 SP1 Convenience Rollup, and the latest Security Monthly Quality Rollup for Windows 7 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 7, it is necessary to identify any security update holes into which Security Updates for Windows 7 have not been installed. And to secure a clean installation of Windows 8.1, upon installing the Windows 8.1 operating system, Windows 8.1 Update, and the latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1, it is necessary to identify any security update holes into which Security Updates for Windows 8.1 have not been installed. And to secure a clean installation of Windows 10/11, upon installing the Windows 10 operating system and the latest Cumulative Update for Windows 10/11, it is necessary to identify any security update holes into which Security Updates for Windows 10/11 have not been installed.</p>
 
 	<p class="subSubsectionTitle"><a id="toc1_8_1"></a>1.8.1.&nbsp;&nbsp;The Security Update Holes In Securing A Clean Installation Of Windows 7</p>
 
@@ -550,9 +580,9 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p>Windows 8.1 Update resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) through April 08, 2014, which is through MS14-019. The latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1 resolves all Windows 8.1 vulnerabilities (that do or do not require user interaction to be exploited) from October 2016, which is from MS16-118, through the present. Therefore, after installing Windows 8.1 Update and the latest Security Monthly Quality Rollup for Windows 8.1 or subsequent, not previous, Preview Of Monthly Quality Rollup for Windows 8.1, there exists a security update hole from May 2014 through September 2016, which if from MS14-020 through MS16-117, into which no Security Updates for Windows 8.1 have been installed.</p>
 
-	<p class="subSubsectionTitle"><a id="toc1_8_3"></a>1.8.3.&nbsp;&nbsp;No Security Update Hole In Securing A Clean Installation Of Windows 10</p>
+	<p class="subSubsectionTitle"><a id="toc1_8_3"></a>1.8.3.&nbsp;&nbsp;No Security Update Hole In Securing A Clean Installation Of Windows 10/11</p>
 
-	<p>The latest Cumulative Update for a supported version of Windows 10 resolves all Windows 10 vulnerabilities (that do or do not require user interaction to be exploited) from the initial release of the version of Windows 10 through the present. Therefore, after installing the latest Cumulative Update for a supported version of Windows 10, there does not exist a security update hole into which no Security Updates for Windows 10 have been installed.</p>
+	<p>The latest Cumulative Update for a supported version of Windows 10/11 resolves all Windows 10/11 vulnerabilities (that do or do not require user interaction to be exploited) from the initial release of the version of Windows 10/11 through the present. Therefore, after installing the latest Cumulative Update for a supported version of Windows 10/11, there does not exist a security update hole into which no Security Updates for Windows 10/11 have been installed.</p>
 
 	<p class="subsectionTitle"><a id="toc1_9"></a>1.9.&nbsp;&nbsp;Compiling The List Of Security Updates For Windows 7/8.1 That Resolve Vulnerabilities That Do Not Require User Interaction To Be Exploited</p>
 
@@ -634,9 +664,9 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p>Lastly, when a Microsoft Security Bulletin consists of multiple Security Updates for Windows, and some of the Security Updates for Windows resolve Windows vulnerabilities that do not require user interaction to be exploited, and some of the Security Updates for Windows resolve Windows vulnerabilities that require user interaction to be exploited; rather than omitting the Security Updates for Windows that resolve Windows vulnerabilities that require user interaction to be exploited, and possibly having someone wonder if a mistake was made, a simpler and less confusing policy has been adopted: list all of the Security Updates for Windows included in a Microsoft Security Bulletin, including those that resolve Windows vulnerabilities that require user interaction to be exploited.</p>
 
-	<p class="subsectionTitle"><a id="toc1_10"></a>1.10.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 7/8.1/10</p>
+	<p class="subsectionTitle"><a id="toc1_10"></a>1.10.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 7/8.1/10/11</p>
 
-	<p>Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited. The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not interacted with the computer in any way that could result in compromise, they can be resolved by placing the computer online and running Windows/Microsoft Update. The following are overviews of how to secure a clean installation of Windows 7/8.1/10 per this web page.</p>
+	<p>Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited. The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not interacted with the computer in any way that could result in compromise, they can be resolved by placing the computer online and running Windows/Microsoft Update. The following are overviews of how to secure a clean installation of Windows 7/8.1/10/11 per this web page.</p>
 
 	<p class="subSubsectionTitle"><a id="toc1_10_1"></a>1.10.1.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 7</p>
 
@@ -682,19 +712,19 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 		</li>
 	</ol>
 
-	<p class="subSubsectionTitle"><a id="toc1_10_3"></a>1.10.3.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 10</p>
+	<p class="subSubsectionTitle"><a id="toc1_10_3"></a>1.10.3.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 10/11</p>
 
 		<div class="note">
 			<div class="noteMarker noteMarkerNormal">i</div>
-			<div class="noteContent">The following is for the <a href="#windows_10_versions_support_status" class="linkContent">supported versions of Windows 10 (above)</a>. A clean installation of an <a href="#windows_10_versions_support_status" class="linkContent">unsupported version of Windows 10 (above)</a> cannot be made secure.</div>
+			<div class="noteContent">The following is for the <a href="#windows_1011_versions_support_status" class="linkContent">supported versions of Windows 10/11 (above)</a>. A clean installation of an <a href="#windows_1011_versions_support_status" class="linkContent">unsupported version of Windows 10/11 (above)</a> cannot be made secure.</div>
 			<div class="clearBoth"></div>
 		</div>
 
 	<ol>
 		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
 			<ol>
-				<li>Perform a default installation of Windows 10 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 10 is free from compromise (i.e., clean).</li>
-				<li>Install the latest Cumulative Update for the version of Windows 10. This resolves all Windows 10 vulnerabilities (that do or do not require user interaction to be exploited) through the present.</li>
+				<li>Perform a default installation of Windows 10/11 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of Windows 10/11 is free from compromise (i.e., clean).</li>
+				<li>Install the latest Cumulative Update for the version of Windows 10/11. This resolves all Windows 10/11 vulnerabilities (that do or do not require user interaction to be exploited) through the present.</li>
 			</ol>
 		</li>
 	</ol>
@@ -711,11 +741,11 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 <hr />
 
-<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10</p>
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7/8.1/10/11</p>
 
 <div class="section">
 
-	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. This requires downloading and copying one or more files to removable media before performing the clean installation of Windows 7/8.1/10. Because files on CDs/DVDs are far more difficult manipulate by malicious software/users than files on external hard disk drives and flash memory drives, CDs/DVDs are the removable media of choice.</p>
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve the known examples of Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. This requires downloading and copying one or more files to removable media before performing the clean installation of Windows 7/8.1/10/11. Because files on CDs/DVDs are far more difficult manipulate by malicious software/users than files on external hard disk drives and flash memory drives, CDs/DVDs are the removable media of choice.</p>
 
 	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 7</p>
 
@@ -979,10 +1009,10 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 				</li>
 				<li>Latest Security Monthly Quality Rollup for Windows 8.1:
 					<ul>
-						<li><a href="https://support.microsoft.com/en-us/help/5005613/" class="linkListItem">September 14, 2021 - KB5005613 (Monthly Rollup) (support.microsoft.com)</a>:
+						<li><a href="https://support.microsoft.com/en-us/help/5007247/" class="linkListItem">November 9, 2021 - KB5007247 (Monthly Rollup) (support.microsoft.com)</a>:
 							<ul>
-								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005613" class="linkListItem">2021-09 Security Monthly Quality Rollup For Windows 8.1 For x86-Based Systems (KB5005613) (catalog.update.microsoft.com)</a>.</li>
-								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005613" class="linkListItem">2021-09 Security Monthly Quality Rollup For Windows 8.1 For x64-Based Systems (KB5005613) (catalog.update.microsoft.com)</a>.</li>
+								<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007247" class="linkListItem">2021-11 Security Monthly Quality Rollup For Windows 8.1 For x86-Based Systems (KB5007247) (catalog.update.microsoft.com)</a>.</li>
+								<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007247" class="linkListItem">2021-11 Security Monthly Quality Rollup For Windows 8.1 For x64-Based Systems (KB5007247) (catalog.update.microsoft.com)</a>.</li>
 							</ul>
 						</li>
 					</ul>
@@ -1001,7 +1031,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 			<ul>
 				<li>If the Windows product DVD is Windows 10 Version 1507, 1511, 1607, 1703, 1709, 1803, 1809, or 1903:
 					<ul>
-						<li>Windows 10 Version 1507, 1511, 1607, 1703, 1709, 1803, 1809, 1903, and 1909 are <a href="#windows_10_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 10. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">media creation tool (microsoft.com)</a> to create a Windows product DVD containing the latest version of Windows 10.
+						<li>Windows 10 Version 1507, 1511, 1607, 1703, 1709, 1803, 1809, 1903, and 1909 are <a href="#windows_1011_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 10. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">media creation tool (microsoft.com)</a> to create a Windows product DVD containing the latest version of Windows 10.
 							<div class="note">
 								<div class="noteMarker noteMarkerNormal">i</div>
 								<div class="noteContent">The Windows product DVD created by the media creation tool automatically contains the latest version of Windows 10.</div>
@@ -1024,10 +1054,10 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 						</li>
 						<li>Latest Cumulative Update for Windows 10 Version 2004:
 							<ul>
-								<li><a href="https://support.microsoft.com/en-us/help/5005565/" class="linkListItem">September 14, 2021 - KB5005565 (OS Builds 19041.1237, 19042.1237, And 19043.1237) (support.microsoft.com)</a>:
+								<li><a href="https://support.microsoft.com/en-us/help/5007186/" class="linkListItem">November 9, 2021 - KB5007186 (OS Builds 19041.1348, 19042.1348, And 19043.1348) (support.microsoft.com)</a>:
 									<ul>
-										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 2004 For x86-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
-										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 2004 For x64-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x86-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x64-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
 									</ul>
 								</li>
 							</ul>
@@ -1048,10 +1078,10 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 						</li>
 						<li>Latest Cumulative Update for Windows 10 Version 20H2:
 							<ul>
-								<li><a href="https://support.microsoft.com/en-us/help/5005565/" class="linkListItem">September 14, 2021 - KB5005565 (OS Builds 19041.1237, 19042.1237, And 19043.1237) (support.microsoft.com)</a>:
+								<li><a href="https://support.microsoft.com/en-us/help/5007186/" class="linkListItem">November 9, 2021 - KB5007186 (OS Builds 19041.1348, 19042.1348, And 19043.1348) (support.microsoft.com)</a>:
 									<ul>
-										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 20H2 For x86-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
-										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 20H2 For x64-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x86-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x64-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
 									</ul>
 								</li>
 							</ul>
@@ -1072,10 +1102,10 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 						</li>
 						<li>Latest Cumulative Update for Windows 10 Version 21H1:
 							<ul>
-								<li><a href="https://support.microsoft.com/en-us/help/5005565/" class="linkListItem">September 14, 2021 - KB5005565 (OS Builds 19041.1237, 19042.1237, And 19043.1237) (support.microsoft.com)</a>:
+								<li><a href="https://support.microsoft.com/en-us/help/5007186/" class="linkListItem">November 9, 2021 - KB5007186 (OS Builds 19041.1348, 19042.1348, And 19043.1348) (support.microsoft.com)</a>:
 									<ul>
-										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 21H1 For x86-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
-										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005565" class="linkListItem">2021-09 Cumulative Update For Windows 10 Version 21H1 For x64-Based Systems (KB5005565) (catalog.update.microsoft.com)</a>.</li>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x86-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007186" class="linkListItem">2021-11 Cumulative Update For Windows 10 Version 2004 For x64-Based Systems (KB5007186) (catalog.update.microsoft.com)</a>.</li>
 									</ul>
 								</li>
 							</ul>
@@ -1087,11 +1117,49 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 		<li>If not located on a disc included with your computer and not installed by Windows 10, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
 	</ol>
 
+	<p class="subsectionTitle"><a id="toc2_4"></a>2.4.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 11</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 11:</p>
+
+	<ol>
+		<li>Latest Cumulative Update for Windows 11:
+			<ul>
+<!--
+				<li>If the Windows product DVD is Windows 11 Original Release:
+					<ul>
+						<li>Windows 11 Original Release is <a href="#windows_1011_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 11. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">media creation tool (microsoft.com)</a> to create a Windows product DVD containing the latest version of Windows 11.
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">The Windows product DVD created by the media creation tool automatically contains the latest version of Windows 11.</div>
+								<div class="clearBoth"></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+-->
+				<li>If the Windows product DVD is Windows 11 Original Release:
+					<ul>
+						<li>Latest Cumulative Update for Windows 11 Original Release:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/5007215/" class="linkListItem">November 9, 2021 - KB5007215 (OS Build 22000.318) (support.microsoft.com)</a>:
+									<ul>
+										<li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007215" class="linkListItem">2021-11 Cumulative Update For Windows 11 For x64-Based Systems (KB5007215) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 11, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
 </div>
 
 <hr />
 
-<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Secure A Clean Installation Of Windows 7/8.1/10</p>
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Secure A Clean Installation Of Windows 7/8.1/10/11</p>
 
 <div class="section">
 
@@ -1333,7 +1401,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 						</li>
 						<li>Install the latest Security Monthly Quality Rollup for Windows 8.1:
 							<ul>
-								<li>Install the 2021-09 Security Monthly Quality Rollup For Windows 8.1 KB5005613 file.</li>
+								<li>Install the 2021-11 Security Monthly Quality Rollup For Windows 8.1 KB5007247 file.</li>
 							</ul>
 						</li>
 					</ol>
@@ -1384,7 +1452,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 								</li>
 								<li>Install the latest Cumulative Update for Windows 10 Version 2004:
 									<ul>
-										<li>Install the 2021-09 Cumulative Update For Windows 10 Version 2004 KB5005565 file.</li>
+										<li>Install the 2021-11 Cumulative Update For Windows 10 Version 2004 KB5007186 file.</li>
 									</ul>
 								</li>
 							</ol>
@@ -1404,7 +1472,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 								</li>
 								<li>Install the latest Cumulative Update for Windows 10 Version 20H2:
 									<ul>
-										<li>Install the 2021-09 Cumulative Update For Windows 10 Version 20H2 KB5005565 file.</li>
+										<li>Install the 2021-11 Cumulative Update For Windows 10 Version 20H2 KB5007186 file.</li>
 									</ul>
 								</li>
 							</ol>
@@ -1424,7 +1492,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 								</li>
 								<li>Install the latest Cumulative Update for Windows 10 Version 21H1:
 									<ul>
-										<li>Install the 2021-09 Cumulative Update For Windows 10 Version 21H1 KB5005565 file.</li>
+										<li>Install the 2021-11 Cumulative Update For Windows 10 Version 21H1 KB5007186 file.</li>
 									</ul>
 								</li>
 							</ul>
@@ -1445,6 +1513,48 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 			</ul>
 		</li>
 		<li>You have secured the clean installation of Windows 10. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_4"></a>3.4.&nbsp;&nbsp;Secure A Clean Installation Of Windows 11</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 11 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 11 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 11, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Cumulative Update for Windows 11:
+					<ul>
+						<li>If Windows 11 Original Release was installed:
+							<ul>
+								<li>Install the latest Cumulative Update for Windows 11 Original Release:
+									<ul>
+										<li>Install the 2021-11 Cumulative Update For Windows 11 Original Release KB5007215 file.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 11, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows/Microsoft Update and install:
+					<ul>
+						<li>Any Security Updates and any security fixes for Windows 11.</li>
+						<li>Any non-security updates and fixes for Windows 11.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 11. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
 	</ol>
 
 </div>
@@ -1490,15 +1600,17 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 		<li><a href="https://support.microsoft.com/en-us/help/2919355/windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2-update-april-2" class="linkListItem">Windows RT 8.1, Windows 8.1, And Windows Server 2012 R2 Update: April 2014 (support.microsoft.com)</a></li>
 		<li><a href="https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/" class="linkListItem">Updated Version Of Windows 10 October 2018 Update Released To Windows Insiders (blogs.windows.com)</a></li>
 		<li><a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/" class="linkListItem">Resuming The Rollout Of The Windows 10 October 2018 Update (blogs.windows.com)</a></li>
-		<li><a href="https://technet.microsoft.com/en-us/windows/release-info" class="linkListItem">Windows 10 Release Information (technet.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/windows/release-health/release-information" class="linkListItem">Windows 10 Release Information (docs.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/windows/release-health/windows11-release-information" class="linkListItem">Windows 11 Release Information (docs.microsoft.com)</a></li>
 		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-quick-start" class="linkListItem">Quick Guide To Windows As A Service (docs.microsoft.com)</a></li>
 		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview" class="linkListItem">Overview Of Windows As A Service (docs.microsoft.com)</a></li>
-		<li><a href="https://support.microsoft.com/en-us/help/4018124/windows-10-update-history" class="linkListItem">Windows 10 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-10-update-history-83aa43c0-82e0-92d8-1580-10642c9ed612" class="linkListItem">Windows 10 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-11-update-history-a19cd327-b57f-44b9-84e0-26ced7109ba9" class="linkListItem">Windows 11 Update History (support.microsoft.com)</a></li>
 		<li><a href="https://docs.microsoft.com/en-us/windows/deployment/update/servicing-stack-updates" class="linkListItem">Servicing Stack Updates (docs.microsoft.com)</a></li>
 		<li><a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001" class="linkListItem">ADV990001 | Latest Servicing Stack Updates (portal.msrc.microsoft.com)</a></li>
 		<li><a href="https://support.microsoft.com/en-us/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus" class="linkListItem">2019 SHA-2 Code Signing Support Requirement For Windows And WSUS (support.microsoft.com)</a></li>
-		<li><a href="https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet" class="linkListItem">Windows Lifecycle Fact Sheet (support.microsoft.com)</a></li>
-		<li><a href="https://support.microsoft.com/en-us/help/12373/windows-update-faq" class="linkListItem">Windows Update: FAQ (support.microsoft.com)</a></li>
+		<li><a href="https://docs.microsoft.com/en-us/lifecycle/faq/windows" class="linkListItem">Lifecycle FAQ - Windows (docs.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2" class="linkListItem">Windows Update: FAQ (support.microsoft.com)</a></li>
 		<li><a href="https://blogs.technet.microsoft.com/joscon/2010/06/15/servicing-windows-part-one/" class="linkListItem">Servicing Windows: Part One (blogs.technet.microsoft.com)</a></li>
 		<li><a href="https://technet.microsoft.com/en-us/library/security/dn631938.aspx" class="linkListItem">Security Bulletin Summaries (technet.microsoft.com)</a></li>
 		<li><a href="https://technet.microsoft.com/en-us/library/security/dn631937.aspx" class="linkListItem">Security Bulletins (technet.microsoft.com)</a></li>
