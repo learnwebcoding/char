@@ -2,7 +2,7 @@
  * Purpose: Primary style sheet for entire Web site.
  * Used in: All Web pages.
  * Last reviewed/updated (meaning styles, not comments): 06 Sep 2014.
- * Published: 08 Jan 2014.
+ * Published: 22 Nov 2021.
  * Use em for scaling font-size throughout. Watch for possible inheritance issues with em.
  * SF 3.1, not CH2.0, zoom in/out (Ctrl + +) scales better with em than px. Nonetheless, use em for font-size only.
  * For body font-size: 12px, logical em values are; 0.08em (1px), 0.17em (2px), 0.25em (3px), 0.33em (4px), 0.42em (5px), 0.50em (6px), 0.58em (7px), 0.67em (8px), 0.75em (9px), 0.83em (10px), 0.92em (11px), 1.00em (12px), 1.08em (13px), 1.17em (14px), 1.25em (15px), 1.33em (16px), 1.42em (17px), 1.50em (18px), 1.58em (19px), 1.67em (20px), 1.75em (21px), 1.83em (22px), 1.92em (23px), 2.00em (24px).
@@ -54,17 +54,17 @@ code { font-family: "courier new", courier, monospace; }
 .pageVersion, .for, .lastUpdated { font-size: 0.92em; font-weight: bold; margin: 0px 0px 15px 0px; }
 .siteGreen, .for { color: #226622; }
 .lastUpdated { color: #777777; margin-bottom: 20px; }
-.toc, .tocSectionOneThruNineSubsectionTitles, .tocSectionTenPlusSubsectionTitles, .tocSubSubsectionTitles { list-style-type: none; margin: 0px; padding: 0px; } /* Assigned to ol. No vertical spacing for ol in TOC. */
+.toc, .tocSectionSubsectionTitles, .tocSectionTenPlusSubsectionTitles, .tocSubSubsectionTitles, .tocSubSubSubsectionTitles { list-style-type: none; margin: 0px; padding: 0px; } /* Plural assigned to ol, not li. Singular assigned to li, not ol. No vertical spacing for ol in TOC. */
 .toc { margin-bottom: 15px; }
 .tocSectionTitle { font-size: 1.17em; font-weight: bold; }
-.tocSectionOneThruNineSubsectionTitles { padding-left: 21px; }
+.tocSectionSubsectionTitles { padding-left: 21px; }
 .tocSectionTenPlusSubsectionTitles { padding-left: 29px; }
 .tocSubsectionTitle { font-weight: bold; }
-.tocSubSubsectionTitles, .tocSubSubsectionTitle {} /* Deliberate. */
+.tocSubSubsectionTitles, .tocSubSubsectionTitle, .tocSubSubSubsectionTitles, .tocSubSubSubsectionTitle {} /* Deliberate. */
 .sectionTitle { font-size: 1.17em; font-weight: bold; margin-bottom: 15px; }
 .section { margin-left: 20px; }
 .subsectionTitle { font-weight: bold; }
-.subSubsectionTitle {} /* Deliberate. */
+.subSubsectionTitle, .subSubSubsectionTitle {} /* Deliberate. */
 
 /* ---------- Links common. ----------
  * Some links are interactive objects (IOs) that look and behave like hyperlinks but are styled text used as JavaScript event targets.
