@@ -30,7 +30,7 @@
 <ol class="toc">
 	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
 		<ol class="tocSectionSubsectionTitles">
-			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Windows Vulnerabilities</a></span></li>
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Windows Vulnerabilities And Worms</a></span></li>
 			<li><span class="tocSubsectionTitle">1.2.&nbsp;&nbsp;<a href="#toc1_2" class="linkToc">Windows 8.1 Servicing Model</a></span>
 				<ol class="tocSubSubsectionTitles">
 					<li><span class="tocSubSubsectionTitle">1.2.1.&nbsp;&nbsp;<a href="#toc1_2_1" class="linkToc">Windows 8.1 Servicing Model Ending September 2016: Individual Security Updates</a></span></li>
@@ -97,7 +97,7 @@
 
 	<p>Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update or Microsoft Update.</p>
 
-	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Windows Vulnerabilities</p>
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Windows Vulnerabilities And Worms</p>
 
 	<p>Windows vulnerabilities are flaws in the Windows operating system code that render Windows susceptible to exploitation. The successful exploitation of a Windows vulnerability results in compromise.<!-- Need to define  compromise. --> Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited.</p>
 
@@ -105,18 +105,28 @@
 
 	<p>For the Windows vulnerabilities that do not require user interaction to be exploited, compromise does not require any user interaction on the computer besides placing the vulnerable computer online. In other words, for the Windows vulnerabilities that do not require user interaction to be exploited, there is no trigger and compromise can occur simply by placing the vulnerable computer online.</p>
 
-	<p>After installing Windows, a common practice is to place the computer online and run Windows Update to install the latest Update (Windows 8.1), Security Monthly Quality Rollup (Windows 8.1), Cumulative Update (Windows 10/11), Security Updates (8.1/10/11), and non-security updates and fixes Windows (8.1/10/11). Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows/Microsoft Update is running.</p>
+	<p>After installing Windows, a common practice is to place the computer online and run Windows Update to install the latest Update (Windows 8.1), Security Monthly Quality Rollup (Windows 8.1), Cumulative Update (Windows 10/11), Security Updates (8.1/10/11), and non-security updates and fixes Windows (8.1/10/11). Although the intension (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows Update is running.</p>
 
 	<p>Worms are the class of threat that automatically run themselves on, and automatically copy themselves from, computer to computer over a network without user interaction. To accomplishes this, worms exploit vulnerabilities that, themselves, do not require user interaction to be exploited and that allow remote code execution (RCE). First, the worm exploits the vulnerability, then it runs itself on the now compromised computer, including possibly delivering a destructive payload, and then it attempts to propagate itself to other vulnerable computers on the network, again without user interaction.</p>
 
-	<p>Worms are extremely dangerous because they can automatically infect a tremendous number of vulnerable networked computers seemingly simultaneously without any user interaction besides placing the vulnerable computers online. Infamous worms that exploit Windows vulnerabilities include <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081113-0229-99" class="linkContent">W32.Blaster.Worm (symantec.com)</a> (Discovered 11 Aug 2003 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms03-026.aspx" class="linkContent">MS03-026 (technet.microsoft.com)</a> published 16 Jul 2003), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2003-081815-2308-99" class="linkContent">W32.Welchia.Worm (a.k.a., Nachi) (symantec.com)</a> (Discovered 18 Aug 2003 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms03-007.aspx" class="linkContent">MS03-007 (technet.microsoft.com)</a> published 17 Mar 2003 and <a href="https://technet.microsoft.com/en-us/library/security/ms03-026.aspx" class="linkContent">MS03-026 (technet.microsoft.com)</a> published 16 Jul 2003), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2004-050116-1831-99" class="linkContent">W32.Sasser.Worm (symantec.com)</a> (Discovered 30 Apr 2004 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms04-011.aspx" class="linkContent">MS04-011 (technet.microsoft.com)</a> published 13 Apr 2004), <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2008-112203-2408-99" class="linkContent">W32.Downadup (a.k.a., Conficker) (symantec.com)</a> (Discovered 21 Aug 2008 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms08-067.aspx" class="linkContent">MS08-067 (technet.microsoft.com)</a> published 23 Oct 2008), and <a href="https://www.symantec.com/security_response/writeup.jsp?docid=2017-051310-3522-99" class="linkContent">Ransom.Wannacry (symantec.com)</a> (Discovered 12 May 2017 and resolved by <a href="https://technet.microsoft.com/en-us/library/security/ms17-010.aspx" class="linkContent">MS17-010 (technet.microsoft.com)</a> published 14 Mar 2017). Moreover, Blaster, Welchia, Sasser, and Downadup remain so prevalent that even today - years after they have been discovered - vulnerable Windows computers are still being compromised by these worms as soon as they are placed online, including during the time that Windows/Microsoft Update is running.</p>
+	<p>Worms are extremely dangerous because they can automatically infect a tremendous number of vulnerable networked computers seemingly simultaneously without any user interaction besides placing the vulnerable computers online. Infamous worms that exploit Windows vulnerabilities include:</p>
 
-	<p>Fortunately, most of the Windows vulnerabilities that do not require user interaction to be exploited are not wormable (i.e., do not allow RCE and, therefore, are not suitable for worms). Instead, the impact of most Windows vulnerabilities that do not require user interaction to be exploited is to allow either denial of service, elevation of privilege (EOP), information disclosure, security feature bypass, or spoofing.</p>
+	<ul>
+		<li>Blaster: Discovered 11 Aug 2003. Affects Windows 2000/XP. Resolved by <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-026" class="linkContent">MS03-026 (docs.microsoft.com)</a> published 16 Jul 2003.</li>
+		<li>Welchia (a.k.a., Nachi): Discovered 18 Aug 2003. Affects Windows 2000/XP. Resolved by <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-007" class="linkContent">MS03-007 (docs.microsoft.com)</a> published 17 Mar 2003 and <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-026" class="linkContent">MS03-026 (docs.microsoft.com)</a> published 16 Jul 2003.</li>
+		<li>Sasser: Discovered 30 Apr 2004. Affects Windows 2000/XP. Resolved by <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2004/ms04-011" class="linkContent">MS04-011 (docs.microsoft.com)</a> published 13 Apr 2004.</li>
+		<li>Conficker (a.k.a., Downadup): Discovered 21 Aug 2008. Affects Windows 2000/XP/Vista. Resolved by <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2008/ms08-067" class="linkContent">MS08-067 (docs.microsoft.com)</a> published 23 Oct 2008.</li>
+		<li>Wannacry: Discovered 12 May 2017. Affects Windows Vista/7/8.1/10. Resolved by <a href="https://docs.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010" class="linkContent">MS17-010 (technet.microsoft.com)</a> published 14 Mar 2017.</li>
+	</ul>
 
-	<p>In some environments, the exploitability (i.e., the likelihood that a vulnerability will be exploited) of a Windows vulnerability that does not require user interaction to be exploited is low. However, in some environments, the exploitability of a Windows vulnerability that does not require user interaction to be exploited is high. Rather than trying to take environment, exploitability, impact, and other factors into account, and unnecessarily driving oneself mad in the process, a simpler and safer policy has been adopted: to secure a clean installation of Windows per this web page, it is necessary to resolve <em>all</em> known examples of Windows vulnerabilities that do not require user interaction to be exploited before, not after, placing the computer online.</p>
+	<p>Worms Blaster, Welchia, Sasser, Conficker, and Wannacry remain so prevalent that even today - years after they have been discovered - vulnerable Windows computers are still being compromised by these worms as soon as they are placed online, including during the time that Windows Update is running.</p>
+
+	<p>Fortunately, most of the Windows vulnerabilities that do not require user interaction to be exploited are not wormable (i.e., do not allow RCE and, therefore, are not suitable for worms). Instead, the impact of most Windows vulnerabilities that do not require user interaction to be exploited is to allow either denial of service, elevation of privilege (EOP), information disclosure, security feature bypass, or spoofing. However, wormable Windows vulnerabilities are found every year. For example, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21907">CVE-2022-21907 (cve.mitre.org)</a>, released in Jan 2022, describes a wormable Windows 10/11 vulnerability. Whether or not a worm will be developed to exploit this vulnerability is anyone's guess.</p>
+
+	<p>In some environments, the exploitability (i.e., the likelihood that a vulnerability will be exploited) of a Windows vulnerability that does not require user interaction to be exploited is low. However, in some environments, the exploitability of a Windows vulnerability that does not require user interaction to be exploited is high. In addition, some worms can transfer across gateways/routers. Rather than trying to take environment, exploitability, impact, and other factors into account, and unnecessarily driving oneself mad in the process, a simpler and safer policy has been adopted: to secure a clean installation of Windows per this web page, it is necessary to resolve <em>all</em> known examples of Windows vulnerabilities that do not require user interaction to be exploited before, not after, placing the computer online.</p>
 
 <!--
-Now, someone in the room might say, who cares about a denial of service vulnerability...simply reboot the computer and carry on with your life. What if, however, the vulnerability actually allows an exhaustion of resources, which freezes the computer, which, in turn, causes the denial of service, and this occurs while your are running Windows/Microsoft Update, and the only solution is a hard reboot, and now the computer boots to a blue screen. Suddenly the seemingly innocuous denial of service vulnerability is not so innocuous.
+Now, someone in the room might say, who cares about a denial of service vulnerability...simply reboot the computer and carry on with your life. What if, however, the vulnerability actually allows an exhaustion of resources, which freezes the computer, which, in turn, causes the denial of service, and this occurs while your are running Windows Update, and the only solution is a hard reboot, and now the computer boots to a blue screen. Suddenly the seemingly innocuous denial of service vulnerability is not so innocuous.
 -->
 
 		<div class="note">
@@ -149,7 +159,7 @@ Now, someone in the room might say, who cares about a denial of service vulnerab
 			<div class="clearBoth"></div>
 		</div>
 
-	<p>Security Updates for Windows can be installed in an automated, batch-like fashion via Windows/Microsoft Update. Security Updates for Windows can also be downloaded via the links in the Microsoft Security Bulletins and installed manually. To secure a clean installation of Windows 8.1 per this web page, it is necessary to install some Security Updates for Windows 8.1 before placing the computer online. This requires downloading and copying the Security Updates for Windows 8.1 to removable media before performing the clean installation of Windows 8.1.</p>
+	<p>Security Updates for Windows can be installed in an automated, batch-like fashion via Windows Update. Security Updates for Windows can also be downloaded via the links in the Microsoft Security Bulletins and installed manually. To secure a clean installation of Windows 8.1 per this web page, it is necessary to install some Security Updates for Windows 8.1 before placing the computer online. This requires downloading and copying the Security Updates for Windows 8.1 to removable media before performing the clean installation of Windows 8.1.</p>
 
 
 	<p class="subSubsectionTitle"><a id="toc1_2_2"></a>1.2.2.&nbsp;&nbsp;Windows 8.1 Update</p>
@@ -424,7 +434,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p class="subsectionTitle"><a id="toc1_4"></a>1.4.&nbsp;&nbsp;Servicing Stack Updates</p>
 
-	<p>Servicing is the process of installing a Windows Service Pack, Update, Security Monthly Quality Rollup, Cumulative Update, Security Update, non-security update, fix, component, role, etc. Depending on what is being installed, servicing is performed manually by the user and/or automatically by Windows/Microsoft Update. The Servicing Stack is the component of Windows that performs servicing. Like other Windows components, the Servicing Stack is periodically updated. A Servicing Stack Update improves the speed and reliability of servicing.</p>
+	<p>Servicing is the process of installing a Windows Service Pack, Update, Security Monthly Quality Rollup, Cumulative Update, Security Update, non-security update, fix, component, role, etc. Depending on what is being installed, servicing is performed manually by the user and/or automatically by Windows Update. The Servicing Stack is the component of Windows that performs servicing. Like other Windows components, the Servicing Stack is periodically updated. A Servicing Stack Update improves the speed and reliability of servicing.</p>
 
 	<p class="subSubsectionTitle"><a id="toc1_4_1"></a>1.4.1.&nbsp;&nbsp;Starting March 2021, Servicing Stack Updates For Windows 10 Version 2004 And Newer Are Included In The Cumulative Updates For Windows 10 Version 2004 And Newer</p>
 
@@ -526,7 +536,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 
 	<p class="subsectionTitle"><a id="toc1_7"></a>1.7.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 8.1/10/11</p>
 
-	<p>Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited. The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not interacted with the computer in any way that could result in compromise, they can be resolved by placing the computer online and running Windows/Microsoft Update. The following are overviews of how to secure a clean installation of Windows 8.1/10/11 per this web page.</p>
+	<p>Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited. The Windows vulnerabilities that do not require user interaction to be exploited must be resolved offline (i.e., before placing the computer online). For the Windows vulnerabilities that require user interaction to be exploited, provided the user has not interacted with the computer in any way that could result in compromise, they can be resolved by placing the computer online and running Windows Update. The following are overviews of how to secure a clean installation of Windows 8.1/10/11 per this web page.</p>
 
 	<p class="subSubsectionTitle"><a id="toc1_7_1"></a>1.7.1.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 8.1</p>
 
@@ -541,7 +551,7 @@ http://blogs.windows.com/windows/b/windowsexperience/archive/2014/04/08/why-i-lo
 		</li>
 		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
 			<ul>
-				<li>Run Windows/Microsoft Update and install any Security Updates for Windows 8.1. Combined with the above, this resolves all Windows 8.1 vulnerabilities that require user interaction to be exploited through the present.</li>
+				<li>Run Windows Update and install any Security Updates for Windows 8.1. Combined with the above, this resolves all Windows 8.1 vulnerabilities that require user interaction to be exploited through the present.</li>
 			</ul>
 		</li>
 	</ol>
@@ -978,7 +988,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 		</li>
 		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
 			<ul>
-				<li>Run Windows/Microsoft Update and install:
+				<li>Run Windows Update and install:
 					<ul>
 						<li>The Security Updates and any security fixes for Windows 8.1.</li>
 						<li>Any non-security updates and fixes for Windows 8.1. If a Preview Of Monthly Quality Rollup for Windows 8.1 is listed, and if it resolves an issue affecting your computer, install it. Otherwise, it is recommended that you do not install Preview Of Monthly Quality Rollups for Windows 8.1. Instead, it is recommended that you only install Security Monthly Quality Rollups for Windows 8.1.</li>
@@ -1065,7 +1075,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 		</li>
 		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
 			<ul>
-				<li>Run Windows/Microsoft Update and install:
+				<li>Run Windows Update and install:
 					<ul>
 						<li>Any Security Updates and any security fixes for Windows 10.</li>
 						<li>Any non-security updates and fixes for Windows 10.</li>
@@ -1107,7 +1117,7 @@ Through the <a href="https://technet.microsoft.com/library/security/ms17-mar" cl
 		</li>
 		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
 			<ul>
-				<li>Run Windows/Microsoft Update and install:
+				<li>Run Windows Update and install:
 					<ul>
 						<li>Any Security Updates and any security fixes for Windows 11.</li>
 						<li>Any non-security updates and fixes for Windows 11.</li>
