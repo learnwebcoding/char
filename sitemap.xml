@@ -4,7 +4,7 @@
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <!-- Computer Help And Resources Site Map (XML Version Per Sitemaps.org)-->
-<!-- Last Reviewed/Updated: 25 Apr 2016 | Status: To Be Continued -->
+<!-- Last Reviewed/Updated: 16 Feb 2023 | Status: To Be Continued -->
 
 <!-- /public_html/ Home -->
 
@@ -18,13 +18,13 @@
 		<loc>http://char.learnwebcoding.com/sitemap.html</loc>
 	</url>
 
-<!-- /public_html/ Home | Header Links -->
+<!-- /public_html/ Home | What's New -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/whats_new.html</loc>
 	</url>
 
-<!-- /public_html/other/ Home | Computer Help | Hardware -->
+<!-- /public_html/help/ Home | Computer Help | Hardware -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/help/builders_guide_desktop_components.html</loc>
@@ -33,7 +33,7 @@
 		<loc>http://char.learnwebcoding.com/help/intel_desktop_chipset_windows_driver_support.html</loc>
 	</url>
 
-<!-- /public_html/other/ Home | Computer Help | Windows -->
+<!-- /public_html/help/ Home | Computer Help | Windows -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/help/windows_system_requirements.html</loc>
@@ -43,7 +43,7 @@
 	</url>
 <!--
 	<url>
-		<loc>http://char.learnwebcoding.com/other/windows_processes_default.html</loc>
+		<loc>http://char.learnwebcoding.com/help/windows_processes_default.html</loc>
 	</url>
 -->
 	<url>
@@ -68,25 +68,25 @@
 		<loc>http://char.learnwebcoding.com/help/w9xme_startup_disk.html</loc>
 	</url>
 
-<!-- /public_html/other/ Home | Computer Help | Internet Explorer -->
+<!-- /public_html/help/ Home | Computer Help | Internet Explorer -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/help/ie_favorites_organize.html</loc>
 	</url>
 
-<!-- /public_html/other/ Home | Computer Help | Outlook Express/Windows Mail -->
+<!-- /public_html/help/ Home | Computer Help | Outlook Express/Windows Mail -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/help/olexp_wmail_disable_preview_pane.html</loc>
 	</url>
 
-<!-- /public_html/other/ Home | Computer Help | Misc -->
+<!-- /public_html/help/ Home | Computer Help | Miscellaneous -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/help/rescue_disk_comparison.html</loc>
 	</url>
 
-<!-- /public_html/resources/ Home | Computer Resources -->
+<!-- /public_html/resources/ Home | Computer Resources | Resources -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/resources/network_resources.html</loc>
@@ -140,7 +140,7 @@
 		<loc>http://char.learnwebcoding.com/resources/miscellaneous_resources.html</loc>
 	</url>
 
-<!-- /public_html/resources/ Home | Useful Links -->
+<!-- /public_html/resources/ Home | Computer Resources | Miscellaneous Links -->
 
 	<url>
 		<loc>http://char.learnwebcoding.com/resources/free_download_links.html</loc>
