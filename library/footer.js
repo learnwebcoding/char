@@ -7,6 +7,6 @@ document.write('<div class="footer">' +
         '<div id="linkFooterLogoSubtitleId" class="linkFooterLogoSubtitle">The Stop For Trusted Computer Information</div>' +
     '</a>' +
     '<p class="clearBoth"><a href="https://validator.w3.org/check?uri=referer"><img src="../../images/HTML5_Logo_48.gif" style="border:0;width:48px;height:48px" alt="Valid HTML5!" /></a>&nbsp;<a href="https://jigsaw.w3.org/css-validator/check?uri=referer&amp;profile=css3"><img src="../../images/valid-css.gif" style="border:0;width:88px;height:31px" alt="Valid CSS3!" /></a></p>' +
-    '<p class="footerCopyright">Copyright &copy; 2024 Steve Taylor</p>' +
+    '<p class="footerCopyright">Copyright &copy; 2025 Steve Taylor</p>' +
 '</div>'
 );
