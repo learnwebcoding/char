@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Secure A Clean Installation Of Windows 10/11</title>
+<meta charset="UTF-8" />
+<meta name="Author" content="Steve Taylor" />
+<meta name="Keywords" content="Windows 10, Windows 11, how to, secure, new, clean, installation" />
+<meta name="Description" content="Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update. Learn how to secure a clean installation of Windows 10/11." />
+<link rel="stylesheet" type="text/css" media="all" href="../library/char.css" id="linkElement" />
+<script src="../library/char.js"></script>
+</head>
+<body>
+
+<script src="../library/header.js" id="headerSrc"></script>
+<script>HighlightTabsUtil.highlightTabs("1");</script>
+<noscript><div class="noscript"><a href="http://char.learnwebcoding.com/" class="linkNoScript">Computer Help And Resources - The Stop For Trusted Computer Information</a><br />This page header displayed because your Web browser does not support JavaScript or has JavaScript support disabled.</div></noscript>
+
+<div class="pageDescOrPath">Computer Help | Windows:</div>
+
+<div class="container">
+
+<h1>Secure A Clean Installation Of Windows 10/11</h1>
+
+<p class="pageVersion">Version: <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char.css')" class="linkPageVersion cursorPointer">Default</span><span id="pageVersion1Asterisk">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_with_images.css')" class="linkPageVersion cursorPointer">Print Friendly With Images</span><span id="pageVersion2Asterisk" style="display:none">*</span> | <span onclick="ReplaceExtStyleSheetUtil.replaceExtStyleSheet('../library/char_print_without_images.css')" class="linkPageVersion cursorPointer">Print Friendly Without Images</span><span id="pageVersion3Asterisk" style="display:none">*</span></p>
+
+<p class="for">For: Windows 10 (32/64) | Windows 11</p>
+
+<p class="lastUpdated">Last Reviewed/Updated: 18 Oct 2025 | Published: 14 Jan 2004 | Status: Active</p>
+
+<ol class="toc">
+	<li><span class="tocSectionTitle">1.&nbsp;&nbsp;<a href="#toc1" class="linkToc">Introduction</a></span>
+		<ol class="tocSectionSubsectionTitles">
+			<li><span class="tocSubsectionTitle">1.1.&nbsp;&nbsp;<a href="#toc1_1" class="linkToc">Windows Vulnerabilities And Worms</a></span></li>
+			<li><span class="tocSubsectionTitle">1.2.&nbsp;&nbsp;<a href="#toc1_2" class="linkToc">Windows 10/11 Servicing Model: Cumulative Updates</a></span></li>
+			<li><span class="tocSubsectionTitle">1.3.&nbsp;&nbsp;<a href="#toc1_3" class="linkToc">Servicing Stack Updates</a></span>
+				<ol class="tocSubSubsectionTitles">
+					<li><span class="tocSubSubsectionTitle">1.3.1.&nbsp;&nbsp;<a href="#toc1_3_1" class="linkToc">Starting March 2021, Servicing Stack Updates For Windows 10 Version 2004 And Newer Are Included In The Cumulative Updates For Windows 10 Version 2004 And Newer</a></span></li>
+					<li><span class="tocSubSubsectionTitle">1.3.2.&nbsp;&nbsp;<a href="#toc1_3_2" class="linkToc">Servicing Stack Updates For Windows 11 Are Included In The Cumulative Updates For Windows 11</a></span></li>
+				</ol>
+			</li>
+			<li><span class="tocSubsectionTitle">1.4.&nbsp;&nbsp;<a href="#toc1_4" class="linkToc">Overview: How To Secure A Clean Installation Of Windows 10/11</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">2.&nbsp;&nbsp;<a href="#toc2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10/11</a></span>
+		<ol class="tocSectionSubsectionTitles">
+			<li><span class="tocSubsectionTitle">2.1.&nbsp;&nbsp;<a href="#toc2_1" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10</a></span></li>
+			<li><span class="tocSubsectionTitle">2.2.&nbsp;&nbsp;<a href="#toc2_2" class="linkToc">Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 11</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">3.&nbsp;&nbsp;<a href="#toc3" class="linkToc">Secure A Clean Installation Of Windows 10/11</a></span>
+		<ol class="tocSectionSubsectionTitles">
+			<li><span class="tocSubsectionTitle">3.1.&nbsp;&nbsp;<a href="#toc3_1" class="linkToc">Secure A Clean Installation Of Windows 10</a></span></li>
+			<li><span class="tocSubsectionTitle">3.2.&nbsp;&nbsp;<a href="#toc3_2" class="linkToc">Secure A Clean Installation Of Windows 11</a></span></li>
+		</ol>
+	</li>
+	<li><span class="tocSectionTitle">4.&nbsp;&nbsp;<a href="#toc4" class="linkToc">Resources And Additional Information</a></span></li>
+</ol>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc1"></a>1.&nbsp;&nbsp;Introduction</p>
+
+<div class="section">
+
+	<p>Some Windows vulnerabilities can be exploited without user interaction as soon as the computer is placed online. Therefore, after performing a clean installation of Windows, it is necessary to resolve the known examples of these vulnerabilities before placing the computer online, including before running Windows Update.</p>
+
+	<p class="subsectionTitle"><a id="toc1_1"></a>1.1.&nbsp;&nbsp;Windows Vulnerabilities And Worms</p>
+
+	<p>Windows vulnerabilities are flaws in the Windows operating system code that render Windows susceptible to exploitation. The successful exploitation of a Windows vulnerability results in compromise.<!-- Need to define  compromise. --> Toward securing Windows, it is instructive to divide Windows vulnerabilities into two groups: 1.) those that require user interaction to be exploited, and 2.) those that do not require user interaction to be exploited.</p>
+
+	<p>For the Windows vulnerabilities that require user interaction to be exploited, compromise requires user interaction on the computer besides placing the vulnerable computer online (i.e., connecting the computer to a network, be it an Intranet and/or the Internet). User interactions that can result in compromise, known as triggers, include attaching external/removable drives or network devices, visiting Web sites, accessing/receiving/opening emails, opening email attachments, creating/accessing/opening/installing/joining/connecting to network resources including but not limited to servers/domains/devices/shares/files/etc. In other words, for the Windows vulnerabilities that require user interaction to be exploited, in the absence of the appropriate user interaction required to trigger exploitation, compromise cannot occur simply by placing the vulnerable computer online.</p>
+
+	<p>For the Windows vulnerabilities that do not require user interaction to be exploited, compromise does not require any user interaction on the computer besides placing the vulnerable computer online. In other words, for the Windows vulnerabilities that do not require user interaction to be exploited, there is no trigger and compromise can occur simply by placing the vulnerable computer online.</p>
+
+	<p>After installing Windows 10/11, a common practice is to place the computer online and run Windows Update to install the latest Cumulative Update for Windows 10/11. Although the intention (to secure Windows) is good, this practice is bad. Why? Because, for the Windows vulnerabilities that do not require user interaction to be exploited, compromise can occur simply by placing the vulnerable computer online, and this includes during the time that Windows Update is running.</p>
+
+	<p>Worms are the class of threat that automatically run themselves on, and automatically copy themselves from, computer to computer over a network without user interaction. To accomplishes this, worms exploit vulnerabilities that, themselves, do not require user interaction to be exploited and that allow remote code execution (RCE). First, the worm exploits the vulnerability, then it runs itself on the now compromised computer, including possibly delivering a destructive payload, and then it attempts to propagate itself to other vulnerable computers on the network, again without user interaction.</p>
+
+	<p>Worms are extremely dangerous because they can automatically infect a tremendous number of vulnerable networked computers seemingly simultaneously without any user interaction besides placing the vulnerable computers online. Infamous worms that exploit Windows vulnerabilities include:</p>
+
+	<ul>
+		<li>Blaster: Discovered 11 Aug 2003. Affects Windows 2000/XP. Resolved by <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-026" class="linkContent">MS03-026 (learn.microsoft.com)</a> published 16 Jul 2003.</li>
+		<li>Welchia (a.k.a., Nachi): Discovered 18 Aug 2003. Affects Windows 2000/XP. Resolved by <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-007" class="linkContent">MS03-007 (learn.microsoft.com)</a> published 17 Mar 2003 and <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2003/ms03-026" class="linkContent">MS03-026 (docs.microsoft.com)</a> published 16 Jul 2003.</li>
+		<li>Sasser: Discovered 30 Apr 2004. Affects Windows 2000/XP. Resolved by <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2004/ms04-011" class="linkContent">MS04-011 (learn.microsoft.com)</a> published 13 Apr 2004.</li>
+		<li>Conficker (a.k.a., Downadup): Discovered 21 Aug 2008. Affects Windows 2000/XP/Vista. Resolved by <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2008/ms08-067" class="linkContent">MS08-067 (learn.microsoft.com)</a> published 23 Oct 2008.</li>
+		<li>Wannacry: Discovered 12 May 2017. Affects Windows Vista/7/8.1/10. Resolved by <a href="https://learn.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010" class="linkContent">MS17-010 (learn.microsoft.com)</a> published 14 Mar 2017.</li>
+	</ul>
+
+	<p>Worms Blaster, Welchia, Sasser, Conficker, and Wannacry remain so prevalent that even today - years after they have been discovered - vulnerable Windows computers are still being compromised by these worms as soon as they are placed online, including during the time that Windows Update is running.</p>
+
+	<p>Fortunately, most of the Windows vulnerabilities that do not require user interaction to be exploited are not wormable (i.e., do not allow RCE and, therefore, are not suitable for worms). Instead, the impact of most Windows vulnerabilities that do not require user interaction to be exploited is to allow either denial of service, elevation of privilege (EOP), information disclosure, security feature bypass, or spoofing. However, wormable Windows vulnerabilities are found every year. For example, <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21907" class="linkContent">CVE-2022-21907 (cve.mitre.org)</a>, released in Jan 2022, describes a wormable Windows 10/11 vulnerability. Whether or not a worm will be developed to exploit this vulnerability only time will tell.</p>
+
+	<p>The exploitability (i.e., the likelihood that a vulnerability will be exploited) of a Windows vulnerability that does not require user interaction to be exploited depends on the computer's network environment. For a computer that is directly connected to the Internet (i.e., for a computer that is assigned a public IP address because it is not behind a gateway/router), the exploitability of a Windows vulnerability that does not require user interaction to be exploited is high. For a computer that is connected to a local network (i.e., for a computer that is assigned a private IP address because it is behind a gateway/router), the exploitability of a Windows vulnerability that does not require user interaction to be exploited is relatively low. Note, however, that some worms (e.g., Downadup (a.k.a., Conficker)) can transfer across (i.e., bridge) gateways/routers. Hence, rather than trying to take network environment, exploitability, severity rating, impact, and other factors into account, thereby, driving oneself mad in the process, a simpler and safer policy has been adopted for this web page: to secure a clean installation of Windows, it is necessary to resolve <em>all</em> known Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online, not after placing the computer online.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">
+				<ul class="olUlNestedInNotePaddingReduced">
+					<li>In this web page the severity rating (e.g., low, moderate, important, and critical) and impact (e.g., denial of service, EOP, information disclosure, RCE, security feature bypass, or spoofing) of a Windows vulnerability does not matter. The only thing that matters is whether or not the Windows vulnerability requires user interaction to be exploited.</li>
+					<li>Toward securing a clean installation of Windows, this Web page assumes the worse, including:
+						<ul>
+							<li>The network administrator and/or Internet Service Provider is not filtering, or is doing a poor job of filtering, malicious network traffic.</li>
+							<li>A gateway/router is not being used, or, if a gateway/router is being used, it is running outdated, insecure firmware and/or is not properly configured.</li>
+							<li>If a gateway/router is being used, it is not explicitly configured to block worms that can transfer across (i.e., bridge) gateways/routers.</li>
+							<li>Your Intranet includes a compromised computer running malicious software and/or a malicious user which are attempting to use the Intranet (not physical access) to compromise other computers on the Intranet.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<p class="subsectionTitle"><a id="toc1_2"></a>1.2.&nbsp;&nbsp;Windows 10/11 Servicing Model: Cumulative Updates</p>
+
+	<p>From 2015 to 2021 Microsoft released a new version (a.k.a., Feature Update) of Windows 10 twice a year, the first in the spring and the second in the fall. Starting in November 2021, Microsoft intended to release a new version of Windows 10/11 once a year, in the second half of the year. However, in April 2023 Microsoft <a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-client-roadmap-update/ba-p/3805227" class="linkContent">announced (techcommunity.microsoft.com)</a> that Windows 10 Version 22H2 is the final version of Windows 10.</p>
+
+	<p>On the second Tuesday of each month, Microsoft releases a Cumulative Update (a.k.a., Quality Update) for the supported versions of Windows 10/11. Microsoft supported each version of Windows 10 Home and Pro through Windows 10 Version 21H2 with Cumulative Updates for 18 months. Microsoft intends to support Windows 10 Version 22H2 Home and Pro with Cumulative Updates through October 14, 2025. Microsoft intends to support each version of Windows 11 Home and Pro with Cumulative Updates for 24 months:</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">For additional information on Windows 10/11 support, see <a href="https://learn.microsoft.com/en-us/windows/release-health/release-information" class="linkContent">Windows 10 Release Information (learn.microsoft.com)</a>, <a href="https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information" class="linkContent">Windows 11 Release Information (learn.microsoft.com)</a>, and <a href="https://learn.microsoft.com/en-us/lifecycle/faq/windows" class="linkContent">Lifecycle FAQ - Windows (learn.microsoft.com)</a>.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<a id="windows_10_versions_support_status"></a><a id="windows_1011_versions_support_status"></a>
+	<table>
+		<tr>
+			<td colspan="6" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Oct 2025)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 1507<br />
+			(10.0.10240)</th><!-- Threshold 1. A.k.a., 10, 10 Initial Version, 10 Gold. --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4025338/windows-10-update-kb4025338" class="linkContent">July 11, 2017 - KB4025338 (OS Build 10240.17488) (support.microsoft.com)</a> -->
+			<th>10 Version 1511<br />
+			(10.0.10586.0)</th><!-- Threshold 2/November Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4041689/windows-10-update-kb4041689" class="linkContent">October 10, 2017 - KB4041689 (OS Build 10586.1176) (support.microsoft.com)</a> -->
+			<th>10 Version 1607<br />
+			(10.0.14393.0)</th><!-- Redstone 1/Anniversary Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4093119/windows-10-update-kb4093119" class="linkContent">April 10, 2018 - KB4093119 (OS Build 14393.2189) (support.microsoft.com)</a> -->
+			<th>10 Version 1703<br />
+			(10.0.15063.0)</th><!-- Redstone 2/Creators Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4462937/windows-10-update-kb4462937" class="linkContent">October 9, 2018 - KB4462937 (OS Build 15063.1387) (support.microsoft.com)</a> -->
+			<th>10 Version 1709<br />
+			(10.0.16299.15)</th><!-- Redstone 3/Fall Creators Update --><!-- Last Cumulative Update: <a href="https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441" class="linkListItem">April 9, 2019 - KB4493441 (OS Build 16299.1087) (support.microsoft.com)</a> -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			<td>29 Jul 2015</td>
+			<td>12 Nov 2015</td>
+			<td>02 Aug 2016</td>
+			<td>11 Apr 2017</td>
+			<td>17 Oct 2017</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="5">No</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="6" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Oct 2025)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 1803<br />
+			(10.0.17134.1)</th><!-- Redstone 4/April 2018 Update -->
+			<th>10 Version 1809 <a id="endnote_1_10support_return"></a><a href="#endnote_1_10support" class="linkEndnote">(1)</a><br />
+			(10.0.17763.1)</th><!-- Redstone 5/October 2018 Update -->
+			<th>10 Version 1809 <a id="endnote_2_10support_return"></a><a href="#endnote_2_10support" class="linkEndnote">(2)</a><br />
+			(10.0.17763.107)</th><!-- Redstone 5/October 2018 Update -->
+			<th>10 Version 1903<br />
+			(10.0.18362.30)</th><!-- 19H1/May 2019 Update -->
+			<th>10 Version 1909<br />
+			(10.0.18363.418)</th><!-- 19H2/November 2019 Update -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			<td>30 Apr 2018</td>
+			<td class="cellTextAlignLeftTop">
+				<ul class="olUlNestedInTablePaddingReduced">
+					<li>02 Oct 2018.</li>
+					<li>With respect to support 13 Nov 2018.</li>
+				</ul>
+			</td>
+			<td>13 Nov 2018</td>
+			<td>21 May 2019</td>
+			<td>12 Nov 2019</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="5">No</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="tableEndnote">
+			<a id="endnote_1_10support"></a><a href="#endnote_1_10support_return" class="linkEndnote">(1)</a><a id="endnote_2_10support"></a><a href="#endnote_2_10support_return" class="linkEndnote">(2)</a>&nbsp;&nbsp;There was two official releases of Windows 10 Version 1809; 1.) Build 10.0.17763.1 released 02 Oct 2018, and 2.) Build 10.0.17763.107 released 13 Nov 2018. With respect to Microsoft supporting Windows 10 Version 1809 with Cumulative Updates for at least 18 months, the general availability data for both releases of Windows 10 Version 1809 is to be considered 13 Nov 2018. For additional information, see <a href="https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/" class="linkContent">Updated Version Of Windows 10 October 2018 Update Released To Windows Insiders (blogs.windows.com)</a> and <a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/" class="linkContent">Resuming The Rollout Of The Windows 10 October 2018 Update (blogs.windows.com)</a>.
+			</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="6" class="tableTitle">Windows 10 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Oct 2025)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>10 Version 2004<br />
+			(10.0.19041.264)</th><!-- 20H1/May 2020 Update -->
+			<th>10 Version 20H2<br />
+			(10.0.19042.508)</th><!-- 20H2/October 2020 Update -->
+			<th>10 Version 21H1<br />
+			(10.0.19043.928)</th><!-- 21H1/May 2021 Update -->
+			<th>10 Version 21H2<br />
+			(10.0.19044.1288)</th><!-- 21H2/November 2021 Update -->
+			<th>10 Version 22H2<br />
+			(10.0.19045.2006)</th><!-- 22H2/2022 Update -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			<td>27 May 2020</td>
+			<td>20 Oct 2020</td>
+			<td>18 May 2021</td>
+			<td>16 Nov 2021</td>
+			<td>18 Oct 2022</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="5">No</td>
+		</tr>
+	</table>
+
+	<a id="windows_11_versions_support_status"></a>
+	<table>
+		<tr>
+			<td colspan="6" class="tableTitle">Windows 11 Versions Support Status<br />
+			(Last Reviewed/Updated: 18 Oct 2025)</td>
+		</tr>
+		<tr>
+			<th>Windows<br />
+			(Build)</th>
+			<th>11 Version 21H2<br />
+			(10.0.22000.194)</th><!-- 21H2/Original Release/Sun Valley -->
+			<th>11 Version 22H2<br />
+			(10.0.22621.521) <a id="endnote_1_W11_21H2_return"></a><a href="#endnote_1_W11_21H2" class="linkEndnote">(1)</a></th><!-- 22H2/Windows 11 2022 Update/Sun Valley 2 -->
+			<th>11 Version 23H2<br />
+			(10.0.22631.2428)</th><!-- 23H2/Windows 11 2023 Update/Sun Valley 3 -->
+			<th>11 Version 24H2<br />
+			(10.0.26100.1742)</th><!-- 24H2/Windows 11 2024 Update/Hudson Valley -->
+			<th>11 Version 25H2<br />
+			(10.0.26200.6584)</th><!-- 25H2/Windows 11 2025 Update/No Codename -->
+		</tr>
+		<tr>
+			<td>General<br />
+			Availability</td><!-- General availability in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			<td>04 Oct 2021</td>
+			<td>20 Sep 2022 <a id="endnote_2_W11_21H2_return"></a><a href="#endnote_2_W11_21H2" class="linkEndnote">(2)</a></td>
+			<td>31 Oct 2023</td>
+			<td>01 Oct 2024</td>
+			<td>30 Sep 2025</td>
+		</tr>
+		<tr>
+			<td>In Support</td>
+			<td colspan="2">No</td>
+			<td colspan="3">Yes</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="tableEndnote">
+			<a id="endnote_1_W11_21H2"></a><a href="#endnote_1_W11_21H2_return" class="linkEndnote">(1)</a><a id="endnote_2_W11_21H2"></a><a href="#endnote_2_W11_21H2_return" class="linkEndnote">(2)</a>&nbsp;&nbsp;Windows 11 Version 22H2 general availability was announced on 20 Sep 2022 when Windows 11 Version 22H2 was at build 10.0.22621.521. However, apparently the first build of Windows 11 Version 22H2 released through official channels as a general availability ISO was 10.0.22621.525 on 28 Sep 2022, not 10.0.22621.521 on 20 Sep 2022.<!-- Endnote in windows_system_requirements.html, windows_versions_software_bundled.html, windows_secure_installation.html. -->
+			</td>
+		</tr>
+	</table>
+
+	<p>In the Windows 10/11 servicing model, a Cumulative Update for Windows 10/11 is a single file that contains new security and non-security fixes, and all previous security and non-security fixes (if there are any), for a version of Windows 10/11. In other words, in the Windows 10/11 servicing model, Cumulative Updates for Windows 10/11 are cumulative back through the initial release of the version of Windows 10/11. This means that to obtain the security (and non-security) fixes for Windows 10/11 from the initial release of the version of Windows 10/11 through the present, it is only necessary to install the latest Cumulative Update (LCU) for Windows 10/11 for the supported version of Windows 10/11.</p>
+
+	<p class="subsectionTitle"><a id="toc1_3"></a>1.3.&nbsp;&nbsp;Servicing Stack Updates</p>
+
+	<p>Servicing is the process of installing a Cumulative Update, Security Update, Update, fix, component, role, etc. Depending on what is being installed, servicing is performed manually by the user and/or automatically by Windows Update. The Servicing Stack is the component of Windows that performs servicing. Like other Windows components, the Servicing Stack is periodically updated. A Servicing Stack Update (SSU) improves the speed and reliability of servicing.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_3_1"></a>1.3.1.&nbsp;&nbsp;Starting March 2021, Servicing Stack Updates For Windows 10 Version 2004 And Newer Are Included In The Cumulative Updates For Windows 10 Version 2004 And Newer</p>
+
+	<p>Starting in March 2021, the Servicing Stack Updates for Windows 10 Version 2004 and newer are no longer released as standalone Updates. Instead, they are included in the Cumulative Updates for Windows 10 Version 2004 and newer. However, a special Servicing Stack Update for Windows 10 Version 2004, 20H2, and 21H1 (KB5005260) is a prerequisite for installing the latest Cumulative Update for Windows 10 Version 2004, 20H2, and 21H1. The special Servicing Stack Update Windows 10 Version 2004, 20H2, and 21H1 (KB5005260) is not prerequisite for installing the latest Cumulative Update for Windows 10 Version 21H2 and newer. Therefore, for Windows 10 Version 21H2 and newer there is no need to worry about Servicing Stack Updates.</p>
+
+	<p class="subSubsectionTitle"><a id="toc1_3_2"></a>1.3.2.&nbsp;&nbsp;Servicing Stack Updates For Windows 11 Are Included In The Cumulative Updates For Windows 11</p>
+
+	<p>The Servicing Stack Updates for Windows 11 are included in the Cumulative Updates for Windows 11. Therefore, for Windows 11 there is no need to worry about Servicing Stack Updates.</p>
+
+	<p class="subsectionTitle"><a id="toc1_4"></a>1.4.&nbsp;&nbsp;Overview: How To Secure A Clean Installation Of Windows 10/11</p>
+
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve all known Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. Rather than read the documentation for the latest Cumulative Update for Windows 10/11 to try to determine if the Cumulative Update resolves any wormable Windows vulnerabilities, it is far simpler to download the latest Cumulative Update for Windows 10/11, to copy the Cumulative Update to removable media, and to install the Cumulative Update before placing the computer online. Accordingly, the following is an overview of how to secure a clean installation of Windows 10/11 per this web page.</p>
+
+		<div class="note">
+			<div class="noteMarker noteMarkerNormal">i</div>
+			<div class="noteContent">The following is for the <a href="#windows_1011_versions_support_status" class="linkContent">supported versions of Windows 10/11 (above)</a>. A clean installation of an <a href="#windows_1011_versions_support_status" class="linkContent">unsupported version of Windows 10/11 (above)</a> cannot be made secure.</div>
+			<div class="clearBoth"></div>
+		</div>
+
+	<ul>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of a supported version of Windows 10/11 onto a new or fully erased hard drive. The new or fully erased hard drive ensures the installation of the supported version of Windows 10/11 is free from compromise (i.e., is clean).</li>
+				<li>Install the latest Cumulative Update for the supported version of Windows 10/11. This resolves all Windows 10/11 vulnerabilities (that do or do not require user interaction to be exploited) through the present.</li>
+			</ol>
+		</li>
+	</ul>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc2"></a>2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10/11</p>
+
+<div class="section">
+
+	<p>To secure a clean installation of Windows per this web page, it is necessary to resolve all known Windows vulnerabilities that do not require user interaction to be exploited before placing the computer online. This requires downloading and copying the latest Cumulative Update for Windows 10/11 to removable media before performing the clean installation of Windows 10/11. Because files on CDs/DVDs are far more difficult manipulate by malicious software/users than files on external hard disk drives and flash memory drives, CDs/DVDs are the removable media of choice.</p>
+
+	<p class="subsectionTitle"><a id="toc2_1"></a>2.1.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 10</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 10:</p>
+
+	<ol>
+		<li>Latest Cumulative Update for Windows 10:
+			<ul>
+				<li>If the Windows product DVD is Windows 10 Version 1507, 1511, 1607, 1703, 1709, 1803, 1809, 1903, 1909, 2004, 20H2, 21H1, or 21H2:
+					<ul>
+						<li>Windows 10 Version 1507, 1511, 1607, 1703, 1709, 1803, 1809, 1903, 1909, 2004, 20H2, 21H1, and 21H2 are <a href="#windows_10_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 10. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">Windows 10 Media Creation Tool (microsoft.com)</a> to create a Windows 10 product DVD containing the latest version of Windows 10.
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">The Windows 10 product DVD created by the Windows 10 Media Creation Tool automatically contains the latest version of Windows 10.</div>
+								<div class="clearBoth"></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 10 Version 22H2:
+					<ul>
+						<li>Latest Cumulative Update for Windows 10 Version 22H2:
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent"><a href="https://support.microsoft.com/en-us/help/5005260/" class="linkContent">KB5005260: Servicing Stack Update For Windows 10, Version 2004, 20H2, And 21H1: August 10, 2021 (support.microsoft.com)</a> is not a prerequisite for the latest Cumulative Update for Windows 10 Version 22H2.</div>
+								<div class="clearBoth"></div>
+							</div>
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/5066791/" class="linkListItem">October 14, 2025 - KB5066791 (OS Builds 19044.6456 And 19045.6456) (support.microsoft.com)</a>:
+									<ul>
+										<li>32-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5066791" class="linkListItem">2025-10 Cumulative Update For Windows 10 Version 22H2 For x86-Based Systems (KB5066791) (catalog.update.microsoft.com)</a>.</li>
+										<li>64-bit: <a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5066791" class="linkListItem">2025-10 Cumulative Update For Windows 10 Version 22H2 For x64-Based Systems (KB5066791) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 10, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc2_2"></a>2.2.&nbsp;&nbsp;Files To Download And Copy To CD/DVD Before Performing The Clean Installation Of Windows 11</p>
+
+	<p>Using a computer that is not compromised, download and copy the following files to CD/DVD before performing the clean installation of Windows 11:</p>
+
+	<ol>
+		<li>Latest Cumulative Update for Windows 11:
+			<ul>
+				<li>If the Windows product DVD is Windows 11 Version 21H2 or 22H2:
+					<ul>
+						<li>Windows 11 Version 21H2 and 22H2 are <a href="#windows_11_versions_support_status" class="linkListItem">out of support (above)</a>. Do not install an out of support version of Windows 11. Instead, run the <a href="https://www.microsoft.com/en-us/software-download/windows11" class="linkListItem">Windows 11 Media Creation Tool (microsoft.com)</a> to create a Windows 11 product DVD containing the latest version of Windows 11.
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">The Windows 11 product DVD created by the Windows 11 Media Creation Tool automatically contains the latest version of Windows 11.</div>
+								<div class="clearBoth"></div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 11 Version 23H2:
+					<ul>
+						<li>Latest Cumulative Update for Windows 11 Version 23H2:
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/5066793/" class="linkListItem">October 14, 2025 - KB5066793 (OS Builds 22621.6060 And 22631.6060) (support.microsoft.com)</a>:
+									<ul>
+										<li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5066793" class="linkListItem">2025-10 Cumulative Update For Windows 11 Version 23H2 For x64-Based Systems (KB5066793) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 11 Version 24H2:
+					<ul>
+						<li>Latest Cumulative Update for Windows 11 Version 24H2:
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">
+									<ul class="olUlNestedInNotePaddingReduced">
+										<li>Although the Microsoft Update Catalog lists the <a href="https://support.microsoft.com/en-us/help/5043080/" class="linkContent">September 10, 2024 - KB5043080 (OS Build 26100.1742) (support.microsoft.com)</a> file for download, it is not a prerequisite for the latest Cumulative Update for Windows 11 Version 24H2.</li>
+										<li>Yes, the Cumulative Update for Windows 11 Version 24H2 (OS Build 26100) and 25H2 (OS Build 26200) is the same identical file, and the Cumulative Update for Windows 11 Version 23H2 (OS Build 22631) is a different file.</li>
+									</ul>
+								</div>
+								<div class="clearBoth"></div>
+							</div>
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/5066835/" class="linkListItem">October 14, 2025 - KB5066835 (OS Builds 26200.6899 And 26100.6899) (support.microsoft.com)</a>:
+									<ul>
+										<li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5066835" class="linkListItem">2025-10 Cumulative Update For Windows 11 Version 24H2 For x64-Based Systems (KB5066835) (26100.6899) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If the Windows product DVD is Windows 11 Version 25H2:
+					<ul>
+						<li>Latest Cumulative Update for Windows 11 Version 25H2:
+							<div class="note">
+								<div class="noteMarker noteMarkerNormal">i</div>
+								<div class="noteContent">
+									<ul class="olUlNestedInNotePaddingReduced">
+										<li>Although the Microsoft Update Catalog lists the <a href="https://support.microsoft.com/en-us/help/5043080/" class="linkContent">September 10, 2024 - KB5043080 (OS Build 26100.1742) (support.microsoft.com)</a> file for download, it is not a prerequisite for the latest Cumulative Update for Windows 11 Version 25H2.</li>
+										<li>Yes, the Cumulative Update for Windows 11 Version 24H2 (OS Build 26100) and 25H2 (OS Build 26200) is the same identical file, and the Cumulative Update for Windows 11 Version 23H2 (OS Build 22631) is a different file.</li>
+									</ul>
+								</div>
+								<div class="clearBoth"></div>
+							</div>
+							<ul>
+								<li><a href="https://support.microsoft.com/en-us/help/5066835/" class="linkListItem">October 14, 2025 - KB5066835 (OS Builds 26200.6899 And 26100.6899) (support.microsoft.com)</a>:
+									<ul>
+										<li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB5066835" class="linkListItem">2025-10 Cumulative Update For Windows 11 Version 25H2 For x64-based Systems (KB5066835) (26200.6899) (catalog.update.microsoft.com)</a>.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>If not located on a disc included with your computer and not installed by Windows 11, the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc3"></a>3.&nbsp;&nbsp;Secure A Clean Installation Of Windows 10/11</p>
+
+<div class="section">
+
+	<p class="subsectionTitle"><a id="toc3_1"></a>3.1.&nbsp;&nbsp;Secure A Clean Installation Of Windows 10</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 10 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 10 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 10, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Cumulative Update for Windows 10:
+					<ul>
+						<li>If Windows 10 Version 22H2 was installed:
+							<ul>
+								<li>Install the latest Cumulative Update for Windows 10 Version 22H2:
+									<ul>
+										<li>Install the 2025-10 Cumulative Update For Windows 10 Version 22H2 KB5066791 file.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 10, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows Update and install:
+					<ul>
+						<li>Any Security Updates and security fixes for Windows 10.</li>
+						<li>Any non-security updates and non-security fixes for Windows 10.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 10. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+	<p class="subsectionTitle"><a id="toc3_2"></a>3.2.&nbsp;&nbsp;Secure A Clean Installation Of Windows 11</p>
+	
+	<ol>
+		<li>Do the following offline, and before interacting with the computer in any way that could result in compromise:
+			<ol>
+				<li>Perform a default installation of Windows 11 onto a new or fully erased hard drive:
+					<ol>
+						<li>Boot the computer from the Windows 11 product DVD and proceed with the installation.</li>
+						<li>Eventually the <span class="userInput">Windows Setup: Which type of installation do you want?</span> dialog appears. Click <span class="userInput">Custom: Install Windows only (advanced)</span>.</li>
+						<li>The <span class="userInput">Windows Setup: Where do you want to install Windows?</span> dialog appears. Either accept the default and click <span class="userInput">Next</span>, or click <span class="userInput">New</span>, create one or more drives, select a drive for the installation of Windows 11, and click <span class="userInput">Next</span>.</li>
+						<li>Otherwise, select the default/typical/recommended option throughout the installation.</li>
+					</ol>
+				</li>
+				<li>From CD/DVD, install the latest Cumulative Update for Windows Version 11:
+					<ul>
+						<li>If Windows 11 Version 23H2 was installed:
+							<ul>
+								<li>Install the latest Cumulative Update for Windows 11 Version 23H2:
+									<ul>
+										<li>Install the 2025-10 Cumulative Update For Windows 11 Version 23H2 KB5066793 file.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>If Windows 11 Version 24H2 was installed:
+							<ul>
+								<li>Install the latest Cumulative Update for Windows 11 Version 24H2:
+									<ul>
+										<li>Install the 2025-10 Cumulative Update For Windows 11 Version 24H2 KB5066835 file.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>If Windows 11 Version 25H2 was installed:
+							<ul>
+								<li>Install the latest Cumulative Update for Windows 11 Version 25H2:
+									<ul>
+										<li>Install the 2025-10 Cumulative Update For Windows 11 Version 25H2 KB5066835 file.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>If not installed by Windows 11, from CD/DVD install the driver for your network connection device (i.e., dial-up modem, ethernet adapter, or Wi-Fi adapter).</li>
+			</ol>
+		</li>
+		<li>Do the following online, and before interacting with the computer in any way that could result in compromise:
+			<ul>
+				<li>Run Windows Update and install:
+					<ul>
+						<li>Any Security Updates and security fixes for Windows 11.</li>
+						<li>Any non-security updates and non-security fixes for Windows 11.</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>You have secured the clean installation of Windows 11. If you use imaging software to back up your system, this is an excellent time to use it. Otherwise, proceed to use the computer as normal.</li>
+	</ol>
+
+</div>
+
+<hr />
+
+<p class="sectionTitle"><a id="toc4"></a>4.&nbsp;&nbsp;Resources And Additional Information</p>
+
+<div class="section">
+
+	<ul>
+		<li><a href="https://learn.microsoft.com/en-US/troubleshoot/windows-client/deployment/standard-terminology-software-updates" class="linkListItem">Description Of The Standard Terminology That Is Used To Describe Microsoft Software Updates (824684) (learn.microsoft.com)</a></li>
+		<li><a href="https://learn.microsoft.com/en-us/previous-versions/tn-archive/cc700845(v=technet.10)" class="linkListItem">Update Management Process (learn.microsoft.com)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=36982" class="linkListItem">Microsoft Security Bulletin Data (microsoft.com)</a></li>
+		<li><a href="https://cve.mitre.org/" class="linkListItem">Common Vulnerabilities And Exposures (CVE) (cve.mitre.org)</a></li>
+		<li><a href="https://nvd.nist.gov/" class="linkListItem">National Vulnerability Database (NVD) (nvd.nist.gov)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Win32%2FMsblast" class="linkListItem">Win32/Msblast (microsoft.com)</a> (Symantec - Blaster.)</li>
+		<li><a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?name=Win32%2FNachi" class="linkListItem">Win32/Nachi (microsoft.com)</a> (Symantec - Welchia.)</li>
+		<li><a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Win32%2fSasser" class="linkListItem">Win32/Sasser (microsoft.com)</a> (Symantec - Sasser.)</li>
+		<li><a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Win32%2fConficker" class="linkListItem">Win32/Conficker (microsoft.com)</a> (Symantec - Downadup.)</li>
+		<li><a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/WannaCrypt" class="linkListItem">Ransom:Win32/WannaCrypt (microsoft.com)</a> (Symantec - Wannacry.)</li>
+		<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-quick-start" class="linkListItem">Quick Guide To Windows As A Service (learn.microsoft.com)</a></li>
+		<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/waas-overview" class="linkListItem">Overview Of Windows As A Service (learn.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-10-update-history-83aa43c0-82e0-92d8-1580-10642c9ed612" class="linkListItem">Windows 10 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://blogs.windows.com/windowsexperience/2018/10/09/updated-version-of-windows-10-october-2018-update-released-to-windows-insiders/" class="linkListItem">Updated Version Of Windows 10 October 2018 Update Released To Windows Insiders (blogs.windows.com)</a></li>
+		<li><a href="https://blogs.windows.com/windowsexperience/2018/11/13/resuming-the-rollout-of-the-windows-10-october-2018-update/" class="linkListItem">Resuming The Rollout Of The Windows 10 October 2018 Update (blogs.windows.com)</a></li>
+		<li><a href="https://learn.microsoft.com/en-us/windows/release-health/release-information" class="linkListItem">Windows 10 Release Information (learn.microsoft.com)</a></li>
+		<li><a href="https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-client-roadmap-update/ba-p/3805227" class="linkListItem">Windows Client Roadmap Update (techcommunity.microsoft.com)</a> (Announcement that Windows 10 Version 22H2 is the last version of Windows 10.)</li>
+		<li><a href="https://www.microsoft.com/en-us/software-download/windows10" class="linkListItem">Download Windows 10 (microsoft.com)</a> (Includes downloading Windows 10 via Windows 10 Media Creation Tool.)
+		<li><a href="https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information" class="linkListItem">Windows 11 Release Information (learn.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-11-version-21h2-update-history-a19cd327-b57f-44b9-84e0-26ced7109ba9" class="linkListItem">Windows 11, Version 21H2 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-11-version-22h2-update-history-ec4229c3-9c5f-4e75-9d6d-9025ab70fcce" class="linkListItem">Windows 11, Version 22H2 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-11-version-23h2-update-history-59875222-b990-4bd9-932f-91a5954de434" class="linkListItem">Windows 11, Version 23H2 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/windows-11-version-24h2-update-history-0929c747-1815-4543-8461-0160d16f15e5" class="linkListItem">Windows 11, Version 24H2 Update History (support.microsoft.com)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/software-download/windows11" class="linkListItem">Download Windows 11 (microsoft.com)</a> (Includes downloading Windows 11 via Windows 11 Media Creation Tool.)
+		<li><a href="https://learn.microsoft.com/en-us/windows/deployment/update/servicing-stack-updates" class="linkListItem">Servicing Stack Updates (learn.microsoft.com)</a></li>
+		<li><a href="https://msrc.microsoft.com/update-guide/en-us/vulnerability/ADV990001" class="linkListItem">ADV990001 | Latest Servicing Stack Updates (msrc.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/topic/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus-64d1c82d-31ee-c273-3930-69a4cde8e64f" class="linkListItem">2019 SHA-2 Code Signing Support Requirement For Windows And WSUS (support.microsoft.com)</a></li>
+		<li><a href="https://learn.microsoft.com/en-us/lifecycle/faq/windows" class="linkListItem">Lifecycle FAQ - Windows (learn.microsoft.com)</a></li>
+		<li><a href="https://support.microsoft.com/en-us/windows/windows-update-faq-8a903416-6f45-0718-f5c7-375e92dddeb2" class="linkListItem">Windows Update: FAQ (support.microsoft.com)</a></li>
+		<li><a href="https://learn.microsoft.com/en-us/security-updates/" class="linkListItem">Security Advisories And Bulletins (learn.microsoft.com)</a></li>
+		<li><a href="https://www.microsoft.com/en-us/msrc" class="linkListItem">Microsoft Security Response Center (microsoft.com)</a></li>
+		<li><a href="https://msrc.microsoft.com/update-guide/en-us" class="linkListItem">Security Update Guide (msrc.microsoft.com)</a></li>
+		<li><a href="https://catalog.update.microsoft.com/Home.aspx" class="linkListItem">Microsoft Update Catalog (catalog.update.microsoft.com)</a></li>
+	</ul>
+
+</div>
+
+<script src="../library/footer.js"></script>
+
+</div><!-- Close class="container". -->
+
+</body>
+</html>
